@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1921F6F48C00583DBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1821F6F48C00583DBD /* ViewController.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
+		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		9716EF5121F6FDAE00583DBD /* 社区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "社区.png"; sourceTree = "<group>"; };
 		9716EF5221F6FDAE00583DBD /* 运动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动.png"; sourceTree = "<group>"; };
 		9716EF5321F6FDAE00583DBD /* 首页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页.png"; sourceTree = "<group>"; };
+		A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046496B521F736AF0093AC4E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		853A7B615FC2989979A8E8B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */,
+				3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9716EF0821F6F48B00583DBD = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +124,8 @@
 				9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */,
 				9716EF3721F6F48D00583DBD /* Burning-calories-APPUITests */,
 				9716EF1221F6F48B00583DBD /* Products */,
+				853A7B615FC2989979A8E8B9 /* Pods */,
+				B02E9C8892945B6E9BF1C9BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +142,7 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
+				046496B521F736AF0093AC4E /* Base */,
 				9716EF1421F6F48C00583DBD /* AppDelegate.h */,
 				9716EF1521F6F48C00583DBD /* AppDelegate.m */,
 				9716EF5821F6FED900583DBD /* Log */,
@@ -263,6 +287,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B02E9C8892945B6E9BF1C9BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9716EF3D21F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APP" */;
 			buildPhases = (
+				4F958E279E76004C150E80FA /* [CP] Check Pods Manifest.lock */,
 				9716EF0D21F6F48B00583DBD /* Sources */,
 				9716EF0E21F6F48B00583DBD /* Frameworks */,
 				9716EF0F21F6F48B00583DBD /* Resources */,
@@ -391,6 +424,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F958E279E76004C150E80FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Burning-calories-APP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9716EF0D21F6F48B00583DBD /* Sources */ = {
@@ -569,6 +627,7 @@
 		};
 		9716EF3E21F6F48D00583DBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,6 +644,7 @@
 		};
 		9716EF3F21F6F48D00583DBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

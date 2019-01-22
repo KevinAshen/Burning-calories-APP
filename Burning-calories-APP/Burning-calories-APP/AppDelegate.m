@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIViewController *openViewController = [[UIViewController alloc]init];
+    UIViewController *openViewController = [[UIViewController alloc] init];
     UIImageView *openImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"开机.jpg"]];
     [openViewController.view addSubview:openImageView];
     self.window.rootViewController = openViewController;
@@ -30,8 +30,7 @@
     // Override point for customization after application launch.
     return YES;
 }
-- (void)changeView{
-    
+- (void)changeView {
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     self.window.rootViewController = tabBarController;
     

@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+target 'Burning-calories-APP' do
+pod 'Masonry'
+pod 'JSONModel'
+pod 'SDWebImage'
+pod 'FMDB'
+pod ‘AFNetworking’
+end
