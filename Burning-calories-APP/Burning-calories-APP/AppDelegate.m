@@ -10,6 +10,7 @@
 #import "BCLLogViewController.h"
 #import "BCLCommunityViewController.h"
 #import "BCLSportsDietaryViewController.h"
+#import "BCLBaseTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -30,25 +31,25 @@
     // Override point for customization after application launch.
     return YES;
 }
+#pragma mark - 工具栏
 - (void)changeView {
-    UITabBarController *tabBarController = [[UITabBarController alloc]init];
-    self.window.rootViewController = tabBarController;
     
     BCLLogViewController *logViewController = [[BCLLogViewController alloc]init];
-    logViewController.tabBarItem.image = [UIImage imageNamed:@"首页"];
-    
     BCLSportsDietaryViewController *sportsDietaryViewController = [[BCLSportsDietaryViewController alloc]init];
-    sportsDietaryViewController.tabBarItem.image = [UIImage imageNamed: @"运动"];
-    
     BCLCommunityViewController *communityController =
     [[BCLCommunityViewController alloc]init];
-    communityController.tabBarItem.image = [UIImage imageNamed:@"社区"];
     
-    UINavigationController *logNavigationController = [[UINavigationController alloc]initWithRootViewController:logViewController];
-    UINavigationController *sportsDietaryNavigationController = [[UINavigationController alloc]initWithRootViewController:sportsDietaryViewController];
-    UINavigationController *communityNavigationController = [[UINavigationController alloc]initWithRootViewController:communityController];
+    NSMutableArray *viewControllerMutableArray = [NSMutableArray array];
+    [viewControllerMutableArray addObject:logViewController];
+    [viewControllerMutableArray addObject:sportsDietaryViewController];
+    [viewControllerMutableArray addObject:communityController];
     
-    tabBarController.viewControllers = @[logNavigationController, sportsDietaryNavigationController, communityNavigationController];
+    NSArray *titleArray = @[@"日志",@"运动",@"社区"];
+    
+    BCLBaseTabBarController *tabBarController = [[BCLBaseTabBarController alloc]init];
+    self.window.rootViewController = tabBarController;
+    [tabBarController setCodeTabbarController:viewControllerMutableArray andviewControllerTitleMutableArray:titleArray];
+
     [self.window makeKeyAndVisible];
 }
 

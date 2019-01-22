@@ -23,7 +23,9 @@
 		9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5021F6FDAE00583DBD /* 开机.jpg */; };
 		9716EF5521F6FDAE00583DBD /* 社区.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5121F6FDAE00583DBD /* 社区.png */; };
 		9716EF5621F6FDAE00583DBD /* 运动.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5221F6FDAE00583DBD /* 运动.png */; };
-		9716EF5721F6FDAF00583DBD /* 首页.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5321F6FDAE00583DBD /* 首页.png */; };
+		9716EF5721F6FDAF00583DBD /* 日志.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5321F6FDAE00583DBD /* 日志.png */; };
+		9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */; };
+		9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,11 @@
 		9716EF5021F6FDAE00583DBD /* 开机.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "开机.jpg"; sourceTree = "<group>"; };
 		9716EF5121F6FDAE00583DBD /* 社区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "社区.png"; sourceTree = "<group>"; };
 		9716EF5221F6FDAE00583DBD /* 运动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动.png"; sourceTree = "<group>"; };
-		9716EF5321F6FDAE00583DBD /* 首页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页.png"; sourceTree = "<group>"; };
+		9716EF5321F6FDAE00583DBD /* 日志.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日志.png"; sourceTree = "<group>"; };
+		9716EF6821F743EB00583DBD /* BCLBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseTabBarController.h; sourceTree = "<group>"; };
+		9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTabBarController.m; sourceTree = "<group>"; };
+		9716EF6B21F74B0300583DBD /* BCLBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseTableViewCell.h; sourceTree = "<group>"; };
+		9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTableViewCell.m; sourceTree = "<group>"; };
 		A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,10 @@
 			children = (
 				046496B621F739B10093AC4E /* BCLBaseViewController.h */,
 				046496B721F739B10093AC4E /* BCLBaseViewController.m */,
+				9716EF6821F743EB00583DBD /* BCLBaseTabBarController.h */,
+				9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */,
+				9716EF6B21F74B0300583DBD /* BCLBaseTableViewCell.h */,
+				9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -126,7 +136,6 @@
 			children = (
 				9716EF4F21F6FDAE00583DBD /* 素材 */,
 				9716EF1321F6F48B00583DBD /* Burning-calories-APP */,
-				9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */,
 				9716EF3721F6F48D00583DBD /* Burning-calories-APPUITests */,
 				9716EF1221F6F48B00583DBD /* Products */,
 				853A7B615FC2989979A8E8B9 /* Pods */,
@@ -158,6 +167,7 @@
 				9716EF1A21F6F48C00583DBD /* Main.storyboard */,
 				9716EF1D21F6F48D00583DBD /* Assets.xcassets */,
 				9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */,
+				9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */,
 				9716EF2221F6F48D00583DBD /* Info.plist */,
 				9716EF2321F6F48D00583DBD /* main.m */,
 			);
@@ -188,7 +198,7 @@
 				9716EF5021F6FDAE00583DBD /* 开机.jpg */,
 				9716EF5121F6FDAE00583DBD /* 社区.png */,
 				9716EF5221F6FDAE00583DBD /* 运动.png */,
-				9716EF5321F6FDAE00583DBD /* 首页.png */,
+				9716EF5321F6FDAE00583DBD /* 日志.png */,
 			);
 			path = "素材";
 			sourceTree = "<group>";
@@ -408,7 +418,7 @@
 				9716EF5621F6FDAE00583DBD /* 运动.png in Resources */,
 				9716EF2121F6F48D00583DBD /* LaunchScreen.storyboard in Resources */,
 				9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */,
-				9716EF5721F6FDAF00583DBD /* 首页.png in Resources */,
+				9716EF5721F6FDAF00583DBD /* 日志.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */,
 			);
@@ -436,15 +446,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Burning-calories-APP-checkManifestLockResult.txt",
 			);
@@ -460,10 +466,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */,
 				9716EF4E21F6FD8400583DBD /* BCLCommunityViewController.m in Sources */,
 				9716EF1921F6F48C00583DBD /* ViewController.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
+				9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */,
 				9716EF4B21F6FD6100583DBD /* BCLSportsDietaryViewController.m in Sources */,
 				046496B821F739B10093AC4E /* BCLBaseViewController.m in Sources */,
 				9716EF4821F6FCA900583DBD /* BCLLogViewController.m in Sources */,
