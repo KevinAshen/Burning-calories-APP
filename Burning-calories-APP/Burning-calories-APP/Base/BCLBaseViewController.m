@@ -8,7 +8,7 @@
 
 #import "BCLBaseViewController.h"
 
-@interface BCLBaseViewController ()
+@interface BCLBaseViewController ()<UITableViewDelegate>
 
 @end
 
@@ -22,6 +22,7 @@
     //[self setupLeftBarButton];
 }
 
+#pragma mark - 基础设定
 - (void)setupBaseSetting {
     // 设置应用的背景色
     self.view.backgroundColor = [UIColor whiteColor];
@@ -45,6 +46,24 @@
 - (void)leftBarButtonClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark - TableView的设置
+- (UITableView *)refreshBaseTableView {
+    UITableView *baseTableView = [self setupBaseTableView];
+    baseTableView.delegate = self;
+    baseTableView.showsVerticalScrollIndicator = NO;
+    baseTableView.showsHorizontalScrollIndicator = NO;
+    baseTableView.bounces = NO;
+    baseTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    baseTableView.backgroundColor = [UIColor whiteColor];
+    return baseTableView;
+}
+
+- (UITableView *)setupBaseTableView {
+    UITableView *baseTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    return baseTableView;
+}
+
 
 /*
 #pragma mark - Navigation
