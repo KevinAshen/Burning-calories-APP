@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "BCLLogViewController.h"
+#import "BCLCommunityViewController.h"
+#import "BCLSportsDietaryViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +19,39 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIViewController *openViewController = [[UIViewController alloc]init];
+    UIImageView *openImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"开机.jpg"]];
+    [openViewController.view addSubview:openImageView];
+    self.window.rootViewController = openViewController;
+    
+    [self performSelector:@selector(changeView) withObject:self afterDelay:2];
+    
     // Override point for customization after application launch.
     return YES;
 }
-
+- (void)changeView{
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    self.window.rootViewController = tabBarController;
+    
+    BCLLogViewController *logViewController = [[BCLLogViewController alloc]init];
+    logViewController.tabBarItem.image = [UIImage imageNamed:@"首页"];
+    
+    BCLSportsDietaryViewController *sportsDietaryViewController = [[BCLSportsDietaryViewController alloc]init];
+    sportsDietaryViewController.tabBarItem.image = [UIImage imageNamed: @"运动"];
+    
+    BCLCommunityViewController *communityController =
+    [[BCLCommunityViewController alloc]init];
+    communityController.tabBarItem.image = [UIImage imageNamed:@"社区"];
+    
+    UINavigationController *logNavigationController = [[UINavigationController alloc]initWithRootViewController:logViewController];
+    UINavigationController *sportsDietaryNavigationController = [[UINavigationController alloc]initWithRootViewController:sportsDietaryViewController];
+    UINavigationController *communityNavigationController = [[UINavigationController alloc]initWithRootViewController:communityController];
+    
+    tabBarController.viewControllers = @[logNavigationController, sportsDietaryNavigationController, communityNavigationController];
+    [self.window makeKeyAndVisible];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
