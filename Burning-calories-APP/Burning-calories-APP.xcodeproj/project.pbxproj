@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046496B821F739B10093AC4E /* BCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496B721F739B10093AC4E /* BCLBaseViewController.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1921F6F48C00583DBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1821F6F48C00583DBD /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046496B621F739B10093AC4E /* BCLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseViewController.h; sourceTree = "<group>"; };
+		046496B721F739B10093AC4E /* BCLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseViewController.m; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +106,8 @@
 		046496B521F736AF0093AC4E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				046496B621F739B10093AC4E /* BCLBaseViewController.h */,
+				046496B721F739B10093AC4E /* BCLBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
 				9716EF4B21F6FD6100583DBD /* BCLSportsDietaryViewController.m in Sources */,
+				046496B821F739B10093AC4E /* BCLBaseViewController.m in Sources */,
 				9716EF4821F6FCA900583DBD /* BCLLogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
