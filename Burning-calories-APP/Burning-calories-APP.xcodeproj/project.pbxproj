@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
+		9716EF1921F6F48C00583DBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1821F6F48C00583DBD /* ViewController.m */; };
+		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
+		9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1D21F6F48D00583DBD /* Assets.xcassets */; };
+		9716EF2121F6F48D00583DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */; };
+		9716EF2421F6F48D00583DBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF2321F6F48D00583DBD /* main.m */; };
+		9716EF2E21F6F48D00583DBD /* Burning_calories_APPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF2D21F6F48D00583DBD /* Burning_calories_APPTests.m */; };
+		9716EF3921F6F48D00583DBD /* Burning_calories_APPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF3821F6F48D00583DBD /* Burning_calories_APPUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9716EF2A21F6F48D00583DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9716EF0921F6F48B00583DBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9716EF1021F6F48B00583DBD;
+			remoteInfo = "Burning-calories-APP";
+		};
+		9716EF3521F6F48D00583DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9716EF0921F6F48B00583DBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9716EF1021F6F48B00583DBD;
+			remoteInfo = "Burning-calories-APP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9716EF1721F6F48C00583DBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9716EF1821F6F48C00583DBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9716EF1B21F6F48C00583DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9716EF1D21F6F48D00583DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9716EF2021F6F48D00583DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9716EF2221F6F48D00583DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9716EF2321F6F48D00583DBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9716EF2921F6F48D00583DBD /* Burning-calories-APPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burning-calories-APPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9716EF2D21F6F48D00583DBD /* Burning_calories_APPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burning_calories_APPTests.m; sourceTree = "<group>"; };
+		9716EF2F21F6F48D00583DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9716EF3421F6F48D00583DBD /* Burning-calories-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burning-calories-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9716EF3821F6F48D00583DBD /* Burning_calories_APPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burning_calories_APPUITests.m; sourceTree = "<group>"; };
+		9716EF3A21F6F48D00583DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9716EF0E21F6F48B00583DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9716EF2621F6F48D00583DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9716EF3121F6F48D00583DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9716EF0821F6F48B00583DBD = {
+			isa = PBXGroup;
+			children = (
+				9716EF1321F6F48B00583DBD /* Burning-calories-APP */,
+				9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */,
+				9716EF3721F6F48D00583DBD /* Burning-calories-APPUITests */,
+				9716EF1221F6F48B00583DBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9716EF1221F6F48B00583DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */,
+				9716EF2921F6F48D00583DBD /* Burning-calories-APPTests.xctest */,
+				9716EF3421F6F48D00583DBD /* Burning-calories-APPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF1421F6F48C00583DBD /* AppDelegate.h */,
+				9716EF1521F6F48C00583DBD /* AppDelegate.m */,
+				9716EF1721F6F48C00583DBD /* ViewController.h */,
+				9716EF1821F6F48C00583DBD /* ViewController.m */,
+				9716EF1A21F6F48C00583DBD /* Main.storyboard */,
+				9716EF1D21F6F48D00583DBD /* Assets.xcassets */,
+				9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */,
+				9716EF2221F6F48D00583DBD /* Info.plist */,
+				9716EF2321F6F48D00583DBD /* main.m */,
+			);
+			path = "Burning-calories-APP";
+			sourceTree = "<group>";
+		};
+		9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF2D21F6F48D00583DBD /* Burning_calories_APPTests.m */,
+				9716EF2F21F6F48D00583DBD /* Info.plist */,
+			);
+			path = "Burning-calories-APPTests";
+			sourceTree = "<group>";
+		};
+		9716EF3721F6F48D00583DBD /* Burning-calories-APPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF3821F6F48D00583DBD /* Burning_calories_APPUITests.m */,
+				9716EF3A21F6F48D00583DBD /* Info.plist */,
+			);
+			path = "Burning-calories-APPUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9716EF1021F6F48B00583DBD /* Burning-calories-APP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9716EF3D21F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APP" */;
+			buildPhases = (
+				9716EF0D21F6F48B00583DBD /* Sources */,
+				9716EF0E21F6F48B00583DBD /* Frameworks */,
+				9716EF0F21F6F48B00583DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Burning-calories-APP";
+			productName = "Burning-calories-APP";
+			productReference = 9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9716EF2821F6F48D00583DBD /* Burning-calories-APPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9716EF4021F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APPTests" */;
+			buildPhases = (
+				9716EF2521F6F48D00583DBD /* Sources */,
+				9716EF2621F6F48D00583DBD /* Frameworks */,
+				9716EF2721F6F48D00583DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9716EF2B21F6F48D00583DBD /* PBXTargetDependency */,
+			);
+			name = "Burning-calories-APPTests";
+			productName = "Burning-calories-APPTests";
+			productReference = 9716EF2921F6F48D00583DBD /* Burning-calories-APPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9716EF3321F6F48D00583DBD /* Burning-calories-APPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9716EF4321F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APPUITests" */;
+			buildPhases = (
+				9716EF3021F6F48D00583DBD /* Sources */,
+				9716EF3121F6F48D00583DBD /* Frameworks */,
+				9716EF3221F6F48D00583DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9716EF3621F6F48D00583DBD /* PBXTargetDependency */,
+			);
+			name = "Burning-calories-APPUITests";
+			productName = "Burning-calories-APPUITests";
+			productReference = 9716EF3421F6F48D00583DBD /* Burning-calories-APPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9716EF0921F6F48B00583DBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "J&Q";
+				TargetAttributes = {
+					9716EF1021F6F48B00583DBD = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					9716EF2821F6F48D00583DBD = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9716EF1021F6F48B00583DBD;
+					};
+					9716EF3321F6F48D00583DBD = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9716EF1021F6F48B00583DBD;
+					};
+				};
+			};
+			buildConfigurationList = 9716EF0C21F6F48B00583DBD /* Build configuration list for PBXProject "Burning-calories-APP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9716EF0821F6F48B00583DBD;
+			productRefGroup = 9716EF1221F6F48B00583DBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9716EF1021F6F48B00583DBD /* Burning-calories-APP */,
+				9716EF2821F6F48D00583DBD /* Burning-calories-APPTests */,
+				9716EF3321F6F48D00583DBD /* Burning-calories-APPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9716EF0F21F6F48B00583DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9716EF2121F6F48D00583DBD /* LaunchScreen.storyboard in Resources */,
+				9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */,
+				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9716EF2721F6F48D00583DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9716EF3221F6F48D00583DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9716EF0D21F6F48B00583DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9716EF1921F6F48C00583DBD /* ViewController.m in Sources */,
+				9716EF2421F6F48D00583DBD /* main.m in Sources */,
+				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9716EF2521F6F48D00583DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9716EF2E21F6F48D00583DBD /* Burning_calories_APPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9716EF3021F6F48D00583DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9716EF3921F6F48D00583DBD /* Burning_calories_APPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9716EF2B21F6F48D00583DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9716EF1021F6F48B00583DBD /* Burning-calories-APP */;
+			targetProxy = 9716EF2A21F6F48D00583DBD /* PBXContainerItemProxy */;
+		};
+		9716EF3621F6F48D00583DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9716EF1021F6F48B00583DBD /* Burning-calories-APP */;
+			targetProxy = 9716EF3521F6F48D00583DBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9716EF1A21F6F48C00583DBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9716EF1B21F6F48C00583DBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9716EF2021F6F48D00583DBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9716EF3B21F6F48D00583DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9716EF3C21F6F48D00583DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9716EF3E21F6F48D00583DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Burning-calories-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9716EF3F21F6F48D00583DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Burning-calories-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9716EF4121F6F48D00583DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Burning-calories-APPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Burning-calories-APPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Burning-calories-APP.app/Burning-calories-APP";
+			};
+			name = Debug;
+		};
+		9716EF4221F6F48D00583DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Burning-calories-APPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Burning-calories-APPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Burning-calories-APP.app/Burning-calories-APP";
+			};
+			name = Release;
+		};
+		9716EF4421F6F48D00583DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Burning-calories-APPUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Burning-calories-APPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Burning-calories-APP";
+			};
+			name = Debug;
+		};
+		9716EF4521F6F48D00583DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Burning-calories-APPUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Burning-calories-APPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Burning-calories-APP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9716EF0C21F6F48B00583DBD /* Build configuration list for PBXProject "Burning-calories-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9716EF3B21F6F48D00583DBD /* Debug */,
+				9716EF3C21F6F48D00583DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9716EF3D21F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9716EF3E21F6F48D00583DBD /* Debug */,
+				9716EF3F21F6F48D00583DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9716EF4021F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9716EF4121F6F48D00583DBD /* Debug */,
+				9716EF4221F6F48D00583DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9716EF4321F6F48D00583DBD /* Build configuration list for PBXNativeTarget "Burning-calories-APPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9716EF4421F6F48D00583DBD /* Debug */,
+				9716EF4521F6F48D00583DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9716EF0921F6F48B00583DBD /* Project object */;
+}
