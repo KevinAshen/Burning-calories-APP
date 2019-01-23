@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046496B821F739B10093AC4E /* BCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496B721F739B10093AC4E /* BCLBaseViewController.m */; };
+		046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D521F7F9BE0093AC4E /* BCLBaseViewController.m */; };
+		046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D821F8038B0093AC4E /* BCLLogViewController.m */; };
+		046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496DB21F803B50093AC4E /* BCLSportsDietaryViewController.m */; };
+		046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496DE21F803D70093AC4E /* BCLCommunityViewController.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
-		9716EF1921F6F48C00583DBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1821F6F48C00583DBD /* ViewController.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
 		9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1D21F6F48D00583DBD /* Assets.xcassets */; };
 		9716EF2121F6F48D00583DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */; };
 		9716EF2421F6F48D00583DBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF2321F6F48D00583DBD /* main.m */; };
 		9716EF2E21F6F48D00583DBD /* Burning_calories_APPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF2D21F6F48D00583DBD /* Burning_calories_APPTests.m */; };
 		9716EF3921F6F48D00583DBD /* Burning_calories_APPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF3821F6F48D00583DBD /* Burning_calories_APPUITests.m */; };
-		9716EF4821F6FCA900583DBD /* BCLLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF4721F6FCA900583DBD /* BCLLogViewController.m */; };
-		9716EF4B21F6FD6100583DBD /* BCLSportsDietaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF4A21F6FD6100583DBD /* BCLSportsDietaryViewController.m */; };
-		9716EF4E21F6FD8400583DBD /* BCLCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF4D21F6FD8400583DBD /* BCLCommunityViewController.m */; };
 		9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5021F6FDAE00583DBD /* 开机.jpg */; };
 		9716EF5521F6FDAE00583DBD /* 社区.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5121F6FDAE00583DBD /* 社区.png */; };
 		9716EF5621F6FDAE00583DBD /* 运动.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5221F6FDAE00583DBD /* 运动.png */; };
@@ -46,15 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		046496B621F739B10093AC4E /* BCLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseViewController.h; sourceTree = "<group>"; };
-		046496B721F739B10093AC4E /* BCLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseViewController.m; sourceTree = "<group>"; };
+		046496D421F7F9BE0093AC4E /* BCLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseViewController.h; sourceTree = "<group>"; };
+		046496D521F7F9BE0093AC4E /* BCLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseViewController.m; sourceTree = "<group>"; };
+		046496D721F8038B0093AC4E /* BCLLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogViewController.h; sourceTree = "<group>"; };
+		046496D821F8038B0093AC4E /* BCLLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogViewController.m; sourceTree = "<group>"; };
+		046496DA21F803B50093AC4E /* BCLSportsDietaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryViewController.h; sourceTree = "<group>"; };
+		046496DB21F803B50093AC4E /* BCLSportsDietaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryViewController.m; sourceTree = "<group>"; };
+		046496DD21F803D70093AC4E /* BCLCommunityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityViewController.h; sourceTree = "<group>"; };
+		046496DE21F803D70093AC4E /* BCLCommunityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityViewController.m; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9716EF1721F6F48C00583DBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9716EF1821F6F48C00583DBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9716EF1B21F6F48C00583DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9716EF1D21F6F48D00583DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9716EF2021F6F48D00583DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,12 +69,6 @@
 		9716EF3421F6F48D00583DBD /* Burning-calories-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Burning-calories-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF3821F6F48D00583DBD /* Burning_calories_APPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burning_calories_APPUITests.m; sourceTree = "<group>"; };
 		9716EF3A21F6F48D00583DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9716EF4621F6FCA900583DBD /* BCLLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogViewController.h; sourceTree = "<group>"; };
-		9716EF4721F6FCA900583DBD /* BCLLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogViewController.m; sourceTree = "<group>"; };
-		9716EF4921F6FD6100583DBD /* BCLSportsDietaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryViewController.h; sourceTree = "<group>"; };
-		9716EF4A21F6FD6100583DBD /* BCLSportsDietaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryViewController.m; sourceTree = "<group>"; };
-		9716EF4C21F6FD8400583DBD /* BCLCommunityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityViewController.h; sourceTree = "<group>"; };
-		9716EF4D21F6FD8400583DBD /* BCLCommunityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityViewController.m; sourceTree = "<group>"; };
 		9716EF5021F6FDAE00583DBD /* 开机.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "开机.jpg"; sourceTree = "<group>"; };
 		9716EF5121F6FDAE00583DBD /* 社区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "社区.png"; sourceTree = "<group>"; };
 		9716EF5221F6FDAE00583DBD /* 运动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动.png"; sourceTree = "<group>"; };
@@ -112,14 +109,65 @@
 		046496B521F736AF0093AC4E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				046496B621F739B10093AC4E /* BCLBaseViewController.h */,
-				046496B721F739B10093AC4E /* BCLBaseViewController.m */,
 				9716EF6821F743EB00583DBD /* BCLBaseTabBarController.h */,
 				9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */,
 				9716EF6B21F74B0300583DBD /* BCLBaseTableViewCell.h */,
 				9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */,
+				046496D421F7F9BE0093AC4E /* BCLBaseViewController.h */,
+				046496D521F7F9BE0093AC4E /* BCLBaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		046496E021F804820093AC4E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF1421F6F48C00583DBD /* AppDelegate.h */,
+				9716EF1521F6F48C00583DBD /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		046496E121F8049E0093AC4E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF5A21F6FF2300583DBD /* Community */,
+				9716EF5921F6FF0B00583DBD /* SportsDietary */,
+				9716EF5821F6FED900583DBD /* Log */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		046496E221F807C40093AC4E /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF5121F6FDAE00583DBD /* 社区.png */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		046496E321F807C80093AC4E /* SportsDietary */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF5221F6FDAE00583DBD /* 运动.png */,
+			);
+			path = SportsDietary;
+			sourceTree = "<group>";
+		};
+		046496E421F807CB0093AC4E /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF5321F6FDAE00583DBD /* 日志.png */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		046496E521F807D00093AC4E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9716EF5021F6FDAE00583DBD /* 开机.jpg */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		853A7B615FC2989979A8E8B9 /* Pods */ = {
@@ -134,7 +182,7 @@
 		9716EF0821F6F48B00583DBD = {
 			isa = PBXGroup;
 			children = (
-				9716EF4F21F6FDAE00583DBD /* 素材 */,
+				9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */,
 				9716EF1321F6F48B00583DBD /* Burning-calories-APP */,
 				9716EF3721F6F48D00583DBD /* Burning-calories-APPUITests */,
 				9716EF1221F6F48B00583DBD /* Products */,
@@ -156,18 +204,13 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
+				9716EF4F21F6FDAE00583DBD /* Resource */,
 				046496B521F736AF0093AC4E /* Base */,
-				9716EF1421F6F48C00583DBD /* AppDelegate.h */,
-				9716EF1521F6F48C00583DBD /* AppDelegate.m */,
-				9716EF5821F6FED900583DBD /* Log */,
-				9716EF5921F6FF0B00583DBD /* SportsDietary */,
-				9716EF5A21F6FF2300583DBD /* Community */,
-				9716EF1721F6F48C00583DBD /* ViewController.h */,
-				9716EF1821F6F48C00583DBD /* ViewController.m */,
+				046496E121F8049E0093AC4E /* Classes */,
+				046496E021F804820093AC4E /* Main */,
 				9716EF1A21F6F48C00583DBD /* Main.storyboard */,
 				9716EF1D21F6F48D00583DBD /* Assets.xcassets */,
 				9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */,
-				9716EF2C21F6F48D00583DBD /* Burning-calories-APPTests */,
 				9716EF2221F6F48D00583DBD /* Info.plist */,
 				9716EF2321F6F48D00583DBD /* main.m */,
 			);
@@ -192,15 +235,15 @@
 			path = "Burning-calories-APPUITests";
 			sourceTree = "<group>";
 		};
-		9716EF4F21F6FDAE00583DBD /* 素材 */ = {
+		9716EF4F21F6FDAE00583DBD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9716EF5021F6FDAE00583DBD /* 开机.jpg */,
-				9716EF5121F6FDAE00583DBD /* 社区.png */,
-				9716EF5221F6FDAE00583DBD /* 运动.png */,
-				9716EF5321F6FDAE00583DBD /* 日志.png */,
+				046496E521F807D00093AC4E /* Welcome */,
+				046496E421F807CB0093AC4E /* Log */,
+				046496E321F807C80093AC4E /* SportsDietary */,
+				046496E221F807C40093AC4E /* Community */,
 			);
-			path = "素材";
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		9716EF5821F6FED900583DBD /* Log */ = {
@@ -250,8 +293,8 @@
 		9716EF5D21F6FF5300583DBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9716EF4621F6FCA900583DBD /* BCLLogViewController.h */,
-				9716EF4721F6FCA900583DBD /* BCLLogViewController.m */,
+				046496D721F8038B0093AC4E /* BCLLogViewController.h */,
+				046496D821F8038B0093AC4E /* BCLLogViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,8 +316,8 @@
 		9716EF6021F6FF6B00583DBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9716EF4921F6FD6100583DBD /* BCLSportsDietaryViewController.h */,
-				9716EF4A21F6FD6100583DBD /* BCLSportsDietaryViewController.m */,
+				046496DA21F803B50093AC4E /* BCLSportsDietaryViewController.h */,
+				046496DB21F803B50093AC4E /* BCLSportsDietaryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,8 +325,8 @@
 		9716EF6121F6FF7500583DBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9716EF4C21F6FD8400583DBD /* BCLCommunityViewController.h */,
-				9716EF4D21F6FD8400583DBD /* BCLCommunityViewController.m */,
+				046496DD21F803D70093AC4E /* BCLCommunityViewController.h */,
+				046496DE21F803D70093AC4E /* BCLCommunityViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -467,14 +510,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */,
-				9716EF4E21F6FD8400583DBD /* BCLCommunityViewController.m in Sources */,
-				9716EF1921F6F48C00583DBD /* ViewController.m in Sources */,
+				046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
 				9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */,
-				9716EF4B21F6FD6100583DBD /* BCLSportsDietaryViewController.m in Sources */,
-				046496B821F739B10093AC4E /* BCLBaseViewController.m in Sources */,
-				9716EF4821F6FCA900583DBD /* BCLLogViewController.m in Sources */,
+				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
+				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
+				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
