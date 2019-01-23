@@ -1,27 +1,22 @@
 //
-//  BCLLogViewController.m
+//  BCLSportsDietaryViewController.m
 //  Burning-calories-APP
 //
-//  Created by 强淑婷 on 2019/1/22.
-//  Copyright © 2019年 J&Q. All rights reserved.
+//  Created by mac on 2019/1/23.
+//  Copyright © 2019 J&Q. All rights reserved.
 //
 
-#import "BCLLogViewController.h"
+#import "BCLSportsDietaryViewController.h"
 
-@interface BCLLogViewController ()
+@interface BCLSportsDietaryViewController ()
 
 @end
 
-@implementation BCLLogViewController
+@implementation BCLSportsDietaryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

@@ -2,7 +2,7 @@
 //  BCLBaseViewController.m
 //  Burning-calories-APP
 //
-//  Created by mac on 2019/1/22.
+//  Created by mac on 2019/1/23.
 //  Copyright © 2019 J&Q. All rights reserved.
 //
 
@@ -33,8 +33,8 @@
 - (void)setupLeftBarButton {
     // 自定义 leftBarButtonItem ，UIImageRenderingModeAlwaysOriginal 防止图片被渲染
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
-                                            initWithImage:[[UIImage
-                                                            imageNamed:@"Back-蓝"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                             initWithImage:[[UIImage
+                                                             imageNamed:@"Back-蓝"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
                                              style:UIBarButtonItemStylePlain
                                              target:self
                                              action:@selector(leftBarButtonClick)];
