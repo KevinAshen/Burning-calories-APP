@@ -28,6 +28,8 @@
     
     [self performSelector:@selector(changeView) withObject:self afterDelay:2];
     
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -44,7 +46,7 @@
     [viewControllerMutableArray addObject:sportsDietaryViewController];
     [viewControllerMutableArray addObject:communityController];
     
-    NSArray *titleArray = @[@"日志",@"运动",@"社区"];
+    NSArray *titleArray = @[@"bcl_ic_log_tabBar",@"bcl_ic_soprts_tabBar",@"bcl_ic_community_tabBar"];
     
     BCLBaseTabBarController *tabBarController = [[BCLBaseTabBarController alloc]init];
     self.window.rootViewController = tabBarController;

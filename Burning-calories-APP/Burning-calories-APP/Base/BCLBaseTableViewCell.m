@@ -21,6 +21,10 @@
 - (void)setupUI {
     
 }
+
+- (void)reloadCellWithData:(id)data{
+    
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
