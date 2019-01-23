@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @interface BCLBaseTableViewCell : UITableViewCell
-
+//设置cell控件
 - (void)setupUI;
+//给cell赋值
+- (void)reloadCellWithData:(id)data;
+
 @end
 NS_ASSUME_NONNULL_END

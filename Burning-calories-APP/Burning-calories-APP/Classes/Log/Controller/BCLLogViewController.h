@@ -7,6 +7,8 @@
 //
 
 #import "BCLBaseViewController.h"
+#import "BCLLogView.h"
+#import "BCLBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
