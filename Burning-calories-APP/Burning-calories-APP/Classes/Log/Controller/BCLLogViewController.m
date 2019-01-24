@@ -7,6 +7,8 @@
 //
 
 #import "BCLLogViewController.h"
+#import "BCLLogView.h"
+#import "BCLBaseViewController.h"
 
 @interface BCLLogViewController ()<UITableViewDelegate>
 
@@ -22,13 +24,20 @@
     _logView = [[BCLLogView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_logView];
     
-    _logView.tableView = [self refreshBaseTableView];
+    _logView.tableView.delegate = self;
     
     
     // Do any additional setup after loading the view.
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 250;
+    return 500.0 / 667 * kDeviceHeight;
+    
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return  0.0;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.0;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     return [[UIView alloc]init];

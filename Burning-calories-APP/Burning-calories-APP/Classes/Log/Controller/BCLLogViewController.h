@@ -7,11 +7,11 @@
 //
 
 #import "BCLBaseViewController.h"
-#import "BCLLogView.h"
-#import "BCLBaseViewController.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class BCLLogView;
+@class BCLBaseViewController;
 @interface BCLLogViewController : BCLBaseViewController
 
 @end

@@ -12,6 +12,8 @@
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 
+@class BCLLogHeaderView;
+
 NS_ASSUME_NONNULL_BEGIN
 @interface BCLLogView : UIView<UITableViewDataSource>
 
