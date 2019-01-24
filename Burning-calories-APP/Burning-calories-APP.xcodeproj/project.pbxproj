@@ -11,6 +11,9 @@
 		046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D821F8038B0093AC4E /* BCLLogViewController.m */; };
 		046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496DB21F803B50093AC4E /* BCLSportsDietaryViewController.m */; };
 		046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496DE21F803D70093AC4E /* BCLCommunityViewController.m */; };
+		046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496E821F9A2580093AC4E /* BCLSportsDietaryRecordView.m */; };
+		046496EB21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 046496EA21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png */; };
+		046496EE21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496ED21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
@@ -62,6 +65,11 @@
 		046496DB21F803B50093AC4E /* BCLSportsDietaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryViewController.m; sourceTree = "<group>"; };
 		046496DD21F803D70093AC4E /* BCLCommunityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityViewController.h; sourceTree = "<group>"; };
 		046496DE21F803D70093AC4E /* BCLCommunityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityViewController.m; sourceTree = "<group>"; };
+		046496E721F9A2580093AC4E /* BCLSportsDietaryRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordView.h; sourceTree = "<group>"; };
+		046496E821F9A2580093AC4E /* BCLSportsDietaryRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordView.m; sourceTree = "<group>"; };
+		046496EA21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_segmentedControl_bottomSelected.png; sourceTree = "<group>"; };
+		046496EC21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsTableViewCell.h; sourceTree = "<group>"; };
+		046496ED21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsTableViewCell.m; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +180,7 @@
 		046496E321F807C80093AC4E /* SportsDietary */ = {
 			isa = PBXGroup;
 			children = (
+				046496EA21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png */,
 				9796BC0A21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png */,
 				9796BC0921F8585700294FE6 /* bcl_ic_soprts_tabBar.png */,
 				9716EF5221F6FDAE00583DBD /* 运动.png */,
@@ -195,6 +204,17 @@
 				9716EF5021F6FDAE00583DBD /* 开机.jpg */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		046496E621F9A1440093AC4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046496E721F9A2580093AC4E /* BCLSportsDietaryRecordView.h */,
+				046496E821F9A2580093AC4E /* BCLSportsDietaryRecordView.m */,
+				046496EC21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.h */,
+				046496ED21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		853A7B615FC2989979A8E8B9 /* Pods */ = {
@@ -286,9 +306,8 @@
 		9716EF5921F6FF0B00583DBD /* SportsDietary */ = {
 			isa = PBXGroup;
 			children = (
+				046496E621F9A1440093AC4E /* View */,
 				9716EF6021F6FF6B00583DBD /* Controller */,
-				9716EF5F21F6FF6600583DBD /* View */,
-				9716EF5E21F6FF6100583DBD /* Model */,
 			);
 			path = SportsDietary;
 			sourceTree = "<group>";
@@ -310,20 +329,6 @@
 				046496D821F8038B0093AC4E /* BCLLogViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		9716EF5E21F6FF6100583DBD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		9716EF5F21F6FF6600583DBD /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		9716EF6021F6FF6B00583DBD /* Controller */ = {
@@ -504,6 +509,7 @@
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */,
 				9796BC0E21F8585E00294FE6 /* bcl_ic_community_tabBar_selected.png in Resources */,
+				046496EB21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,12 +560,14 @@
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
+				046496EE21F9CA1E0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */,
 				9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */,
 				9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */,
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
+				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
