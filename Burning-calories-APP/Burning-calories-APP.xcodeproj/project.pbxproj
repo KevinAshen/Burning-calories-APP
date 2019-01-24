@@ -34,6 +34,7 @@
 		9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC1F21F87ABF00294FE6 /* BCLLogView.m */; };
 		9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC2321F87AFB00294FE6 /* BCLLogModel.m */; };
 		9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */; };
+		97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		9796BC2321F87AFB00294FE6 /* BCLLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogModel.m; sourceTree = "<group>"; };
 		9796BC2521F8A52100294FE6 /* BCLLogHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLLogHeaderView.h; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.h"; sourceTree = SOURCE_ROOT; };
 		9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BCLLogHeaderView.m; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.m"; sourceTree = SOURCE_ROOT; };
+		97F608D821F9F506004BC91E /* BCLLogDayWeekTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogDayWeekTableViewCell.h; sourceTree = "<group>"; };
+		97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogDayWeekTableViewCell.m; sourceTree = "<group>"; };
 		A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -365,9 +368,10 @@
 				9796BC1F21F87ABF00294FE6 /* BCLLogView.m */,
 				9796BC2521F8A52100294FE6 /* BCLLogHeaderView.h */,
 				9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */,
+				97F608D821F9F506004BC91E /* BCLLogDayWeekTableViewCell.h */,
+				97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */,
 			);
-			name = View;
-			path = "New Group";
+			path = View;
 			sourceTree = "<group>";
 		};
 		9796BC2121F87AD000294FE6 /* Model */ = {
@@ -552,6 +556,7 @@
 				9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */,
 				046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
+				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
 				9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */,
