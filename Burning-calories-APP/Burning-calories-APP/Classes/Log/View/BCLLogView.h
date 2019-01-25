@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BCLLogHeaderView.h"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 
 @class BCLLogHeaderView;
+@class BCLLogMonthTableViewCell;
+@class BCLLogDayWeekTableViewCell;
 
 NS_ASSUME_NONNULL_BEGIN
 @interface BCLLogView : UIView<UITableViewDataSource>
