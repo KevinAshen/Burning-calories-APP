@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define kDeviceHeight [UIScreen mainScreen].bounds.size.height
+
 @interface BCLBaseTableViewCell : UITableViewCell
 //设置cell控件
 - (void)setupUI;

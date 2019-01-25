@@ -8,6 +8,8 @@
 
 #import "BCLSportsDietaryRecordView.h"
 #import "BCLSportsDietaryRecordSportsTableViewCell.h"
+#import "BCLSportsDietaryRecordSportsHeadView.h"
+#import "BCLSportsDietaryRecordSportsBottomView.h"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
@@ -30,8 +32,12 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
 //背景板
 @property (nonatomic, strong) UIScrollView *backgroundScrollView;
-//运动列表
+//运动tableView
 @property (nonatomic, strong) UITableView *sportsTableView;
+//运动tableViewHeadView
+@property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
+//运动tableViewBottomView
+@property (nonatomic, strong) BCLSportsDietaryRecordSportsBottomView *sportsDietaryRecordSportsBottomView;
 
 //运动数目
 @property (nonatomic, assign) NSInteger sportsNumber;
@@ -90,7 +96,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     [self addSubview:_segmentedControl];
 }
 
-#pragma mark - 计算背景画布即运动列表高度并更新View的高度
+#pragma mark - 计算背景画布即运动tableView高度并更新View的高度
 - (void)calculateUpdateBackgroundScrollViewHeight {
     NSInteger backgroundScrollViewHeight = kTitleHeight + kTitleInterval + kAddHeight + kAddInterval + (kCellHeight + kCellInterval) * _sportsNumber + kBottomInterval;
     _backgroundScrollViewHeight = backgroundScrollViewHeight;
@@ -116,7 +122,17 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     return _backgroundScrollView;
 }
 
-#pragma mark - 运动列表设置
+#pragma mark - 运动tableViewHeadView设置
+- (void)setupSportsDietaryRecordSportsHeadView {
+    
+}
+
+#pragma mark - 运动tableViewBottomView设置
+- (void)setupSportsDietaryRecordSportsBottomView {
+    
+}
+
+#pragma mark - 运动tableView设置
 - (void)setupSportsTableView {
     _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_sportsTableView];

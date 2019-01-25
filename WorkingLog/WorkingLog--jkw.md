@@ -8,3 +8,5 @@
   1. 动饮的规划
   2. 分栏控制器与scrollView
   3. 分栏控制器的小短横无能为力
+- 1.25
+  1. 运动的headView与bottomView布局
