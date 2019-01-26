@@ -8,7 +8,7 @@
 
 #import "BCLBaseViewController.h"
 
-@interface BCLBaseViewController ()<UITableViewDelegate>
+@interface BCLBaseViewController ()
 
 @end
 
@@ -48,21 +48,21 @@
 }
 
 #pragma mark - TableView的设置
-- (UITableView *)refreshBaseTableView {
-    UITableView *baseTableView = [self setupBaseTableView];
-    baseTableView.delegate = self;
-    baseTableView.showsVerticalScrollIndicator = NO;
-    baseTableView.showsHorizontalScrollIndicator = NO;
-    baseTableView.bounces = NO;
-    baseTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    baseTableView.backgroundColor = [UIColor whiteColor];
-    return baseTableView;
-}
-
-- (UITableView *)setupBaseTableView {
-    UITableView *baseTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    return baseTableView;
-}
+//- (UITableView *)refreshBaseTableView {
+//    UITableView *baseTableView = [self setupBaseTableView];
+//    baseTableView.delegate = self;
+//    baseTableView.showsVerticalScrollIndicator = NO;
+//    baseTableView.showsHorizontalScrollIndicator = NO;
+//    baseTableView.bounces = NO;
+//    baseTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    baseTableView.backgroundColor = [UIColor whiteColor];
+//    return baseTableView;
+//}
+//
+//- (UITableView *)setupBaseTableView {
+//    UITableView *baseTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+//    return baseTableView;
+//}
 
 
 /*

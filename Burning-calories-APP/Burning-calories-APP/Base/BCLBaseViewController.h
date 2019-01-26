@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BCLBaseViewController : UIViewController
 
 //创建tableView
-- (UITableView *)refreshBaseTableView;
+//- (UITableView *)refreshBaseTableView;
 //进行tableView的frame设置和注册cell
-- (UITableView *)setupBaseTableView;
+//- (UITableView *)setupBaseTableView;
 
 @end
 

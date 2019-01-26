@@ -10,6 +10,7 @@
 #import <Masonry.h>
 
 static const CGFloat kTopMargin = 22;
+static const CGFloat kRightMargin = 9;
 
 @implementation BCLLogMonthTableViewCell
 
@@ -51,6 +52,16 @@ static const CGFloat kTopMargin = 22;
     _caloriesRecordLabel.textColor = [UIColor colorWithRed:0.87f green:0.87f blue:0.87f alpha:1.00f];
     _caloriesRecordLabel.font = [UIFont systemFontOfSize:18];
     _caloriesRecordLabel.text = @"577789千卡";
+    
+    self.smallArrowImageView  = [[UIImageView alloc]init];
+    [self addSubview:_smallArrowImageView];
+    [_smallArrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self).offset(-kRightMargin);
+        make.top.equalTo(self.timeRecordLabel.mas_top);
+        make.width.mas_equalTo(23);
+        make.height.mas_equalTo(23);
+    }];
+    _smallArrowImageView.image = [UIImage imageNamed:@"bcl_log_month_arrow"];
 }
 
 - (void)awakeFromNib {

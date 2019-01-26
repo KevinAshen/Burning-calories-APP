@@ -10,7 +10,7 @@
 #import "BCLLogView.h"
 #import "BCLBaseViewController.h"
 
-@interface BCLLogViewController ()<UITableViewDelegate>
+@interface BCLLogViewController ()
 
 @property (nonatomic, strong) BCLLogView *logView;
 @end
@@ -30,7 +30,10 @@
     // Do any additional setup after loading the view.
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 500.0 / 667 * kDeviceHeight;
+    if(indexPath.row == 0 || indexPath.row == 1) {
+        return 50.0 / 667 * kDeviceHeight;
+    }
+    return 150.0 / 667 * kDeviceHeight;
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -48,10 +51,10 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-}
+//}
 
 
 @end
