@@ -30,6 +30,7 @@
 		9716EF5721F6FDAF00583DBD /* 日志.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5321F6FDAE00583DBD /* 日志.png */; };
 		9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */; };
 		9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */; };
+		974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */; };
 		97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */; };
 		9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9796BC0621F8582800294FE6 /* bcl_ic_log_tabBar.png */; };
 		9796BC0B21F8585700294FE6 /* bcl_ic_soprts_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9796BC0921F8585700294FE6 /* bcl_ic_soprts_tabBar.png */; };
@@ -102,6 +103,7 @@
 		9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTabBarController.m; sourceTree = "<group>"; };
 		9716EF6B21F74B0300583DBD /* BCLBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseTableViewCell.h; sourceTree = "<group>"; };
 		9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTableViewCell.m; sourceTree = "<group>"; };
+		974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_log_month_arrow.png; sourceTree = "<group>"; };
 		97687AF221FB4DBA00E09F1F /* BCLLogMonthTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogMonthTableViewCell.h; sourceTree = "<group>"; };
 		97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogMonthTableViewCell.m; sourceTree = "<group>"; };
 		9796BC0621F8582800294FE6 /* bcl_ic_log_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_tabBar.png; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		046496E421F807CB0093AC4E /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */,
 				9796BC1721F8787800294FE6 /* bcl_ic_log_tabBar_selected.png */,
 				9796BC0621F8582800294FE6 /* bcl_ic_log_tabBar.png */,
 				9716EF5321F6FDAE00583DBD /* 日志.png */,
@@ -522,6 +525,7 @@
 				9716EF5621F6FDAE00583DBD /* 运动.png in Resources */,
 				9716EF2121F6F48D00583DBD /* LaunchScreen.storyboard in Resources */,
 				9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */,
+				974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */,
 				9796BC0C21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png in Resources */,
 				9716EF5721F6FDAF00583DBD /* 日志.png in Resources */,
 				9796BC1821F8787900294FE6 /* bcl_ic_log_tabBar_selected.png in Resources */,

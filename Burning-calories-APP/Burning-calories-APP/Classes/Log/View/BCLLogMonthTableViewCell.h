@@ -13,5 +13,6 @@
 @property (nonatomic, strong) UIButton *circleButton;
 @property (nonatomic, strong) UILabel *timeRecordLabel;
 @property (nonatomic, strong) UILabel *caloriesRecordLabel;
+@property (nonatomic, strong) UIImageView *smallArrowImageView;
 
 @end

@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class BCLLogView;
 @class BCLBaseViewController;
-@interface BCLLogViewController : BCLBaseViewController
+@interface BCLLogViewController : BCLBaseViewController<UITableViewDelegate>
 
 @end
 
