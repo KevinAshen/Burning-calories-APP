@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BCLSportsDietaryRecordSportsHeadView : UIView
 
+//更新运动消耗的总卡路里数目
+- (void)reloadSportsTotalCalorieNumber:(NSInteger)totalCalorieNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,7 +9,17 @@
 #import "BCLSportsDietaryViewController.h"
 #import "BCLSportsDietaryRecordView.h"
 
-@interface BCLSportsDietaryViewController ()<UIScrollViewDelegate>
+static const NSInteger kSegmentedControlHeight = 30;
+static const NSInteger kTitleHeight = 30;
+static const NSInteger kCellHeight = 75;
+static const NSInteger kAddHeight = 45;
+
+static const NSInteger kTitleInterval = 30;
+static const NSInteger kCellInterval = 15;
+static const NSInteger kAddInterval = 45;
+static const NSInteger kBottomInterval = 60;
+
+@interface BCLSportsDietaryViewController ()<UIScrollViewDelegate, UITableViewDelegate>
 
 //上半部分的分段控制器与饮食+健康的tableView
 @property (nonatomic, strong) BCLSportsDietaryRecordView *sportsDietaryRecordView;
@@ -42,6 +52,13 @@
     [self.view addSubview:_sportsDietaryRecordView];
     
     [_sportsDietaryRecordView getBackgroundScrollView].delegate = self;
+    [_sportsDietaryRecordView getSportsTableView].delegate = self;
+}
+
+#pragma mark - UITableViewDelegate实现
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //!!!TEST!!!
+    return 75;
 }
 
 /*
