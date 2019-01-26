@@ -96,13 +96,6 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     [self addSubview:_segmentedControl];
 }
 
-#pragma mark - 计算背景画布即运动tableView高度并更新View的高度
-- (void)calculateUpdateBackgroundScrollViewHeight {
-    NSInteger backgroundScrollViewHeight = kTitleHeight + kTitleInterval + kAddHeight + kAddInterval + (kCellHeight + kCellInterval) * _sportsNumber + kBottomInterval;
-    _backgroundScrollViewHeight = backgroundScrollViewHeight;
-    [self setFrame:CGRectMake(0, 64, kDeviceWidth, _backgroundScrollViewHeight)];
-}
-
 #pragma mark - 背景画布设置
 - (void)setupBackgroundScrollView {
     _backgroundScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, kSegmentedControlHeight, kDeviceWidth, _backgroundScrollViewHeight)];
@@ -117,19 +110,16 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     
 }
 
-#pragma mark - 传出背景scrollView
-- (UIScrollView *)getBackgroundScrollView {
-    return _backgroundScrollView;
-}
-
 #pragma mark - 运动tableViewHeadView设置
 - (void)setupSportsDietaryRecordSportsHeadView {
-    
+    _sportsDietaryRecordSportsHeadView = [[BCLSportsDietaryRecordSportsHeadView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kTitleInterval + kTitleHeight)];
+    //!!!TEST!!!
+    [_sportsDietaryRecordSportsHeadView reloadSportsTotalCalorieNumber:119];
 }
 
 #pragma mark - 运动tableViewBottomView设置
 - (void)setupSportsDietaryRecordSportsBottomView {
-    
+    _sportsDietaryRecordSportsBottomView = [[BCLSportsDietaryRecordSportsBottomView alloc] initWithFrame:CGRectMake(0, _backgroundScrollViewHeight, kDeviceWidth, kAddHeight)];
 }
 
 #pragma mark - 运动tableView设置
@@ -143,11 +133,41 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     _sportsTableView.showsHorizontalScrollIndicator = NO;
     _sportsTableView.bounces = NO;
     _sportsTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    _sportsTableView.dataSource = self;
+    
+    [self setupSportsDietaryRecordSportsHeadView];
+    _sportsTableView.tableHeaderView = _sportsDietaryRecordSportsHeadView;
+    [self setupSportsDietaryRecordSportsBottomView];
+    _sportsTableView.tableFooterView = _sportsDietaryRecordSportsBottomView;
+}
+
+#pragma mark - UITableViewDataSource实现
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _sportsNumber;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BCLSportsDietaryRecordSportsTableViewCell *sportsDietaryRecordSportsTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
+    return sportsDietaryRecordSportsTableViewCell;
+}
+
+#pragma mark - 传出背景scrollView
+- (UIScrollView *)getBackgroundScrollView {
+    return _backgroundScrollView;
 }
 
 #pragma mark - 传出运动tableView
 - (UITableView *)getSportsTableView {
     return _sportsTableView;
+}
+
+#pragma mark - 计算背景画布即运动tableView高度并更新View的高度
+- (void)calculateUpdateBackgroundScrollViewHeight {
+    NSInteger backgroundScrollViewHeight = kTitleHeight + kTitleInterval + kAddHeight + kAddInterval + (kCellHeight + kCellInterval) * _sportsNumber + kBottomInterval;
+    _backgroundScrollViewHeight = backgroundScrollViewHeight;
+    [self setFrame:CGRectMake(0, 64, kDeviceWidth, _backgroundScrollViewHeight)];
 }
 
 #pragma mark - 测试数据填充

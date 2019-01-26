@@ -9,15 +9,10 @@
 #import "BCLSportsDietaryRecordSportsHeadView.h"
 #import <Masonry.h>
 
-static const NSInteger kSegmentedControlHeight = 30;
 static const NSInteger kTitleHeight = 30;
-static const NSInteger kCellHeight = 75;
-static const NSInteger kAddHeight = 45;
+static const NSInteger kSportsTotalCalorieHeight = 20;
 
 static const NSInteger kTitleInterval = 30;
-static const NSInteger kCellInterval = 15;
-static const NSInteger kAddInterval = 45;
-static const NSInteger kBottomInterval = 60;
 
 static const NSInteger kViewLeftOrRightInterval = 36;
 
@@ -43,12 +38,12 @@ static const NSInteger kViewLeftOrRightInterval = 36;
     return self;
 }
 
-#pragma mark - 更新运动消耗的总卡路里数目
-
-
 #pragma mark - UI设置
 - (void)setupUI {
-
+    self.backgroundColor = [UIColor colorWithRed:0.95f green:0.35f blue:0.20f alpha:1.00f];
+    
+    [self setupSportsTitleLabel];
+    [self setupSportsTotalCalorieLabel];
 }
 
 #pragma mark - 运动标题Label设置
@@ -70,6 +65,21 @@ static const NSInteger kViewLeftOrRightInterval = 36;
 - (void)setupSportsTotalCalorieLabel {
     self.sportsTotalCalorieLabel = [[UILabel alloc] init];
     [self addSubview:_sportsTotalCalorieLabel];
+    
+    [_sportsTotalCalorieLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.mas_right).offset(-kViewLeftOrRightInterval);
+        make.bottom.equalTo(self.mas_bottom).offset(0);
+        make.height.mas_equalTo(kSportsTotalCalorieHeight);
+        make.width.lessThanOrEqualTo(@(100));
+    }];
+    
+    NSString *totalCalorieStr = [NSString stringWithFormat:@"%ld千卡", _sportsTotalCalorieNumber];
+    _sportsTotalCalorieLabel.text = totalCalorieStr;
+}
+
+#pragma mark - 更新运动消耗的总卡路里数目
+- (void)reloadSportsTotalCalorieNumber:(NSInteger)totalCalorieNumber {
+    _sportsTotalCalorieNumber = totalCalorieNumber;
 }
 
 /*

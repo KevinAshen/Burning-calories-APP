@@ -10,3 +10,6 @@
   3. 分栏控制器的小短横无能为力
 - 1.25
   1. 运动的headView与bottomView布局
+- 1.26
+  1. 继续完善sportsTableView
+  2. 为partner解决一个她认为很难的问题，花了很长时间
