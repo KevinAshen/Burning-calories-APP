@@ -13,3 +13,6 @@
 - 1.26
   1. 继续完善sportsTableView
   2. 为partner解决一个她认为很难的问题，花了很长时间
+- 1.27
+  1. 解决TableView框架
+  2. cell背景解决

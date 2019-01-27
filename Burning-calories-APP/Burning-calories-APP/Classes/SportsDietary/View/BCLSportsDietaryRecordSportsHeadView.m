@@ -12,8 +12,6 @@
 static const NSInteger kTitleHeight = 30;
 static const NSInteger kSportsTotalCalorieHeight = 20;
 
-static const NSInteger kTitleInterval = 30;
-
 static const NSInteger kViewLeftOrRightInterval = 36;
 
 @interface BCLSportsDietaryRecordSportsHeadView ()
@@ -40,7 +38,7 @@ static const NSInteger kViewLeftOrRightInterval = 36;
 
 #pragma mark - UI设置
 - (void)setupUI {
-    self.backgroundColor = [UIColor colorWithRed:0.95f green:0.35f blue:0.20f alpha:1.00f];
+    self.backgroundColor = [UIColor clearColor];
     
     [self setupSportsTitleLabel];
     [self setupSportsTotalCalorieLabel];
@@ -53,12 +51,14 @@ static const NSInteger kViewLeftOrRightInterval = 36;
     
     [_sportsTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(kViewLeftOrRightInterval);
-        make.top.equalTo(self.mas_top).offset(kTitleInterval);
+        make.bottom.equalTo(self.mas_bottom).offset(0);
         make.height.mas_equalTo(kTitleHeight);
         make.width.lessThanOrEqualTo(@(100));
     }];
     
-    _sportsTotalCalorieLabel.text = @"运动";
+    [_sportsTitleLabel setText:@"运动"];
+    [_sportsTitleLabel setTextColor:[UIColor whiteColor]];
+    [_sportsTitleLabel setFont:[UIFont systemFontOfSize:24]];
 }
 
 #pragma mark - 总卡路里Label设置
@@ -75,6 +75,7 @@ static const NSInteger kViewLeftOrRightInterval = 36;
     
     NSString *totalCalorieStr = [NSString stringWithFormat:@"%ld千卡", _sportsTotalCalorieNumber];
     _sportsTotalCalorieLabel.text = totalCalorieStr;
+    [_sportsTotalCalorieLabel setTextColor:[UIColor whiteColor]];
 }
 
 #pragma mark - 更新运动消耗的总卡路里数目

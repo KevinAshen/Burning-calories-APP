@@ -32,7 +32,7 @@ static const NSInteger kViewLeftOrRightInterval = 85;
 
 #pragma mark - UI设置
 - (void)setupUI {
-    self.backgroundColor = [UIColor colorWithRed:0.95f green:0.35f blue:0.20f alpha:1.00f];
+    self.backgroundColor = [UIColor clearColor];
     [self setupAddSprotsButton];
 }
 
@@ -50,10 +50,12 @@ static const NSInteger kViewLeftOrRightInterval = 85;
     
     _addSprotsButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     _addSprotsButton.layer.masksToBounds = YES;
-    _addSprotsButton.layer.cornerRadius = 30;
+    _addSprotsButton.layer.cornerRadius = 15;
     [_addSprotsButton setBackgroundColor:[UIColor whiteColor]];
     
     [_addSprotsButton setTitle:@"添加运动" forState:UIControlStateNormal];
+    [_addSprotsButton setTitleColor:[UIColor colorWithRed:0.64f green:0.64f blue:0.64f alpha:1.00f] forState:UIControlStateNormal];
+    [_addSprotsButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_tableView_bottomAddButton"] forState:normal];
 }
 
 /*
