@@ -8,11 +8,15 @@
 
 #import "BCLBaseTableViewCell.h"
 
+@class BCLLogHistogramView;
 @interface BCLLogMonthTableViewCell : BCLBaseTableViewCell
 
 @property (nonatomic, strong) UIButton *circleButton;
 @property (nonatomic, strong) UILabel *timeRecordLabel;
 @property (nonatomic, strong) UILabel *caloriesRecordLabel;
 @property (nonatomic, strong) UIImageView *smallArrowImageView;
+@property (nonatomic, strong) BCLLogHistogramView *logHistogramView;
+@property (strong,nonatomic)NSMutableArray *x_names;
+@property (strong,nonatomic)NSMutableArray *targets;
 
 @end

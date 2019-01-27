@@ -8,12 +8,28 @@
 
 #import "BCLLogMonthTableViewCell.h"
 #import <Masonry.h>
+#import "BCLLogHistogramView.h"
 
 static const CGFloat kTopMargin = 22;
 static const CGFloat kRightMargin = 9;
 
 @implementation BCLLogMonthTableViewCell
 
+-(NSMutableArray *)x_names{
+    if (!_x_names) {
+        _x_names = [NSMutableArray arrayWithArray:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"]];
+    }
+    return _x_names;
+}
+/**
+ *  Y轴值
+ */
+-(NSMutableArray *)targets{
+    if (!_targets) {
+        _targets = [NSMutableArray arrayWithArray:@[@20,@40,@20,@50,@30,@90,@30,@100,@70,@20,@40,@20]];
+    }
+    return _targets;
+}
 - (void)setupUI {
     
     self.timeRecordLabel = [[UILabel alloc]init];
@@ -62,6 +78,16 @@ static const CGFloat kRightMargin = 9;
         make.height.mas_equalTo(23);
     }];
     _smallArrowImageView.image = [UIImage imageNamed:@"bcl_log_month_arrow"];
+    
+    _logHistogramView = [[BCLLogHistogramView alloc] initWithFrame:CGRectMake(141, 50, 270, 100)];
+    [self addSubview:_logHistogramView];
+//    [_logHistogramView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self).offset(141);
+//        make.top.equalTo(self.timeRecordLabel.mas_top);
+//        make.width.mas_equalTo(270);
+//        make.height.mas_equalTo(150);
+//    }];
+    [self.logHistogramView drawBarChartViewWithX_Value_Names:self.x_names TargetValues:self.targets];
 }
 
 - (void)awakeFromNib {
