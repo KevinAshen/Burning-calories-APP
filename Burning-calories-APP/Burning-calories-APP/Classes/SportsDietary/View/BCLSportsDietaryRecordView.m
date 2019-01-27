@@ -28,7 +28,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 @interface BCLSportsDietaryRecordView()<UITableViewDataSource>
 
-//饮食与健康分段控制器
+//饮食与健康分段控制器    //TEST
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
 //背景板
 @property (nonatomic, strong) UIScrollView *backgroundScrollView;
