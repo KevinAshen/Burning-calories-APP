@@ -36,6 +36,10 @@
 		974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */; };
 		97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */; };
 		977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */; };
+		977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C9D9821FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m */; };
+		977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */ = {isa = PBXBuildFile; fileRef = 977C9D9A21FF470E00898615 /* bcl_bg_log_everyday.png */; };
+		977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C9D9D21FF478500898615 /* BCLDayTimeRecordView.m */; };
+		977C9DA121FF48AB00898615 /* BCLDayTimeRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C9DA021FF48AB00898615 /* BCLDayTimeRecordViewController.m */; };
 		9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9796BC0621F8582800294FE6 /* bcl_ic_log_tabBar.png */; };
 		9796BC0B21F8585700294FE6 /* bcl_ic_soprts_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9796BC0921F8585700294FE6 /* bcl_ic_soprts_tabBar.png */; };
 		9796BC0C21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9796BC0A21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png */; };
@@ -115,14 +119,21 @@
 		97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogMonthTableViewCell.m; sourceTree = "<group>"; };
 		977601F921FDE244008B9F74 /* BCLLogHistogramView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogHistogramView.h; sourceTree = "<group>"; };
 		977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLLogHistogramView.m; sourceTree = "<group>"; };
+		977C9D9721FF450800898615 /* BCLDayTimeRecordCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLDayTimeRecordCollectionViewCell.h; sourceTree = "<group>"; };
+		977C9D9821FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLDayTimeRecordCollectionViewCell.m; sourceTree = "<group>"; };
+		977C9D9A21FF470E00898615 /* bcl_bg_log_everyday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday.png; sourceTree = "<group>"; };
+		977C9D9C21FF478500898615 /* BCLDayTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLDayTimeRecordView.h; sourceTree = "<group>"; };
+		977C9D9D21FF478500898615 /* BCLDayTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLDayTimeRecordView.m; sourceTree = "<group>"; };
+		977C9D9F21FF48AB00898615 /* BCLDayTimeRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLDayTimeRecordViewController.h; sourceTree = "<group>"; };
+		977C9DA021FF48AB00898615 /* BCLDayTimeRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLDayTimeRecordViewController.m; sourceTree = "<group>"; };
 		9796BC0621F8582800294FE6 /* bcl_ic_log_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_tabBar.png; sourceTree = "<group>"; };
 		9796BC0921F8585700294FE6 /* bcl_ic_soprts_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_tabBar.png; sourceTree = "<group>"; };
 		9796BC0A21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_tabBar_selected.png; sourceTree = "<group>"; };
 		9796BC0D21F8585E00294FE6 /* bcl_ic_community_tabBar_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_community_tabBar_selected.png; sourceTree = "<group>"; };
 		9796BC0F21F8586300294FE6 /* bcl_ic_community_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_community_tabBar.png; sourceTree = "<group>"; };
 		9796BC1721F8787800294FE6 /* bcl_ic_log_tabBar_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_tabBar_selected.png; sourceTree = "<group>"; };
-		9796BC1E21F87ABF00294FE6 /* BCLLogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLLogView.h; path = "Burning-calories-APP/Classes/Log/View/BCLLogView.h"; sourceTree = SOURCE_ROOT; };
-		9796BC1F21F87ABF00294FE6 /* BCLLogView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BCLLogView.m; path = "Burning-calories-APP/Classes/Log/View/BCLLogView.m"; sourceTree = SOURCE_ROOT; };
+		9796BC1E21F87ABF00294FE6 /* BCLLogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLLogView.h; path = "Burning-calories-APP/Classes/Log/Views/BCLLogView.h"; sourceTree = SOURCE_ROOT; };
+		9796BC1F21F87ABF00294FE6 /* BCLLogView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BCLLogView.m; path = "Burning-calories-APP/Classes/Log/Views/BCLLogView.m"; sourceTree = SOURCE_ROOT; };
 		9796BC2221F87AFB00294FE6 /* BCLLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogModel.h; sourceTree = "<group>"; };
 		9796BC2321F87AFB00294FE6 /* BCLLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogModel.m; sourceTree = "<group>"; };
 		9796BC2521F8A52100294FE6 /* BCLLogHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLLogHeaderView.h; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.h"; sourceTree = SOURCE_ROOT; };
@@ -217,6 +228,7 @@
 		046496E421F807CB0093AC4E /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				977C9D9A21FF470E00898615 /* bcl_bg_log_everyday.png */,
 				974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */,
 				9796BC1721F8787800294FE6 /* bcl_ic_log_tabBar_selected.png */,
 				9796BC0621F8582800294FE6 /* bcl_ic_log_tabBar.png */,
@@ -328,8 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				9796BC2121F87AD000294FE6 /* Model */,
-				9796BC1D21F87A8600294FE6 /* View */,
-				9716EF5D21F6FF5300583DBD /* Controller */,
+				9796BC1D21F87A8600294FE6 /* Views */,
+				9716EF5D21F6FF5300583DBD /* Controllers */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -353,13 +365,15 @@
 			path = Community;
 			sourceTree = "<group>";
 		};
-		9716EF5D21F6FF5300583DBD /* Controller */ = {
+		9716EF5D21F6FF5300583DBD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				046496D721F8038B0093AC4E /* BCLLogViewController.h */,
 				046496D821F8038B0093AC4E /* BCLLogViewController.m */,
+				977C9D9F21FF48AB00898615 /* BCLDayTimeRecordViewController.h */,
+				977C9DA021FF48AB00898615 /* BCLDayTimeRecordViewController.m */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9716EF6021F6FF6B00583DBD /* Controller */ = {
@@ -394,9 +408,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		9796BC1D21F87A8600294FE6 /* View */ = {
+		977C9D9621FF43E900898615 /* EveryDayLogView */ = {
 			isa = PBXGroup;
 			children = (
+				977C9D9721FF450800898615 /* BCLDayTimeRecordCollectionViewCell.h */,
+				977C9D9821FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m */,
+				977C9D9C21FF478500898615 /* BCLDayTimeRecordView.h */,
+				977C9D9D21FF478500898615 /* BCLDayTimeRecordView.m */,
+			);
+			path = EveryDayLogView;
+			sourceTree = "<group>";
+		};
+		9796BC1D21F87A8600294FE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				977C9D9621FF43E900898615 /* EveryDayLogView */,
 				977601F921FDE244008B9F74 /* BCLLogHistogramView.h */,
 				977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */,
 				9796BC1E21F87ABF00294FE6 /* BCLLogView.h */,
@@ -408,7 +434,7 @@
 				97687AF221FB4DBA00E09F1F /* BCLLogMonthTableViewCell.h */,
 				97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9796BC2121F87AD000294FE6 /* Model */ = {
@@ -546,6 +572,7 @@
 				9716EF5721F6FDAF00583DBD /* 日志.png in Resources */,
 				9796BC1821F8787900294FE6 /* bcl_ic_log_tabBar_selected.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
+				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
 				9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */,
 				9796BC0E21F8585E00294FE6 /* bcl_ic_community_tabBar_selected.png in Resources */,
 				043C543921FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png in Resources */,
@@ -599,6 +626,7 @@
 				046496F121FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */,
 				046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
+				977C9DA121FF48AB00898615 /* BCLDayTimeRecordViewController.m in Sources */,
 				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
 				977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */,
@@ -608,6 +636,8 @@
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
 				046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */,
 				046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */,
+				977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */,
+				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,

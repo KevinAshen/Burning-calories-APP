@@ -9,6 +9,7 @@
 #import "BCLLogViewController.h"
 #import "BCLLogView.h"
 #import "BCLBaseViewController.h"
+#import "BCLDayTimeRecordViewController.h"
 
 @interface BCLLogViewController ()
 
@@ -47,6 +48,12 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     return [[UIView alloc]init];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row == 0) {
+        BCLDayTimeRecordViewController *new = [[BCLDayTimeRecordViewController alloc]init];
+        [self.navigationController pushViewController:new animated:YES];
+    }
 }
 #pragma mark - Navigation
 
