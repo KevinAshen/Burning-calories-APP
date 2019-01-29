@@ -168,12 +168,12 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 - (void)calculateUpdateBackgroundScrollViewHeight {
     NSInteger backgroundScrollViewHeight = kTitleHeight + kTitleInterval + kAddHeight + kAddInterval + (kCellHeight + kCellInterval) * _sportsNumber + kBottomInterval;
     _backgroundScrollViewHeight = backgroundScrollViewHeight;
-    [self setFrame:CGRectMake(0, 64, kDeviceWidth, _backgroundScrollViewHeight)];
+    [self setFrame:CGRectMake(0, 64, kDeviceWidth, _backgroundScrollViewHeight + kSegmentedControlHeight)];
 }
 
 #pragma mark - 测试数据填充
 - (void)programmingTest {
-    _sportsNumber = 2;
+    _sportsNumber = 8;
 }
 
 /*
