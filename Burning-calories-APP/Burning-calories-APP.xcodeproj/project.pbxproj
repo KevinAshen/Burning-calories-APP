@@ -49,6 +49,10 @@
 		9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC1F21F87ABF00294FE6 /* BCLLogView.m */; };
 		9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC2321F87AFB00294FE6 /* BCLLogModel.m */; };
 		9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */; };
+		97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F390220084AC00F66B85 /* bcl_bg_log_everyday2.png */; };
+		97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */; };
+		97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */; };
+		97B8F39722008DF100F66B85 /* bcl_bg_log_everyday_food1.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39522008DF100F66B85 /* bcl_bg_log_everyday_food1.png */; };
 		97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +142,10 @@
 		9796BC2321F87AFB00294FE6 /* BCLLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogModel.m; sourceTree = "<group>"; };
 		9796BC2521F8A52100294FE6 /* BCLLogHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLLogHeaderView.h; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.h"; sourceTree = SOURCE_ROOT; };
 		9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BCLLogHeaderView.m; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.m"; sourceTree = SOURCE_ROOT; };
+		97B8F390220084AC00F66B85 /* bcl_bg_log_everyday2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday2.png; sourceTree = "<group>"; };
+		97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_btn_log_everyday_cancel.png; sourceTree = "<group>"; };
+		97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday_food2.png; sourceTree = "<group>"; };
+		97B8F39522008DF100F66B85 /* bcl_bg_log_everyday_food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday_food1.png; sourceTree = "<group>"; };
 		97F608D821F9F506004BC91E /* BCLLogDayWeekTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogDayWeekTableViewCell.h; sourceTree = "<group>"; };
 		97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogDayWeekTableViewCell.m; sourceTree = "<group>"; };
 		A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +236,10 @@
 		046496E421F807CB0093AC4E /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				97B8F39522008DF100F66B85 /* bcl_bg_log_everyday_food1.png */,
+				97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */,
+				97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */,
+				97B8F390220084AC00F66B85 /* bcl_bg_log_everyday2.png */,
 				977C9D9A21FF470E00898615 /* bcl_bg_log_everyday.png */,
 				974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */,
 				9796BC1721F8787800294FE6 /* bcl_ic_log_tabBar_selected.png */,
@@ -561,6 +573,8 @@
 				9716EF5521F6FDAE00583DBD /* 社区.png in Resources */,
 				9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */,
 				043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */,
+				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
+				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
 				9796BC1021F8586300294FE6 /* bcl_ic_community_tabBar.png in Resources */,
 				043C543D21FDDFE300F041D0 /* QQ20190127-0.png in Resources */,
 				9796BC0B21F8585700294FE6 /* bcl_ic_soprts_tabBar.png in Resources */,
@@ -573,10 +587,12 @@
 				9796BC1821F8787900294FE6 /* bcl_ic_log_tabBar_selected.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
+				97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */,
 				9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */,
 				9796BC0E21F8585E00294FE6 /* bcl_ic_community_tabBar_selected.png in Resources */,
 				043C543921FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png in Resources */,
 				046496EB21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png in Resources */,
+				97B8F39722008DF100F66B85 /* bcl_bg_log_everyday_food1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
