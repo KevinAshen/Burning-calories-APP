@@ -16,3 +16,5 @@
 - 1.27
   1. 解决TableView框架
   2. cell背景解决
+- 1.29
+  1. 无法解决tableView显示问题
