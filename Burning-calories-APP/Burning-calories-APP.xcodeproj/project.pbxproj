@@ -20,6 +20,7 @@
 		046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */; };
 		046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
+		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
 		9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1D21F6F48D00583DBD /* Assets.xcassets */; };
@@ -96,6 +97,8 @@
 		046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsBottomView.m; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
+		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -281,6 +284,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		970A7180220329F400A9C999 /* WeekLogView */ = {
+			isa = PBXGroup;
+			children = (
+				970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */,
+				970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */,
+			);
+			path = WeekLogView;
+			sourceTree = "<group>";
+		};
 		9716EF0821F6F48B00583DBD = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +446,7 @@
 		9796BC1D21F87A8600294FE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				970A7180220329F400A9C999 /* WeekLogView */,
 				977C9D9621FF43E900898615 /* EveryDayLogView */,
 				977601F921FDE244008B9F74 /* BCLLogHistogramView.h */,
 				977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */,
@@ -652,6 +665,7 @@
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
 				046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */,
 				046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */,
+				970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */,
 				977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */,
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
