@@ -7,6 +7,7 @@
 //
 
 #import "BCLSportsDietaryRecordSportsTableViewCell.h"
+#import "BCLSportsDietaryRecordSportsTableViewCellView.h"
 #import <Masonry.h>
 
 static const NSInteger kSegmentedControlHeight = 30;
@@ -28,15 +29,8 @@ static const NSInteger kLeftNameToTimeInterval = 60;
 
 @interface BCLSportsDietaryRecordSportsTableViewCell ()
 
-//运动项目
-@property (nonatomic, strong) UILabel *sportsNameLabel;
-//运动时间
-@property (nonatomic, strong) UILabel *sportsTimeLabel;
-//运动消耗卡路里
-@property (nonatomic, strong) UILabel *sportsCalorieLabel;
-
-//删除运动
-@property (nonatomic, strong) UIButton *sportsDeleteButton;
+//cell中的齿状View
+@property (nonatomic, strong) BCLSportsDietaryRecordSportsTableViewCellView *sportsDietaryRecordSportsTableViewCellView;
 
 @end
 
@@ -44,58 +38,14 @@ static const NSInteger kLeftNameToTimeInterval = 60;
 
 #pragma mark - UI设置
 - (void)setupUI {
-    [self setupSportsLabel];
-    [self setupDeleteButton];
+    self.contentView.backgroundColor = [UIColor clearColor];
+    [self setupSportsDietaryRecordSportsTableViewCellView];
 }
 
-#pragma mark - 运动相关Label设置
-- (void)setupSportsLabel {
-    //运动项目Label
-    self.sportsNameLabel = [[UILabel alloc] init];
-    [self.contentView addSubview:_sportsNameLabel];
-
-    [_sportsNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.mas_left).offset(kLeftLittleInterval);
-        make.top.equalTo(self.mas_top).offset(kTopLittleInterval);
-        make.height.mas_equalTo(kSportsNameHeight);
-        make.width.mas_equalTo(@(100));
-    }];
-    
-    _sportsNameLabel.text = @"快跑";  //!!!TEST!!!
-    
-    //运动时间Label
-    self.sportsTimeLabel = [[UILabel alloc] init];
-    [self.contentView addSubview:_sportsTimeLabel];
-    
-    [_sportsTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.sportsNameLabel.mas_left).offset(kLeftNameToTimeInterval);
-        make.top.equalTo(self.mas_top).offset(kTopLittleInterval);
-        make.height.mas_equalTo(kSportsNameHeight);
-        make.width.mas_equalTo(@(100));
-    }];
-    
-    _sportsTimeLabel.textColor = [UIColor colorWithRed:0.87f green:0.87f blue:0.87f alpha:1.00f];
-    _sportsTimeLabel.text = @"30分钟"; //!!!TEST!!!
-    
-    //运动卡路里Label
-    self.sportsCalorieLabel = [[UILabel alloc] init];
-    [self.contentView addSubview:_sportsCalorieLabel];
-    
-    [_sportsCalorieLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.sportsNameLabel.mas_left).offset(kLeftNameToTimeInterval);
-        make.top.equalTo(self.sportsTimeLabel.mas_bottom).offset(kCalorieToTimeInterval);
-        make.height.mas_equalTo(kSportsCalorieHeight);
-        make.width.mas_equalTo(@(100));
-    }];
-    
-    _sportsCalorieLabel.textColor = [UIColor colorWithRed:0.87f green:0.87f blue:0.87f alpha:1.00f];
-    _sportsCalorieLabel.text = @"100千卡"; //!!!TEST!!!
-    _sportsCalorieLabel.font = [UIFont systemFontOfSize:12];
-}
-
-#pragma mark - 删除运动Button设置
-- (void)setupDeleteButton {
-    
+#pragma mark - cell中的齿状View设置
+- (void)setupSportsDietaryRecordSportsTableViewCellView {
+    _sportsDietaryRecordSportsTableViewCellView = [[BCLSportsDietaryRecordSportsTableViewCellView alloc] initWithFrame:CGRectMake(36, 0, kDeviceWidth - 36 - 36, 75)];
+    [self.contentView addSubview:_sportsDietaryRecordSportsTableViewCellView];
 }
 
 - (void)awakeFromNib {
