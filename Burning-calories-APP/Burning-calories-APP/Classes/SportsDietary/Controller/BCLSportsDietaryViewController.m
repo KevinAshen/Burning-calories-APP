@@ -65,15 +65,6 @@ static const NSInteger kBottomInterval = 60;
     headView.backgroundColor = [UIColor clearColor];
     return headView;
 }
-//设置cell的背景图片
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UIView *cellBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, 90)];
-    UIImageView *cellBackgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bcl_ic_soprts_tableView_cellBackgroundImage"]];
-    cellBackgroundImageView.backgroundColor = [UIColor clearColor];
-//    cellBackgroundImageView.frame = CGRectMake(36, 0, kDeviceWidth, 90);
-    cell.backgroundView = cellBackgroundImageView;
-    
-}
 
 /*
 #pragma mark - Navigation

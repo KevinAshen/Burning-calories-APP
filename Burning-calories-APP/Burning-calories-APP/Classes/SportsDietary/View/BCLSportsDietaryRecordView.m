@@ -113,19 +113,19 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 运动tableViewHeadView设置
 - (void)setupSportsDietaryRecordSportsHeadView {
-    _sportsDietaryRecordSportsHeadView = [[BCLSportsDietaryRecordSportsHeadView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, kTitleInterval + kTitleHeight)];
+    _sportsDietaryRecordSportsHeadView = [[BCLSportsDietaryRecordSportsHeadView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kTitleInterval + kTitleHeight)];
     //!!!TEST!!!
     [_sportsDietaryRecordSportsHeadView reloadSportsTotalCalorieNumber:119];
 }
 
 #pragma mark - 运动tableViewBottomView设置
 - (void)setupSportsDietaryRecordSportsBottomView {
-    _sportsDietaryRecordSportsBottomView = [[BCLSportsDietaryRecordSportsBottomView alloc] initWithFrame:CGRectMake(0, _backgroundScrollViewHeight - kBottomInterval - kAddHeight, kDeviceWidth - 36 - 36, kAddHeight)];
+    _sportsDietaryRecordSportsBottomView = [[BCLSportsDietaryRecordSportsBottomView alloc] initWithFrame:CGRectMake(0, _backgroundScrollViewHeight - kBottomInterval - kAddHeight, kDeviceWidth, kAddHeight)];
 }
 
 #pragma mark - 运动tableView设置
 - (void)setupSportsTableView {
-    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(36, 0, kDeviceWidth - 36 - 36, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
+    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_sportsTableView];
     
     [_sportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
@@ -151,6 +151,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BCLSportsDietaryRecordSportsTableViewCell *sportsDietaryRecordSportsTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
+    sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
     return sportsDietaryRecordSportsTableViewCell;
 }
 
@@ -173,7 +174,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 测试数据填充
 - (void)programmingTest {
-    _sportsNumber = 8;
+    _sportsNumber = 2;
 }
 
 /*
