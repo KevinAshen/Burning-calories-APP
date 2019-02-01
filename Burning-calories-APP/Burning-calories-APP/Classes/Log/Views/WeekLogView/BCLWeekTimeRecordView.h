@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BCLWeekTimeRecordView : UIView
+@property (nonatomic, strong) UICollectionView *weekLogCollectionView;
 
 @end
