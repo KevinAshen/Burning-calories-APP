@@ -10,6 +10,7 @@
 #import "BCLLogView.h"
 #import "BCLBaseViewController.h"
 #import "BCLDayTimeRecordViewController.h"
+#import "BCLWeekTimeRecordViewController.h"
 
 @interface BCLLogViewController ()
 
@@ -52,6 +53,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.row == 0) {
         BCLDayTimeRecordViewController *new = [[BCLDayTimeRecordViewController alloc]init];
+        [self.navigationController pushViewController:new animated:YES];
+    } else if (indexPath.row == 1) {
+        BCLWeekTimeRecordViewController *new = [[BCLWeekTimeRecordViewController alloc] init];
         [self.navigationController pushViewController:new animated:YES];
     }
 }
