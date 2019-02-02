@@ -130,10 +130,10 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     
     [_sportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
     _sportsTableView.backgroundColor = [UIColor clearColor];
+    _sportsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _sportsTableView.showsVerticalScrollIndicator = NO;
     _sportsTableView.showsHorizontalScrollIndicator = NO;
     _sportsTableView.bounces = NO;
-    _sportsTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     _sportsTableView.dataSource = self;
     
     [self setupSportsDietaryRecordSportsHeadView];
@@ -152,6 +152,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BCLSportsDietaryRecordSportsTableViewCell *sportsDietaryRecordSportsTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
     sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
+    sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
     return sportsDietaryRecordSportsTableViewCell;
 }
 
@@ -174,7 +175,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 测试数据填充
 - (void)programmingTest {
-    _sportsNumber = 2;
+    _sportsNumber = 3;
 }
 
 /*
