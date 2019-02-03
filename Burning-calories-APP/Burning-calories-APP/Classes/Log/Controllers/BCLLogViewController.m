@@ -11,6 +11,7 @@
 #import "BCLBaseViewController.h"
 #import "BCLDayTimeRecordViewController.h"
 #import "BCLWeekTimeRecordViewController.h"
+#import "BCLMonthTimeRecordViewController.h"
 
 @interface BCLLogViewController ()
 
@@ -56,6 +57,10 @@
         [self.navigationController pushViewController:new animated:YES];
     } else if (indexPath.row == 1) {
         BCLWeekTimeRecordViewController *new = [[BCLWeekTimeRecordViewController alloc] init];
+        [self.navigationController pushViewController:new animated:YES];
+    } else {
+        BCLMonthTimeRecordViewController *new
+        = [[BCLMonthTimeRecordViewController alloc] init];
         [self.navigationController pushViewController:new animated:YES];
     }
 }
