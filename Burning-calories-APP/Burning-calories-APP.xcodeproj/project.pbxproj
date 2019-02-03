@@ -60,6 +60,10 @@
 		97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */; };
 		97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */; };
 		97B8F39722008DF100F66B85 /* bcl_bg_log_everyday_food1.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39522008DF100F66B85 /* bcl_bg_log_everyday_food1.png */; };
+		97BE2386220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE2385220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m */; };
+		97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE238822072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m */; };
+		97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE238B22072E3500284424 /* BCLMonthTimeRecordView.m */; };
+		97BE238F2207311000284424 /* BCLMonthTimeRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE238E2207311000284424 /* BCLMonthTimeRecordViewController.m */; };
 		97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +169,14 @@
 		97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_btn_log_everyday_cancel.png; sourceTree = "<group>"; };
 		97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday_food2.png; sourceTree = "<group>"; };
 		97B8F39522008DF100F66B85 /* bcl_bg_log_everyday_food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday_food1.png; sourceTree = "<group>"; };
+		97BE2384220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthOfDayRecordCollectionViewCell.h; sourceTree = "<group>"; };
+		97BE2385220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthOfDayRecordCollectionViewCell.m; sourceTree = "<group>"; };
+		97BE238722072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthAllCaloriesCollectionViewCell.h; sourceTree = "<group>"; };
+		97BE238822072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthAllCaloriesCollectionViewCell.m; sourceTree = "<group>"; };
+		97BE238A22072E3500284424 /* BCLMonthTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthTimeRecordView.h; sourceTree = "<group>"; };
+		97BE238B22072E3500284424 /* BCLMonthTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthTimeRecordView.m; sourceTree = "<group>"; };
+		97BE238D2207311000284424 /* BCLMonthTimeRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthTimeRecordViewController.h; sourceTree = "<group>"; };
+		97BE238E2207311000284424 /* BCLMonthTimeRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthTimeRecordViewController.m; sourceTree = "<group>"; };
 		97F608D821F9F506004BC91E /* BCLLogDayWeekTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogDayWeekTableViewCell.h; sourceTree = "<group>"; };
 		97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogDayWeekTableViewCell.m; sourceTree = "<group>"; };
 		A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -422,6 +434,8 @@
 				977C9DA021FF48AB00898615 /* BCLDayTimeRecordViewController.m */,
 				977C88FE22047ECA00313CBD /* BCLWeekTimeRecordViewController.h */,
 				977C88FF22047ECA00313CBD /* BCLWeekTimeRecordViewController.m */,
+				97BE238D2207311000284424 /* BCLMonthTimeRecordViewController.h */,
+				97BE238E2207311000284424 /* BCLMonthTimeRecordViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -472,6 +486,7 @@
 		9796BC1D21F87A8600294FE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97BE23832207280800284424 /* MonthLogView */,
 				970A7180220329F400A9C999 /* WeekLogView */,
 				977C9D9621FF43E900898615 /* EveryDayLogView */,
 				977601F921FDE244008B9F74 /* BCLLogHistogramView.h */,
@@ -495,6 +510,19 @@
 				9796BC2321F87AFB00294FE6 /* BCLLogModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		97BE23832207280800284424 /* MonthLogView */ = {
+			isa = PBXGroup;
+			children = (
+				97BE2384220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.h */,
+				97BE2385220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m */,
+				97BE238722072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.h */,
+				97BE238822072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m */,
+				97BE238A22072E3500284424 /* BCLMonthTimeRecordView.h */,
+				97BE238B22072E3500284424 /* BCLMonthTimeRecordView.m */,
+			);
+			path = MonthLogView;
 			sourceTree = "<group>";
 		};
 		B02E9C8892945B6E9BF1C9BE /* Frameworks */ = {
@@ -679,6 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE2386220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m in Sources */,
 				977C88FD2204723A00313CBD /* BCLWeekTimeRecordCollectionViewCell.m in Sources */,
 				9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */,
 				046496F121FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */,
@@ -689,6 +718,7 @@
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
 				977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
+				97BE238F2207311000284424 /* BCLMonthTimeRecordViewController.m in Sources */,
 				9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */,
 				9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */,
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
@@ -701,9 +731,11 @@
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
+				97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
 				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
+				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
 				97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
