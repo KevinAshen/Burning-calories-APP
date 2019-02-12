@@ -29,7 +29,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0) {
-        return CGSizeMake(340, 250);
+        return CGSizeMake(320, 220);
     } else {
         return CGSizeMake(132, 150);
     }
@@ -38,7 +38,7 @@
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     if(section == 0) {
-        return UIEdgeInsetsMake(20, 0, 0,0);
+        return UIEdgeInsetsMake(30, 0, 0,0);
     } else {
         return UIEdgeInsetsMake(40, 40, 0, 40);
     }
