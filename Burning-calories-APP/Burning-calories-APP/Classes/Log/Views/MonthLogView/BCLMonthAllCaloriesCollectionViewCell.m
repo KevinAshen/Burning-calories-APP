@@ -18,7 +18,7 @@ static const CGFloat kMarginMonthAll = 20;
         [_dayTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(kMarginMonthAll);
             make.top.equalTo(self).offset(kMarginMonthAll);
-            make.width.mas_lessThanOrEqualTo(@56);
+            make.width.mas_lessThanOrEqualTo(@86);
             make.height.mas_equalTo(22);
         }];
         _dayTimeLabel.font = [UIFont systemFontOfSize:16];
