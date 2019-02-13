@@ -50,14 +50,14 @@ static NSString *const monthOfDayRecordCellName = @"monthOfDayRecordCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.section == 0) {
         BCLMonthAllCaloriesCollectionViewCell *cell = [_monthLogCollectionView dequeueReusableCellWithReuseIdentifier:monthAllDaysRecordCellName forIndexPath:indexPath];
-        cell.backgroundColor = [UIColor colorWithRed:0.49f green:0.87f blue:0.82f alpha:1.00f];
+        //cell.backgroundColor = [UIColor colorWithRed:0.49f green:0.87f blue:0.82f alpha:1.00f];
+        
         
         cell.dayTimeLabel.text = @"1月28日";
         return  cell;
     } else {
         BCLMonthOfDayRecordCollectionViewCell *cell
         = [_monthLogCollectionView dequeueReusableCellWithReuseIdentifier:monthOfDayRecordCellName forIndexPath:indexPath];
-        cell.backgroundColor = [UIColor whiteColor];
         
         cell.monthOfDayTimeLabel.text = [NSString stringWithFormat:@"Day%ld", (indexPath.row + 1)];
         cell.monthOfDayFoodImageView.image = [UIImage imageNamed:@"bcl_bg_log_everyday_food2"];

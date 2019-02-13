@@ -13,6 +13,9 @@ static const CGFloat kMagrinMonth = 8;
 @implementation BCLMonthOfDayRecordCollectionViewCell
 - (instancetype) initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
+        
+        self.backgroundColor = [UIColor whiteColor];
+        
         self.monthOfDayFoodImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:_monthOfDayFoodImageView];
         [_monthOfDayFoodImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -36,7 +39,7 @@ static const CGFloat kMagrinMonth = 8;
         self.monthOfDayCaloriesLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_monthOfDayCaloriesLabel];
         [_monthOfDayCaloriesLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self).offset(kMagrinMonth);
+            make.right.equalTo(self).offset(-kMagrinMonth);
             make.top.equalTo(self.monthOfDayFoodImageView.mas_bottom).offset(kMagrinMonth);
             make.width.mas_lessThanOrEqualTo(@80);
             make.height.mas_equalTo(20);
