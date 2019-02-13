@@ -28,7 +28,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 @interface BCLSportsDietaryRecordView()<UITableViewDataSource>
 
-//饮食与健康分段控制器    //TEST
+//饮食与健康分段控制器
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
 //背景板
 @property (nonatomic, strong) UIScrollView *backgroundScrollView;
@@ -38,6 +38,8 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 @property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
 //运动tableViewBottomView
 @property (nonatomic, strong) BCLSportsDietaryRecordSportsBottomView *sportsDietaryRecordSportsBottomView;
+//饮食tableView
+@property (nonatomic, strong) UITableView *dietaryTableView;
 
 //运动数目
 @property (nonatomic, assign) NSInteger sportsNumber;
@@ -128,6 +130,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_sportsTableView];
     
+    _sportsTableView.tag = 1;
     [_sportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
     _sportsTableView.backgroundColor = [UIColor clearColor];
     _sportsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -142,18 +145,45 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     _sportsTableView.tableFooterView = _sportsDietaryRecordSportsBottomView;
 }
 
+#pragma mark - 饮食tableView设置
+- (void)setupDietaryTableView {
+    _dietaryTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
+    [self.backgroundScrollView addSubview:_dietaryTableView];
+    
+    _dietaryTableView.tag = 2;
+    [_dietaryTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
+    _dietaryTableView.backgroundColor = [UIColor clearColor];
+    _dietaryTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _dietaryTableView.showsVerticalScrollIndicator = NO;
+    _dietaryTableView.showsHorizontalScrollIndicator = NO;
+    _dietaryTableView.bounces = NO;
+    _dietaryTableView.dataSource = self;
+}
+
 #pragma mark - UITableViewDataSource实现
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return _sportsNumber;
+    if (tableView.tag == 1) {
+        return _sportsNumber;
+    } else {
+        return 0;
+    }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    if (tableView.tag == 1) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BCLSportsDietaryRecordSportsTableViewCell *sportsDietaryRecordSportsTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
-    sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
-    sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
-    return sportsDietaryRecordSportsTableViewCell;
+    if (tableView.tag == 1) {
+        BCLSportsDietaryRecordSportsTableViewCell *sportsDietaryRecordSportsTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
+        sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
+        sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+        return sportsDietaryRecordSportsTableViewCell;
+    } else {
+        return nil;
+    }
 }
 
 #pragma mark - 传出背景scrollView

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0408466C221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408466B221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m */; };
 		043C543921FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 043C543821FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png */; };
 		043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 043C543A21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png */; };
 		043C543D21FDDFE300F041D0 /* QQ20190127-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 043C543C21FDDFE300F041D0 /* QQ20190127-0.png */; };
@@ -87,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0408466A221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordDietaryTableViewSectionView.h; sourceTree = "<group>"; };
+		0408466B221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordDietaryTableViewSectionView.m; sourceTree = "<group>"; };
 		043C543821FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_tableView_bottomAddButton.png; sourceTree = "<group>"; };
 		043C543A21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_tableView_cellBackgroundImage.png; sourceTree = "<group>"; };
 		043C543C21FDDFE300F041D0 /* QQ20190127-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20190127-0.png"; sourceTree = "<group>"; };
@@ -212,6 +215,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0408466822145F1800E8F0DE /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				046496EF21FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.h */,
+				046496F021FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */,
+				046496F221FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.h */,
+				046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */,
+				046496F521FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.h */,
+				046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */,
+				0457FA2122015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.h */,
+				0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		0408466922145F2F00E8F0DE /* Dietary */ = {
+			isa = PBXGroup;
+			children = (
+				0408466A221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.h */,
+				0408466B221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m */,
+			);
+			path = Dietary;
+			sourceTree = "<group>";
+		};
 		046496B521F736AF0093AC4E /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,14 +328,8 @@
 			children = (
 				046496E721F9A2580093AC4E /* BCLSportsDietaryRecordView.h */,
 				046496E821F9A2580093AC4E /* BCLSportsDietaryRecordView.m */,
-				046496EF21FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.h */,
-				046496F021FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */,
-				046496F221FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.h */,
-				046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */,
-				046496F521FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.h */,
-				046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */,
-				0457FA2122015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.h */,
-				0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */,
+				0408466922145F2F00E8F0DE /* Dietary */,
+				0408466822145F1800E8F0DE /* Sports */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -720,6 +741,7 @@
 				9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */,
 				046496F121FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */,
 				046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */,
+				0408466C221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
 				977C9DA121FF48AB00898615 /* BCLDayTimeRecordViewController.m in Sources */,
 				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
