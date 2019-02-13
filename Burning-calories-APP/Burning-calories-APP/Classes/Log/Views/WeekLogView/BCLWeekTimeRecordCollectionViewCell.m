@@ -28,7 +28,7 @@ static const CGFloat kMarginWeek = 8;
         [_weekOfTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.weekFoodImageView.mas_left);
             make.top.equalTo(self.weekFoodImageView.mas_top).offset(2);
-            make.width.mas_lessThanOrEqualTo(@51);
+            make.width.mas_lessThanOrEqualTo(@56);
             make.height.mas_equalTo(33);
         }];
         _weekOfTimeLabel.text = @"Day1";
@@ -56,6 +56,7 @@ static const CGFloat kMarginWeek = 8;
             make.height.mas_equalTo(20);
         }];
         [self.shareButton setImage:[UIImage imageNamed:@"bcl_ic_log_week_share"] forState:UIControlStateNormal];
+        [self.shareButton setImage:[UIImage imageNamed:@"bcl_ic_log_week_share_selected"] forState:UIControlStateSelected];
         
         self.loveButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.contentView addSubview:_loveButton];

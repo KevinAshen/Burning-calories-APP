@@ -14,3 +14,4 @@
 - [iOS UIBezierPath使用——贝塞尔曲线](https://www.jianshu.com/p/e136c3e65c29)
 - [iOS 中tableview cell点击取消选中效果](https://www.jianshu.com/p/6b91bc638681)
 - [UITableView 去掉分割线](https://www.jianshu.com/p/3e8a260d21bc)
+- [CAGradientLayer的一些属性解析](https://www.cnblogs.com/YouXianMing/p/3793913.html)
