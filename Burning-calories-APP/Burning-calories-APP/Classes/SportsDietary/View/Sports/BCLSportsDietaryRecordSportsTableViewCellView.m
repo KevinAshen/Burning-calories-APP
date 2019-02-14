@@ -18,6 +18,7 @@ static const NSInteger kCalorieToTimeInterval = 10;
 
 static const NSInteger kLeftLittleInterval = 10;
 static const NSInteger kLeftNameToTimeInterval = 60;
+static const NSInteger kRightLittleInterval = 10;
 
 @interface BCLSportsDietaryRecordSportsTableViewCellView()
 
@@ -100,7 +101,17 @@ static const NSInteger kLeftNameToTimeInterval = 60;
 
 #pragma mark - 删除运动Button设置
 - (void)setupDeleteButton {
+    self.sportsDeleteButton = [[UIButton alloc] init];
+    [self addSubview:_sportsDeleteButton];
     
+    [_sportsDeleteButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.mas_right).offset(-kRightLittleInterval);
+        make.top.equalTo(self.mas_top).offset(kTopLittleInterval);
+        make.height.mas_equalTo(20);
+        make.width.mas_equalTo(20);
+    }];
+    
+    [_sportsDeleteButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_tableView_cellDeleteButton"] forState:UIControlStateNormal];
 }
 
 #pragma mark - 更新数据
