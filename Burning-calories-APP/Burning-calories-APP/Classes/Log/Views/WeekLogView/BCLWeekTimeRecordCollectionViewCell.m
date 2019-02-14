@@ -67,6 +67,7 @@ static const CGFloat kMarginWeek = 8;
             make.height.mas_equalTo(20);
         }];
         [_loveButton setImage:[UIImage imageNamed:@"bcl_ic_log_week_aixin"] forState:UIControlStateNormal];
+        [_loveButton setImage:[UIImage imageNamed:@"bcl_ic_log_week_aixin_selected"] forState:UIControlStateSelected];
         
         
     }
