@@ -116,7 +116,7 @@
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9709D7E122145D3200B1EF9F /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_log_week_aixin.png; path = "../../../../../../卡路里素材/bcl_ic_log_week_aixin.png"; sourceTree = "<group>"; };
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
-		9709D7E522145DD600B1EF9F /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_log_week_aixin_selected.png; path = ../../../../../../bcl_ic_log_week_aixin_selected.png; sourceTree = "<group>"; };
+		9709D7E522145DD600B1EF9F /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_log_week_aixin_selected.png; path = "../../../../../../卡路里素材/bcl_ic_log_week_aixin_selected.png"; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
