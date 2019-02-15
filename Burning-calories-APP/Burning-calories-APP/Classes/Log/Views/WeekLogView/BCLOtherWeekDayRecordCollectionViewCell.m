@@ -65,8 +65,13 @@ static const CGFloat kMarginWeek = 8;
         }];
         [_loveButton setImage:[UIImage imageNamed:@"bcl_ic_log_week_aixin"] forState:UIControlStateNormal];
         
-        
+        [_loveButton addTarget:self action:@selector(loveClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
+}
+- (void)loveClick:(UIButton *)button {
+    if(self.loveButtonAction) {
+        self.loveButtonAction(button);
+    }
 }
 @end

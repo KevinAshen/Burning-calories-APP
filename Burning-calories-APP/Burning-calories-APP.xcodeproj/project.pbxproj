@@ -25,6 +25,8 @@
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
+		970C762E221706D100DE5F88 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */; };
+		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
 		9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1D21F6F48D00583DBD /* Assets.xcassets */; };
@@ -117,6 +119,8 @@
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
+		970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_log_week_aixin_selected.png; path = "../../../../../../卡路里素材/bcl_ic_log_week_aixin_selected.png"; sourceTree = "<group>"; };
+		970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin.png; sourceTree = "<group>"; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 		046496E421F807CB0093AC4E /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */,
+				970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */,
 				9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */,
 				977C89012204846300313CBD /* bcl_ic_log_week_share.png */,
 				97B8F39522008DF100F66B85 /* bcl_bg_log_everyday_food1.png */,
@@ -662,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9716EF5521F6FDAE00583DBD /* 社区.png in Resources */,
+				970C762E221706D100DE5F88 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */,
 				043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */,
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
@@ -680,6 +687,7 @@
 				977C89032204846400313CBD /* bcl_ic_log_week_share.png in Resources */,
 				9796BC1821F8787900294FE6 /* bcl_ic_log_tabBar_selected.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
+				970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */,
 				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
 				97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */,
 				9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */,
