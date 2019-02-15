@@ -15,7 +15,7 @@ static NSString *const otherWeekDayCellName = @"otherWeekDayCell";
 
 @interface BCLWeekTimeRecordView ()<UICollectionViewDataSource>
 
-
+@property (nonatomic, assign)BOOL loveBtnSelected;
 @end
 @implementation BCLWeekTimeRecordView
 - (instancetype) initWithFrame:(CGRect)frame {
@@ -31,6 +31,8 @@ static NSString *const otherWeekDayCellName = @"otherWeekDayCell";
         [_weekLogCollectionView registerClass:[BCLWeekTimeRecordCollectionViewCell class] forCellWithReuseIdentifier:weekCellName];
         [_weekLogCollectionView registerClass:[BCLOtherWeekDayRecordCollectionViewCell class] forCellWithReuseIdentifier:otherWeekDayCellName];
         [self addSubview:_weekLogCollectionView];
+        
+        _loveBtnSelected = false;
     }
     return self;
 }
@@ -52,6 +54,9 @@ static NSString *const otherWeekDayCellName = @"otherWeekDayCell";
         weekCell.backgroundColor = [UIColor whiteColor];
         weekCell.weekFoodImageView.image = [UIImage imageNamed:@"bcl_bg_log_everyday_food1"];
         weekCell.everydayCaloriesLabel.text = @"1778千卡";
+        weekCell.loveButtonAction = ^(UIButton *sender) {
+            [self cellLoveButtonClick:sender];
+        };
         return weekCell;
     } else {
         BCLOtherWeekDayRecordCollectionViewCell *otherWeekDayCell = [_weekLogCollectionView dequeueReusableCellWithReuseIdentifier:otherWeekDayCellName forIndexPath:indexPath];
@@ -59,9 +64,22 @@ static NSString *const otherWeekDayCellName = @"otherWeekDayCell";
         otherWeekDayCell.backgroundColor = [UIColor whiteColor];
         otherWeekDayCell.weekFoodImageView.image = [UIImage imageNamed:@"bcl_bg_log_everyday_food2"];
         otherWeekDayCell.everydayCaloriesLabel.text = @"2000千卡";
+        otherWeekDayCell.loveButtonAction = ^(UIButton *sender) {
+            [self cellLoveButtonClick:sender];
+        };
         return otherWeekDayCell;
     }
     
+}
+- (void)cellLoveButtonClick:(UIButton *)btn {
+    
+    if(!_loveBtnSelected) {
+        _loveBtnSelected = true;
+        [btn setImage:[UIImage imageNamed:@"bcl_ic_log_week_aixin_selected"] forState:UIControlStateNormal];
+    } else {
+        _loveBtnSelected = false;
+        [btn setImage:[UIImage imageNamed:@"bcl_ic_log_week_aixin"] forState:UIControlStateNormal];
+    }
 }
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

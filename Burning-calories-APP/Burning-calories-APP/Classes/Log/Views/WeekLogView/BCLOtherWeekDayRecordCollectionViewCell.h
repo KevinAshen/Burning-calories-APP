@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void(^loveButtonClick) (UIButton *sender);
 
 @interface BCLOtherWeekDayRecordCollectionViewCell : UICollectionViewCell
 
@@ -15,5 +16,6 @@
 @property (nonatomic, strong) UILabel *everydayCaloriesLabel;
 @property (nonatomic, strong) UIButton *loveButton;
 @property (nonatomic, strong) UIButton *shareButton;
+@property (nonatomic, copy)loveButtonClick loveButtonAction;
 
 @end
