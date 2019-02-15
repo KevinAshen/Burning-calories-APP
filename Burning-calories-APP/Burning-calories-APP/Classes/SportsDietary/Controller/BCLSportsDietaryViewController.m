@@ -61,9 +61,15 @@ static const NSInteger kBottomInterval = 60;
     return 75;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
-    headView.backgroundColor = [UIColor clearColor];
-    return headView;
+    if (tableView.tag == 1) {
+        UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
+        headView.backgroundColor = [UIColor clearColor];
+        return headView;
+    } else {
+        UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
+        headView.backgroundColor = [UIColor clearColor];
+        return headView;
+    }
 }
 
 /*

@@ -65,6 +65,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     [self setupSegmentedControl];
     [self setupBackgroundScrollView];
     [self setupSportsTableView];
+    [self setupDietaryTableView];
 }
 
 #pragma mark - 分栏设置
@@ -147,7 +148,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 饮食tableView设置
 - (void)setupDietaryTableView {
-    _dietaryTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
+    _dietaryTableView = [[UITableView alloc] initWithFrame:CGRectMake(kDeviceWidth, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_dietaryTableView];
     
     _dietaryTableView.tag = 2;
@@ -165,14 +166,14 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     if (tableView.tag == 1) {
         return _sportsNumber;
     } else {
-        return 0;
+        return 4;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView.tag == 1) {
         return 1;
     } else {
-        return 0;
+        return 2;
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -182,7 +183,10 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
         sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
         return sportsDietaryRecordSportsTableViewCell;
     } else {
-        return nil;
+        BCLSportsDietaryRecordSportsTableViewCell *sportsDietaryRecordSportsTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
+        sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
+        sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+        return sportsDietaryRecordSportsTableViewCell;
     }
 }
 
