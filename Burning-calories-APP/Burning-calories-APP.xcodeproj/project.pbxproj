@@ -27,6 +27,9 @@
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
 		970C762E221706D100DE5F88 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
+		970EBB41221857AB00025038 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB3E221857AB00025038 /* FSLineChart.m */; };
+		970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB40221857AB00025038 /* UIColor+FSPalette.m */; };
+		970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB442218581900025038 /* BCLMonthLineChartView.m */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
 		9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1D21F6F48D00583DBD /* Assets.xcassets */; };
@@ -121,6 +124,12 @@
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
 		970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_log_week_aixin_selected.png; path = "../../../../../../卡路里素材/bcl_ic_log_week_aixin_selected.png"; sourceTree = "<group>"; };
 		970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin.png; sourceTree = "<group>"; };
+		970EBB3D221857AB00025038 /* FSLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLineChart.h; sourceTree = "<group>"; };
+		970EBB3E221857AB00025038 /* FSLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLineChart.m; sourceTree = "<group>"; };
+		970EBB3F221857AB00025038 /* UIColor+FSPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FSPalette.h"; sourceTree = "<group>"; };
+		970EBB40221857AB00025038 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FSPalette.m"; sourceTree = "<group>"; };
+		970EBB432218581900025038 /* BCLMonthLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthLineChartView.h; sourceTree = "<group>"; };
+		970EBB442218581900025038 /* BCLMonthLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthLineChartView.m; sourceTree = "<group>"; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -359,6 +368,17 @@
 			path = WeekLogView;
 			sourceTree = "<group>";
 		};
+		970EBB3C221857AB00025038 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				970EBB3D221857AB00025038 /* FSLineChart.h */,
+				970EBB3E221857AB00025038 /* FSLineChart.m */,
+				970EBB3F221857AB00025038 /* UIColor+FSPalette.h */,
+				970EBB40221857AB00025038 /* UIColor+FSPalette.m */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
 		9716EF0821F6F48B00583DBD = {
 			isa = PBXGroup;
 			children = (
@@ -545,12 +565,15 @@
 		97BE23832207280800284424 /* MonthLogView */ = {
 			isa = PBXGroup;
 			children = (
+				970EBB3C221857AB00025038 /* LineChart */,
 				97BE2384220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.h */,
 				97BE2385220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m */,
 				97BE238722072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.h */,
 				97BE238822072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m */,
 				97BE238A22072E3500284424 /* BCLMonthTimeRecordView.h */,
 				97BE238B22072E3500284424 /* BCLMonthTimeRecordView.m */,
+				970EBB432218581900025038 /* BCLMonthLineChartView.h */,
+				970EBB442218581900025038 /* BCLMonthLineChartView.m */,
 			);
 			path = MonthLogView;
 			sourceTree = "<group>";
@@ -767,6 +790,9 @@
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
+				970EBB41221857AB00025038 /* FSLineChart.m in Sources */,
+				970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */,
+				970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */,
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
 				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
 				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
