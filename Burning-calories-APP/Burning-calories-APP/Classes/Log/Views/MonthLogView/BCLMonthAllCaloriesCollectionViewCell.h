@@ -26,4 +26,5 @@
 @property (nonatomic, strong) UILabel *dayTimeLabel;
 @property (nonatomic, strong) BCLMonthLineChartView *chartView;
 
+
 @end
