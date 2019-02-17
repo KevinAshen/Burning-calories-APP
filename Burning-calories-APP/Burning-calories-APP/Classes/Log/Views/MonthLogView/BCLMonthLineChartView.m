@@ -17,8 +17,6 @@
 
 static const CGFloat marginScale  = 15.0f;
 static const CGFloat fontSize = 12;
-static const CGFloat leftXMarginScale = 10.0f;
-static const CGFloat rightXMarginScale = 10.0f;
 static const CGFloat lineChartXlabelHeight = 16.0f;
 static const CGFloat bottomMarginScale = 16.0f;
 static const int GAP = 120;
