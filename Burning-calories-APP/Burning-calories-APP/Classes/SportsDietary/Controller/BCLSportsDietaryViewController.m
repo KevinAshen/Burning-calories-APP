@@ -66,9 +66,10 @@ static const NSInteger kBottomInterval = 60;
         headView.backgroundColor = [UIColor clearColor];
         return headView;
     } else {
-        UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
-        headView.backgroundColor = [UIColor clearColor];
-        return headView;
+        //UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
+        //headView.backgroundColor = [UIColor clearColor];
+        //return headView;
+        return nil;
     }
 }
 

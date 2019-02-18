@@ -23,6 +23,7 @@
 		046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */; };
 		046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */; };
 		048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */; };
+		048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9708E21F221995B2004BC766 /* bcl_bg_log_month_allCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
@@ -119,6 +120,8 @@
 		046496F521FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsBottomView.h; sourceTree = "<group>"; };
 		046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsBottomView.m; sourceTree = "<group>"; };
 		048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin_selected.png; sourceTree = "<group>"; };
+		048300AF2219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordDietaryRecipeView.h; sourceTree = "<group>"; };
+		048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordDietaryRecipeView.m; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_month_allCell.png; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 			children = (
 				0408466A221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.h */,
 				0408466B221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m */,
+				048300AF2219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.h */,
+				048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */,
 			);
 			path = Dietary;
 			sourceTree = "<group>";
@@ -792,6 +797,7 @@
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
+				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,
 				97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
 				970EBB41221857AB00025038 /* FSLineChart.m in Sources */,
