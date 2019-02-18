@@ -22,11 +22,11 @@
 		046496F121FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F021FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */; };
 		046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */; };
 		046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */; };
+		048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9708E21F221995B2004BC766 /* bcl_bg_log_month_allCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
-		970C762E221706D100DE5F88 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
 		970EBB41221857AB00025038 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB3E221857AB00025038 /* FSLineChart.m */; };
 		970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB40221857AB00025038 /* UIColor+FSPalette.m */; };
@@ -118,13 +118,13 @@
 		046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsHeadView.m; sourceTree = "<group>"; };
 		046496F521FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsBottomView.h; sourceTree = "<group>"; };
 		046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsBottomView.m; sourceTree = "<group>"; };
+		048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin_selected.png; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_month_allCell.png; sourceTree = "<group>"; };
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
-		970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_log_week_aixin_selected.png; path = "../../../../../../卡路里素材/bcl_ic_log_week_aixin_selected.png"; sourceTree = "<group>"; };
 		970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin.png; sourceTree = "<group>"; };
 		970EBB3D221857AB00025038 /* FSLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLineChart.h; sourceTree = "<group>"; };
 		970EBB3E221857AB00025038 /* FSLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLineChart.m; sourceTree = "<group>"; };
@@ -312,8 +312,8 @@
 		046496E421F807CB0093AC4E /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */,
 				9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */,
-				970C762D221706D000DE5F88 /* bcl_ic_log_week_aixin_selected.png */,
 				970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */,
 				9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */,
 				977C89012204846300313CBD /* bcl_ic_log_week_share.png */,
@@ -695,10 +695,10 @@
 			files = (
 				9708E21F221995B2004BC766 /* bcl_bg_log_month_allCell.png in Resources */,
 				9716EF5521F6FDAE00583DBD /* 社区.png in Resources */,
-				970C762E221706D100DE5F88 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */,
 				043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */,
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
+				048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
 				9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */,
 				9796BC1021F8586300294FE6 /* bcl_ic_community_tabBar.png in Resources */,
