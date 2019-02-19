@@ -166,14 +166,14 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     if (tableView.tag == 1) {
         return _sportsNumber;
     } else {
-        return 8;
+        return 2;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView.tag == 1) {
         return 1;
     } else {
-        return 1;
+        return 2;
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -198,6 +198,11 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 #pragma mark - 传出运动tableView
 - (UITableView *)getSportsTableView {
     return _sportsTableView;
+}
+
+#pragma mark - 传出饮食tableView
+- (UITableView *)getDietaryTableView {
+    return _dietaryTableView;
 }
 
 #pragma mark - 计算背景画布即运动tableView高度并更新View的高度

@@ -8,10 +8,12 @@
 
 #import "BCLSportsDietaryViewController.h"
 #import "BCLSportsDietaryRecordView.h"
+#import "BCLSportsDietaryRecordDietaryTableViewSectionView.h"
 
 static const NSInteger kSegmentedControlHeight = 30;
 static const NSInteger kTitleHeight = 30;
 static const NSInteger kCellHeight = 75;
+static const NSInteger kSectionHeight = 70;
 static const NSInteger kAddHeight = 45;
 
 static const NSInteger kTitleInterval = 30;
@@ -53,6 +55,7 @@ static const NSInteger kBottomInterval = 60;
     
     [_sportsDietaryRecordView getBackgroundScrollView].delegate = self;
     [_sportsDietaryRecordView getSportsTableView].delegate = self;
+    [_sportsDietaryRecordView getDietaryTableView].delegate = self;
 }
 
 #pragma mark - UITableViewDelegate实现
@@ -66,11 +69,15 @@ static const NSInteger kBottomInterval = 60;
         headView.backgroundColor = [UIColor clearColor];
         return headView;
     } else {
-        //UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
-        //headView.backgroundColor = [UIColor clearColor];
-        //return headView;
-        return nil;
+        BCLSportsDietaryRecordDietaryTableViewSectionView *sportsDietaryRecordDietaryTableViewSectionView = [[BCLSportsDietaryRecordDietaryTableViewSectionView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kSectionHeight)];
+        return sportsDietaryRecordDietaryTableViewSectionView;
     }
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.01;
 }
 
 /*
