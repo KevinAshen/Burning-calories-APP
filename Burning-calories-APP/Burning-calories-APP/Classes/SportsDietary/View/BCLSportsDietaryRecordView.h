@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIScrollView *)getBackgroundScrollView;
 //获取运动tableView
 - (UITableView *)getSportsTableView;
+//获取饮食tableView
+- (UITableView *)getDietaryTableView;
 
 @end
 
