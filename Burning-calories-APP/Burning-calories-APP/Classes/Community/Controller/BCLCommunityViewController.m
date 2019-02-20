@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"社区";
+    
     // Do any additional setup after loading the view.
 }
 
