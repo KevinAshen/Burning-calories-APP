@@ -32,6 +32,8 @@
 		970EBB41221857AB00025038 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB3E221857AB00025038 /* FSLineChart.m */; };
 		970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB40221857AB00025038 /* UIColor+FSPalette.m */; };
 		970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB442218581900025038 /* BCLMonthLineChartView.m */; };
+		97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97149C2A221D8C1D001454B0 /* BCLCommunityView.m */; };
+		97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97149C2D221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
 		9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1D21F6F48D00583DBD /* Assets.xcassets */; };
@@ -73,6 +75,7 @@
 		97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE238822072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m */; };
 		97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE238B22072E3500284424 /* BCLMonthTimeRecordView.m */; };
 		97BE238F2207311000284424 /* BCLMonthTimeRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BE238E2207311000284424 /* BCLMonthTimeRecordViewController.m */; };
+		97E69607221D2BC500FB6316 /* bcl_btn_whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E69606221D2BC500FB6316 /* bcl_btn_whole.png */; };
 		97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +138,10 @@
 		970EBB40221857AB00025038 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FSPalette.m"; sourceTree = "<group>"; };
 		970EBB432218581900025038 /* BCLMonthLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthLineChartView.h; sourceTree = "<group>"; };
 		970EBB442218581900025038 /* BCLMonthLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthLineChartView.m; sourceTree = "<group>"; };
+		97149C29221D8C1D001454B0 /* BCLCommunityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityView.h; sourceTree = "<group>"; };
+		97149C2A221D8C1D001454B0 /* BCLCommunityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityView.m; sourceTree = "<group>"; };
+		97149C2C221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityCircleTableViewCell.h; sourceTree = "<group>"; };
+		97149C2D221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityCircleTableViewCell.m; sourceTree = "<group>"; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9716EF1421F6F48C00583DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9716EF1521F6F48C00583DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -200,6 +207,7 @@
 		97BE238B22072E3500284424 /* BCLMonthTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthTimeRecordView.m; sourceTree = "<group>"; };
 		97BE238D2207311000284424 /* BCLMonthTimeRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMonthTimeRecordViewController.h; sourceTree = "<group>"; };
 		97BE238E2207311000284424 /* BCLMonthTimeRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMonthTimeRecordViewController.m; sourceTree = "<group>"; };
+		97E69606221D2BC500FB6316 /* bcl_btn_whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_btn_whole.png; sourceTree = "<group>"; };
 		97F608D821F9F506004BC91E /* BCLLogDayWeekTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogDayWeekTableViewCell.h; sourceTree = "<group>"; };
 		97F608D921F9F506004BC91E /* BCLLogDayWeekTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogDayWeekTableViewCell.m; sourceTree = "<group>"; };
 		A7D2E8A054CB5ACF8B87F104 /* Pods-Burning-calories-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +346,7 @@
 		046496E521F807D00093AC4E /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				97E69606221D2BC500FB6316 /* bcl_btn_whole.png */,
 				9716EF5021F6FDAE00583DBD /* 开机.jpg */,
 			);
 			path = Welcome;
@@ -385,6 +394,17 @@
 				970EBB40221857AB00025038 /* UIColor+FSPalette.m */,
 			);
 			path = LineChart;
+			sourceTree = "<group>";
+		};
+		97149C28221D8BE9001454B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97149C29221D8C1D001454B0 /* BCLCommunityView.h */,
+				97149C2A221D8C1D001454B0 /* BCLCommunityView.m */,
+				97149C2C221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.h */,
+				97149C2D221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9716EF0821F6F48B00583DBD = {
@@ -476,7 +496,7 @@
 		9716EF5A21F6FF2300583DBD /* Community */ = {
 			isa = PBXGroup;
 			children = (
-				9716EF6321F6FF8400583DBD /* View */,
+				97149C28221D8BE9001454B0 /* Views */,
 				9716EF6221F6FF7F00583DBD /* Model */,
 				9716EF6121F6FF7500583DBD /* Controller */,
 			);
@@ -521,13 +541,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9716EF6321F6FF8400583DBD /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		977C9D9621FF43E900898615 /* EveryDayLogView */ = {
@@ -718,6 +731,7 @@
 				9716EF5721F6FDAF00583DBD /* 日志.png in Resources */,
 				977C89032204846400313CBD /* bcl_ic_log_week_share.png in Resources */,
 				9796BC1821F8787900294FE6 /* bcl_ic_log_tabBar_selected.png in Resources */,
+				97E69607221D2BC500FB6316 /* bcl_btn_whole.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */,
 				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
@@ -802,11 +816,13 @@
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
 				970EBB41221857AB00025038 /* FSLineChart.m in Sources */,
 				970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */,
+				97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */,
 				970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */,
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
 				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
 				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
 				97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */,
+				97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
