@@ -42,3 +42,5 @@
 - 2.19
   1. 完善饮食tableView
   2.TableView划不动bug，心累
+- 2.20
+  1. tableview可以滑动啦！！！

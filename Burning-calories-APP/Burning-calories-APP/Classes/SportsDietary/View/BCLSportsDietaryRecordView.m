@@ -128,7 +128,8 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 运动tableView设置
 - (void)setupSportsTableView {
-    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight - 64) style:UITableViewStyleGrouped];
+//    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight - 64) style:UITableViewStyleGrouped];
+    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight - 64) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_sportsTableView];
     
     _sportsTableView.tag = 1;
@@ -209,7 +210,8 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 - (void)calculateUpdateBackgroundScrollViewHeight {
     NSInteger backgroundScrollViewHeight = kTitleHeight + kTitleInterval + kAddHeight + kAddInterval + (kCellHeight + kCellInterval) * _sportsNumber + kBottomInterval;
     _backgroundScrollViewHeight = backgroundScrollViewHeight;
-    [self setFrame:CGRectMake(0, 64, kDeviceWidth * 2, _backgroundScrollViewHeight + kSegmentedControlHeight)];
+//    [self setFrame:CGRectMake(0, 64, kDeviceWidth * 2, _backgroundScrollViewHeight + kSegmentedControlHeight)];
+    [self setFrame:CGRectMake(0, 64, kDeviceWidth * 2, kDeviceHeight - 64)];
 }
 
 #pragma mark - 测试数据填充
