@@ -9,6 +9,12 @@
 #import "BCLSportsDietaryRecordDietaryTableViewSectionView.h"
 #import <Masonry.h>
 
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define kDeviceHeight [UIScreen mainScreen].bounds.size.height
+
+static const NSInteger kViewLeftOrRightInterval = 170;
+static const NSInteger kViewTopInterval = 10;
+
 @interface BCLSportsDietaryRecordDietaryTableViewSectionView ()
 
 @property (nonatomic, strong) UIButton *mealButton;
@@ -28,7 +34,7 @@
 #pragma mark - UI设置
 - (void)setupUI {
     self.backgroundColor = [UIColor clearColor];
-    
+    [self setupMealButton];
 }
 
 #pragma mark - mealButton设置
@@ -37,11 +43,22 @@
     [self addSubview:_mealButton];
     
     [_mealButton mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(self.mas_left).offset(kViewLeftOrRightInterval);
-//        make.bottom.equalTo(self.mas_bottom).offset(0);
-//        make.height.mas_equalTo(kTitleHeight);
-//        make.width.lessThanOrEqualTo(@(100));
+        make.left.equalTo(self.mas_left).offset(kViewLeftOrRightInterval);
+        make.top.equalTo(self.mas_top).offset(kViewTopInterval);
+        make.center.equalTo(self);
     }];
+    
+    [_mealButton setBackgroundColor:[UIColor whiteColor]];
+    [_mealButton setTitle:@"早" forState:UIControlStateNormal];
+    [_mealButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_mealButton setImage:[UIImage imageNamed:@"bcl_ic_Dietary_tableView_sectionSetting"] forState:UIControlStateNormal];
+    _mealButton.layer.masksToBounds = YES;
+    _mealButton.layer.cornerRadius = 10;
+    
+    CGFloat imgWidth = _mealButton.imageView.bounds.size.width;
+    CGFloat labWidth = _mealButton.titleLabel.bounds.size.width;
+    [_mealButton setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth)];
+    [_mealButton setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, 0, imgWidth)];
 }
 
 /*
