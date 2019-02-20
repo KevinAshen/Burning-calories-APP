@@ -56,6 +56,7 @@ static const NSInteger kBottomInterval = 60;
     [_sportsDietaryRecordView getBackgroundScrollView].delegate = self;
     [_sportsDietaryRecordView getSportsTableView].delegate = self;
     [_sportsDietaryRecordView getDietaryTableView].delegate = self;
+    [_sportsDietaryRecordView getBackgroundScrollView].scrollEnabled = NO;
 }
 
 #pragma mark - UITableViewDelegate实现
@@ -78,6 +79,16 @@ static const NSInteger kBottomInterval = 60;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.01;
+}
+
+#pragma mark - UITableViewDelegate实现
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if ([scrollView isKindOfClass:[UITableView class]]) {
+        NSLog(@"------是列表---");
+    }
+    else {
+        NSLog(@"------是滚动试图----");
+    }
 }
 
 /*
