@@ -16,3 +16,4 @@
 - [UITableView 去掉分割线](https://www.jianshu.com/p/3e8a260d21bc)
 - [CAGradientLayer的一些属性解析](https://www.cnblogs.com/YouXianMing/p/3793913.html)
 - [iOS经典讲解之UIButton改变图片和文字的位置](https://blog.csdn.net/loving_ios/article/details/52412734)
+- [自定义UISegmentControl控件](https://blog.csdn.net/Iven_ma/article/details/75011491)

@@ -7,9 +7,13 @@
 //
 
 #import "BCLCommunityViewController.h"
+#import "BCLCommunityView.h"
 
-@interface BCLCommunityViewController ()
+#define KScreenW [UIScreen mainScreen].bounds.size.width
+#define KScreenH [UIScreen mainScreen].bounds.size.height
 
+@interface BCLCommunityViewController ()<UITableViewDelegate>
+@property (nonatomic, strong) BCLCommunityView *communityView;
 @end
 
 @implementation BCLCommunityViewController
@@ -19,9 +23,18 @@
     
     self.navigationItem.title = @"社区";
     
+    _communityView = [[BCLCommunityView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:_communityView];
+    
+    _communityView.circleTableView.delegate = self;
+    _communityView.squreTableView.delegate = self;
     // Do any additional setup after loading the view.
 }
-
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+//    if(scrollView.contentOffset.x / KScreenW == 0) {
+//
+//    }
+//}
 /*
 #pragma mark - Navigation
 

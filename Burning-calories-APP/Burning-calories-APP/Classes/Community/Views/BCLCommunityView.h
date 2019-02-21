@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class BCLCommunitySegmentView;
 @interface BCLCommunityView : UIView
+
+@property (nonatomic, strong) UIScrollView *scrollerView;
+@property(nonatomic ,strong) UITableView *circleTableView;
+@property(nonatomic ,strong) UITableView *squreTableView;
+@property (nonatomic, strong)BCLCommunitySegmentView *segmentView;
 
 @end

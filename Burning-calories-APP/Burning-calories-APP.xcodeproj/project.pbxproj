@@ -47,6 +47,8 @@
 		9716EF5721F6FDAF00583DBD /* 日志.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5321F6FDAE00583DBD /* 日志.png */; };
 		9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */; };
 		9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */; };
+		974D421E221ECEBA00738D3A /* BCLCommunitySegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */; };
+		974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */; };
 		974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */; };
 		97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */; };
 		977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */; };
@@ -164,6 +166,9 @@
 		9716EF6921F743EB00583DBD /* BCLBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTabBarController.m; sourceTree = "<group>"; };
 		9716EF6B21F74B0300583DBD /* BCLBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseTableViewCell.h; sourceTree = "<group>"; };
 		9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTableViewCell.m; sourceTree = "<group>"; };
+		974D421C221ECEBA00738D3A /* BCLCommunitySegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunitySegmentView.h; sourceTree = "<group>"; };
+		974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunitySegmentView.m; sourceTree = "<group>"; };
+		974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_community_segment_color_line.png; sourceTree = "<group>"; };
 		974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_log_month_arrow.png; sourceTree = "<group>"; };
 		97687AF221FB4DBA00E09F1F /* BCLLogMonthTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogMonthTableViewCell.h; sourceTree = "<group>"; };
 		97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogMonthTableViewCell.m; sourceTree = "<group>"; };
@@ -300,6 +305,7 @@
 		046496E221F807C40093AC4E /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */,
 				9796BC0F21F8586300294FE6 /* bcl_ic_community_tabBar.png */,
 				9796BC0D21F8585E00294FE6 /* bcl_ic_community_tabBar_selected.png */,
 				9716EF5121F6FDAE00583DBD /* 社区.png */,
@@ -403,6 +409,8 @@
 				97149C2A221D8C1D001454B0 /* BCLCommunityView.m */,
 				97149C2C221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.h */,
 				97149C2D221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m */,
+				974D421C221ECEBA00738D3A /* BCLCommunitySegmentView.h */,
+				974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -720,6 +728,7 @@
 				048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
 				9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */,
+				974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */,
 				9796BC1021F8586300294FE6 /* bcl_ic_community_tabBar.png in Resources */,
 				9796BC0B21F8585700294FE6 /* bcl_ic_soprts_tabBar.png in Resources */,
 				9716EF5621F6FDAE00583DBD /* 运动.png in Resources */,
@@ -786,6 +795,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974D421E221ECEBA00738D3A /* BCLCommunitySegmentView.m in Sources */,
 				97BE2386220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m in Sources */,
 				977C88FD2204723A00313CBD /* BCLWeekTimeRecordCollectionViewCell.m in Sources */,
 				9716EF6A21F743EB00583DBD /* BCLBaseTabBarController.m in Sources */,
