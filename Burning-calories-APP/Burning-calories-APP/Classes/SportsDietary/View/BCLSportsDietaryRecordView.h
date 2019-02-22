@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 //获取饮食tableView
 - (UITableView *)getDietaryTableView;
 
+//更新分栏指数
+- (void)updateSegmentedControlIndexWithIndexNumber:(NSInteger)indexNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

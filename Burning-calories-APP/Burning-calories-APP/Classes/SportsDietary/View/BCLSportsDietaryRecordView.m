@@ -96,7 +96,20 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 //    [_segmentedControl setBackgroundColor:[UIColor whiteColor]];
 //    [_segmentedControl setBackgroundImage:[UIImage imageNamed:@"bcl_ic_soprts_segmentedControl_bottomSelected"] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
     
+    [_segmentedControl addTarget:self action:@selector(changeSegmentedControlIndex:) forControlEvents:UIControlEventValueChanged];
+    
     [self addSubview:_segmentedControl];
+}
+
+#pragma mark - 更新分栏指数
+- (void)updateSegmentedControlIndexWithIndexNumber:(NSInteger)indexNumber {
+    _segmentedControl.selectedSegmentIndex = indexNumber;
+}
+
+#pragma mark - 分栏点击事件
+- (void)changeSegmentedControlIndex:(UISegmentedControl *)segmentedControl {
+    NSInteger selectindext = segmentedControl.selectedSegmentIndex;
+    NSLog(@"QSTSD---%lu", selectindext);
 }
 
 #pragma mark - 背景画布设置
@@ -128,8 +141,8 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 运动tableView设置
 - (void)setupSportsTableView {
-//    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight - 64) style:UITableViewStyleGrouped];
-    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight - 64) style:UITableViewStyleGrouped];
+//    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, _backgroundScrollViewHeight - 64)  style:UITableViewStyleGrouped];
+    _sportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight - 64 - 64) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_sportsTableView];
     
     _sportsTableView.tag = 1;
@@ -149,7 +162,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 饮食tableView设置
 - (void)setupDietaryTableView {
-    _dietaryTableView = [[UITableView alloc] initWithFrame:CGRectMake(kDeviceWidth, 0, kDeviceWidth, _backgroundScrollViewHeight) style:UITableViewStyleGrouped];
+    _dietaryTableView = [[UITableView alloc] initWithFrame:CGRectMake(kDeviceWidth, 0, kDeviceWidth, kDeviceHeight - 64 - 64 - 30) style:UITableViewStyleGrouped];
     [self.backgroundScrollView addSubview:_dietaryTableView];
     
     _dietaryTableView.tag = 2;
@@ -167,7 +180,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     if (tableView.tag == 1) {
         return _sportsNumber;
     } else {
-        return 2;
+        return 5;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
