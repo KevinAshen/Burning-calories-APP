@@ -8,9 +8,21 @@
 
 #import "BCLBaseTableViewCell.h"
 
-@interface BCLCommunityCircleTableViewCell : BCLBaseTableViewCell
+typedef enum _CommunityTableViewCellStyle {
+    NoneTableViewCell,
+    oneImageTableViewCell,
+    videoTableViewCell,
+    manyImagesTableViewCell
+}CommunityTableViewCellStyle;
+@interface BCLCommunityCircleTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UIButton *iconImageButton;
 @property (nonatomic, strong) UILabel *nickNameLabel;
-//@property (nonatomic, strong) UIImageView 
+//@property (nonatomic, strong) UIImageView *shareImageView;
+@property (nonatomic, strong) UILabel *elapsedTimeLabel;
+@property (nonatomic, strong) UILabel *phoneModelsLabel;
+@property (nonatomic, strong) UIButton *transmitButton;
+@property (nonatomic, strong) UIButton *commitButton;
+@property (nonatomic, strong) UIButton *likesButton;
+
 @end
