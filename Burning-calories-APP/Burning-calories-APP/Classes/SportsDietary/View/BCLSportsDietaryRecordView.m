@@ -108,8 +108,8 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 
 #pragma mark - 分栏点击事件
 - (void)changeSegmentedControlIndex:(UISegmentedControl *)segmentedControl {
-    NSInteger selectindext = segmentedControl.selectedSegmentIndex;
-    NSLog(@"QSTSD---%lu", selectindext);
+    NSInteger offsentX = segmentedControl.selectedSegmentIndex * 414;
+    [_backgroundScrollView setContentOffset:CGPointMake(offsentX, 0) animated:YES];
 }
 
 #pragma mark - 背景画布设置
