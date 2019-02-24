@@ -7,6 +7,7 @@
 //
 
 #import "BCLCommunityCircleTableViewCell.h"
+#import "BCLImageListView.h"
 #import <Masonry.h>
 static const CGFloat kCommunityMargin = 18;
 static const CGFloat kThreeButtonConstance = 118;
@@ -90,7 +91,15 @@ static const CGFloat kThreeButtonConstance = 118;
             make.height.mas_equalTo(17);
         }];
         [self setThreeButton:_likesButton andImageString:@"" andTitle:@"3"];
-        
+    
+        if([type isEqualToString:@"imageTableViewCell"]) {
+            BCLImageListView *listView = [[BCLImageListView alloc]initWithFrame:CGRectZero];
+            [self addSubview:listView];
+        } else if([type isEqualToString:@"NoneTableViewCell"]) {
+            
+        } else if([type isEqualToString:@""]) {
+            
+        }
     }
     return self;
 }

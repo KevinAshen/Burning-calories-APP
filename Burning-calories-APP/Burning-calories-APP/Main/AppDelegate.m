@@ -67,14 +67,11 @@
         [_button addGestureRecognizer:pan];
     }
 }
-- (UIButton*) button{
+- (UIButton*)button {
     if (!_button) {
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
         _button.frame = CGRectMake(258, 450, 60, 60);//初始在屏幕上的位置
         [_button setImage:[UIImage imageNamed:@"bcl_btn_whole"] forState:UIControlStateNormal];
-        //_button.layer.cornerRadius = 33;
-        //_button.layer.masksToBounds = YES;
-        //[_button addTarget:self action:@selector(removeButton) forControlEvents:UIControlEventTouchUpInside];
     }
     return _button;
 }

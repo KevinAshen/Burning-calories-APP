@@ -10,9 +10,8 @@
 
 typedef enum _CommunityTableViewCellStyle {
     NoneTableViewCell,
-    oneImageTableViewCell,
-    videoTableViewCell,
-    manyImagesTableViewCell
+    imageTableViewCell,
+    videoTableViewCell
 }CommunityTableViewCellStyle;
 @interface BCLCommunityCircleTableViewCell : UITableViewCell
 
