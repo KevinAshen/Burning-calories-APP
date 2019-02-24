@@ -17,3 +17,8 @@
 - [CAGradientLayer的一些属性解析](https://www.cnblogs.com/YouXianMing/p/3793913.html)
 - [iOS经典讲解之UIButton改变图片和文字的位置](https://blog.csdn.net/loving_ios/article/details/52412734)
 - [自定义UISegmentControl控件](https://blog.csdn.net/Iven_ma/article/details/75011491)
+- [iOS 保持界面流畅的技巧](https://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
+- [实现微信朋友圈动态列表](https://www.jianshu.com/p/5bd97047a78e)
+- [scrollView实现图片的缩小放大
+](https://www.jianshu.com/p/3dfb0e409eb1)
+- [CGRect使用技巧](https://blog.csdn.net/andy_jiangbin/article/details/14519539)
