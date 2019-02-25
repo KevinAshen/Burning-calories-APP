@@ -87,6 +87,7 @@
 
 @end
 
-@implementation BCLOneImageView
+
+@implementation BCLOneImageVIew
 
 @end

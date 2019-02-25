@@ -10,7 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol BCLSportsDietaryRecordSportsBottomViewDelegate <NSObject>
+
+- (void)addSportsDelegate;
+
+@end
+
 @interface BCLSportsDietaryRecordSportsBottomView : UIView
+
+@property (nonatomic, weak) id<BCLSportsDietaryRecordSportsBottomViewDelegate> sportsDietaryRecordSportsBottomViewDelegate;
 
 @end
 

@@ -21,6 +21,7 @@
 		046496F121FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F021FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m */; };
 		046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */; };
 		046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */; };
+		046497D42224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046497D32224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.m */; };
 		048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */; };
 		048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */; };
 		048300C3221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300C2221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png */; };
@@ -127,6 +128,8 @@
 		046496F321FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsHeadView.m; sourceTree = "<group>"; };
 		046496F521FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsBottomView.h; sourceTree = "<group>"; };
 		046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsBottomView.m; sourceTree = "<group>"; };
+		046497D22224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsListView.h; sourceTree = "<group>"; };
+		046497D32224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsListView.m; sourceTree = "<group>"; };
 		048300AF2219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordDietaryRecipeView.h; sourceTree = "<group>"; };
 		048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordDietaryRecipeView.m; sourceTree = "<group>"; };
 		048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin_selected.png; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				046496F621FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m */,
 				0457FA2122015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.h */,
 				0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */,
+				046497D22224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.h */,
+				046497D32224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.m */,
 			);
 			path = Sports;
 			sourceTree = "<group>";
@@ -838,6 +843,7 @@
 				046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */,
 				97377F742222703B0077ED68 /* BCLCommunityMoment.m in Sources */,
 				970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */,
+				046497D42224250100D9AA0A /* BCLSportsDietaryRecordSportsListView.m in Sources */,
 				977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */,
 				977C89072204893100313CBD /* BCLOtherWeekDayRecordCollectionViewCell.m in Sources */,
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,

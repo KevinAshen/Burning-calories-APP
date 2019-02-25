@@ -9,6 +9,8 @@
 #import "BCLSportsDietaryViewController.h"
 #import "BCLSportsDietaryRecordView.h"
 #import "BCLSportsDietaryRecordDietaryTableViewSectionView.h"
+#import "BCLSportsDietaryRecordSportsBottomView.h"
+#import "BCLSportsDietaryRecordSportsListView.h"
 
 static const NSInteger kSegmentedControlHeight = 30;
 static const NSInteger kTitleHeight = 30;
@@ -21,10 +23,13 @@ static const NSInteger kCellInterval = 15;
 static const NSInteger kAddInterval = 45;
 static const NSInteger kBottomInterval = 60;
 
-@interface BCLSportsDietaryViewController ()<UIScrollViewDelegate, UITableViewDelegate>
+@interface BCLSportsDietaryViewController ()<UIScrollViewDelegate, UITableViewDelegate, BCLSportsDietaryRecordSportsBottomViewDelegate>
 
 //上半部分的分段控制器与饮食+健康的tableView
 @property (nonatomic, strong) BCLSportsDietaryRecordView *sportsDietaryRecordView;
+
+//上半部分的分段控制器与饮食+健康的tableView
+@property (nonatomic, strong) BCLSportsDietaryRecordSportsListView *sportsDietaryRecordSportsListView;
 
 @end
 
@@ -92,6 +97,11 @@ static const NSInteger kBottomInterval = 60;
             [_sportsDietaryRecordView updateSegmentedControlIndexWithIndexNumber:1];
         }
     }
+}
+
+#pragma mark - BCLSportsDietaryRecordSportsBottomViewDelegate实现
+- (void)addSportsDelegate {
+    
 }
 
 /*
