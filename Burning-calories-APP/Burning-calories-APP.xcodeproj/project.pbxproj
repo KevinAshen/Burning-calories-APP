@@ -26,6 +26,8 @@
 		048300C3221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300C2221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9708E21F221995B2004BC766 /* bcl_bg_log_month_allCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */; };
+		9708E946222419280037EA02 /* BCLImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708E945222419280037EA02 /* BCLImagePreviewView.m */; };
+		9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708E94822242F000037EA02 /* UIView+Geometry.m */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
@@ -132,6 +134,10 @@
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_month_allCell.png; sourceTree = "<group>"; };
+		9708E944222419280037EA02 /* BCLImagePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLImagePreviewView.h; sourceTree = "<group>"; };
+		9708E945222419280037EA02 /* BCLImagePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImagePreviewView.m; sourceTree = "<group>"; };
+		9708E94722242EF90037EA02 /* UIView+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		9708E94822242F000037EA02 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
@@ -411,6 +417,8 @@
 		97149C28221D8BE9001454B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9708E94722242EF90037EA02 /* UIView+Geometry.h */,
+				9708E94822242F000037EA02 /* UIView+Geometry.m */,
 				97149C29221D8C1D001454B0 /* BCLCommunityView.h */,
 				97149C2A221D8C1D001454B0 /* BCLCommunityView.m */,
 				97149C2C221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.h */,
@@ -419,6 +427,8 @@
 				974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */,
 				97377F6E22226C410077ED68 /* BCLImageListView.h */,
 				97377F6F22226C410077ED68 /* BCLImageListView.m */,
+				9708E944222419280037EA02 /* BCLImagePreviewView.h */,
+				9708E945222419280037EA02 /* BCLImagePreviewView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -833,10 +843,12 @@
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
+				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
 				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,
 				97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
 				970EBB41221857AB00025038 /* FSLineChart.m in Sources */,
+				9708E946222419280037EA02 /* BCLImagePreviewView.m in Sources */,
 				970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */,
 				97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */,
 				970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */,
