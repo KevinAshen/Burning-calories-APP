@@ -56,6 +56,12 @@ static const NSInteger kViewLeftOrRightInterval = 85;
     [_addSprotsButton setTitle:@"添加运动" forState:UIControlStateNormal];
     [_addSprotsButton setTitleColor:[UIColor colorWithRed:0.64f green:0.64f blue:0.64f alpha:1.00f] forState:UIControlStateNormal];
     [_addSprotsButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_tableView_bottomAddButton"] forState:normal];
+    
+    [_addSprotsButton addTarget:self action:@selector(clickAddSports) forControlEvents:UIControlEventTouchUpInside];
+}
+#pragma mark - 增加运动button点击事件
+- (void)clickAddSports {
+    NSLog(@"QSTSD");
 }
 
 /*

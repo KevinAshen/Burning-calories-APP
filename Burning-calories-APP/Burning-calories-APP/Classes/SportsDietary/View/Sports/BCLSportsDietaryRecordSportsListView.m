@@ -1,17 +1,17 @@
 //
-//  BCLSportsDietaryRecordDietaryRecipeView.m
+//  BCLSportsDietaryRecordSportsListView.m
 //  Burning-calories-APP
 //
-//  Created by mac on 2019/2/17.
+//  Created by mac on 2019/2/25.
 //  Copyright © 2019 J&Q. All rights reserved.
 //
 
-#import "BCLSportsDietaryRecordDietaryRecipeView.h"
+#import "BCLSportsDietaryRecordSportsListView.h"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 
-@implementation BCLSportsDietaryRecordDietaryRecipeView
+@implementation BCLSportsDietaryRecordSportsListView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
