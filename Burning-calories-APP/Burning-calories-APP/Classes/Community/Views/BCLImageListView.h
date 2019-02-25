@@ -16,9 +16,9 @@
 
 @end
 //单个小图显示视图
-@interface BCLOneImageVIew : UIImageView
+@interface BCLOneImageView : UIImageView
 
 //点击小图
-@property (nonatomic, copy) void (^tapSmallView)(BCLOneImageVIew *imageView);
+@property (nonatomic, copy) void (^tapSmallView)(BCLOneImageView *imageView);
 
 @end
