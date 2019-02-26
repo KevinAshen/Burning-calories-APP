@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BCLSportsDietaryRecordSportsBottomViewDelegate <NSObject>
 
-- (void)addSportsDelegate;
+- (void)addSportsSkip;
 
 @end
 

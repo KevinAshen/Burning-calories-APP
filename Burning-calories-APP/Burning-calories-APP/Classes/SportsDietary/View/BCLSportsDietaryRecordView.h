@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BCLSportsDietaryRecordSportsBottomView;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BCLSportsDietaryRecordView : UIView
+
+//运动tableViewBottomView
+@property (nonatomic, strong) BCLSportsDietaryRecordSportsBottomView *sportsDietaryRecordSportsBottomView;
 
 //获取背景scrollView
 - (UIScrollView *)getBackgroundScrollView;
@@ -18,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (UITableView *)getSportsTableView;
 //获取饮食tableView
 - (UITableView *)getDietaryTableView;
+//传出底部BottomView
+- (UIView *)getSportsDietaryRecordSportsBottomView;
 
 //更新分栏指数
 - (void)updateSegmentedControlIndexWithIndexNumber:(NSInteger)indexNumber;
