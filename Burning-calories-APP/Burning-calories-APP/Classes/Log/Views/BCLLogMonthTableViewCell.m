@@ -11,7 +11,7 @@
 #import "BCLLogHistogramView.h"
 
 static const CGFloat kTopMargin = 22;
-static const CGFloat kRightMargin = 9;
+static const CGFloat kMonthRightMargin = 9;
 
 @implementation BCLLogMonthTableViewCell
 
@@ -72,7 +72,7 @@ static const CGFloat kRightMargin = 9;
     self.smallArrowImageView  = [[UIImageView alloc]init];
     [self addSubview:_smallArrowImageView];
     [_smallArrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self).offset(-kRightMargin);
+        make.right.equalTo(self).offset(-kMonthRightMargin);
         make.top.equalTo(self.timeRecordLabel.mas_top);
         make.width.mas_equalTo(23);
         make.height.mas_equalTo(23);

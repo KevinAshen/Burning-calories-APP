@@ -75,6 +75,7 @@
 		9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC1F21F87ABF00294FE6 /* BCLLogView.m */; };
 		9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC2321F87AFB00294FE6 /* BCLLogModel.m */; };
 		9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */; };
+		97A3008F2225728000A37540 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A3008E2225728000A37540 /* Utility.m */; };
 		97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F390220084AC00F66B85 /* bcl_bg_log_everyday2.png */; };
 		97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */; };
 		97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */; };
@@ -218,6 +219,10 @@
 		9796BC2321F87AFB00294FE6 /* BCLLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogModel.m; sourceTree = "<group>"; };
 		9796BC2521F8A52100294FE6 /* BCLLogHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLLogHeaderView.h; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.h"; sourceTree = SOURCE_ROOT; };
 		9796BC2621F8A52100294FE6 /* BCLLogHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BCLLogHeaderView.m; path = "Burning-calories-APP/Classes/Log/Model/BCLLogHeaderView.m"; sourceTree = SOURCE_ROOT; };
+		97A3008D2225727900A37540 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		97A3008E2225728000A37540 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		97A30090222574B500A37540 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		97A300912225844100A37540 /* MomentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentKit.h; sourceTree = "<group>"; };
 		97B8F390220084AC00F66B85 /* bcl_bg_log_everyday2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday2.png; sourceTree = "<group>"; };
 		97B8F39222008A6000F66B85 /* bcl_btn_log_everyday_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_btn_log_everyday_cancel.png; sourceTree = "<group>"; };
 		97B8F39422008DF100F66B85 /* bcl_bg_log_everyday_food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_everyday_food2.png; sourceTree = "<group>"; };
@@ -442,6 +447,9 @@
 		97149C28221D8BE9001454B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97A300912225844100A37540 /* MomentKit.h */,
+				97A3008D2225727900A37540 /* Utility.h */,
+				97A3008E2225728000A37540 /* Utility.m */,
 				9708E94722242EF90037EA02 /* UIView+Geometry.h */,
 				9708E94822242F000037EA02 /* UIView+Geometry.m */,
 				97149C29221D8C1D001454B0 /* BCLCommunityView.h */,
@@ -491,6 +499,7 @@
 				9716EF1D21F6F48D00583DBD /* Assets.xcassets */,
 				9716EF1F21F6F48D00583DBD /* LaunchScreen.storyboard */,
 				9716EF2221F6F48D00583DBD /* Info.plist */,
+				97A30090222574B500A37540 /* PrefixHeader.pch */,
 				9716EF2321F6F48D00583DBD /* main.m */,
 			);
 			path = "Burning-calories-APP";
@@ -882,6 +891,7 @@
 				970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */,
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
 				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
+				97A3008F2225728000A37540 /* Utility.m in Sources */,
 				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
 				97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */,
 				97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */,
@@ -1055,6 +1065,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/qiangshuting/Desktop/卡路里/Burning-calories-APP/Burning-calories-APP/Burning-calories-APP/PrefixHeader.pch";
 				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1072,6 +1084,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/qiangshuting/Desktop/卡路里/Burning-calories-APP/Burning-calories-APP/Burning-calories-APP/PrefixHeader.pch";
 				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
