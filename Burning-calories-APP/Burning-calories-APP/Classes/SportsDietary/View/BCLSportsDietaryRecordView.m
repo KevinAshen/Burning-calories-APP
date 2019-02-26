@@ -36,8 +36,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 @property (nonatomic, strong) UITableView *sportsTableView;
 //运动tableViewHeadView
 @property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
-//运动tableViewBottomView
-@property (nonatomic, strong) BCLSportsDietaryRecordSportsBottomView *sportsDietaryRecordSportsBottomView;
+
 //饮食tableView
 @property (nonatomic, strong) UITableView *dietaryTableView;
 
@@ -217,6 +216,11 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
 #pragma mark - 传出饮食tableView
 - (UITableView *)getDietaryTableView {
     return _dietaryTableView;
+}
+
+#pragma mark - 传出底部BottomView
+- (UIView *)getSportsDietaryRecordSportsBottomView {
+    return _sportsDietaryRecordSportsBottomView;
 }
 
 #pragma mark - 计算背景画布即运动tableView高度并更新View的高度

@@ -10,7 +10,7 @@
 #import "BCLSportsDietaryRecordView.h"
 #import "BCLSportsDietaryRecordDietaryTableViewSectionView.h"
 #import "BCLSportsDietaryRecordSportsBottomView.h"
-#import "BCLSportsDietaryRecordSportsListView.h"
+#import "BCLSportsDietaryAddSportsListViewController.h"
 
 static const NSInteger kSegmentedControlHeight = 30;
 static const NSInteger kTitleHeight = 30;
@@ -28,8 +28,8 @@ static const NSInteger kBottomInterval = 60;
 //上半部分的分段控制器与饮食+健康的tableView
 @property (nonatomic, strong) BCLSportsDietaryRecordView *sportsDietaryRecordView;
 
-//上半部分的分段控制器与饮食+健康的tableView
-@property (nonatomic, strong) BCLSportsDietaryRecordSportsListView *sportsDietaryRecordSportsListView;
+//增加运动ViewController
+@property (nonatomic, strong) BCLSportsDietaryAddSportsListViewController *sportsDietaryAddSportsListViewController;
 
 @end
 
@@ -61,6 +61,7 @@ static const NSInteger kBottomInterval = 60;
     [_sportsDietaryRecordView getBackgroundScrollView].delegate = self;
     [_sportsDietaryRecordView getSportsTableView].delegate = self;
     [_sportsDietaryRecordView getDietaryTableView].delegate = self;
+    _sportsDietaryRecordView.sportsDietaryRecordSportsBottomView.sportsDietaryRecordSportsBottomViewDelegate = self;
 }
 
 #pragma mark - UITableViewDelegate实现
@@ -100,8 +101,9 @@ static const NSInteger kBottomInterval = 60;
 }
 
 #pragma mark - BCLSportsDietaryRecordSportsBottomViewDelegate实现
-- (void)addSportsDelegate {
-    
+- (void)addSportsSkip {
+    _sportsDietaryAddSportsListViewController = [[BCLSportsDietaryAddSportsListViewController alloc] init];
+    [self.navigationController pushViewController:_sportsDietaryAddSportsListViewController animated:YES];
 }
 
 /*

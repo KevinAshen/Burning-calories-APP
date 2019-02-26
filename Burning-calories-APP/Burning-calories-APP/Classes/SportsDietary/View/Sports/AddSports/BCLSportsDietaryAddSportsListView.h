@@ -1,8 +1,8 @@
 //
-//  BCLSportsDietaryRecordSportsListView.h
+//  BCLSportsDietaryAddSportsListView.h
 //  Burning-calories-APP
 //
-//  Created by mac on 2019/2/25.
+//  Created by mac on 2019/2/26.
 //  Copyright © 2019 J&Q. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BCLSportsDietaryRecordSportsListView : UIView
+@interface BCLSportsDietaryAddSportsListView : UIView
 
 @end
 
