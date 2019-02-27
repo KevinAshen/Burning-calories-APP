@@ -33,6 +33,12 @@
     [self setupSportsDietaryAddSportsListView];
 }
 
+#pragma mark - Navigation的设置
+- (void)setupNavigation {
+    self.navigationItem.title = @"饮食与健康";
+}
+
+
 #pragma mark - 增加运动主页面设置
 - (void)setupSportsDietaryAddSportsListView {
     self.sportsDietaryAddSportsListView = [[BCLSportsDietaryAddSportsListView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
