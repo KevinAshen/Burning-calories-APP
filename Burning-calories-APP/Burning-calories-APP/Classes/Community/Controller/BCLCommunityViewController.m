@@ -30,6 +30,13 @@
     _communityView.squreTableView.delegate = self;
     // Do any additional setup after loading the view.
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(tableView.tag == 1) {
+        return 200;
+    }else {
+        return 50;
+    }
+}
 //- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
 //    if(scrollView.contentOffset.x / KScreenW == 0) {
 //
