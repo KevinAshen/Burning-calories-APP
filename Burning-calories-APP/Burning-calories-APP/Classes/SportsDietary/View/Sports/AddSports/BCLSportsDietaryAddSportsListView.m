@@ -7,6 +7,29 @@
 //
 
 #import "BCLSportsDietaryAddSportsListView.h"
+#import "BCLSportsDietaryRecordSportsHeadView.h"
+
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define kDeviceHeight [UIScreen mainScreen].bounds.size.height
+
+static const NSInteger kSegmentedControlHeight = 30;
+static const NSInteger kTitleHeight = 30;
+static const NSInteger kCellHeight = 75;
+static const NSInteger kAddHeight = 45;
+
+static const NSInteger kTitleInterval = 30;
+static const NSInteger kCellInterval = 15;
+static const NSInteger kAddInterval = 45;
+static const NSInteger kBottomInterval = 60;
+
+@interface BCLSportsDietaryAddSportsListView ()<UITableViewDataSource>
+
+//增加运动tableView
+@property (nonatomic, strong) UITableView *addSportsTableView;
+//增加运动tableViewHeadView
+@property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
+
+@end
 
 @implementation BCLSportsDietaryAddSportsListView
 
@@ -21,6 +44,30 @@
 #pragma mark - UI设置
 - (void)setupUI {
     self.backgroundColor = [UIColor colorWithRed:0.93f green:0.31f blue:0.17f alpha:1.00f];
+}
+
+#pragma mark - 增加运动tableViewHeadView设置
+- (void)setupSportsDietaryRecordSportsHeadView {
+    _sportsDietaryRecordSportsHeadView = [[BCLSportsDietaryRecordSportsHeadView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kTitleInterval + kTitleHeight)];
+    //!!!TEST!!!
+    [_sportsDietaryRecordSportsHeadView reloadSportsTotalCalorieNumber:119];
+}
+
+#pragma mark - 增加运动tableView设置
+- (void)setupAddSportsTableView {
+    _addSportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight - 64 - 64) style:UITableViewStyleGrouped];
+    [self addSubview:_addSportsTableView];
+    
+    [_addSportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
+    _addSportsTableView.backgroundColor = [UIColor clearColor];
+    _addSportsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _addSportsTableView.showsVerticalScrollIndicator = NO;
+    _addSportsTableView.showsHorizontalScrollIndicator = NO;
+    _addSportsTableView.bounces = NO;
+    _addSportsTableView.dataSource = self;
+    
+    [self setupSportsDietaryRecordSportsHeadView];
+    _addSportsTableView.tableHeaderView = _sportsDietaryRecordSportsHeadView;
 }
 
 /*
