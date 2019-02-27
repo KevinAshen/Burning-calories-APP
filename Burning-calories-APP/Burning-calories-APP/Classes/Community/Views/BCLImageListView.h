@@ -13,7 +13,11 @@
 
 //动态
 @property (nonatomic, strong) BCLCommunityMoment *moment;
+//图片数组
+@property (nonatomic, strong) NSArray *imageArray;
 
+
+- (instancetype) initWithFrame:(CGRect)frame andImageArray:(NSMutableArray *)imageArray;
 @end
 //单个小图显示视图
 @interface BCLOneImageView : UIImageView

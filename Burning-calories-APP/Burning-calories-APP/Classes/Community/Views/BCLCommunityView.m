@@ -8,6 +8,7 @@
 
 #import "BCLCommunityView.h"
 #import "BCLCommunitySegmentView.h"
+#import "BCLCommunityCircleTableViewCell.h"
 
 @interface BCLCommunityView ()<UITableViewDataSource, UIScrollViewDelegate>
 
@@ -50,6 +51,7 @@
 {
     UITableView  *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenW, KScreenH) style:UITableViewStyleGrouped];
     tableView.showsVerticalScrollIndicator = NO;
+    [tableView registerClass:[BCLCommunityCircleTableViewCell class] forCellReuseIdentifier:@"circleCell"];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     tableView.dataSource = self;
@@ -59,7 +61,7 @@
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if(tableView.tag == 1) {
-        return 3;
+        return 1;
     } else {
          return 2;
     }
@@ -70,14 +72,11 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(tableView.tag == 1) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-        if(!cell) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        //BCLCommunityCircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"circleCell" forIndexPath:indexPath];
+        //if(!cell) {
+           BCLCommunityCircleTableViewCell *cell = [[BCLCommunityCircleTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"circleCell" cellType:@"imageTableViewCell"];
             
-        }
-        cell.backgroundColor = [UIColor redColor];
-        
-        cell.textLabel.text = @"11111";
+        //}
         return cell;
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];

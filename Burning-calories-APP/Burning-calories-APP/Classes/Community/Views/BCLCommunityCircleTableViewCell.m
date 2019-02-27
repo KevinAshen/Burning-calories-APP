@@ -10,7 +10,7 @@
 #import "BCLImageListView.h"
 #import <Masonry.h>
 static const CGFloat kCommunityMargin = 18;
-static const CGFloat kThreeButtonConstance = 118;
+static const CGFloat kThreeButtonConstance = 110;
 
 @implementation BCLCommunityCircleTableViewCell
 
@@ -25,14 +25,14 @@ static const CGFloat kThreeButtonConstance = 118;
             make.height.mas_equalTo(30);
         }];
         self.iconImageButton.layer.cornerRadius = 15;
-        [self.iconImageButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [self.iconImageButton setImage:[UIImage imageNamed:@"bcl_ic_community_circleCell"] forState:UIControlStateNormal];
         
         self.nickNameLabel = [[UILabel alloc]init];
         [self.contentView addSubview:_nickNameLabel];
         [_nickNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.iconImageButton).offset(kCommunityMargin);
+            make.left.equalTo(self.iconImageButton.mas_right).offset(kCommunityMargin);
             make.top.equalTo(self.iconImageButton.mas_top);
-            make.width.mas_equalTo(27);
+            make.width.mas_lessThanOrEqualTo(@50);
             make.height.mas_equalTo(20);
         }];
         self.nickNameLabel.text = @"Amy";
@@ -43,7 +43,7 @@ static const CGFloat kThreeButtonConstance = 118;
         [_elapsedTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.nickNameLabel.mas_left);
             make.top.equalTo(self.nickNameLabel.mas_bottom).offset(1);
-            make.width.mas_equalTo(45);
+            make.width.mas_lessThanOrEqualTo(@80);
             make.height.mas_equalTo(17);
         }];
         _elapsedTimeLabel.textColor = [UIColor lightGrayColor];
@@ -62,39 +62,48 @@ static const CGFloat kThreeButtonConstance = 118;
         _phoneModelsLabel.textColor = [UIColor lightGrayColor];
         _phoneModelsLabel.font = [UIFont systemFontOfSize:12];
         
-        _transmitButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _transmitButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.contentView addSubview:_transmitButton];
         [_transmitButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.iconImageButton.mas_left);
-            make.top.equalTo(self.contentView.mas_bottom).offset(kCommunityMargin / 3);
-            make.width.mas_equalTo(20);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-kCommunityMargin / 3);
+            make.width.mas_equalTo(30);
             make.height.mas_equalTo(17);
         }];
-        [self setThreeButton:_transmitButton andImageString:@"" andTitle:@"3"];
+        [self setThreeButton:_transmitButton andImageString:@"bcl_ic_community_circleCell_share" andTitle:@"3"];
         
-        self.commitButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.commitButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.contentView addSubview:_commitButton];
         [_commitButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.transmitButton.mas_right).offset(kThreeButtonConstance);
             make.top.equalTo(self.transmitButton.mas_top);
-            make.width.mas_equalTo(17);
-            make.height.mas_equalTo(17);
+            make.width.equalTo(self.transmitButton.mas_width);
+            make.height.equalTo(self.transmitButton.mas_height);;
         }];
-        [self setThreeButton:_commitButton andImageString:@"" andTitle:@"3"];
+        [self setThreeButton:_commitButton andImageString:@"bcl_ic_community_circleCell_commit" andTitle:@"3"];
         
-        self.likesButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.likesButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.contentView addSubview:_likesButton];
         [_likesButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.commitButton.mas_right).offset(kThreeButtonConstance);
             make.top.equalTo(self.transmitButton.mas_top);
-            make.width.mas_equalTo(17);
-            make.height.mas_equalTo(17);
+            make.width.equalTo(self.transmitButton.mas_width);
+            make.height.equalTo(self.transmitButton.mas_height);
         }];
-        [self setThreeButton:_likesButton andImageString:@"" andTitle:@"3"];
+        [self setThreeButton:_likesButton andImageString:@"bcl_ic_community_circleCell_likes" andTitle:@"3"];
     
         if([type isEqualToString:@"imageTableViewCell"]) {
-            BCLImageListView *listView = [[BCLImageListView alloc]initWithFrame:CGRectZero];
-            [self addSubview:listView];
+            NSMutableArray *imageArray = [[NSMutableArray alloc]initWithObjects:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",
+            @"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2487114660,3715789872&fm=26&gp=0.jpg",
+            @"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2022825927,4080151337&fm=26&gp=0.jpg",
+            @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3409408983,232289470&fm=27&gp=0.jpg",
+            @"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1621006471,2082577216&fm=26&gp=0.jpg",
+            @"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3737190694,876071200&fm=26&gp=0.jpg",
+            @"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2927189981,1776495486&fm=27&gp=0.jpg",
+            @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3530818737,3303073876&fm=26&gp=0.jpg",
+            @"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4107522323,2122317060&fm=26&gp=0.jpg", nil];
+            _listView = [[BCLImageListView alloc]initWithFrame:CGRectZero andImageArray:imageArray];
+            [self addSubview:_listView];
         } else if([type isEqualToString:@"NoneTableViewCell"]) {
             
         } else if([type isEqualToString:@""]) {

@@ -11,8 +11,7 @@
 //#import "Utility.h"
 
 @interface BCLImageListView ()
-//图片数组
-@property (nonatomic, strong) NSArray *imageArray;
+
 //图片视图数组
 @property (nonatomic, strong) NSMutableArray *imageViewsArray;
 //预览视图
@@ -20,7 +19,7 @@
 @end
 
 @implementation BCLImageListView
-- (instancetype) initWithFrame:(CGRect)frame {
+- (instancetype) initWithFrame:(CGRect)frame andImageArray:(NSMutableArray *)imageArray {
     if(self = [super initWithFrame:frame]) {
         //小图（九宫格)
         _imageViewsArray = [[NSMutableArray alloc] init];
@@ -28,7 +27,7 @@
             BCLOneImageView *imageView = [[BCLOneImageView alloc] initWithFrame:CGRectZero];
             imageView.tag = 1000 + i;
             [imageView setTapSmallView:^(BCLOneImageView *imageView) {
-                
+                [self singleTapSmallViewCallback:imageView];
             }];
             [_imageViewsArray addObject:imageView];
             [self addSubview:imageView];
@@ -36,7 +35,7 @@
         //预览视图
         _previewView = [[BCLImagePreviewView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
         //测试网络图片
-        _imageArray = [[NSMutableArray alloc] init];
+        _imageArray = imageArray;
     }
     return self;
 }
@@ -46,15 +45,15 @@
         imageView.hidden = YES;
     }
     //图片区
-    NSInteger count = moment.fileCount;
+    //NSInteger count = moment.fileCount;
+    NSInteger count = 9;
     if (count == 0) {
         self.frame = CGRectMake(0, 0, 0, 0);
         return;
     }
     //更新视图数据
     _previewView.pageNum = count;
-    _previewView.scrollView.contentSize = CGSizeMake(_previewView.frame.size.width * count, _previewView.frame.size.height);
-    
+    _previewView.scrollView.contentSize = CGSizeMake(_previewView.width * count, _previewView.height);
     //添加图片
     BCLOneImageView *imageView = nil;
     for (NSInteger i = 0; i < count; i++) {
@@ -70,13 +69,14 @@
         CGRect frame = CGRectMake(imageX, imageY, kImageWidth, kImageWidth);
         //单张图片需计算实际显示size
         if (count == 1) {
-            CGSize singleSize = [Utility getSingleSize:CGSizeMake(moment.singleWidth, moment.singleHeight)];
+//            CGSize singleSize = [Utility getSingleSize:CGSizeMake(moment.singleWidth, moment.singleHeight)];
+            CGSize singleSize = [Utility getSingleSize:CGSizeMake(50, 50)];
             frame = CGRectMake(0, 0, singleSize.width, singleSize.height);
         }
         imageView = [self viewWithTag:1000+i];
         imageView.hidden = NO;
         imageView.frame = frame;
-        //[imageView sd_setImageWithURL:[NSURL URLWithString:[_imageArray objectAtIndex:i]] placeholderImage:nil];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[_imageArray objectAtIndex:i]] placeholderImage:nil];
     }
     self.width = kTextWidth;
     self.height = imageView.bottom;
@@ -92,7 +92,8 @@
     [_previewView.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     // 添加子视图
     NSInteger index = imageView.tag-1000;
-    NSInteger count = _moment.fileCount;
+    //NSInteger count = _moment.fileCount;
+    NSInteger count = 9;
     CGRect convertRect;
     if (count == 1) {
         [_previewView.pageControl removeFromSuperview];
