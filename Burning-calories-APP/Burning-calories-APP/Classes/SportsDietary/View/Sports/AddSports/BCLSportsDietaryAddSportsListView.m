@@ -58,7 +58,7 @@ static const NSInteger kBottomInterval = 60;
     _addSportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight - 64 - 64) style:UITableViewStyleGrouped];
     [self addSubview:_addSportsTableView];
     
-    [_addSportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
+//    [_addSportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
     _addSportsTableView.backgroundColor = [UIColor clearColor];
     _addSportsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _addSportsTableView.showsVerticalScrollIndicator = NO;
