@@ -36,6 +36,7 @@
         _previewView = [[BCLImagePreviewView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
         //测试网络图片
         _imageArray = imageArray;
+        NSLog(@"%@---_imageArray--", _imageArray);
     }
     return self;
 }
