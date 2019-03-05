@@ -24,13 +24,14 @@ static const int GAP = 120;
 @implementation BCLMonthLineChartView
 // 画虚线， 需要改进
 - (void)drawRect:(CGRect)rect {
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextRef ctx = UIGraphicsGetCurrentContext();//虚线
     CGFloat yAxisOffset =  10.f;
     CGPoint point;
     CGFloat yStepHeight = rect.size.height / self.LineChartDataArray.count;
     
     CGContextSetStrokeColorWithColor(ctx, [UIColor lightGrayColor].CGColor);
     CGContextSetFillColorWithColor(ctx, [UIColor redColor].CGColor);
+    //DLog(@"self.lineChartXlabelHeight");
     
     for (NSUInteger i = 0; i < _LineChartDataArray.count; i++) {
         point = CGPointMake(10 + yAxisOffset, (rect.size.height - i * yStepHeight + 10 / 2));
@@ -56,7 +57,7 @@ static const int GAP = 120;
     if (!_lineChartXLabelArray) return;
     
     _pointXArray = [[NSMutableArray alloc]init];
-    // CGFloat labelWidthScale = (self.frame.size.width-leftXMarginScale-rightXMarginScale)/_lineChartXLabelArray.count;
+    //CGFloat labelWidthScale = (self.frame.size.width-bottomMarginScale-bottomMarginScale)/_lineChartXLabelArray.count;
     self.totalWidth =0;
     for (int idx = 0; idx < _lineChartXLabelArray.count; idx ++) {
         CGFloat labelWidthScale = [self getLabelWidthWithText:_lineChartXLabelArray[idx]];
@@ -94,7 +95,7 @@ static const int GAP = 120;
 - (void)setLineChartDataArray:(NSArray *)LineChartDataArray{
     _LineChartDataArray = LineChartDataArray;
     if (!_LineChartDataArray) return;
-    // [self drawGragient];
+    [self drawGragient];
     
     UIBezierPath * bezierPath = [self getPath];
     
