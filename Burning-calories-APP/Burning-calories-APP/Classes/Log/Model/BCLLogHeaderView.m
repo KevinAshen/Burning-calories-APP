@@ -41,11 +41,12 @@ static const CGFloat kTopMargin = 51;
         self.todayCaloriesButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:_todayCaloriesButton];
         [_todayCaloriesButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self->_anticipateCaloriesButton.mas_right).offset(34);
+            make.left.equalTo(self->_anticipateCaloriesButton.mas_right).offset(35);
             make.top.equalTo(self).offset(20);
             make.width.mas_equalTo(100);
             make.height.mas_equalTo(100);
         }];
+        //_todayCaloriesButton.center = self.center;
         _todayCaloriesButton.backgroundColor = [UIColor whiteColor];
         _todayCaloriesButton.layer.masksToBounds = YES;
         _todayCaloriesButton.layer.cornerRadius = 50;
@@ -68,7 +69,7 @@ static const CGFloat kTopMargin = 51;
         self.healthConditionButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:_healthConditionButton];
         [_healthConditionButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.todayCaloriesButton.mas_right).offset(54);
+            make.right.equalTo(self).offset(-kLeftMargin);
             make.top.equalTo(self.anticipateCaloriesButton);
             make.width.equalTo(self.anticipateCaloriesButton.mas_width);
             make.height.equalTo(self.anticipateCaloriesButton.mas_height);

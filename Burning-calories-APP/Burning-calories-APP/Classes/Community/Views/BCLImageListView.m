@@ -36,7 +36,7 @@
         _previewView = [[BCLImagePreviewView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
         //测试网络图片
         _imageArray = imageArray;
-        NSLog(@"%@---_imageArray--", _imageArray);
+        //NSLog(@"%@---_imageArray--", _imageArray);
     }
     return self;
 }
@@ -70,7 +70,7 @@
         CGRect frame = CGRectMake(imageX, imageY, kImageWidth, kImageWidth);
         //单张图片需计算实际显示size
         if (count == 1) {
-//            CGSize singleSize = [Utility getSingleSize:CGSizeMake(moment.singleWidth, moment.singleHeight)];
+           //CGSize singleSize = [Utility getSingleSize:CGSizeMake(moment.singleWidth, moment.singleHeight)];
             CGSize singleSize = [Utility getSingleSize:CGSizeMake(50, 50)];
             frame = CGRectMake(0, 0, singleSize.width, singleSize.height);
         }
@@ -102,10 +102,10 @@
     for (NSInteger i = 0; i < count; i ++)
     {
         // 转换Frame
-        BCLOneImageView *pImageView = (BCLOneImageView *)[self viewWithTag:1000+i];
+        BCLOneImageView *pImageView = (BCLOneImageView *)[self viewWithTag:1000 + i];
         convertRect = [[pImageView superview] convertRect:pImageView.frame toView:window];
         // 添加
-        BCLPreScrollView *scrollView = [[BCLPreScrollView alloc] initWithFrame:CGRectMake(i*_previewView.width, 0, _previewView.width, _previewView.height)];
+        BCLPreScrollView *scrollView = [[BCLPreScrollView alloc] initWithFrame:CGRectMake(i * _previewView.width, 0, _previewView.width, _previewView.height)];
         scrollView.tag = 100+i;
         scrollView.maximumZoomScale = 2.0;
         scrollView.image = pImageView.image;
