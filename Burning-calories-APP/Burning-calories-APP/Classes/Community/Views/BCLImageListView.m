@@ -36,20 +36,20 @@
         _previewView = [[BCLImagePreviewView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
         //测试网络图片
         _imageArray = imageArray;
-        //NSLog(@"%@---_imageArray--", _imageArray);
+        [self setMoment:_moment];
     }
     return self;
 }
+
 - (void)setMoment:(BCLCommunityMoment *)moment {
     _moment = moment;
     for (BCLOneImageView *imageView in _imageViewsArray) {
         imageView.hidden = YES;
     }
     //图片区
-    //NSInteger count = moment.fileCount;
-    NSInteger count = 9;
+    NSInteger count = _imageArray.count;
     if (count == 0) {
-        self.frame = CGRectMake(0, 0, 0, 0);
+        self.size = CGSizeZero;
         return;
     }
     //更新视图数据
@@ -71,7 +71,7 @@
         //单张图片需计算实际显示size
         if (count == 1) {
            //CGSize singleSize = [Utility getSingleSize:CGSizeMake(moment.singleWidth, moment.singleHeight)];
-            CGSize singleSize = [Utility getSingleSize:CGSizeMake(50, 50)];
+            CGSize singleSize = [Utility getSingleSize:CGSizeMake(250, 180)];
             frame = CGRectMake(0, 0, singleSize.width, singleSize.height);
         }
         imageView = [self viewWithTag:1000+i];
@@ -121,8 +121,8 @@
         [_previewView.scrollView addSubview:scrollView];
         if (i == index) {
             [UIView animateWithDuration:0.3 animations:^{
-                _previewView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
-                _previewView.pageControl.hidden = NO;
+                self->_previewView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
+                self->_previewView.pageControl.hidden = NO;
                 [scrollView updateOriginRect];
             }];
         } else {

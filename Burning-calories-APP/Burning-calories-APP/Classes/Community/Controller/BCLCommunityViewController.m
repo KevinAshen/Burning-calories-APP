@@ -8,6 +8,7 @@
 
 #import "BCLCommunityViewController.h"
 #import "BCLCommunityView.h"
+#import "BCLCommunityCircleTableViewCell.h"
 
 #define KScreenW [UIScreen mainScreen].bounds.size.width
 #define KScreenH [UIScreen mainScreen].bounds.size.height
@@ -32,7 +33,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(tableView.tag == 1) {
-        return 200;
+        return 300;
     }else {
         return 50;
     }

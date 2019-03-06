@@ -72,7 +72,7 @@ static const CGFloat kThreeButtonConstance = 110;
         }];
         [self setThreeButton:_transmitButton andImageString:@"bcl_ic_community_circleCell_share" andTitle:@"3"];
         
-        self.commitButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        _commitButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.contentView addSubview:_commitButton];
         [_commitButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.transmitButton.mas_right).offset(kThreeButtonConstance);
@@ -91,19 +91,30 @@ static const CGFloat kThreeButtonConstance = 110;
             make.height.equalTo(self.transmitButton.mas_height);
         }];
         [self setThreeButton:_likesButton andImageString:@"bcl_ic_community_circleCell_likes" andTitle:@"3"];
+        
+        NSString *dynamicText = @"今天的咖啡觉得舒服的方式看风使舵激发肌肤水分附近的副驾驶飞机舒服今天的咖啡觉得舒服的方式看风使舵激发肌肤水分附近的副驾驶飞机舒服";
+        CGFloat dynamicTextHeight = [BCLCommunityCircleTableViewCell getCellHeight:dynamicText];
+        self.dynamicTextLabel = [[UILabel alloc]init];
+        [self.contentView addSubview:self.dynamicTextLabel];
+        [self.dynamicTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self. iconImageButton.mas_left);
+            make.top.equalTo(self.iconImageButton.mas_bottom).offset(kCommunityMargin);
+            make.width.mas_equalTo(k_screen_width - kCommunityMargin);
+            make.height.mas_equalTo(dynamicTextHeight);
+        }];
+        self.dynamicTextLabel.font = [UIFont systemFontOfSize:12];
+        self.dynamicTextLabel.textColor = [UIColor colorWithRed:0.25f green:0.25f blue:0.25f alpha:1.00f];
+        self.dynamicTextLabel.text = dynamicText;
+        self.dynamicTextLabel.numberOfLines = 0;
     
         if([type isEqualToString:@"imageTableViewCell"]) {
-            NSMutableArray *imageArray = [[NSMutableArray alloc]initWithObjects:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",
+            _imageArray = [[NSMutableArray alloc]initWithObjects:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",
             @"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2487114660,3715789872&fm=26&gp=0.jpg",
             @"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2022825927,4080151337&fm=26&gp=0.jpg",
             @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3409408983,232289470&fm=27&gp=0.jpg",
-            @"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1621006471,2082577216&fm=26&gp=0.jpg",
-            @"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3737190694,876071200&fm=26&gp=0.jpg",
-            @"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2927189981,1776495486&fm=27&gp=0.jpg",
-            @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3530818737,3303073876&fm=26&gp=0.jpg",
-            @"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4107522323,2122317060&fm=26&gp=0.jpg", nil];
-            _listView = [[BCLImageListView alloc]initWithFrame:CGRectZero andImageArray:imageArray];
-            [self addSubview:_listView];
+            @"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1621006471,2082577216&fm=26&gp=0.jpg",nil];
+            _listView = [[BCLImageListView alloc]initWithFrame:CGRectMake(20, 60 + dynamicTextHeight, k_screen_width - kCommunityMargin, [BCLCommunityCircleTableViewCell getPhotosHeight:_imageArray.count].height) andImageArray:_imageArray];
+            [self.contentView addSubview:_listView];
         } else if([type isEqualToString:@"NoneTableViewCell"]) {
             
         } else if([type isEqualToString:@""]) {
@@ -116,6 +127,31 @@ static const CGFloat kThreeButtonConstance = 110;
     [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+}
++ (CGFloat)getCellHeight:(NSString *)content{
+    CGRect rect = [content boundingRectWithSize:CGSizeMake( k_screen_width - kCommunityMargin, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:12]} context:nil];
+    CGFloat height= ceilf(rect.size.height);
+    return height;
+}
++ (CGSize)getPhotosHeight:(NSInteger)photosNumber {
+    NSInteger rowNum = 0;
+    NSInteger colNum = 0;
+    if (photosNumber == 1) {
+        return CGSizeMake(214, 143);
+    } else if(photosNumber == 0){
+        return CGSizeMake(0, 0);
+    } else if(photosNumber == 4) {
+        rowNum = colNum = photosNumber / 2;
+        return CGSizeMake(colNum * (kImageWidth + kImagePadding), rowNum * (kImageWidth + kImagePadding));
+    } else {
+        rowNum = photosNumber / 3;
+        if(photosNumber <= 3) {
+            colNum = photosNumber;
+        } else {
+            colNum = 3;
+        }
+        return CGSizeMake(colNum * (kImageWidth + kImagePadding), rowNum * (kImageWidth + kImagePadding));
+    }
 }
 - (void)awakeFromNib {
     [super awakeFromNib];
