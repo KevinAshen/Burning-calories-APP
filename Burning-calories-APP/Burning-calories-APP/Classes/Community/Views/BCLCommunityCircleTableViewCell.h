@@ -24,9 +24,12 @@ typedef enum _CommunityTableViewCellStyle {
 @property (nonatomic, strong) BCLImageListView *listView;
 @property (nonatomic, strong) UILabel *elapsedTimeLabel;
 @property (nonatomic, strong) UILabel *phoneModelsLabel;
+@property (nonatomic, strong) UILabel *dynamicTextLabel;
 @property (nonatomic, strong) UIButton *transmitButton;
 @property (nonatomic, strong) UIButton *commitButton;
 @property (nonatomic, strong) UIButton *likesButton;
+
+@property (nonatomic, strong) NSMutableArray *imageArray;
 
 //动态
 @property (nonatomic, strong) BCLCommunityMoment *moment;
@@ -34,6 +37,12 @@ typedef enum _CommunityTableViewCellStyle {
 @property (nonatomic, assign) id<MomentCellDelegate> delegate;
 
 - (instancetype) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier cellType:(NSString *)type;
+
+//动态文本高度
++ (CGFloat)getCellHeight:(NSString *)content;
+//照片高度
++ (CGSize)getPhotosHeight:(NSInteger)photosNumber;
+
 @end
 
 @protocol MomentCellDelegate <NSObject>
