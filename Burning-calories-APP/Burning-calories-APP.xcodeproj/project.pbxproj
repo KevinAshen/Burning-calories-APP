@@ -26,6 +26,9 @@
 		048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */; };
 		048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */; };
 		048300C3221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300C2221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png */; };
+		04D7519F222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */; };
+		04FE34B0222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */; };
+		04FE34B6222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34B5222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
 		9708E21F221995B2004BC766 /* bcl_bg_log_month_allCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */; };
 		9708E946222419280037EA02 /* BCLImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708E945222419280037EA02 /* BCLImagePreviewView.m */; };
@@ -143,6 +146,11 @@
 		048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordDietaryRecipeView.m; sourceTree = "<group>"; };
 		048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin_selected.png; sourceTree = "<group>"; };
 		048300C2221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_Dietary_tableView_sectionSetting.png; sourceTree = "<group>"; };
+		04D7519D222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryAddSportsListTagView.h; sourceTree = "<group>"; };
+		04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryAddSportsListTagView.m; sourceTree = "<group>"; };
+		04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_addSports_addButton.png; sourceTree = "<group>"; };
+		04FE34B4222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryAddSportsListTableViewCell.h; sourceTree = "<group>"; };
+		04FE34B5222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryAddSportsListTableViewCell.m; sourceTree = "<group>"; };
 		3443BCC58C689AE448C1F455 /* Pods-Burning-calories-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burning-calories-APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burning-calories-APP/Pods-Burning-calories-APP.release.xcconfig"; sourceTree = "<group>"; };
 		4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Burning-calories-APP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_log_month_allCell.png; sourceTree = "<group>"; };
@@ -362,6 +370,7 @@
 				046496EA21F9A8610093AC4E /* bcl_ic_soprts_segmentedControl_bottomSelected.png */,
 				9796BC0A21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png */,
 				9796BC0921F8585700294FE6 /* bcl_ic_soprts_tabBar.png */,
+				04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */,
 				9716EF5221F6FDAE00583DBD /* 运动.png */,
 			);
 			path = SportsDietary;
@@ -422,6 +431,10 @@
 			children = (
 				046497DA22251FB500D9AA0A /* BCLSportsDietaryAddSportsListView.h */,
 				046497DB22251FB500D9AA0A /* BCLSportsDietaryAddSportsListView.m */,
+				04D7519D222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.h */,
+				04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */,
+				04FE34B4222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.h */,
+				04FE34B5222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m */,
 			);
 			path = AddSports;
 			sourceTree = "<group>";
@@ -794,6 +807,7 @@
 				972AC2CE2226DEF6002A6172 /* bcl_ic_community_circleCell_likes.png in Resources */,
 				9716EF5521F6FDAE00583DBD /* 社区.png in Resources */,
 				972AC2CA2226DCBE002A6172 /* bcl_ic_community_circleCell.png in Resources */,
+				04FE34B0222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png in Resources */,
 				9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */,
 				043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */,
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
@@ -884,6 +898,7 @@
 				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
 				977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */,
+				04D7519F222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
 				97BE238F2207311000284424 /* BCLMonthTimeRecordViewController.m in Sources */,
 				9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */,
@@ -896,6 +911,7 @@
 				970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */,
 				977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */,
 				977C89072204893100313CBD /* BCLOtherWeekDayRecordCollectionViewCell.m in Sources */,
+				04FE34B6222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m in Sources */,
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,

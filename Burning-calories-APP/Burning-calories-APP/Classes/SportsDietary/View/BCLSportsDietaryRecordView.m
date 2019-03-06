@@ -236,6 +236,13 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     _sportsNumber = 8;
 }
 
+- (UITableView *)dietaryTableView {
+    if (!_dietaryTableView) {
+        
+    }
+    return _dietaryTableView;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
