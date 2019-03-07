@@ -8,6 +8,7 @@
 
 #import "BCLSportsDietaryAddSportsListView.h"
 #import "BCLSportsDietaryRecordSportsHeadView.h"
+#import "BCLSportsDietaryAddSportsListTableViewCell.h"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
@@ -21,6 +22,8 @@ static const NSInteger kTitleInterval = 30;
 static const NSInteger kCellInterval = 15;
 static const NSInteger kAddInterval = 45;
 static const NSInteger kBottomInterval = 60;
+
+static NSString *kAddSportCellIdentifier = @"addSportsCell";
 
 @interface BCLSportsDietaryAddSportsListView ()<UITableViewDataSource>
 
@@ -69,6 +72,20 @@ static const NSInteger kBottomInterval = 60;
     [self setupSportsDietaryRecordSportsHeadView];
     _addSportsTableView.tableHeaderView = _sportsDietaryRecordSportsHeadView;
 }
+
+#pragma mark - UITableViewDataSource实现
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 5;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+////    BCLSportsDietaryAddSportsListTableViewCell *sportsDietaryAddSportsListTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
+////    sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
+////    sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+////    return sportsDietaryRecordSportsTableViewCell;
+//}
 
 /*
 // Only override drawRect: if you perform custom drawing.
