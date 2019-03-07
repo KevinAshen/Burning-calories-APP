@@ -1,14 +1,14 @@
 //
-//  BCLCommunityRecipesTableViewCell.h
+//  BCLCommunityRecipesView.h
 //  Burning-calories-APP
 //
-//  Created by 强淑婷 on 2019/3/6.
+//  Created by 强淑婷 on 2019/3/7.
 //  Copyright © 2019年 J&Q. All rights reserved.
 //
 
-#import "BCLBaseTableViewCell.h"
+#import <UIKit/UIKit.h>
 
-@interface BCLCommunityRecipesTableViewCell : BCLBaseTableViewCell
+@interface BCLCommunityRecipesView : UIView
 
 @property (nonatomic, strong) UIImageView *foodImageView;
 @property (nonatomic, strong) UIButton *iconImageButton;
@@ -18,4 +18,5 @@
 @property (nonatomic, strong) UILabel *foodNameLabel;
 @property (nonatomic, strong) UILabel *caloriesLabel;
 
+- (instancetype)initWithFrame:(CGRect)frame  andRecipesImage:(NSString *)recipesImageString;
 @end

@@ -9,6 +9,32 @@
 #import "BCLCommunityView.h"
 #import "BCLCommunitySegmentView.h"
 #import "BCLCommunityCircleTableViewCell.h"
+#import "BCLCommunityRecipesView.h"
+@interface BCLCommunityRecipesCell : BCLBaseTableViewCell<UIScrollViewDelegate>
+
+@property (nonatomic, strong) UIScrollView *scrollView;
+
+@end
+@implementation BCLCommunityRecipesCell
+- (void)setupUI {
+    _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, k_screen_width, k_screen_height / 3)];
+    _scrollView.delegate = self;
+    _scrollView.showsVerticalScrollIndicator = NO;
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.pagingEnabled = YES;
+    _scrollView.bounces = NO;
+    [self addSubview:_scrollView];
+    
+    NSInteger imageCount = 6;
+    _scrollView.contentSize = CGSizeMake(k_screen_width * imageCount, k_screen_height / 3);
+    for(int i = 0;i < imageCount; i++) {
+        NSArray *recipesImage = [NSArray arrayWithObjects:@"bcl_bg_log_month_allCell",@"bcl_bg_log_everyday_food2",@"bcl_bg_log_everyday_food1",@"bcl_bg_log_month_allCell",@"bcl_bg_log_everyday_food2",@"bcl_bg_log_everyday_food1", nil];
+        BCLCommunityRecipesView *recipesView = [[BCLCommunityRecipesView alloc]initWithFrame:CGRectMake(k_screen_width * i, 0, k_screen_width, k_screen_height/3) andRecipesImage:recipesImage[i]];
+        [_scrollView addSubview:recipesView];
+    }
+}
+
+@end
 
 @interface BCLCommunityView ()<UITableViewDataSource, UIScrollViewDelegate>
 
@@ -52,6 +78,7 @@
     UITableView  *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KScreenW, KScreenH) style:UITableViewStyleGrouped];
     tableView.showsVerticalScrollIndicator = NO;
     [tableView registerClass:[BCLCommunityCircleTableViewCell class] forCellReuseIdentifier:@"circleCell"];
+    [tableView registerClass:[BCLCommunityRecipesCell class] forCellReuseIdentifier:@"recipescell"];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     tableView.dataSource = self;
@@ -61,7 +88,7 @@
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if(tableView.tag == 1) {
-        return 1;
+        return 2;
     } else {
          return 2;
     }
@@ -72,12 +99,16 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(tableView.tag == 1) {
-        //BCLCommunityCircleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"circleCell" forIndexPath:indexPath];
-        //if(!cell) {
-           BCLCommunityCircleTableViewCell *cell = [[BCLCommunityCircleTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"circleCell" cellType:@"imageTableViewCell"];
-            
-        //}
-        return cell;
+        if(indexPath.section == 0) {
+            BCLCommunityRecipesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recipescell" forIndexPath:indexPath];
+            if(!cell) {
+                cell = [[BCLCommunityRecipesCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"recipescell"];
+            }
+            return cell;
+        } else {
+            BCLCommunityCircleTableViewCell *cell = [[BCLCommunityCircleTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"circleCell" cellType:@"imageTableViewCell"];
+            return cell;
+        }
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
         if(!cell) {
