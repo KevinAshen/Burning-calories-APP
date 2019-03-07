@@ -63,6 +63,7 @@
 		97377F742222703B0077ED68 /* BCLCommunityMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 97377F732222703B0077ED68 /* BCLCommunityMoment.m */; };
 		974D421E221ECEBA00738D3A /* BCLCommunitySegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */; };
 		974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */; };
+		974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974DDAFA223144220036FE8D /* BCLCommunityRecipesView.m */; };
 		974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */; };
 		97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */; };
 		977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */; };
@@ -206,6 +207,8 @@
 		974D421C221ECEBA00738D3A /* BCLCommunitySegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunitySegmentView.h; sourceTree = "<group>"; };
 		974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunitySegmentView.m; sourceTree = "<group>"; };
 		974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_community_segment_color_line.png; sourceTree = "<group>"; };
+		974DDAF9223144220036FE8D /* BCLCommunityRecipesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityRecipesView.h; sourceTree = "<group>"; };
+		974DDAFA223144220036FE8D /* BCLCommunityRecipesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityRecipesView.m; sourceTree = "<group>"; };
 		974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_log_month_arrow.png; sourceTree = "<group>"; };
 		97687AF221FB4DBA00E09F1F /* BCLLogMonthTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogMonthTableViewCell.h; sourceTree = "<group>"; };
 		97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogMonthTableViewCell.m; sourceTree = "<group>"; };
@@ -490,6 +493,8 @@
 				97377F6F22226C410077ED68 /* BCLImageListView.m */,
 				9708E944222419280037EA02 /* BCLImagePreviewView.h */,
 				9708E945222419280037EA02 /* BCLImagePreviewView.m */,
+				974DDAF9223144220036FE8D /* BCLCommunityRecipesView.h */,
+				974DDAFA223144220036FE8D /* BCLCommunityRecipesView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -915,6 +920,7 @@
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
+				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
 				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
 				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,
 				97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */,

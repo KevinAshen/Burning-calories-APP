@@ -17,3 +17,5 @@
 @property (nonatomic, strong)BCLCommunitySegmentView *segmentView;
 
 @end
+
+
