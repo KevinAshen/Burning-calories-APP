@@ -25,3 +25,4 @@
 - [iOS UIDatePicker的使用详情](https://www.jianshu.com/p/f5149258d881)
 - [iOS开发UI篇—常见的项目文件介绍](https://www.cnblogs.com/wendingding/p/3766249.html)
 - [pch文件找不到的解决方法](https://www.jianshu.com/p/5742cf8a867f)
+- [【已解决】iOS程序中，设置delegate时候，出现警告：Assigning to ‘id<UINavigationControllerDelegate,UIImagePickerControllerDelegate>’ from incompatible type ‘AddSightingViewController *const __strong’](https://www.crifan.com/when_assign_delegate_occur_warning_assigning_to_id_uinavigationcontrollerdelegate_uiimagepickercontrollerdelegate_from_incompatible_type_const_strong/)

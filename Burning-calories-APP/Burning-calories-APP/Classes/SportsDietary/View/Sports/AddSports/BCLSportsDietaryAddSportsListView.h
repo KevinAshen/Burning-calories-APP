@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BCLSportsDietaryAddSportsListView : UIView
 
+//增加运动tableView
+@property (nonatomic, strong) UITableView *addSportsTableView;
+
+- (UITableView *)getAddSportsTableView;
+
 @end
 
 NS_ASSUME_NONNULL_END

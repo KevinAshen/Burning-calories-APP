@@ -30,14 +30,15 @@ static const NSInteger kTittleAddInterval = 30;
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-        
+        [self setupSportLabel];
+        [self setupAddButton];
     }
     return self;
 }
 
 #pragma mark - sportLabel设置
-- (UILabel *)sportLabel {
-    if (_sportLabel) {
+- (void)setupSportLabel {
+    if (!_sportLabel) {
         _sportLabel = [[UILabel alloc] init];
         [self addSubview:_sportLabel];
         
@@ -49,9 +50,8 @@ static const NSInteger kTittleAddInterval = 30;
         }];
         
         _sportLabel.textColor = [UIColor blackColor];
-        
+        _sportLabel.text = @"TEXT";
     }
-    return _sportLabel;
 }
 
 #pragma mark - 为sportLabel赋值
@@ -60,8 +60,8 @@ static const NSInteger kTittleAddInterval = 30;
 }
 
 #pragma mark - addButton设置
-- (UIButton *)addButton {
-    if (_addButton) {
+- (void)setupAddButton {
+    if (!_addButton) {
         _addButton = [[UIButton alloc] init];
         [_addButton addSubview:self];
         
@@ -74,7 +74,6 @@ static const NSInteger kTittleAddInterval = 30;
         
         [_addButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_addSports_addButton"] forState:UIControlStateNormal];
     }
-    return _addButton;
 }
 
 

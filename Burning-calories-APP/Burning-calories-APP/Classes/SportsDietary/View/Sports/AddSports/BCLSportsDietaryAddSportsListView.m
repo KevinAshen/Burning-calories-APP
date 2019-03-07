@@ -27,8 +27,6 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
 
 @interface BCLSportsDietaryAddSportsListView ()<UITableViewDataSource>
 
-//增加运动tableView
-@property (nonatomic, strong) UITableView *addSportsTableView;
 //增加运动tableViewHeadView
 @property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
 
@@ -40,6 +38,7 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
     self = [super initWithFrame:frame];
     if (self) {
         [self setupUI];
+        [self setupAddSportsTableView];
     }
     return self;
 }
@@ -61,7 +60,7 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
     _addSportsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight - 64 - 64) style:UITableViewStyleGrouped];
     [self addSubview:_addSportsTableView];
     
-//    [_addSportsTableView registerClass:[BCLSportsDietaryRecordSportsTableViewCell class] forCellReuseIdentifier:kSportsCellIdentifier];
+    [_addSportsTableView registerClass:[BCLSportsDietaryAddSportsListTableViewCell class] forCellReuseIdentifier:kAddSportCellIdentifier];
     _addSportsTableView.backgroundColor = [UIColor clearColor];
     _addSportsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _addSportsTableView.showsVerticalScrollIndicator = NO;
@@ -73,6 +72,11 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
     _addSportsTableView.tableHeaderView = _sportsDietaryRecordSportsHeadView;
 }
 
+#pragma mark - 传出运动tableView
+- (UITableView *)getAddSportsTableView {
+    return _addSportsTableView;
+}
+
 #pragma mark - UITableViewDataSource实现
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 5;
@@ -80,12 +84,12 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-////    BCLSportsDietaryAddSportsListTableViewCell *sportsDietaryAddSportsListTableViewCell = [tableView dequeueReusableCellWithIdentifier:kSportsCellIdentifier forIndexPath:indexPath];
-////    sportsDietaryRecordSportsTableViewCell.backgroundColor = [UIColor clearColor];
-////    sportsDietaryRecordSportsTableViewCell.selectionStyle = UIAccessibilityTraitNone;
-////    return sportsDietaryRecordSportsTableViewCell;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BCLSportsDietaryAddSportsListTableViewCell *sportsDietaryAddSportsListTableViewCell = [tableView dequeueReusableCellWithIdentifier:kAddSportCellIdentifier forIndexPath:indexPath];
+    sportsDietaryAddSportsListTableViewCell.backgroundColor = [UIColor clearColor];
+    sportsDietaryAddSportsListTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+    return sportsDietaryAddSportsListTableViewCell;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

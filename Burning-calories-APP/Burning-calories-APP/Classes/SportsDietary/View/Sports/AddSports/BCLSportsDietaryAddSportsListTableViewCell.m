@@ -26,12 +26,12 @@ static const NSInteger kViewLeftOrRightInterval = 36;
 
 - (void)setupUI {
     self.contentView.backgroundColor = [UIColor clearColor];
-    
+    [self setupSportsDietaryAddSportsListTagView];
 }
 
 //运动listView设置
-- (BCLSportsDietaryAddSportsListTagView *)sportsDietaryAddSportsListTagView {
-    if (_sportsDietaryAddSportsListTagView) {
+- (BCLSportsDietaryAddSportsListTagView *)setupSportsDietaryAddSportsListTagView {
+    if (!_sportsDietaryAddSportsListTagView) {
         _sportsDietaryAddSportsListTagView = [[BCLSportsDietaryAddSportsListTagView alloc] init];
         [self.contentView addSubview:_sportsDietaryAddSportsListTagView];
         
