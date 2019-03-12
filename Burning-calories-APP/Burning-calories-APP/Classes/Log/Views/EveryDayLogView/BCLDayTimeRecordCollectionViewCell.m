@@ -17,10 +17,10 @@ static const CGFloat kSideDayTimeLength = 100;
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         _backgroundImageView = [[UIImageView alloc]init];
-        [self addSubview:_backgroundImageView];
+        [self.contentView addSubview:_backgroundImageView];
         [_backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             //make.left.equalTo(self).offset(kLeftDayTimeMargin);
-            make.top.equalTo(self).offset(kTopDayTimeMargin);
+            make.top.equalTo(self.contentView.mas_top).offset(kTopDayTimeMargin/2);
             make.width.mas_equalTo(3 * kSideDayTimeLength);
             make.height.mas_equalTo(2 * kSideDayTimeLength);
 
@@ -29,7 +29,7 @@ static const CGFloat kSideDayTimeLength = 100;
         _backgroundImageView.image = [UIImage imageNamed:@"bcl_bg_log_everyday"];
         
         self.dayOfTimeLabel = [[UILabel alloc]init];
-        [self addSubview:_dayOfTimeLabel];
+        [self.contentView addSubview:_dayOfTimeLabel];
         [_dayOfTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(kLeftDayTimeMargin);
             make.top.equalTo(self.backgroundImageView.mas_top).offset(kLeftDayTimeMargin);
@@ -39,7 +39,7 @@ static const CGFloat kSideDayTimeLength = 100;
         _dayOfTimeLabel.font = [UIFont systemFontOfSize:14];
         
         self.sometimeCaloriesLabel = [[UILabel alloc]init];
-        [self addSubview:_sometimeCaloriesLabel];
+        [self.contentView addSubview:_sometimeCaloriesLabel];
         [_sometimeCaloriesLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.dayOfTimeLabel.mas_right).offset(140);
             make.top.equalTo(self.dayOfTimeLabel.mas_top);
@@ -51,7 +51,7 @@ static const CGFloat kSideDayTimeLength = 100;
         _sometimeCaloriesLabel.text = @"207千卡";
         
         _dayCancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self addSubview:_dayCancelButton];
+        [self.contentView addSubview:_dayCancelButton];
         [_dayCancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.sometimeCaloriesLabel.mas_right).offset(kLeftDayTimeMargin / 2);
             make.top.equalTo(self.sometimeCaloriesLabel.mas_top);
@@ -61,7 +61,7 @@ static const CGFloat kSideDayTimeLength = 100;
         [_dayCancelButton setImage:[UIImage imageNamed:@"bcl_btn_log_everyday_cancel"] forState:UIControlStateNormal];
         
         _dayFoodImageView = [[UIImageView alloc] init];
-        [self addSubview:_dayFoodImageView];
+        [self.contentView addSubview:_dayFoodImageView];
         [_dayFoodImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.dayOfTimeLabel.mas_left);
             make.top.equalTo(self.dayOfTimeLabel.mas_bottom).offset(kLeftDayTimeMargin / 2);
