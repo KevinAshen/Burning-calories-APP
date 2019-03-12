@@ -108,11 +108,7 @@ static const CGFloat kThreeButtonConstance = 110;
         self.dynamicTextLabel.numberOfLines = 0;
     
         if([type isEqualToString:@"imageTableViewCell"]) {
-            _imageArray = [[NSMutableArray alloc]initWithObjects:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",
-            @"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2487114660,3715789872&fm=26&gp=0.jpg",
-            @"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2022825927,4080151337&fm=26&gp=0.jpg",
-            @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3409408983,232289470&fm=27&gp=0.jpg",
-            @"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1621006471,2082577216&fm=26&gp=0.jpg",nil];
+            _imageArray = [[NSMutableArray alloc]initWithObjects:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",nil];
             _listView = [[BCLImageListView alloc]initWithFrame:CGRectMake(20, 60 + dynamicTextHeight, k_screen_width - kCommunityMargin, [BCLCommunityCircleTableViewCell getPhotosHeight:_imageArray.count].height) andImageArray:_imageArray];
             [self.contentView addSubview:_listView];
         } else if([type isEqualToString:@"NoneTableViewCell"]) {

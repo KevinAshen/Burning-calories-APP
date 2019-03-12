@@ -22,6 +22,7 @@
     
     self.navigationItem.title = @"今日";
     
+    
     _dayTimeRecordView = [[BCLDayTimeRecordView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_dayTimeRecordView]; _dayTimeRecordView.everyDayLogCollectionView.delegate = self;
     
@@ -35,7 +36,7 @@
 //设置每个item的UIEdgeInsets
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(0, 0, 0,0);
+    return UIEdgeInsetsMake(20, 0, 0,0);
 }
 //设置每个item的水平间距
 -(CGFloat) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
@@ -45,7 +46,7 @@
 //设置每个item的垂直间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 40;
+    return 0;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

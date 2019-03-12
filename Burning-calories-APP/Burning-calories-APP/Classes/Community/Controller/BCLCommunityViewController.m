@@ -33,10 +33,39 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(tableView.tag == 1) {
+        if(indexPath.section == 0){
+            return 160.0/667 * k_screen_height;
+        }
         return 300;
     }else {
         return 50;
     }
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if(tableView.tag == 1) {
+        if(section == 0) {
+            return 0.0;
+        }
+        return 20;
+    } else {
+        return 0.0;
+    }
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    if(tableView.tag == 1) {
+        if(section == 0) {
+            return 0.0;
+        }
+        return 20;
+    } else {
+        return 0.0;
+    }
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [[UIView alloc] init];
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return [[UIView alloc] init];
 }
 //- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
 //    if(scrollView.contentOffset.x / KScreenW == 0) {
