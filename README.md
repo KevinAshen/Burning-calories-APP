@@ -28,7 +28,7 @@
 - [【已解决】iOS程序中，设置delegate时候，出现警告：Assigning to ‘id<UINavigationControllerDelegate,UIImagePickerControllerDelegate>’ from incompatible type ‘AddSightingViewController *const __strong’](https://www.crifan.com/when_assign_delegate_occur_warning_assigning_to_id_uinavigationcontrollerdelegate_uiimagepickercontrollerdelegate_from_incompatible_type_const_strong/)
 - [UILable UITextField 文字 左右 左右 垂直 居中 对其怎么解决](https://zhidao.baidu.com/question/177720710578080164.html)
 
-##比赛信息
+## 比赛信息
 - 三创：
     - 报名截止时间：2019年3月31日
     - 4月底提交商业计划书参加校级选拔
