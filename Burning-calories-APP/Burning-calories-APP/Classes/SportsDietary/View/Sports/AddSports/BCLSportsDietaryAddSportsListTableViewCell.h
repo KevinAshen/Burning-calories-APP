@@ -7,10 +7,16 @@
 //
 
 #import "BCLBaseTableViewCell.h"
+@class BCLSportsDietaryAddSportsListTagView;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BCLSportsDietaryAddSportsListTableViewCell : BCLBaseTableViewCell
+
+//取消右侧tagView
+- (void)cancelRightTagView;
+//返回tagView
+- (BCLSportsDietaryAddSportsListTagView *)getTagView;
 
 @end
 

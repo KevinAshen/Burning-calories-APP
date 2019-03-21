@@ -77,7 +77,7 @@
     //通过当前的tag值设置select的位置
     NSInteger index = button.tag - 1000;
     [UIView animateWithDuration:0.3 animations:^{
-        self->_selectImage.frame = CGRectMake((1 + index)*_itemWidth/2, _selectImage.frame.origin.y, self->_selectImage.frame.size.width, _selectImage.frame.size.height);
+        self->_selectImage.frame = CGRectMake((1 + index)*self->_itemWidth/2, _selectImage.frame.origin.y, self->_selectImage.frame.size.width, _selectImage.frame.size.height);
     }];
     
     _returnBlock(index);

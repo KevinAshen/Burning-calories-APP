@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BCLSportsDietaryAddSportsListTagView;
+@class BCLSportsDietaryAddSportsListTableViewCell;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UITableView *addSportsTableView;
 
 - (UITableView *)getAddSportsTableView;
+
+- (BCLSportsDietaryAddSportsListTagView *)getSportsDietaryAddSportsListTableViewTagView;
+
+//Listcell
+@property (nonatomic, strong) BCLSportsDietaryAddSportsListTableViewCell *sportsDietaryAddSportsListTableViewCell;
 
 @end
 
