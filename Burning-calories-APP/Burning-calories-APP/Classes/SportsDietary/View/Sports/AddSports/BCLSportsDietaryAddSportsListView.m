@@ -9,19 +9,15 @@
 #import "BCLSportsDietaryAddSportsListView.h"
 #import "BCLSportsDietaryRecordSportsHeadView.h"
 #import "BCLSportsDietaryAddSportsListTableViewCell.h"
+#import "BCLSportsDietaryAddSportsListPickerView.h"
+#import <Masonry.h>
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 
-static const NSInteger kSegmentedControlHeight = 30;
 static const NSInteger kTitleHeight = 30;
-static const NSInteger kCellHeight = 75;
-static const NSInteger kAddHeight = 45;
 
 static const NSInteger kTitleInterval = 30;
-static const NSInteger kCellInterval = 15;
-static const NSInteger kAddInterval = 45;
-static const NSInteger kBottomInterval = 60;
 
 static NSString *kAddSportCellIdentifier = @"addSportsCell";
 
@@ -29,6 +25,9 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
 
 //增加运动tableViewHeadView
 @property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
+//设定运动View
+@property (nonatomic, strong) BCLSportsDietaryAddSportsListPickerView *sportsDietaryAddSportsListPickerView;
+
 
 @end
 
@@ -38,7 +37,6 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
     self = [super initWithFrame:frame];
     if (self) {
         [self setupUI];
-        [self setupAddSportsTableView];
     }
     return self;
 }
@@ -46,6 +44,8 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
 #pragma mark - UI设置
 - (void)setupUI {
     self.backgroundColor = [UIColor colorWithRed:0.93f green:0.31f blue:0.17f alpha:1.00f];
+    [self setupAddSportsTableView];
+    //[self setupSportsDietaryAddSportsListPickerView];
 }
 
 #pragma mark - 增加运动tableViewHeadView设置
@@ -85,10 +85,21 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
     return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BCLSportsDietaryAddSportsListTableViewCell *sportsDietaryAddSportsListTableViewCell = [tableView dequeueReusableCellWithIdentifier:kAddSportCellIdentifier forIndexPath:indexPath];
-    sportsDietaryAddSportsListTableViewCell.backgroundColor = [UIColor clearColor];
-    sportsDietaryAddSportsListTableViewCell.selectionStyle = UIAccessibilityTraitNone;
-    return sportsDietaryAddSportsListTableViewCell;
+    _sportsDietaryAddSportsListTableViewCell = [tableView dequeueReusableCellWithIdentifier:kAddSportCellIdentifier forIndexPath:indexPath];
+    _sportsDietaryAddSportsListTableViewCell.backgroundColor = [UIColor clearColor];
+    _sportsDietaryAddSportsListTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+    return _sportsDietaryAddSportsListTableViewCell;
+}
+
+#pragma mark - 设定运动PickerView
+- (void)setupSportsDietaryAddSportsListPickerView {
+    _sportsDietaryAddSportsListPickerView = [[BCLSportsDietaryAddSportsListPickerView alloc] initWithFrame:CGRectMake(0, 64, kDeviceWidth, kDeviceHeight)];
+    [self addSubview:_sportsDietaryAddSportsListPickerView];
+}
+
+#pragma mark - 得到cell中的tagView
+- (BCLSportsDietaryAddSportsListTagView *)getSportsDietaryAddSportsListTableViewTagView {
+    return [self.sportsDietaryAddSportsListTableViewCell getTagView];
 }
 
 /*

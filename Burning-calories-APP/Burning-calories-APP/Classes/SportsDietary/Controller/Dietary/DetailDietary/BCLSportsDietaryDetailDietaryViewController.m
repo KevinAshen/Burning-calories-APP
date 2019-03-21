@@ -1,61 +1,61 @@
 //
-//  BCLSportsDietaryAddSportsListViewController.m
+//  BCLSportsDietaryDetailDietaryViewController.m
 //  Burning-calories-APP
 //
-//  Created by mac on 2019/2/26.
+//  Created by mac on 2019/3/18.
 //  Copyright © 2019 J&Q. All rights reserved.
 //
 
-#import "BCLSportsDietaryAddSportsListViewController.h"
-#import "BCLSportsDietaryAddSportsListView.h"
+#import "BCLSportsDietaryDetailDietaryViewController.h"
+#import "BCLSportsDietaryDetailDietaryView.h"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 
-@interface BCLSportsDietaryAddSportsListViewController ()<UITabBarDelegate, UITableViewDelegate>
+@interface BCLSportsDietaryDetailDietaryViewController ()<UITableViewDelegate>
 
-//增加运动主页面
-@property (nonatomic, strong) BCLSportsDietaryAddSportsListView *sportsDietaryAddSportsListView;
+//详细食谱界面
+@property (nonatomic, strong) BCLSportsDietaryDetailDietaryView *sportsDietaryDetailDietaryView;
 
 @end
 
-@implementation BCLSportsDietaryAddSportsListViewController
+@implementation BCLSportsDietaryDetailDietaryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self setupNavigation];
     [self setupSubview];
 }
 
 #pragma mark - 子视图设置
 - (void)setupSubview {
-    [self setupSportsDietaryAddSportsListView];
+    [self setupSportsDietaryDetailDietaryView];
 }
 
 #pragma mark - Navigation的设置
 - (void)setupNavigation {
-    self.navigationItem.title = @"饮食与健康";
+    self.navigationItem.title = @"早餐食谱";
 }
 
-
-#pragma mark - 增加运动主页面设置
-- (void)setupSportsDietaryAddSportsListView {
-    self.sportsDietaryAddSportsListView = [[BCLSportsDietaryAddSportsListView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
-    [self.view addSubview:_sportsDietaryAddSportsListView];
+#pragma mark - 详细食谱界面设置
+- (void)setupSportsDietaryDetailDietaryView {
+    self.sportsDietaryDetailDietaryView = [[BCLSportsDietaryDetailDietaryView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
+    [self.view addSubview:_sportsDietaryDetailDietaryView];
     
-    self.sportsDietaryAddSportsListView.addSportsTableView.delegate = self;
+    [_sportsDietaryDetailDietaryView getDetailDietaryTableView].delegate = self;
 }
 
-#pragma mark - UITableViewDelegate实现
+#pragma mark - UITableViewDelegate协议实现
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //!!!TEST!!!
-    return 60;
+    return 75;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth - 36 - 36, 15)];
-    headView.backgroundColor = [UIColor clearColor];
-    return headView;
+    return nil;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.01;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     return nil;

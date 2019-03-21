@@ -7,13 +7,13 @@
 //
 
 #import "BCLSportsDietaryAddSportsListTagView.h"
+#import "BCLSportsDietaryAddSportsBounceView.h"
 #import <Masonry.h>
 
 static const NSInteger kTitleAddHeightWidth = 25;
 static const NSInteger kCellWidth = 90;
 
-static const NSInteger kTittleLeftInterval = 15;
-static const NSInteger kTittleAddInterval = 30;
+static const NSInteger kTittleLeftRightInterval = 15;
 
 @interface BCLSportsDietaryAddSportsListTagView ()
 
@@ -43,7 +43,7 @@ static const NSInteger kTittleAddInterval = 30;
         [self addSubview:_sportLabel];
         
         [_sportLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.mas_left).offset(kTittleLeftInterval);
+            make.left.equalTo(self.mas_left).offset(kTittleLeftRightInterval);
             make.centerY.equalTo(self);
             make.height.mas_equalTo(kTitleAddHeightWidth);
             make.width.lessThanOrEqualTo(@(90));
@@ -63,20 +63,27 @@ static const NSInteger kTittleAddInterval = 30;
 - (void)setupAddButton {
     if (!_addButton) {
         _addButton = [[UIButton alloc] init];
-        [_addButton addSubview:self];
+        [self addSubview:_addButton];
         
         [_addButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self.mas_right).offset(-kTittleAddInterval);
+            make.right.equalTo(self.mas_right).offset(-kTittleLeftRightInterval);
             make.centerY.equalTo(self);
             make.height.mas_equalTo(kTitleAddHeightWidth);
             make.width.mas_equalTo(kTitleAddHeightWidth);
         }];
         
         [_addButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_addSports_addButton"] forState:UIControlStateNormal];
+        [_addButton addTarget:self action:@selector(clickAddDetailSports) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
-
+- (void)clickAddDetailSports {
+    NSLog(@"QSTSD");
+    if ([_sportsDietaryAddSportsListTagViewDelegate respondsToSelector:@selector(addDetailSport)]) {
+        NSLog(@"JKWKSD");
+        [_sportsDietaryAddSportsListTagViewDelegate addDetailSport];
+    }
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

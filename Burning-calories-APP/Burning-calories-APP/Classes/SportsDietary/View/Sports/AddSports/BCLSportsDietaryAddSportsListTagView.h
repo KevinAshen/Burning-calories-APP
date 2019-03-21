@@ -10,10 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol BCLSportsDietaryAddSportsListTagViewDelegate <NSObject>
+
+- (void)addDetailSport;
+
+@end
+
 @interface BCLSportsDietaryAddSportsListTagView : UIView
 
 //为sportLabel赋值
 - (void)setupSportLabelText:(NSString *)sportString;
+
+@property (nonatomic, weak) id<BCLSportsDietaryAddSportsListTagViewDelegate> sportsDietaryAddSportsListTagViewDelegate;
 
 @end
 

@@ -61,7 +61,6 @@ static const NSInteger kViewLeftOrRightInterval = 85;
 }
 #pragma mark - 增加运动button点击事件
 - (void)clickAddSports {
-    NSLog(@"QSTSD");
     if ([_sportsDietaryRecordSportsBottomViewDelegate respondsToSelector:@selector(addSportsSkip)]) {
         [_sportsDietaryRecordSportsBottomViewDelegate addSportsSkip];
     }
