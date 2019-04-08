@@ -10,6 +10,8 @@
 #import "BCLSportsDietaryRecordSportsHeadView.h"
 #import "BCLSportsDietaryAddSportsListTableViewCell.h"
 #import "BCLSportsDietaryAddSportsListPickerView.h"
+#import "BCLSportsDietaryAddSportsListTagView.h"
+#import "BCLSportsDietaryAddSportsBounceView.h"
 #import <Masonry.h>
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
@@ -27,7 +29,8 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
 @property (nonatomic, strong) BCLSportsDietaryRecordSportsHeadView *sportsDietaryRecordSportsHeadView;
 //设定运动View
 @property (nonatomic, strong) BCLSportsDietaryAddSportsListPickerView *sportsDietaryAddSportsListPickerView;
-
+//弹起View
+@property (nonatomic, strong) BCLSportsDietaryAddSportsBounceView *sportsDietaryAddSportsBounceView;
 
 @end
 
@@ -88,7 +91,18 @@ static NSString *kAddSportCellIdentifier = @"addSportsCell";
     _sportsDietaryAddSportsListTableViewCell = [tableView dequeueReusableCellWithIdentifier:kAddSportCellIdentifier forIndexPath:indexPath];
     _sportsDietaryAddSportsListTableViewCell.backgroundColor = [UIColor clearColor];
     _sportsDietaryAddSportsListTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+    
+    _sportsDietaryAddSportsListTableViewCell.sportsDietaryAddSportsLeftListTagView.addButtonAction = ^(UIButton * _Nonnull sender) {
+        [self cellAddButtonClick:sender];
+    };
+    
     return _sportsDietaryAddSportsListTableViewCell;
+}
+
+#pragma mark - addButton点击事件
+- (void)cellAddButtonClick:(UIButton *)button {
+    self.sportsDietaryAddSportsBounceView = [[BCLSportsDietaryAddSportsBounceView alloc] init];
+    [_sportsDietaryAddSportsBounceView showInView:self];
 }
 
 #pragma mark - 设定运动PickerView

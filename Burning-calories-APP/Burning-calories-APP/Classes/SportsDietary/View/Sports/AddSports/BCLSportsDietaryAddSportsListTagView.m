@@ -7,11 +7,9 @@
 //
 
 #import "BCLSportsDietaryAddSportsListTagView.h"
-#import "BCLSportsDietaryAddSportsBounceView.h"
 #import <Masonry.h>
 
 static const NSInteger kTitleAddHeightWidth = 25;
-static const NSInteger kCellWidth = 90;
 
 static const NSInteger kTittleLeftRightInterval = 15;
 
@@ -38,20 +36,18 @@ static const NSInteger kTittleLeftRightInterval = 15;
 
 #pragma mark - sportLabel设置
 - (void)setupSportLabel {
-    if (!_sportLabel) {
-        _sportLabel = [[UILabel alloc] init];
-        [self addSubview:_sportLabel];
+    self.sportLabel = [[UILabel alloc] init];
+    [self addSubview:_sportLabel];
         
-        [_sportLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.mas_left).offset(kTittleLeftRightInterval);
-            make.centerY.equalTo(self);
-            make.height.mas_equalTo(kTitleAddHeightWidth);
-            make.width.lessThanOrEqualTo(@(90));
+    [_sportLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.mas_left).offset(kTittleLeftRightInterval);
+        make.centerY.equalTo(self);
+        make.height.mas_equalTo(kTitleAddHeightWidth);
+        make.width.lessThanOrEqualTo(@(90));
         }];
         
-        _sportLabel.textColor = [UIColor blackColor];
-        _sportLabel.text = @"TEXT";
-    }
+    _sportLabel.textColor = [UIColor blackColor];
+    _sportLabel.text = @"TEXT";
 }
 
 #pragma mark - 为sportLabel赋值
@@ -61,29 +57,26 @@ static const NSInteger kTittleLeftRightInterval = 15;
 
 #pragma mark - addButton设置
 - (void)setupAddButton {
-    if (!_addButton) {
-        _addButton = [[UIButton alloc] init];
-        [self addSubview:_addButton];
+    self.addButton = [[UIButton alloc] init];
+    [self addSubview:_addButton];
         
-        [_addButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self.mas_right).offset(-kTittleLeftRightInterval);
-            make.centerY.equalTo(self);
-            make.height.mas_equalTo(kTitleAddHeightWidth);
-            make.width.mas_equalTo(kTitleAddHeightWidth);
-        }];
+    [_addButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.mas_right).offset(-kTittleLeftRightInterval);
+        make.centerY.equalTo(self);
+        make.height.mas_equalTo(kTitleAddHeightWidth);
+        make.width.mas_equalTo(kTitleAddHeightWidth);
+    }];
         
-        [_addButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_addSports_addButton"] forState:UIControlStateNormal];
-        [_addButton addTarget:self action:@selector(clickAddDetailSports) forControlEvents:UIControlEventTouchUpInside];
+    [_addButton setImage:[UIImage imageNamed:@"bcl_ic_soprts_addSports_addButton"] forState:UIControlStateNormal];
+    [_addButton addTarget:self action:@selector(addButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)addButtonClick:(UIButton *)button {
+    if (self.addButtonAction) {
+        self.addButtonAction(button);
     }
 }
 
-- (void)clickAddDetailSports {
-    NSLog(@"QSTSD");
-    if ([_sportsDietaryAddSportsListTagViewDelegate respondsToSelector:@selector(addDetailSport)]) {
-        NSLog(@"JKWKSD");
-        [_sportsDietaryAddSportsListTagViewDelegate addDetailSport];
-    }
-}
 
 /*
 // Only override drawRect: if you perform custom drawing.

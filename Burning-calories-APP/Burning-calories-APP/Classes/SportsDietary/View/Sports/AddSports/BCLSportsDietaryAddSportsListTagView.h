@@ -10,18 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol BCLSportsDietaryAddSportsListTagViewDelegate <NSObject>
-
-- (void)addDetailSport;
-
-@end
-
 @interface BCLSportsDietaryAddSportsListTagView : UIView
+
+typedef void(^ButtonClick)(UIButton *sender);
+@property (nonatomic, copy) ButtonClick addButtonAction;
 
 //为sportLabel赋值
 - (void)setupSportLabelText:(NSString *)sportString;
-
-@property (nonatomic, weak) id<BCLSportsDietaryAddSportsListTagViewDelegate> sportsDietaryAddSportsListTagViewDelegate;
 
 @end
 

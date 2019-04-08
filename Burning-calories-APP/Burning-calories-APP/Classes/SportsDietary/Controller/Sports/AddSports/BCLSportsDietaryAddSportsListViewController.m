@@ -15,7 +15,7 @@
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
 
-@interface BCLSportsDietaryAddSportsListViewController ()<UITabBarDelegate, UITableViewDelegate, BCLSportsDietaryAddSportsListTagViewDelegate>
+@interface BCLSportsDietaryAddSportsListViewController ()<UITabBarDelegate, UITableViewDelegate>
 
 //增加运动主页面
 @property (nonatomic, strong) BCLSportsDietaryAddSportsListView *sportsDietaryAddSportsListView;
@@ -53,14 +53,6 @@
     [self.view addSubview:_sportsDietaryAddSportsListView];
     
     self.sportsDietaryAddSportsListView.addSportsTableView.delegate = self;
-    NSLog(@"%p Delegate Test", [self.sportsDietaryAddSportsListView getSportsDietaryAddSportsListTableViewTagView]);
-    NSLog(@"%p Delegate232 Test", self.sportsDietaryAddSportsListView.sportsDietaryAddSportsListTableViewCell);
-    [self.sportsDietaryAddSportsListView getSportsDietaryAddSportsListTableViewTagView].sportsDietaryAddSportsListTagViewDelegate = self;
-    UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(0, kDeviceHeight - 80, 200, 80)];
-    [self.sportsDietaryAddSportsListView addSubview:testButton];
-    
-    [testButton setBackgroundColor:[UIColor whiteColor]];
-    [testButton addTarget:self action:@selector(touchPush) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark - UITableViewDelegate实现
@@ -80,23 +72,6 @@
     return 0.01;
 }
 
-#pragma mark - BCLSportsDietaryAddSportsListTagViewDelegate实现
-- (void)addDetailSport {
-    NSLog(@"ZZSD");
-    _sportsDietaryAddSportsBounceView = [[BCLSportsDietaryAddSportsBounceView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
-    [_sportsDietaryAddSportsBounceView showInView:self.view];
-}
-
-- (void)touchChange {
-    NSLog(@"ZZSD");
-    _sportsDietaryAddSportsBounceView = [[BCLSportsDietaryAddSportsBounceView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
-    [_sportsDietaryAddSportsBounceView showInView:self.view];
-}
-
-- (void)touchPush {
-    _sportsDietaryDetailDietaryViewController = [[BCLSportsDietaryDetailDietaryViewController alloc] init];
-    [self.navigationController pushViewController:_sportsDietaryDetailDietaryViewController animated:YES];
-}
 
 /*
 #pragma mark - Navigation

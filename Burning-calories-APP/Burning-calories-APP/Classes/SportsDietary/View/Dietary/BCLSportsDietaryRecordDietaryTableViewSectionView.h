@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BCLSportsDietaryRecordDietaryTableViewSectionView : UIView
 
+@property (nonatomic, strong) UIButton *mealButton;
+
 @end
 
 NS_ASSUME_NONNULL_END
