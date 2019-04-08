@@ -17,11 +17,6 @@ static const NSInteger kViewLeftOrRightInterval = 36;
 
 @interface BCLSportsDietaryAddSportsListTableViewCell ()
 
-//运动LeftlistView
-@property (nonatomic, strong) BCLSportsDietaryAddSportsListTagView *sportsDietaryAddSportsLeftListTagView;
-//运动RightlistView
-@property (nonatomic, strong) BCLSportsDietaryAddSportsListTagView *sportsDietaryAddSportsRightListTagView;
-
 //标记参数（确定是否有第二个tagView）
 @property (nonatomic, assign) BOOL signFlag;
 

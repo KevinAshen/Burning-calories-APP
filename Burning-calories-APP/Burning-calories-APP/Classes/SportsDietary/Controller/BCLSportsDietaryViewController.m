@@ -11,6 +11,7 @@
 #import "BCLSportsDietaryRecordDietaryTableViewSectionView.h"
 #import "BCLSportsDietaryRecordSportsBottomView.h"
 #import "BCLSportsDietaryAddSportsListViewController.h"
+#import "BCLSportsDietaryDetailDietaryViewController.h"
 
 static const NSInteger kSegmentedControlHeight = 30;
 static const NSInteger kTitleHeight = 30;
@@ -76,6 +77,9 @@ static const NSInteger kBottomInterval = 60;
         return headView;
     } else {
         BCLSportsDietaryRecordDietaryTableViewSectionView *sportsDietaryRecordDietaryTableViewSectionView = [[BCLSportsDietaryRecordDietaryTableViewSectionView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kSectionHeight)];
+        
+        [sportsDietaryRecordDietaryTableViewSectionView.mealButton addTarget:self action:@selector(mealButtonClick) forControlEvents:UIControlEventTouchUpInside];
+        
         return sportsDietaryRecordDietaryTableViewSectionView;
     }
 }
@@ -84,6 +88,12 @@ static const NSInteger kBottomInterval = 60;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.01;
+}
+
+#pragma mark - mealButton跳转实现
+- (void)mealButtonClick {
+    BCLSportsDietaryDetailDietaryViewController *sportsDietaryDetailDietaryViewController = [[BCLSportsDietaryDetailDietaryViewController alloc] init];
+    [self.navigationController pushViewController:sportsDietaryDetailDietaryViewController animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate实现

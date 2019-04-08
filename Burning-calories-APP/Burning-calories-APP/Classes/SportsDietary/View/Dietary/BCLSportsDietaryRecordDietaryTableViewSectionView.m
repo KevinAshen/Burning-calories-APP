@@ -17,7 +17,6 @@ static const NSInteger kViewTopInterval = 10;
 
 @interface BCLSportsDietaryRecordDietaryTableViewSectionView ()
 
-@property (nonatomic, strong) UIButton *mealButton;
 
 @end
 
