@@ -38,6 +38,7 @@
 		9708E21F221995B2004BC766 /* bcl_bg_log_month_allCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */; };
 		9708E946222419280037EA02 /* BCLImagePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708E945222419280037EA02 /* BCLImagePreviewView.m */; };
 		9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708E94822242F000037EA02 /* UIView+Geometry.m */; };
+		97098B75226F4A96001C6A48 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 97098B74226F4A96001C6A48 /* APIClient.m */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
@@ -173,6 +174,9 @@
 		9708E945222419280037EA02 /* BCLImagePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImagePreviewView.m; sourceTree = "<group>"; };
 		9708E94722242EF90037EA02 /* UIView+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
 		9708E94822242F000037EA02 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		97098B72226F4A59001C6A48 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = "../../../../../网络请求学习/testAF/testAF/AF/Singleton.h"; sourceTree = "<group>"; };
+		97098B73226F4A96001C6A48 /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		97098B74226F4A96001C6A48 /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
@@ -505,6 +509,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		97098B71226F4897001C6A48 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				97098B72226F4A59001C6A48 /* Singleton.h */,
+				97098B73226F4A96001C6A48 /* APIClient.h */,
+				97098B74226F4A96001C6A48 /* APIClient.m */,
+			);
+			name = Manage;
+			path = Manag;
+			sourceTree = "<group>";
+		};
 		970A7180220329F400A9C999 /* WeekLogView */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +593,7 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
+				97098B71226F4897001C6A48 /* Manage */,
 				9716EF4F21F6FDAE00583DBD /* Resource */,
 				046496B521F736AF0093AC4E /* Base */,
 				046496E121F8049E0093AC4E /* Classes */,
@@ -953,6 +969,7 @@
 				97377F7022226C410077ED68 /* BCLImageListView.m in Sources */,
 				046497D82225127A00D9AA0A /* BCLSportsDietaryAddSportsListViewController.m in Sources */,
 				046496F121FB399F0093AC4E /* BCLSportsDietaryRecordSportsTableViewCell.m in Sources */,
+				97098B75226F4A96001C6A48 /* APIClient.m in Sources */,
 				046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */,
 				0408466C221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
