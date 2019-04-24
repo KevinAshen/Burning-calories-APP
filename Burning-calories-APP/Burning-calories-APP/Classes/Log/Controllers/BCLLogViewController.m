@@ -12,6 +12,7 @@
 #import "BCLDayTimeRecordViewController.h"
 #import "BCLWeekTimeRecordViewController.h"
 #import "BCLMonthTimeRecordViewController.h"
+#import "APIClient.h"
 
 @interface BCLLogViewController ()
 
@@ -28,7 +29,23 @@
     [self.view addSubview:_logView];
     
     _logView.tableView.delegate = self;
-    
+    NSString *url = @"http://www.shidongxuan.top:8000/user/register";
+    NSDictionary *parameters = @{@"username":@"强淑婷",@"password":@"863139668",@"gender":@1, @"phone":@"18391741628",@"email":@"dfssd",@"birth":@"2019/08/18 00:00:00"};
+    if([APIClient networkType] > 0) {
+        [APIClient requestURL:url httpMethod:POST contentType:@"application/x-www-form-urlencoded" params:parameters response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
+            switch (requestStatusCode) {
+                case ApiRequestOK:
+                    NSLog(@"%@", JSON);
+                    break;
+                case ApiRequestError:
+                    break;
+                case ApiRequestNotReachable:
+                    break;
+                default:
+                    break;
+            }
+        }];
+    }
     
     // Do any additional setup after loading the view.
 }
