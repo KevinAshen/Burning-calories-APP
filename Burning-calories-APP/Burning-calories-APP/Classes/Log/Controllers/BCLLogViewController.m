@@ -14,9 +14,14 @@
 #import "BCLMonthTimeRecordViewController.h"
 #import "APIClient.h"
 
+
 @interface BCLLogViewController ()
 
 @property (nonatomic, strong) BCLLogView *logView;
+
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIButton *button;
+
 @end
 
 @implementation BCLLogViewController
@@ -24,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"日志";
+    
     
     _logView = [[BCLLogView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_logView];
@@ -49,6 +55,7 @@
     
     // Do any additional setup after loading the view.
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0 || indexPath.row == 1) {
         return 50.0 / 667 * kDeviceHeight;
