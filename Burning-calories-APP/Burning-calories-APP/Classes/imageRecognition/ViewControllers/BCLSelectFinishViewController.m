@@ -30,9 +30,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    //_selectImageButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _selectImageButton.frame = CGRectMake(65, 170, 300, 300);
-    //[button setImage:[UIImage imageNamed:@"番茄炒蛋.jpg"] forState:UIControlStateNormal];
     [self.view addSubview:_selectImageButton];
     // Do any additional setup after loading the view.
 }

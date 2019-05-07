@@ -10,6 +10,7 @@
 #import "BCLLogViewController.h"
 #import "BCLCommunityViewController.h"
 #import "BCLSportsDietaryViewController.h"
+#import "BCLMineViewController.h"
 #import "BCLBaseTabBarController.h"
 #import "BCLSuspensionButton.h"
 #import "BCLSelectFinishViewController.h"
@@ -45,13 +46,15 @@
     BCLSportsDietaryViewController *sportsDietaryViewController = [[BCLSportsDietaryViewController alloc]init];
     BCLCommunityViewController *communityController =
     [[BCLCommunityViewController alloc]init];
+    BCLMineViewController *mineViewController= [[BCLMineViewController alloc] init];
     
     NSMutableArray *viewControllerMutableArray = [NSMutableArray array];
     [viewControllerMutableArray addObject:logViewController];
     [viewControllerMutableArray addObject:sportsDietaryViewController];
     [viewControllerMutableArray addObject:communityController];
+    [viewControllerMutableArray addObject:mineViewController];
     
-    NSArray *titleArray = @[@"bcl_ic_log_tabBar",@"bcl_ic_soprts_tabBar",@"bcl_ic_community_tabBar"];
+    NSArray *titleArray = @[@"bcl_ic_log_tabBar",@"bcl_ic_soprts_tabBar",@"bcl_ic_community_tabBar",@"bcl_ic_mine_tabBar"];
     
     _tabBarController = [[BCLBaseTabBarController alloc]init];
     self.window.rootViewController = self.tabBarController;
