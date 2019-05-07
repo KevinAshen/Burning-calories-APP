@@ -2,7 +2,7 @@
 //  BCLBaseViewController.m
 //  Burning-calories-APP
 //
-//  Created by mac on 2019/1/23.
+//  Created by mac on 2019/1/               23.
 //  Copyright © 2019 J&Q. All rights reserved.
 //
 
