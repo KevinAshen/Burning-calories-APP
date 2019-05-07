@@ -43,6 +43,9 @@
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
+		970C7C1822808376002FC9A0 /* BCLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1722808376002FC9A0 /* BCLMineViewController.m */; };
+		970C7C1B22808394002FC9A0 /* BCLMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1A22808394002FC9A0 /* BCLMineView.m */; };
+		970C7C1D22808506002FC9A0 /* bcl_ic_mine_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C7C1C22808506002FC9A0 /* bcl_ic_mine_tabBar.png */; };
 		970EBB41221857AB00025038 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB3E221857AB00025038 /* FSLineChart.m */; };
 		970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB40221857AB00025038 /* UIColor+FSPalette.m */; };
 		970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB442218581900025038 /* BCLMonthLineChartView.m */; };
@@ -176,15 +179,21 @@
 		9708E945222419280037EA02 /* BCLImagePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImagePreviewView.m; sourceTree = "<group>"; };
 		9708E94722242EF90037EA02 /* UIView+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
 		9708E94822242F000037EA02 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
-		9709248D2276DB6D00DA25C0 /* BCLBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BCLBaseTabBarController.h; path = ../../../../../../.Trash/BCLBaseTabBarController.h; sourceTree = "<group>"; };
-		9709248E2276DB7C00DA25C0 /* BCLBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BCLBaseTabBarController.m; path = ../../../../../../.Trash/BCLBaseTabBarController.m; sourceTree = "<group>"; };
-		97098B72226F4A59001C6A48 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = "../../../../../网络请求学习/testAF/testAF/AF/Singleton.h"; sourceTree = "<group>"; };
+		9709248D2276DB6D00DA25C0 /* BCLBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseTabBarController.h; sourceTree = "<group>"; };
+		9709248E2276DB7C00DA25C0 /* BCLBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTabBarController.m; sourceTree = "<group>"; };
+		97098B72226F4A59001C6A48 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		97098B73226F4A96001C6A48 /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		97098B74226F4A96001C6A48 /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
 		970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin.png; sourceTree = "<group>"; };
+		970C7C1622808376002FC9A0 /* BCLMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineViewController.h; sourceTree = "<group>"; };
+		970C7C1722808376002FC9A0 /* BCLMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineViewController.m; sourceTree = "<group>"; };
+		970C7C1922808394002FC9A0 /* BCLMineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineView.h; sourceTree = "<group>"; };
+		970C7C1A22808394002FC9A0 /* BCLMineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineView.m; sourceTree = "<group>"; };
+		970C7C1C22808506002FC9A0 /* bcl_ic_mine_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_mine_tabBar.png; path = ../../../../../../Downloads/bcl_ic_mine_tabBar.png; sourceTree = "<group>"; };
+		970C7C1E22808509002FC9A0 /* bcl_ic_mine_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_mine_tabBar.png; sourceTree = "<group>"; };
 		970EBB3D221857AB00025038 /* FSLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLineChart.h; sourceTree = "<group>"; };
 		970EBB3E221857AB00025038 /* FSLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLineChart.m; sourceTree = "<group>"; };
 		970EBB3F221857AB00025038 /* UIColor+FSPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FSPalette.h"; sourceTree = "<group>"; };
@@ -401,6 +410,7 @@
 		046496E121F8049E0093AC4E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				970C7C122280819C002FC9A0 /* Mine */,
 				9716B5A7227F2675007B64A1 /* imageRecognition */,
 				9716EF5A21F6FF2300583DBD /* Community */,
 				9716EF5921F6FF0B00583DBD /* SportsDietary */,
@@ -445,6 +455,7 @@
 		046496E421F807CB0093AC4E /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				970C7C1E22808509002FC9A0 /* bcl_ic_mine_tabBar.png */,
 				048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */,
 				9708E21E221995B2004BC766 /* bcl_bg_log_month_allCell.png */,
 				970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */,
@@ -518,14 +529,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		97098B71226F4897001C6A48 /* Manage */ = {
+		97098B71226F4897001C6A48 /* Manag */ = {
 			isa = PBXGroup;
 			children = (
 				97098B72226F4A59001C6A48 /* Singleton.h */,
 				97098B73226F4A96001C6A48 /* APIClient.h */,
 				97098B74226F4A96001C6A48 /* APIClient.m */,
 			);
-			name = Manage;
 			path = Manag;
 			sourceTree = "<group>";
 		};
@@ -540,6 +550,41 @@
 				977C89062204893100313CBD /* BCLOtherWeekDayRecordCollectionViewCell.m */,
 			);
 			path = WeekLogView;
+			sourceTree = "<group>";
+		};
+		970C7C122280819C002FC9A0 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				970C7C1522808214002FC9A0 /* Controllers */,
+				970C7C142280820B002FC9A0 /* Views */,
+				970C7C1322808204002FC9A0 /* Model */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		970C7C1322808204002FC9A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		970C7C142280820B002FC9A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				970C7C1922808394002FC9A0 /* BCLMineView.h */,
+				970C7C1A22808394002FC9A0 /* BCLMineView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		970C7C1522808214002FC9A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				970C7C1622808376002FC9A0 /* BCLMineViewController.h */,
+				970C7C1722808376002FC9A0 /* BCLMineViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		970EBB3C221857AB00025038 /* LineChart */ = {
@@ -635,7 +680,7 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
-				97098B71226F4897001C6A48 /* Manage */,
+				97098B71226F4897001C6A48 /* Manag */,
 				9716EF4F21F6FDAE00583DBD /* Resource */,
 				046496B521F736AF0093AC4E /* Base */,
 				046496E121F8049E0093AC4E /* Classes */,
@@ -671,6 +716,7 @@
 		9716EF4F21F6FDAE00583DBD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				970C7C1C22808506002FC9A0 /* bcl_ic_mine_tabBar.png */,
 				046496E521F807D00093AC4E /* Welcome */,
 				046496E421F807CB0093AC4E /* Log */,
 				046496E321F807C80093AC4E /* SportsDietary */,
@@ -931,6 +977,7 @@
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
 				048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
+				970C7C1D22808506002FC9A0 /* bcl_ic_mine_tabBar.png in Resources */,
 				9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */,
 				974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */,
 				972AC2CC2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png in Resources */,
@@ -1006,6 +1053,7 @@
 				974D421E221ECEBA00738D3A /* BCLCommunitySegmentView.m in Sources */,
 				97BE2386220729B400284424 /* BCLMonthOfDayRecordCollectionViewCell.m in Sources */,
 				042A8F12223FEDB700CE57AB /* BCLSportsDietaryDetailDietaryViewController.m in Sources */,
+				970C7C1822808376002FC9A0 /* BCLMineViewController.m in Sources */,
 				977C88FD2204723A00313CBD /* BCLWeekTimeRecordCollectionViewCell.m in Sources */,
 				97377F7022226C410077ED68 /* BCLImageListView.m in Sources */,
 				046497D82225127A00D9AA0A /* BCLSportsDietaryAddSportsListViewController.m in Sources */,
@@ -1048,6 +1096,7 @@
 				046497DC22251FB500D9AA0A /* BCLSportsDietaryAddSportsListView.m in Sources */,
 				970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */,
 				04040BBD223682FB00DAFAC5 /* BCLSportsDietaryAddSportsListPickerView.m in Sources */,
+				970C7C1B22808394002FC9A0 /* BCLMineView.m in Sources */,
 				97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */,
 				042A8F0E223FCBA300CE57AB /* BCLSportsDietaryAddSportsBounceView.m in Sources */,
 				9709248F2276DB7D00DA25C0 /* BCLBaseTabBarController.m in Sources */,
