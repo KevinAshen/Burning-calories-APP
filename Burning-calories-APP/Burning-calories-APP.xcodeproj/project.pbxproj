@@ -716,7 +716,7 @@
 		9716EF4F21F6FDAE00583DBD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */,
+				974BED382281D2DF004A8ABB /* Mine */,
 				046496E521F807D00093AC4E /* Welcome */,
 				046496E421F807CB0093AC4E /* Log */,
 				046496E321F807C80093AC4E /* SportsDietary */,
@@ -796,6 +796,14 @@
 				97377F732222703B0077ED68 /* BCLCommunityMoment.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		974BED382281D2DF004A8ABB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		977C9D9621FF43E900898615 /* EveryDayLogView */ = {
