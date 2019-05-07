@@ -16,6 +16,9 @@
 		042A8F1A2241D0FE00CE57AB /* bcl_ic_dietary_detailDietary_testDietaryImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 042A8F192241D0FD00CE57AB /* bcl_ic_dietary_detailDietary_testDietaryImage.png */; };
 		043C543921FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 043C543821FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png */; };
 		043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 043C543A21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png */; };
+		04504C3B2275E21E0049D5A9 /* XYBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04504C3A2275E21E0049D5A9 /* XYBaseTableViewCell.m */; };
+		04504C3E2275E2AA0049D5A9 /* ABCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04504C3D2275E2AA0049D5A9 /* ABCTableViewCell.m */; };
+		04504C412275E30C0049D5A9 /* XYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04504C402275E30C0049D5A9 /* XYTableView.m */; };
 		0457FA2322015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */; };
 		046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D521F7F9BE0093AC4E /* BCLBaseViewController.m */; };
 		046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D821F8038B0093AC4E /* BCLLogViewController.m */; };
@@ -134,6 +137,12 @@
 		042A8F192241D0FD00CE57AB /* bcl_ic_dietary_detailDietary_testDietaryImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_dietary_detailDietary_testDietaryImage.png; sourceTree = "<group>"; };
 		043C543821FDB28B00F041D0 /* bcl_ic_soprts_tableView_bottomAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_tableView_bottomAddButton.png; sourceTree = "<group>"; };
 		043C543A21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_tableView_cellBackgroundImage.png; sourceTree = "<group>"; };
+		04504C392275E21E0049D5A9 /* XYBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBaseTableViewCell.h; sourceTree = "<group>"; };
+		04504C3A2275E21E0049D5A9 /* XYBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBaseTableViewCell.m; sourceTree = "<group>"; };
+		04504C3C2275E2AA0049D5A9 /* ABCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCTableViewCell.h; sourceTree = "<group>"; };
+		04504C3D2275E2AA0049D5A9 /* ABCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCTableViewCell.m; sourceTree = "<group>"; };
+		04504C3F2275E30C0049D5A9 /* XYTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYTableView.h; sourceTree = "<group>"; };
+		04504C402275E30C0049D5A9 /* XYTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTableView.m; sourceTree = "<group>"; };
 		0457FA2122015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsTableViewCellView.h; sourceTree = "<group>"; };
 		0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsTableViewCellView.m; sourceTree = "<group>"; };
 		046496D421F7F9BE0093AC4E /* BCLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseViewController.h; sourceTree = "<group>"; };
@@ -364,6 +373,19 @@
 			path = Sports;
 			sourceTree = "<group>";
 		};
+		04504C382275E2010049D5A9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				04504C392275E21E0049D5A9 /* XYBaseTableViewCell.h */,
+				04504C3A2275E21E0049D5A9 /* XYBaseTableViewCell.m */,
+				04504C3C2275E2AA0049D5A9 /* ABCTableViewCell.h */,
+				04504C3D2275E2AA0049D5A9 /* ABCTableViewCell.m */,
+				04504C3F2275E30C0049D5A9 /* XYTableView.h */,
+				04504C402275E30C0049D5A9 /* XYTableView.m */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		046496B521F736AF0093AC4E /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +600,7 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
+				04504C382275E2010049D5A9 /* New Group */,
 				9716EF4F21F6FDAE00583DBD /* Resource */,
 				046496B521F736AF0093AC4E /* Base */,
 				046496E121F8049E0093AC4E /* Classes */,
@@ -826,6 +849,14 @@
 				TargetAttributes = {
 					9716EF1021F6F48B00583DBD = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					9716EF2821F6F48D00583DBD = {
 						CreatedOnToolsVersion = 9.4;
@@ -979,6 +1010,7 @@
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
 				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
+				04504C3B2275E21E0049D5A9 /* XYBaseTableViewCell.m in Sources */,
 				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,
 				97BE238922072CE800284424 /* BCLMonthAllCaloriesCollectionViewCell.m in Sources */,
 				9796BC2021F87ABF00294FE6 /* BCLLogView.m in Sources */,
@@ -986,6 +1018,7 @@
 				9708E946222419280037EA02 /* BCLImagePreviewView.m in Sources */,
 				042A8F08223E898600CE57AB /* BCLSportsDietaryDetailDietaryView.m in Sources */,
 				046497DC22251FB500D9AA0A /* BCLSportsDietaryAddSportsListView.m in Sources */,
+				04504C412275E30C0049D5A9 /* XYTableView.m in Sources */,
 				970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */,
 				04040BBD223682FB00DAFAC5 /* BCLSportsDietaryAddSportsListPickerView.m in Sources */,
 				97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */,
@@ -994,6 +1027,7 @@
 				046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */,
 				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
 				97A3008F2225728000A37540 /* Utility.m in Sources */,
+				04504C3E2275E2AA0049D5A9 /* ABCTableViewCell.m in Sources */,
 				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
 				97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */,
 				97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */,

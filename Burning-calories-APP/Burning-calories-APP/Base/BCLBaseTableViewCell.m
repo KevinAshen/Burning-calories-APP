@@ -14,8 +14,17 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self setupUI];
+
     }
     return self;
+}
+
++ (CGFloat)getCellHeight:(id)objcet{
+    if (![objcet isKindOfClass:NSClassFromString(@"aa")]) {
+        0;
+    }
+    
+    return 0;
 }
 
 - (void)setupUI {
