@@ -52,7 +52,7 @@ static const NSInteger kBounceViewHight = 400;
     
     [_sportsDietaryAddSportsListPickerView setFrame:CGRectMake(0, kDeviceHeight, kDeviceWidth, kBounceViewHight)];
     
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.1 animations:^{
         
         self.alpha = 1.0;
         

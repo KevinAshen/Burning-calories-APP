@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BCLBaseTableViewCell : UITableViewCell
 //设置cell控件
 - (void)setupUI;
+
++ (CGFloat)getCellHeight:(id)objcet;
 //给cell赋值
 - (void)reloadCellWithData:(id)data;
 
