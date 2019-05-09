@@ -48,7 +48,6 @@
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
 		970C7C1822808376002FC9A0 /* BCLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1722808376002FC9A0 /* BCLMineViewController.m */; };
 		970C7C1B22808394002FC9A0 /* BCLMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1A22808394002FC9A0 /* BCLMineView.m */; };
-		970C7C1D22808506002FC9A0 /* bcl_ic_mine_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C7C1C22808506002FC9A0 /* bcl_ic_mine_tabBar.png */; };
 		970EBB41221857AB00025038 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB3E221857AB00025038 /* FSLineChart.m */; };
 		970EBB42221857AB00025038 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB40221857AB00025038 /* UIColor+FSPalette.m */; };
 		970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB442218581900025038 /* BCLMonthLineChartView.m */; };
@@ -75,6 +74,7 @@
 		972AC2D22226DF05002A6172 /* bcl_ic_community_circleCell_commit.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2D12226DF05002A6172 /* bcl_ic_community_circleCell_commit.png */; };
 		97377F7022226C410077ED68 /* BCLImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97377F6F22226C410077ED68 /* BCLImageListView.m */; };
 		97377F742222703B0077ED68 /* BCLCommunityMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 97377F732222703B0077ED68 /* BCLCommunityMoment.m */; };
+		974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */; };
 		974D421E221ECEBA00738D3A /* BCLCommunitySegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */; };
 		974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */; };
 		974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974DDAFA223144220036FE8D /* BCLCommunityRecipesView.m */; };
@@ -201,7 +201,6 @@
 		970C7C1722808376002FC9A0 /* BCLMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineViewController.m; sourceTree = "<group>"; };
 		970C7C1922808394002FC9A0 /* BCLMineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineView.h; sourceTree = "<group>"; };
 		970C7C1A22808394002FC9A0 /* BCLMineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineView.m; sourceTree = "<group>"; };
-		970C7C1C22808506002FC9A0 /* bcl_ic_mine_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_mine_tabBar.png; path = ../../../../../../Downloads/bcl_ic_mine_tabBar.png; sourceTree = "<group>"; };
 		970C7C1E22808509002FC9A0 /* bcl_ic_mine_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_mine_tabBar.png; sourceTree = "<group>"; };
 		970EBB3D221857AB00025038 /* FSLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLineChart.h; sourceTree = "<group>"; };
 		970EBB3E221857AB00025038 /* FSLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLineChart.m; sourceTree = "<group>"; };
@@ -246,6 +245,7 @@
 		97377F6F22226C410077ED68 /* BCLImageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImageListView.m; sourceTree = "<group>"; };
 		97377F722222703B0077ED68 /* BCLCommunityMoment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityMoment.h; sourceTree = "<group>"; };
 		97377F732222703B0077ED68 /* BCLCommunityMoment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityMoment.m; sourceTree = "<group>"; };
+		974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_mine_tabBar.png; sourceTree = "<group>"; };
 		974D421C221ECEBA00738D3A /* BCLCommunitySegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunitySegmentView.h; sourceTree = "<group>"; };
 		974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunitySegmentView.m; sourceTree = "<group>"; };
 		974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bg_community_segment_color_line.png; sourceTree = "<group>"; };
@@ -740,7 +740,7 @@
 		9716EF4F21F6FDAE00583DBD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				970C7C1C22808506002FC9A0 /* bcl_ic_mine_tabBar.png */,
+				974BED382281D2DF004A8ABB /* Mine */,
 				046496E521F807D00093AC4E /* Welcome */,
 				046496E421F807CB0093AC4E /* Log */,
 				046496E321F807C80093AC4E /* SportsDietary */,
@@ -820,6 +820,14 @@
 				97377F732222703B0077ED68 /* BCLCommunityMoment.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		974BED382281D2DF004A8ABB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		977C9D9621FF43E900898615 /* EveryDayLogView */ = {
@@ -1009,7 +1017,6 @@
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
 				048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
-				970C7C1D22808506002FC9A0 /* bcl_ic_mine_tabBar.png in Resources */,
 				9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */,
 				974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */,
 				972AC2CC2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png in Resources */,
@@ -1030,6 +1037,7 @@
 				97E69607221D2BC500FB6316 /* bcl_btn_whole.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */,
+				974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */,
 				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
 				97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */,
 				9716EF5421F6FDAE00583DBD /* 开机.jpg in Resources */,
