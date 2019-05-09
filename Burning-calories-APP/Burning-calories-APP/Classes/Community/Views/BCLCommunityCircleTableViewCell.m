@@ -92,7 +92,7 @@ static const CGFloat kThreeButtonConstance = 110;
         }];
         [self setThreeButton:_likesButton andImageString:@"bcl_ic_community_circleCell_likes" andTitle:@"3"];
         
-        NSString *dynamicText = @"今天的咖啡觉得舒服的方式看风使舵激发肌肤水分附近的副驾驶飞机舒服今天的咖啡觉得舒服的方式看风使舵激发肌肤水分附近的副驾驶飞机舒服";
+        NSString *dynamicText = @"今天的咖啡觉得舒服的方式看风使舵激发肌肤水分附近的副驾驶飞机舒服今天的咖啡觉得舒服的方式看风使舵激发肌肤水分附近的副驾驶飞机舒服回家快回家看哈数据库的黑科技啊是的哈说的话记得看撒谎大家看哈时间快点哈数据库的环境卡圣诞节卡上的健康";
         CGFloat dynamicTextHeight = [BCLCommunityCircleTableViewCell getCellHeight:dynamicText];
         self.dynamicTextLabel = [[UILabel alloc]init];
         [self.contentView addSubview:self.dynamicTextLabel];

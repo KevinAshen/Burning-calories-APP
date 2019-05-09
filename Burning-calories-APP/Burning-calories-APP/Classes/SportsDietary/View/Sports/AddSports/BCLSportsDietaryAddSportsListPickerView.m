@@ -24,7 +24,7 @@ static const NSInteger kTopBottomInterval = 10;
 
 //运动时间选择器
 @property (nonatomic, strong) UIDatePicker *sportDatePicker;
-//确认Button
+//确认ButtonUIResponder
 @property (nonatomic, strong) UIButton *confirmButton;
 //取消Button
 @property (nonatomic, strong) UIButton *cancelButton;
