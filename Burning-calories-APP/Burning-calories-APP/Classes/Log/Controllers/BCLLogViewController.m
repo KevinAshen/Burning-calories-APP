@@ -63,6 +63,7 @@
         = [[BCLMonthTimeRecordViewController alloc] init];
         [self.navigationController pushViewController:new animated:YES];
     }
+    NSLog(@"%@", self.view);
 }
 #pragma mark - Navigation
 
