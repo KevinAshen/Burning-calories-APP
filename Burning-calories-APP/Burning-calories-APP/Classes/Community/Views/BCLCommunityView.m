@@ -143,11 +143,11 @@
     CGRect frame = _segmentView.selectImage.frame;
     if(scrollView.contentOffset.x / KScreenW == 0) {
         [UIView animateWithDuration:0.1 animations:^{
-        _segmentView.selectImage.frame = CGRectMake(KScreenW / 4, frame.origin.y, frame.size.width, frame.size.height);
+            self->_segmentView.selectImage.frame = CGRectMake(KScreenW / 4, frame.origin.y, frame.size.width, frame.size.height);
         }];
     } else if(scrollView.contentOffset.x / KScreenW == 1){
         [UIView animateWithDuration:0.1 animations:^{
-            _segmentView.selectImage.frame = CGRectMake(KScreenW / 2, frame.origin.y, frame.size.width, frame.size.height);
+            self->_segmentView.selectImage.frame = CGRectMake(KScreenW / 2, frame.origin.y, frame.size.width, frame.size.height);
         }];
     }
 }
