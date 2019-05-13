@@ -34,6 +34,7 @@
 		048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */; };
 		048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */; };
 		048300C3221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = 048300C2221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png */; };
+		04B9E7E52289982C00AFE4B1 /* BCLBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */; };
 		04D7519F222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */; };
 		04FE34B0222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */; };
 		04FE34B6222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34B5222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m */; };
@@ -176,6 +177,8 @@
 		048300B02219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordDietaryRecipeView.m; sourceTree = "<group>"; };
 		048300BF221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin_selected.png; sourceTree = "<group>"; };
 		048300C2221C3F7A000DDE19 /* bcl_ic_Dietary_tableView_sectionSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_Dietary_tableView_sectionSetting.png; sourceTree = "<group>"; };
+		04B9E7E32289982C00AFE4B1 /* BCLBounceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBounceView.h; sourceTree = "<group>"; };
+		04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBounceView.m; sourceTree = "<group>"; };
 		04D7519D222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryAddSportsListTagView.h; sourceTree = "<group>"; };
 		04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryAddSportsListTagView.m; sourceTree = "<group>"; };
 		04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_addSports_addButton.png; sourceTree = "<group>"; };
@@ -425,6 +428,8 @@
 				9716EF1521F6F48C00583DBD /* AppDelegate.m */,
 				9716B599227F1DE7007B64A1 /* BCLSuspensionButton.h */,
 				9716B59A227F1DE7007B64A1 /* BCLSuspensionButton.m */,
+				04B9E7E32289982C00AFE4B1 /* BCLBounceView.h */,
+				04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -702,9 +707,8 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
-				97098B71226F4897001C6A48 /* Manag */,
 				04504C382275E2010049D5A9 /* New Group */,
-				97098B71226F4897001C6A48 /* Manage */,
+				97098B71226F4897001C6A48 /* Manag */,
 				9716EF4F21F6FDAE00583DBD /* Resource */,
 				046496B521F736AF0093AC4E /* Base */,
 				046496E121F8049E0093AC4E /* Classes */,
@@ -1123,6 +1127,7 @@
 				9716B59B227F1DE7007B64A1 /* BCLSuspensionButton.m in Sources */,
 				04FE34B6222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m in Sources */,
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
+				04B9E7E52289982C00AFE4B1 /* BCLBounceView.m in Sources */,
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
