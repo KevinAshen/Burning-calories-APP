@@ -73,6 +73,12 @@
         [_button addTarget:self action:@selector(addClick:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
+
+//打开四种识别分类
+- (void)chooseClassify:(UIButton *)btn {
+    
+}
+
 - (void)addClick:(UIButton *)btn {
     _imagePicker = [[UIImagePickerController alloc]init];
     _imagePicker.delegate = self;
