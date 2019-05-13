@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class BCLMineTableView;
 @interface BCLMineView : UIView
-
+@property (nonatomic, strong) BCLMineTableView *mineTableView;
 @end
+

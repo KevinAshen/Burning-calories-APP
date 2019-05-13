@@ -45,6 +45,9 @@
 		97098B75226F4A96001C6A48 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 97098B74226F4A96001C6A48 /* APIClient.m */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
+		970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C55F82289A2B7001006CA /* BCLMineTableView.m */; };
+		970C55FC2289A321001006CA /* BCLMineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C55FB2289A321001006CA /* BCLMineTopTableViewCell.m */; };
+		970C55FE2289A7DA001006CA /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C55FD2289A7DA001006CA /* 4.jpg */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
 		970C7C1822808376002FC9A0 /* BCLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1722808376002FC9A0 /* BCLMineViewController.m */; };
 		970C7C1B22808394002FC9A0 /* BCLMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1A22808394002FC9A0 /* BCLMineView.m */; };
@@ -196,6 +199,11 @@
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
+		970C55F72289A2B7001006CA /* BCLMineTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineTableView.h; sourceTree = "<group>"; };
+		970C55F82289A2B7001006CA /* BCLMineTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineTableView.m; sourceTree = "<group>"; };
+		970C55FA2289A321001006CA /* BCLMineTopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineTopTableViewCell.h; sourceTree = "<group>"; };
+		970C55FB2289A321001006CA /* BCLMineTopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineTopTableViewCell.m; sourceTree = "<group>"; };
+		970C55FD2289A7DA001006CA /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin.png; sourceTree = "<group>"; };
 		970C7C1622808376002FC9A0 /* BCLMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineViewController.h; sourceTree = "<group>"; };
 		970C7C1722808376002FC9A0 /* BCLMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineViewController.m; sourceTree = "<group>"; };
@@ -596,6 +604,10 @@
 			children = (
 				970C7C1922808394002FC9A0 /* BCLMineView.h */,
 				970C7C1A22808394002FC9A0 /* BCLMineView.m */,
+				970C55F72289A2B7001006CA /* BCLMineTableView.h */,
+				970C55F82289A2B7001006CA /* BCLMineTableView.m */,
+				970C55FA2289A321001006CA /* BCLMineTopTableViewCell.h */,
+				970C55FB2289A321001006CA /* BCLMineTopTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -702,9 +714,8 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
-				97098B71226F4897001C6A48 /* Manag */,
 				04504C382275E2010049D5A9 /* New Group */,
-				97098B71226F4897001C6A48 /* Manage */,
+				97098B71226F4897001C6A48 /* Manag */,
 				9716EF4F21F6FDAE00583DBD /* Resource */,
 				046496B521F736AF0093AC4E /* Base */,
 				046496E121F8049E0093AC4E /* Classes */,
@@ -825,6 +836,7 @@
 		974BED382281D2DF004A8ABB /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				970C55FD2289A7DA001006CA /* 4.jpg */,
 				974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */,
 			);
 			path = Mine;
@@ -1014,6 +1026,7 @@
 				04FE34B0222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png in Resources */,
 				9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */,
 				043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */,
+				970C55FE2289A7DA001006CA /* 4.jpg in Resources */,
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
 				048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
@@ -1102,6 +1115,7 @@
 				046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */,
 				0408466C221460AB00E8F0DE /* BCLSportsDietaryRecordDietaryTableViewSectionView.m in Sources */,
 				9716EF2421F6F48D00583DBD /* main.m in Sources */,
+				970C55FC2289A321001006CA /* BCLMineTopTableViewCell.m in Sources */,
 				977C9DA121FF48AB00898615 /* BCLDayTimeRecordViewController.m in Sources */,
 				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
@@ -1126,6 +1140,7 @@
 				977C890022047ECA00313CBD /* BCLWeekTimeRecordViewController.m in Sources */,
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
+				970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */,
 				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
 				04504C3B2275E21E0049D5A9 /* XYBaseTableViewCell.m in Sources */,
 				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,

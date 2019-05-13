@@ -7,18 +7,43 @@
 //
 
 #import "BCLMineViewController.h"
+#import "BCLMineView.h"
+#import "BCLMineTableView.h"
 
-@interface BCLMineViewController ()
-
+@interface BCLMineViewController ()<UITableViewDelegate>
+@property (nonatomic, strong)BCLMineView *mineView;
 @end
 
 @implementation BCLMineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationItem.title = @"我的";
+    
+    self.mineView = [[BCLMineView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_mineView];
+    self.mineView.mineTableView.delegate = self;
     // Do any additional setup after loading the view.
 }
-
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [[UIView alloc] init];
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return [[UIView alloc] init];
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.section == 0) {
+        return 100;
+    } else {
+        return 60;
+    }
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return  0.0;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.0;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

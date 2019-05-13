@@ -109,7 +109,7 @@ static const CGFloat kThreeButtonConstance = 110;
     
         if([type isEqualToString:@"imageTableViewCell"]) {
             _imageArray = [[NSMutableArray alloc]initWithObjects:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3110881033,2007189544&fm=26&gp=0.jpg",nil];
-            _listView = [[BCLImageListView alloc]initWithFrame:CGRectMake(20, 60 + dynamicTextHeight, k_screen_width - kCommunityMargin, [BCLCommunityCircleTableViewCell getPhotosHeight:_imageArray.count].height) andImageArray:_imageArray];
+            _listView = [[BCLImageListView alloc]initWithFrame:CGRectMake(20, 30 + 2 * kCommunityMargin + dynamicTextHeight, k_screen_width - kCommunityMargin, [BCLCommunityCircleTableViewCell getPhotosHeight:_imageArray.count].height) andImageArray:_imageArray];
             [self.contentView addSubview:_listView];
         } else if([type isEqualToString:@"NoneTableViewCell"]) {
             

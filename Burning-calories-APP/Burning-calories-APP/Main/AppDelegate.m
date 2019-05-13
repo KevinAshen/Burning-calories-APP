@@ -60,7 +60,7 @@
     self.window.rootViewController = self.tabBarController;
     [_tabBarController setCodeTabbarController:viewControllerMutableArray andviewControllerTitleMutableArray:titleArray];
     
-//我qst是个SD
+
     [self.window makeKeyAndVisible];
 }
 -(void)createButton{
