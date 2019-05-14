@@ -22,6 +22,7 @@
     NSMutableArray *allNavigationController = [NSMutableArray array];
     for(int i = 0;i < viewControllerMutableArray.count; i++) {
         UINavigationController *everyNavigationController = [[UINavigationController alloc]initWithRootViewController:viewControllerMutableArray[i]];
+        
         everyNavigationController.tabBarItem.image = [UIImage imageNamed:titleMutableArray[i]];
         everyNavigationController.tabBarItem.selectedImage= [[UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",titleMutableArray[i]]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         

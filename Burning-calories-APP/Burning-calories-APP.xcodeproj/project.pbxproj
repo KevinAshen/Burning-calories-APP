@@ -49,6 +49,7 @@
 		970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C55F82289A2B7001006CA /* BCLMineTableView.m */; };
 		970C55FC2289A321001006CA /* BCLMineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C55FB2289A321001006CA /* BCLMineTopTableViewCell.m */; };
 		970C55FE2289A7DA001006CA /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C55FD2289A7DA001006CA /* 4.jpg */; };
+		970C56012289BC0B001006CA /* BCLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C56002289BC0B001006CA /* BCLTabBarController.m */; };
 		970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */; };
 		970C7C1822808376002FC9A0 /* BCLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1722808376002FC9A0 /* BCLMineViewController.m */; };
 		970C7C1B22808394002FC9A0 /* BCLMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C7C1A22808394002FC9A0 /* BCLMineView.m */; };
@@ -57,7 +58,6 @@
 		970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EBB442218581900025038 /* BCLMonthLineChartView.m */; };
 		97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97149C2A221D8C1D001454B0 /* BCLCommunityView.m */; };
 		97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97149C2D221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m */; };
-		9716B59B227F1DE7007B64A1 /* BCLSuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716B59A227F1DE7007B64A1 /* BCLSuspensionButton.m */; };
 		9716B5AD227F2703007B64A1 /* BCLSelectFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716B5AC227F2703007B64A1 /* BCLSelectFinishViewController.m */; };
 		9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF1521F6F48C00583DBD /* AppDelegate.m */; };
 		9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF1A21F6F48C00583DBD /* Main.storyboard */; };
@@ -71,6 +71,7 @@
 		9716EF5621F6FDAE00583DBD /* 运动.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5221F6FDAE00583DBD /* 运动.png */; };
 		9716EF5721F6FDAF00583DBD /* 日志.png in Resources */ = {isa = PBXBuildFile; fileRef = 9716EF5321F6FDAE00583DBD /* 日志.png */; };
 		9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */; };
+		972543E2228ACED1003827E7 /* BCLCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 972543E1228ACED1003827E7 /* BCLCustomTabBar.m */; };
 		972AC2CA2226DCBE002A6172 /* bcl_ic_community_circleCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2C92226DCBE002A6172 /* bcl_ic_community_circleCell.png */; };
 		972AC2CC2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2CB2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png */; };
 		972AC2CE2226DEF6002A6172 /* bcl_ic_community_circleCell_likes.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2CD2226DEF6002A6172 /* bcl_ic_community_circleCell_likes.png */; };
@@ -207,6 +208,8 @@
 		970C55FA2289A321001006CA /* BCLMineTopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineTopTableViewCell.h; sourceTree = "<group>"; };
 		970C55FB2289A321001006CA /* BCLMineTopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineTopTableViewCell.m; sourceTree = "<group>"; };
 		970C55FD2289A7DA001006CA /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		970C55FF2289BC0B001006CA /* BCLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLTabBarController.h; sourceTree = "<group>"; };
+		970C56002289BC0B001006CA /* BCLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLTabBarController.m; sourceTree = "<group>"; };
 		970C762F221706DA00DE5F88 /* bcl_ic_log_week_aixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_aixin.png; sourceTree = "<group>"; };
 		970C7C1622808376002FC9A0 /* BCLMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineViewController.h; sourceTree = "<group>"; };
 		970C7C1722808376002FC9A0 /* BCLMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineViewController.m; sourceTree = "<group>"; };
@@ -223,8 +226,6 @@
 		97149C2A221D8C1D001454B0 /* BCLCommunityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityView.m; sourceTree = "<group>"; };
 		97149C2C221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityCircleTableViewCell.h; sourceTree = "<group>"; };
 		97149C2D221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityCircleTableViewCell.m; sourceTree = "<group>"; };
-		9716B599227F1DE7007B64A1 /* BCLSuspensionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSuspensionButton.h; sourceTree = "<group>"; };
-		9716B59A227F1DE7007B64A1 /* BCLSuspensionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSuspensionButton.m; sourceTree = "<group>"; };
 		9716B5AB227F2703007B64A1 /* BCLSelectFinishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSelectFinishViewController.h; sourceTree = "<group>"; };
 		9716B5AC227F2703007B64A1 /* BCLSelectFinishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSelectFinishViewController.m; sourceTree = "<group>"; };
 		9716EF1121F6F48B00583DBD /* Burning-calories-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burning-calories-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +248,8 @@
 		9716EF5321F6FDAE00583DBD /* 日志.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日志.png"; sourceTree = "<group>"; };
 		9716EF6B21F74B0300583DBD /* BCLBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseTableViewCell.h; sourceTree = "<group>"; };
 		9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTableViewCell.m; sourceTree = "<group>"; };
+		972543E0228ACED1003827E7 /* BCLCustomTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCustomTabBar.h; sourceTree = "<group>"; };
+		972543E1228ACED1003827E7 /* BCLCustomTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCustomTabBar.m; sourceTree = "<group>"; };
 		972AC2C92226DCBE002A6172 /* bcl_ic_community_circleCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_community_circleCell.png; sourceTree = "<group>"; };
 		972AC2CB2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_community_circleCell_share.png; sourceTree = "<group>"; };
 		972AC2CD2226DEF6002A6172 /* bcl_ic_community_circleCell_likes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_community_circleCell_likes.png; sourceTree = "<group>"; };
@@ -434,10 +437,12 @@
 			children = (
 				9716EF1421F6F48C00583DBD /* AppDelegate.h */,
 				9716EF1521F6F48C00583DBD /* AppDelegate.m */,
-				9716B599227F1DE7007B64A1 /* BCLSuspensionButton.h */,
-				9716B59A227F1DE7007B64A1 /* BCLSuspensionButton.m */,
 				04B9E7E32289982C00AFE4B1 /* BCLBounceView.h */,
 				04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */,
+				970C55FF2289BC0B001006CA /* BCLTabBarController.h */,
+				970C56002289BC0B001006CA /* BCLTabBarController.m */,
+				972543E0228ACED1003827E7 /* BCLCustomTabBar.h */,
+				972543E1228ACED1003827E7 /* BCLCustomTabBar.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1125,6 +1130,7 @@
 				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
 				977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */,
+				970C56012289BC0B001006CA /* BCLTabBarController.m in Sources */,
 				04D7519F222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m in Sources */,
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
 				97BE238F2207311000284424 /* BCLMonthTimeRecordViewController.m in Sources */,
@@ -1139,7 +1145,6 @@
 				9716B5AD227F2703007B64A1 /* BCLSelectFinishViewController.m in Sources */,
 				977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */,
 				977C89072204893100313CBD /* BCLOtherWeekDayRecordCollectionViewCell.m in Sources */,
-				9716B59B227F1DE7007B64A1 /* BCLSuspensionButton.m in Sources */,
 				04FE34B6222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m in Sources */,
 				977C9D9921FF450800898615 /* BCLDayTimeRecordCollectionViewCell.m in Sources */,
 				04B9E7E52289982C00AFE4B1 /* BCLBounceView.m in Sources */,
@@ -1168,6 +1173,7 @@
 				046496E921F9A2580093AC4E /* BCLSportsDietaryRecordView.m in Sources */,
 				97A3008F2225728000A37540 /* Utility.m in Sources */,
 				04504C3E2275E2AA0049D5A9 /* ABCTableViewCell.m in Sources */,
+				972543E2228ACED1003827E7 /* BCLCustomTabBar.m in Sources */,
 				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
 				97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */,
 				97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */,
