@@ -7,11 +7,13 @@
 //
 
 #import "BCLBounceView.h"
-#define kBCLBounceViewHeight k_screen_height / 4.5
+#define kBCLBounceViewHeight k_screen_height / 3.5
 
 @interface BCLBounceView ()
 
 @property (nonatomic, strong) UIView *contentView;
+
+@property (nonatomic, strong) UIImageView *testImageView;
 
 @end
 
@@ -45,12 +47,29 @@
     [UIView animateWithDuration:0.15 animations:^{
         self.alpha = 1.0;
         
-        [self.contentView setFrame:CGRectMake(0, k_screen_height, k_screen_width, kBCLBounceViewHeight)];
+        [self.contentView setFrame:CGRectMake(0, k_screen_height - kBCLBounceViewHeight, k_screen_width, kBCLBounceViewHeight)];
     } completion:nil];
 }
 
 - (void)setupContentSubview {
     
+    _contentView.backgroundColor = [UIColor yellowColor];
+    self.testImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bcl_btn_whole.png"]];
+    [_contentView addSubview:_testImageView];
+    [_testImageView setFrame:CGRectMake(50, 50, 100, 100)];
+    CABasicAnimation *moveAnimation = [CABasicAnimation animationWithKeyPath:@"position.y"];
+    moveAnimation.duration = 0.8; //动画时间
+    //动画起始值与终止值的设置
+    moveAnimation.fromValue = @(self.testImageView.center.x);
+    moveAnimation.toValue = @(self.testImageView.center.x - 30);
+    //一个时间函数，代表它是怎么运行的
+    moveAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    moveAnimation.repeatCount = HUGE_VALF;
+    //moveAnimation.repeatDuration = 2;
+    moveAnimation.removedOnCompletion = NO;
+    moveAnimation.fillMode = kCAFillModeForwards;
+    //添加动画，后面可以拿到中国动画的标志
+    [self.testImageView.layer addAnimation:moveAnimation forKey:@"可以拿到中国动画的标志值"];
 }
 
 - (void)disMissView {

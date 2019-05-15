@@ -10,4 +10,7 @@
 
 @interface BCLCustomTabBar : UITabBar
 
+///中心button
+@property (nonatomic, strong) UIButton *centerButton;
+
 @end
