@@ -44,7 +44,23 @@
     
     NSArray *titleArray = @[@"bcl_ic_log_tabBar",@"bcl_ic_soprts_tabBar",@"bcl_ic_community_tabBar",@"bcl_ic_mine_tabBar"];
     [self setCodeTabbarController:viewControllerMutableArray andviewControllerTitleMutableArray:titleArray];
+    
+    [self removeTabBarTopLine];
     // Do any additional setup after loading the view.
+}
+
+#pragma mark--隐藏tabBar顶部线条
+- (void)removeTabBarTopLine {
+    CGRect rect = CGRectMake(0, 0, k_screen_width, k_screen_height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self.tabBar setBackgroundImage:img];
+    [self.tabBar setShadowImage:img];
 }
 
 - (void)clickCenterBtn:(UIButton *)button {
