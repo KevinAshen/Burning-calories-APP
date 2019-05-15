@@ -12,9 +12,12 @@
 #import "BCLSportsDietaryViewController.h"
 #import "BCLMineViewController.h"
 #import "BCLCustomTabBar.h"
+#import "BCLBounceView.h"
 
 @interface BCLTabBarController ()
 
+///弹出的选择框
+@property (nonatomic, strong) BCLBounceView *bounceView;
 
 @end
 
@@ -22,7 +25,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setValue:[[BCLCustomTabBar alloc] init] forKey:@"tabBar"];
+    BCLCustomTabBar *customTabBar = [[BCLCustomTabBar alloc] init];
+    [self setValue:customTabBar forKey:@"tabBar"];
+    
+    [customTabBar.centerButton addTarget:self action:@selector(clickCenterBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     BCLLogViewController *logViewController = [[BCLLogViewController alloc]init];
     BCLSportsDietaryViewController *sportsDietaryViewController = [[BCLSportsDietaryViewController alloc]init];
@@ -39,6 +45,12 @@
     NSArray *titleArray = @[@"bcl_ic_log_tabBar",@"bcl_ic_soprts_tabBar",@"bcl_ic_community_tabBar",@"bcl_ic_mine_tabBar"];
     [self setCodeTabbarController:viewControllerMutableArray andviewControllerTitleMutableArray:titleArray];
     // Do any additional setup after loading the view.
+}
+
+- (void)clickCenterBtn:(UIButton *)button {
+    self.bounceView = [[BCLBounceView alloc] initWithFrame:CGRectMake(0, 0, k_screen_width, k_screen_height)];
+    [_bounceView showInView:self.view];
+    NSLog(@"fdsfs");
 }
 
 - (void)didReceiveMemoryWarning {
