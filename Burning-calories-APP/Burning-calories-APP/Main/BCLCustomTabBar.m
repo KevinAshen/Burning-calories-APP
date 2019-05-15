@@ -8,10 +8,6 @@
 
 #import "BCLCustomTabBar.h"
 
-@interface BCLCustomTabBar()
-
-@property (nonatomic, strong) UIButton *centerButton;
-@end
 
 @implementation BCLCustomTabBar
 - (UIButton *)centerButton {
@@ -24,7 +20,6 @@
         [_centerButton setImage:[UIImage imageNamed:@"tianjia-3"] forState:UIControlStateNormal];
 //        [_centerButton setImage:[UIImage imageNamed:@"bcl_btn_whole"] forState:UIControlStateNormal];
         [self addSubview:_centerButton];
-        [_centerButton addTarget:self action:@selector(clickCenterBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _centerButton;
 }
@@ -59,9 +54,7 @@
     //把中间按钮带到视图最前面
     [self bringSubviewToFront:self.centerButton];
 }
-- (void)clickCenterBtn:(UIButton *)button {
-    NSLog(@"fdsfs");
-}
+
 //让突出的那部分响应事件
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *result = [super hitTest:point withEvent:event];
