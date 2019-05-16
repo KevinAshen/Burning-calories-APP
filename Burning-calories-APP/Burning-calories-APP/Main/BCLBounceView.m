@@ -57,17 +57,16 @@
     self.testImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bcl_btn_whole.png"]];
     [_contentView addSubview:_testImageView];
     [_testImageView setFrame:CGRectMake(50, 50, 100, 100)];
-    CABasicAnimation *moveAnimation = [CABasicAnimation animationWithKeyPath:@"position.y"];
+    CABasicAnimation *moveAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     moveAnimation.duration = 0.8; //动画时间
-    //动画起始值与终止值的设置
-    moveAnimation.fromValue = @(self.testImageView.center.x);
-    moveAnimation.toValue = @(self.testImageView.center.x - 30);
+    moveAnimation.fromValue = [NSNumber numberWithFloat:-0.25 * M_PI];
+    moveAnimation.toValue = [NSNumber numberWithFloat:0 * M_PI];
     //一个时间函数，代表它是怎么运行的
-    moveAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    moveAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     moveAnimation.repeatCount = HUGE_VALF;
-    //moveAnimation.repeatDuration = 2;
-    moveAnimation.removedOnCompletion = NO;
-    moveAnimation.fillMode = kCAFillModeForwards;
+    moveAnimation.repeatDuration = 1;
+    //moveAnimation.removedOnCompletion = YES;
+    //moveAnimation.fillMode = kCAFillModeForwards;
     //添加动画，后面可以拿到中国动画的标志
     [self.testImageView.layer addAnimation:moveAnimation forKey:@"可以拿到中国动画的标志值"];
 }
