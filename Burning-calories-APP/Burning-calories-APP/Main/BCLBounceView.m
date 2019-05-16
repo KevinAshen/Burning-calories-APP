@@ -58,7 +58,7 @@
     [_contentView addSubview:_testImageView];
     [_testImageView setFrame:CGRectMake(50, 50, 100, 100)];
     CABasicAnimation *moveAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    moveAnimation.duration = 1; //动画时间
+    moveAnimation.duration = 0.8; //动画时间
     moveAnimation.fromValue = [NSNumber numberWithFloat:-0.25 * M_PI];
     moveAnimation.toValue = [NSNumber numberWithFloat:0 * M_PI];
     //一个时间函数，代表它是怎么运行的
