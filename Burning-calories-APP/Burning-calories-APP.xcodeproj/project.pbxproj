@@ -92,7 +92,6 @@
 		9748CD34228D8D37004AE8CB /* bcl_ic_login_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */; };
 		9748CD36228D8D43004AE8CB /* bcl_ic_login_password.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */; };
 		9748CD38228D9643004AE8CB /* bcl_ic_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD37228D9642004AE8CB /* bcl_ic_logo.png */; };
-		9748CD3A228D99C8004AE8CB /* bcl_bt_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD39228D99C8004AE8CB /* bcl_bt_login.png */; };
 		9748CD40228DA694004AE8CB /* BCLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9748CD3F228DA694004AE8CB /* BCLRegisterViewController.m */; };
 		9748CD43228DA7A6004AE8CB /* BCLRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9748CD42228DA7A6004AE8CB /* BCLRegisterView.m */; };
 		974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */; };
@@ -100,6 +99,7 @@
 		974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */; };
 		974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974DDAFA223144220036FE8D /* BCLCommunityRecipesView.m */; };
 		974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */; };
+		97625365228FFF4200443803 /* bcl_bt_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 97625364228FFF4200443803 /* bcl_bt_login.png */; };
 		97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */; };
 		977601FB21FDE24D008B9F74 /* BCLLogHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977601FA21FDE24D008B9F74 /* BCLLogHistogramView.m */; };
 		977C88FD2204723A00313CBD /* BCLWeekTimeRecordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C88FC2204723A00313CBD /* BCLWeekTimeRecordCollectionViewCell.m */; };
@@ -291,7 +291,6 @@
 		9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_login_user.png; path = ../../../../../../../Downloads/bcl_ic_login_user.png; sourceTree = "<group>"; };
 		9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_login_password.png; sourceTree = "<group>"; };
 		9748CD37228D9642004AE8CB /* bcl_ic_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_logo.png; sourceTree = "<group>"; };
-		9748CD39228D99C8004AE8CB /* bcl_bt_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_bt_login.png; path = ../../../../../../../Downloads/bcl_bt_login.png; sourceTree = "<group>"; };
 		9748CD3E228DA694004AE8CB /* BCLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLRegisterViewController.h; sourceTree = "<group>"; };
 		9748CD3F228DA694004AE8CB /* BCLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLRegisterViewController.m; sourceTree = "<group>"; };
 		9748CD41228DA7A6004AE8CB /* BCLRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLRegisterView.h; sourceTree = "<group>"; };
@@ -303,6 +302,7 @@
 		974DDAF9223144220036FE8D /* BCLCommunityRecipesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityRecipesView.h; sourceTree = "<group>"; };
 		974DDAFA223144220036FE8D /* BCLCommunityRecipesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityRecipesView.m; sourceTree = "<group>"; };
 		974E6FDC21FCA0CE005E85F2 /* bcl_log_month_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_log_month_arrow.png; sourceTree = "<group>"; };
+		97625364228FFF4200443803 /* bcl_bt_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_bt_login.png; sourceTree = "<group>"; };
 		97687AF221FB4DBA00E09F1F /* BCLLogMonthTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogMonthTableViewCell.h; sourceTree = "<group>"; };
 		97687AF321FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLogMonthTableViewCell.m; sourceTree = "<group>"; };
 		977601F921FDE244008B9F74 /* BCLLogHistogramView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogHistogramView.h; sourceTree = "<group>"; };
@@ -558,7 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				9748CD37228D9642004AE8CB /* bcl_ic_logo.png */,
-				9748CD39228D99C8004AE8CB /* bcl_bt_login.png */,
+				97625364228FFF4200443803 /* bcl_bt_login.png */,
 				9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */,
 				9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */,
 				9748CD31228D8790004AE8CB /* bcl_icon_login_shortline.png */,
@@ -1147,6 +1147,7 @@
 				974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */,
 				9748CD38228D9643004AE8CB /* bcl_ic_logo.png in Resources */,
 				0408467022158C0800E8F0DE /* bcl_ic_soprts_tableView_cellDeleteButton.png in Resources */,
+				97625365228FFF4200443803 /* bcl_bt_login.png in Resources */,
 				042A8F1A2241D0FE00CE57AB /* bcl_ic_dietary_detailDietary_testDietaryImage.png in Resources */,
 				9748CD34228D8D37004AE8CB /* bcl_ic_login_user.png in Resources */,
 				9796BC0C21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png in Resources */,
@@ -1157,7 +1158,6 @@
 				97E69607221D2BC500FB6316 /* bcl_btn_whole.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */,
-				9748CD3A228D99C8004AE8CB /* bcl_bt_login.png in Resources */,
 				9748CD36228D8D43004AE8CB /* bcl_ic_login_password.png in Resources */,
 				974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */,
 				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
