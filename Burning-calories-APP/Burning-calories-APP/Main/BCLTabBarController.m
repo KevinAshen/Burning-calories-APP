@@ -18,6 +18,7 @@
 
 ///弹出的选择框
 @property (nonatomic, strong) BCLBounceView *bounceView;
+@property (nonatomic, strong) BCLCustomTabBar *customTabBar;
 
 @end
 
@@ -25,10 +26,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BCLCustomTabBar *customTabBar = [[BCLCustomTabBar alloc] init];
-    [self setValue:customTabBar forKey:@"tabBar"];
+    _customTabBar = [[BCLCustomTabBar alloc] init];
+    [self setValue:_customTabBar forKey:@"tabBar"];
     
-    [customTabBar.centerButton addTarget:self action:@selector(clickCenterBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [_customTabBar.centerButton addTarget:self action:@selector(clickCenterBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     BCLLogViewController *logViewController = [[BCLLogViewController alloc]init];
     BCLSportsDietaryViewController *sportsDietaryViewController = [[BCLSportsDietaryViewController alloc]init];
@@ -53,6 +54,7 @@
 - (void)removeTabBarTopLine {
     CGRect rect = CGRectMake(0, 0, k_screen_width, k_screen_height);
     UIGraphicsBeginImageContext(rect.size);
+    //2G画布
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
     CGContextFillRect(context, rect);

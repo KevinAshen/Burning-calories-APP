@@ -73,6 +73,8 @@
 		9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */; };
 		971B10A3228C449B00A73B04 /* tianjia-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 971B10A2228C449A00A73B04 /* tianjia-3.png */; };
 		971B10A5228C45B000A73B04 /* jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = 971B10A4228C45B000A73B04 /* jiahao.png */; };
+		971B10AC228C567D00A73B04 /* BCLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971B10AB228C567D00A73B04 /* BCLLoginViewController.m */; };
+		971B10AF228C56A200A73B04 /* BCLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 971B10AE228C56A200A73B04 /* BCLLoginView.m */; };
 		972543E2228ACED1003827E7 /* BCLCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 972543E1228ACED1003827E7 /* BCLCustomTabBar.m */; };
 		972AC2CA2226DCBE002A6172 /* bcl_ic_community_circleCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2C92226DCBE002A6172 /* bcl_ic_community_circleCell.png */; };
 		972AC2CC2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2CB2226DEA3002A6172 /* bcl_ic_community_circleCell_share.png */; };
@@ -81,6 +83,13 @@
 		972AC2D22226DF05002A6172 /* bcl_ic_community_circleCell_commit.png in Resources */ = {isa = PBXBuildFile; fileRef = 972AC2D12226DF05002A6172 /* bcl_ic_community_circleCell_commit.png */; };
 		97377F7022226C410077ED68 /* BCLImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97377F6F22226C410077ED68 /* BCLImageListView.m */; };
 		97377F742222703B0077ED68 /* BCLCommunityMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 97377F732222703B0077ED68 /* BCLCommunityMoment.m */; };
+		9748CD32228D8790004AE8CB /* bcl_icon_login_shortline.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD31228D8790004AE8CB /* bcl_icon_login_shortline.png */; };
+		9748CD34228D8D37004AE8CB /* bcl_ic_login_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */; };
+		9748CD36228D8D43004AE8CB /* bcl_ic_login_password.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */; };
+		9748CD38228D9643004AE8CB /* bcl_ic_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD37228D9642004AE8CB /* bcl_ic_logo.png */; };
+		9748CD3A228D99C8004AE8CB /* bcl_bt_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 9748CD39228D99C8004AE8CB /* bcl_bt_login.png */; };
+		9748CD40228DA694004AE8CB /* BCLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9748CD3F228DA694004AE8CB /* BCLRegisterViewController.m */; };
+		9748CD43228DA7A6004AE8CB /* BCLRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9748CD42228DA7A6004AE8CB /* BCLRegisterView.m */; };
 		974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */; };
 		974D421E221ECEBA00738D3A /* BCLCommunitySegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */; };
 		974D4220221ED1A600738D3A /* bcl_bg_community_segment_color_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 974D421F221ED1A600738D3A /* bcl_bg_community_segment_color_line.png */; };
@@ -252,6 +261,10 @@
 		9716EF6C21F74B0300583DBD /* BCLBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseTableViewCell.m; sourceTree = "<group>"; };
 		971B10A2228C449A00A73B04 /* tianjia-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tianjia-3.png"; sourceTree = "<group>"; };
 		971B10A4228C45B000A73B04 /* jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiahao.png; sourceTree = "<group>"; };
+		971B10AA228C567D00A73B04 /* BCLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLoginViewController.h; sourceTree = "<group>"; };
+		971B10AB228C567D00A73B04 /* BCLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLoginViewController.m; sourceTree = "<group>"; };
+		971B10AD228C56A200A73B04 /* BCLLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLoginView.h; sourceTree = "<group>"; };
+		971B10AE228C56A200A73B04 /* BCLLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLLoginView.m; sourceTree = "<group>"; };
 		972543E0228ACED1003827E7 /* BCLCustomTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCustomTabBar.h; sourceTree = "<group>"; };
 		972543E1228ACED1003827E7 /* BCLCustomTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCustomTabBar.m; sourceTree = "<group>"; };
 		972AC2C92226DCBE002A6172 /* bcl_ic_community_circleCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_community_circleCell.png; sourceTree = "<group>"; };
@@ -263,6 +276,15 @@
 		97377F6F22226C410077ED68 /* BCLImageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImageListView.m; sourceTree = "<group>"; };
 		97377F722222703B0077ED68 /* BCLCommunityMoment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityMoment.h; sourceTree = "<group>"; };
 		97377F732222703B0077ED68 /* BCLCommunityMoment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityMoment.m; sourceTree = "<group>"; };
+		9748CD31228D8790004AE8CB /* bcl_icon_login_shortline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_icon_login_shortline.png; sourceTree = "<group>"; };
+		9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_login_user.png; path = ../../../../../../../Downloads/bcl_ic_login_user.png; sourceTree = "<group>"; };
+		9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_login_password.png; sourceTree = "<group>"; };
+		9748CD37228D9642004AE8CB /* bcl_ic_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_logo.png; sourceTree = "<group>"; };
+		9748CD39228D99C8004AE8CB /* bcl_bt_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_bt_login.png; path = ../../../../../../../Downloads/bcl_bt_login.png; sourceTree = "<group>"; };
+		9748CD3E228DA694004AE8CB /* BCLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLRegisterViewController.h; sourceTree = "<group>"; };
+		9748CD3F228DA694004AE8CB /* BCLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLRegisterViewController.m; sourceTree = "<group>"; };
+		9748CD41228DA7A6004AE8CB /* BCLRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLRegisterView.h; sourceTree = "<group>"; };
+		9748CD42228DA7A6004AE8CB /* BCLRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLRegisterView.m; sourceTree = "<group>"; };
 		974BED362281D290004A8ABB /* bcl_ic_mine_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_mine_tabBar.png; sourceTree = "<group>"; };
 		974D421C221ECEBA00738D3A /* BCLCommunitySegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunitySegmentView.h; sourceTree = "<group>"; };
 		974D421D221ECEBA00738D3A /* BCLCommunitySegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunitySegmentView.m; sourceTree = "<group>"; };
@@ -454,6 +476,7 @@
 		046496E121F8049E0093AC4E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				971B10A6228C564700A73B04 /* Login */,
 				970C7C122280819C002FC9A0 /* Mine */,
 				9716B5A7227F2675007B64A1 /* imageRecognition */,
 				9716EF5A21F6FF2300583DBD /* Community */,
@@ -521,6 +544,11 @@
 		046496E521F807D00093AC4E /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				9748CD37228D9642004AE8CB /* bcl_ic_logo.png */,
+				9748CD39228D99C8004AE8CB /* bcl_bt_login.png */,
+				9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */,
+				9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */,
+				9748CD31228D8790004AE8CB /* bcl_icon_login_shortline.png */,
 				97E69606221D2BC500FB6316 /* bcl_btn_whole.png */,
 				9716EF5021F6FDAE00583DBD /* 开机.jpg */,
 			);
@@ -838,6 +866,45 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		971B10A6228C564700A73B04 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				971B10A9228C565D00A73B04 /* Model */,
+				971B10A8228C565700A73B04 /* Controller */,
+				971B10A7228C565000A73B04 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		971B10A7228C565000A73B04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				971B10AD228C56A200A73B04 /* BCLLoginView.h */,
+				971B10AE228C56A200A73B04 /* BCLLoginView.m */,
+				9748CD41228DA7A6004AE8CB /* BCLRegisterView.h */,
+				9748CD42228DA7A6004AE8CB /* BCLRegisterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		971B10A8228C565700A73B04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				971B10AA228C567D00A73B04 /* BCLLoginViewController.h */,
+				971B10AB228C567D00A73B04 /* BCLLoginViewController.m */,
+				9748CD3E228DA694004AE8CB /* BCLRegisterViewController.h */,
+				9748CD3F228DA694004AE8CB /* BCLRegisterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		971B10A9228C565D00A73B04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		97377F7122226FE60077ED68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1043,6 +1110,7 @@
 				9796BC0821F8582800294FE6 /* bcl_ic_log_tabBar.png in Resources */,
 				043C543B21FDD74700F041D0 /* bcl_ic_soprts_tableView_cellBackgroundImage.png in Resources */,
 				970C55FE2289A7DA001006CA /* 4.jpg in Resources */,
+				9748CD32228D8790004AE8CB /* bcl_icon_login_shortline.png in Resources */,
 				97B8F391220084AC00F66B85 /* bcl_bg_log_everyday2.png in Resources */,
 				048300C0221AFB85000DDE19 /* bcl_ic_log_week_aixin_selected.png in Resources */,
 				97B8F39322008A6000F66B85 /* bcl_btn_log_everyday_cancel.png in Resources */,
@@ -1057,8 +1125,10 @@
 				9716EF2121F6F48D00583DBD /* LaunchScreen.storyboard in Resources */,
 				9716EF1E21F6F48D00583DBD /* Assets.xcassets in Resources */,
 				974E6FDD21FCA0CE005E85F2 /* bcl_log_month_arrow.png in Resources */,
+				9748CD38228D9643004AE8CB /* bcl_ic_logo.png in Resources */,
 				0408467022158C0800E8F0DE /* bcl_ic_soprts_tableView_cellDeleteButton.png in Resources */,
 				042A8F1A2241D0FE00CE57AB /* bcl_ic_dietary_detailDietary_testDietaryImage.png in Resources */,
+				9748CD34228D8D37004AE8CB /* bcl_ic_login_user.png in Resources */,
 				9796BC0C21F8585700294FE6 /* bcl_ic_soprts_tabBar_selected.png in Resources */,
 				972AC2D22226DF05002A6172 /* bcl_ic_community_circleCell_commit.png in Resources */,
 				9716EF5721F6FDAF00583DBD /* 日志.png in Resources */,
@@ -1067,6 +1137,8 @@
 				97E69607221D2BC500FB6316 /* bcl_btn_whole.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
 				970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */,
+				9748CD3A228D99C8004AE8CB /* bcl_bt_login.png in Resources */,
+				9748CD36228D8D43004AE8CB /* bcl_ic_login_password.png in Resources */,
 				974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */,
 				977C9D9B21FF470E00898615 /* bcl_bg_log_everyday.png in Resources */,
 				97B8F39622008DF100F66B85 /* bcl_bg_log_everyday_food2.png in Resources */,
@@ -1143,12 +1215,14 @@
 				9716EF1621F6F48C00583DBD /* AppDelegate.m in Sources */,
 				97BE238F2207311000284424 /* BCLMonthTimeRecordViewController.m in Sources */,
 				9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */,
+				9748CD40228DA694004AE8CB /* BCLRegisterViewController.m in Sources */,
 				9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */,
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
 				0457FA2322015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m in Sources */,
 				046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */,
 				046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */,
 				97377F742222703B0077ED68 /* BCLCommunityMoment.m in Sources */,
+				971B10AC228C567D00A73B04 /* BCLLoginViewController.m in Sources */,
 				970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */,
 				9716B5AD227F2703007B64A1 /* BCLSelectFinishViewController.m in Sources */,
 				977C9D9E21FF478500898615 /* BCLDayTimeRecordView.m in Sources */,
@@ -1160,6 +1234,7 @@
 				046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */,
 				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
 				970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */,
+				9748CD43228DA7A6004AE8CB /* BCLRegisterView.m in Sources */,
 				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
 				04504C3B2275E21E0049D5A9 /* XYBaseTableViewCell.m in Sources */,
 				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,
@@ -1182,6 +1257,7 @@
 				97A3008F2225728000A37540 /* Utility.m in Sources */,
 				04504C3E2275E2AA0049D5A9 /* ABCTableViewCell.m in Sources */,
 				972543E2228ACED1003827E7 /* BCLCustomTabBar.m in Sources */,
+				971B10AF228C56A200A73B04 /* BCLLoginView.m in Sources */,
 				97BE238C22072E3500284424 /* BCLMonthTimeRecordView.m in Sources */,
 				97687AF421FB4DBA00E09F1F /* BCLLogMonthTableViewCell.m in Sources */,
 				97149C2E221D8D2B001454B0 /* BCLCommunityCircleTableViewCell.m in Sources */,
