@@ -12,11 +12,12 @@
 @implementation BCLCustomTabBar
 - (UIButton *)centerButton {
     if (_centerButton == nil) {
+        self.translucent = NO;
         _centerButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _centerButton.frame = CGRectMake(0, 0, 60, 60);
         _centerButton.layer.cornerRadius = 30;
         _centerButton.layer.masksToBounds = YES;
-        _centerButton.layer.backgroundColor = [UIColor colorWithRed:0.96f green:0.96f blue:0.96f alpha:1.00f].CGColor;
+        _centerButton.layer.backgroundColor = [UIColor colorWithRed:1.00f green:1.00f blue:1.00f alpha:1.00f].CGColor;
         [_centerButton setImage:[UIImage imageNamed:@"tianjia-3"] forState:UIControlStateNormal];
 //        [_centerButton setImage:[UIImage imageNamed:@"bcl_btn_whole"] forState:UIControlStateNormal];
         [self addSubview:_centerButton];

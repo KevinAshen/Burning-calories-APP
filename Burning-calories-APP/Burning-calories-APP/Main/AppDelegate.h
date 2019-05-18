@@ -12,9 +12,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UIButton *button;
-@property (nonatomic, strong) BCLBaseTabBarController *tabBarController;
-@property (nonatomic, strong)UIImagePickerController *imagePicker;
+
 
 @end
 

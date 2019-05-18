@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BCLTabBarController.h"
 #import "BCLSelectFinishViewController.h"
+#import "BCLLoginViewController.h"
 
 #define KScreenWidth [UIScreen mainScreen].bounds.size.width
 #define KScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -34,8 +35,9 @@
 }
 #pragma mark - 工具栏
 - (void)changeView {
-    _tabBarController = [[BCLTabBarController alloc]init];
-    [self.openViewController presentViewController:_tabBarController animated:YES completion:nil];
+    BCLLoginViewController *loginViewController = [[BCLLoginViewController alloc] init];
+    
+    [self.openViewController presentViewController:loginViewController animated:YES completion:nil];
 
     [self.window makeKeyAndVisible];
 }
