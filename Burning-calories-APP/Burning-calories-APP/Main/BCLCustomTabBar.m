@@ -8,7 +8,6 @@
 
 #import "BCLCustomTabBar.h"
 
-
 @implementation BCLCustomTabBar
 - (UIButton *)centerButton {
     if (_centerButton == nil) {

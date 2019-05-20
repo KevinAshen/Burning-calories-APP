@@ -13,16 +13,7 @@
 #import "BCLSportsDietaryAddSportsListViewController.h"
 #import "BCLSportsDietaryDetailDietaryViewController.h"
 
-static const NSInteger kSegmentedControlHeight = 30;
-static const NSInteger kTitleHeight = 30;
-static const NSInteger kCellHeight = 75;
 static const NSInteger kSectionHeight = 70;
-static const NSInteger kAddHeight = 45;
-
-static const NSInteger kTitleInterval = 30;
-static const NSInteger kCellInterval = 15;
-static const NSInteger kAddInterval = 45;
-static const NSInteger kBottomInterval = 60;
 
 @interface BCLSportsDietaryViewController ()<UIScrollViewDelegate, UITableViewDelegate, BCLSportsDietaryRecordSportsBottomViewDelegate>
 

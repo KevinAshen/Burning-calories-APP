@@ -65,24 +65,33 @@
     
     [_vegButton setTitle:@"蔬菜" forState:UIControlStateNormal];
     [_vegButton setImage:[UIImage imageNamed:@"TestVeg.png"] forState:UIControlStateNormal];
+    _vegButton.tag = 1;
+    [_vegButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     
     self.fruitButton = [[ChooseButton alloc] initWithFrame:CGRectMake(100, 50, 100, 100)];
     [_contentView addSubview:_fruitButton];
     
     [_fruitButton setTitle:@"水果" forState:UIControlStateNormal];
     [_fruitButton setImage:[UIImage imageNamed:@"Fruit.png"] forState:UIControlStateNormal];
+    _fruitButton.tag = 2;
+    [_fruitButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     
     self.cookButton = [[ChooseButton alloc] initWithFrame:CGRectMake(200, 50, 100, 100)];
     [_contentView addSubview:_cookButton];
     
     [_cookButton setTitle:@"菜肴" forState:UIControlStateNormal];
     [_cookButton setImage:[UIImage imageNamed:@"cook.png"] forState:UIControlStateNormal];
+    _cookButton.tag = 3;
+    [_cookButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
+    
     
     self.stapleButton = [[ChooseButton alloc] initWithFrame:CGRectMake(300, 50, 100, 100)];
     [_contentView addSubview:_stapleButton];
     
     [_stapleButton setTitle:@"主食" forState:UIControlStateNormal];
     [_stapleButton setImage:[UIImage imageNamed:@"rice.png"] forState:UIControlStateNormal];
+    _stapleButton.tag = 4;
+     [_stapleButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     
     _contentView.backgroundColor = [UIColor colorWithRed:0.97f green:0.97f blue:0.97f alpha:1.00f];
     
@@ -134,6 +143,14 @@
     [self.fruitButton.layer addAnimation:moveAnimation2 forKey:@"可以拿到中国动画的标志值2"];
     [self.cookButton.layer addAnimation:moveAnimation3 forKey:@"可以拿到中国动画的标志值3"];
     [self.stapleButton.layer addAnimation:moveAnimation4 forKey:@"可以拿到中国动画的标志值4"];
+}
+
+- (void)chooseClassify:(UIButton *)btn {
+    [self disMissView];
+    if (self.buttonAction) {
+        self.buttonAction(btn.tag);
+    }
+    
 }
 
 - (void)disMissView {

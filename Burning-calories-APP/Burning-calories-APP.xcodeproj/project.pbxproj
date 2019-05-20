@@ -288,7 +288,7 @@
 		97377F722222703B0077ED68 /* BCLCommunityMoment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLCommunityMoment.h; sourceTree = "<group>"; };
 		97377F732222703B0077ED68 /* BCLCommunityMoment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLCommunityMoment.m; sourceTree = "<group>"; };
 		9748CD31228D8790004AE8CB /* bcl_icon_login_shortline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_icon_login_shortline.png; sourceTree = "<group>"; };
-		9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bcl_ic_login_user.png; path = ../../../../../../../Downloads/bcl_ic_login_user.png; sourceTree = "<group>"; };
+		9748CD33228D8D37004AE8CB /* bcl_ic_login_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_login_user.png; sourceTree = "<group>"; };
 		9748CD35228D8D42004AE8CB /* bcl_ic_login_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_login_password.png; sourceTree = "<group>"; };
 		9748CD37228D9642004AE8CB /* bcl_ic_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_logo.png; sourceTree = "<group>"; };
 		9748CD3E228DA694004AE8CB /* BCLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLRegisterViewController.h; sourceTree = "<group>"; };
