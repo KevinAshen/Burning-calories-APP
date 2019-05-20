@@ -67,8 +67,28 @@
 
 - (void)clickCenterBtn:(UIButton *)button {
     self.bounceView = [[BCLBounceView alloc] initWithFrame:CGRectMake(0, 0, k_screen_width, k_screen_height)];
+    
     [_bounceView showInView:self.view];
+    _bounceView.buttonAction = ^(NSInteger tag) {
+        [self addFoodPhotoWithTag:tag];
+    };
     NSLog(@"fdsfs");
+}
+
+- (void)addFoodPhotoWithTag:(NSInteger)tag {
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"打开相机" style:UIAlertActionStyleDefault handler:nil];
+    [alertVc addAction:cameraAction];
+    
+    UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"打开相册" style:UIAlertActionStyleDefault handler:nil];
+    [alertVc addAction:albumAction];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:nil];
+    [alertVc addAction:cancelAction];
+    
+    [self presentViewController:alertVc animated:YES completion:nil];
+    NSLog(@"XXXX%ldXXXX", tag);
 }
 
 - (void)didReceiveMemoryWarning {

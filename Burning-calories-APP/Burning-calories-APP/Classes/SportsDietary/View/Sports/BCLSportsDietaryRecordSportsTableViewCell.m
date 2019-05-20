@@ -10,22 +10,6 @@
 #import "BCLSportsDietaryRecordSportsTableViewCellView.h"
 #import <Masonry.h>
 
-static const NSInteger kSegmentedControlHeight = 30;
-static const NSInteger kTitleHeight = 30;
-static const NSInteger kCellHeight = 75;
-static const NSInteger kAddHeight = 45;
-static const NSInteger kSportsNameHeight = 20;
-static const NSInteger kSportsCalorieHeight = 15;
-
-static const NSInteger kTitleInterval = 30;
-static const NSInteger kCellInterval = 15;
-static const NSInteger kAddInterval = 45;
-static const NSInteger kBottomInterval = 60;
-static const NSInteger kTopLittleInterval = 10;
-static const NSInteger kCalorieToTimeInterval = 10;
-
-static const NSInteger kLeftLittleInterval = 10;
-static const NSInteger kLeftNameToTimeInterval = 60;
 
 @interface BCLSportsDietaryRecordSportsTableViewCell ()
 
