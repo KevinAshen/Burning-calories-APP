@@ -51,6 +51,7 @@
 		97098B75226F4A96001C6A48 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 97098B74226F4A96001C6A48 /* APIClient.m */; };
 		9709D7E422145D3300B1EF9F /* bcl_ic_log_week_share_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */; };
 		970A718322032A6A00A9C999 /* BCLWeekTimeRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */; };
+		970C14ED229AD1E6000CD620 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C14EC229AD1E6000CD620 /* Reachability.m */; };
 		970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C55F82289A2B7001006CA /* BCLMineTableView.m */; };
 		970C55FC2289A321001006CA /* BCLMineTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C55FB2289A321001006CA /* BCLMineTopTableViewCell.m */; };
 		970C55FE2289A7DA001006CA /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970C55FD2289A7DA001006CA /* 4.jpg */; };
@@ -225,6 +226,8 @@
 		9709D7E222145D3300B1EF9F /* bcl_ic_log_week_share_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_log_week_share_selected.png; sourceTree = "<group>"; };
 		970A718122032A6A00A9C999 /* BCLWeekTimeRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLWeekTimeRecordView.h; sourceTree = "<group>"; };
 		970A718222032A6A00A9C999 /* BCLWeekTimeRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLWeekTimeRecordView.m; sourceTree = "<group>"; };
+		970C14EB229AD1E2000CD620 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		970C14EC229AD1E6000CD620 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		970C55F72289A2B7001006CA /* BCLMineTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineTableView.h; sourceTree = "<group>"; };
 		970C55F82289A2B7001006CA /* BCLMineTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLMineTableView.m; sourceTree = "<group>"; };
 		970C55FA2289A321001006CA /* BCLMineTopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLMineTopTableViewCell.h; sourceTree = "<group>"; };
@@ -617,6 +620,8 @@
 		97098B71226F4897001C6A48 /* Manag */ = {
 			isa = PBXGroup;
 			children = (
+				970C14EB229AD1E2000CD620 /* Reachability.h */,
+				970C14EC229AD1E6000CD620 /* Reachability.m */,
 				97098B72226F4A59001C6A48 /* Singleton.h */,
 				97098B73226F4A96001C6A48 /* APIClient.h */,
 				97098B74226F4A96001C6A48 /* APIClient.m */,
@@ -1238,6 +1243,7 @@
 				9796BC2421F87AFB00294FE6 /* BCLLogModel.m in Sources */,
 				9748CD40228DA694004AE8CB /* BCLRegisterViewController.m in Sources */,
 				9716EF6D21F74B0300583DBD /* BCLBaseTableViewCell.m in Sources */,
+				970C14ED229AD1E6000CD620 /* Reachability.m in Sources */,
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
 				0457FA2322015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m in Sources */,
 				046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */,

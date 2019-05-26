@@ -8,6 +8,7 @@
 
 #import "APIClient.h"
 #import <AFNetworking.h>
+#import "Reachability.h"
 
 @interface APIClient()
 
@@ -19,39 +20,62 @@
 DEF_SINGLETON(APIClient);
 //获取当前的网络状态类型
 + (int)networkType {
-    NSArray *subViews = [[[[UIApplication sharedApplication] valueForKey:@"statusBar"] valueForKey:@"foregroundView"] subviews];
-    NSNumber *dateNetworkItemView = nil;
-    
-    for(id subview in subViews) {
-        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
-            dateNetworkItemView = subview;
+    //iphoneX以上机型也OK
+    int isExistenceNetwork = YES;
+    Reachability *reach = [Reachability reachabilityWithHostName:@"www.apple.com"];
+    switch ([reach currentReachabilityStatus]) {
+        case NotReachable:
+            isExistenceNetwork = 0;
+            NSLog(@"Current Reachability Status : notReachable");
             break;
-        }
-    }
-    int ret = 0;
-    switch ([[dateNetworkItemView valueForKey:@"dataNetworkType"] integerValue]) {
-        case 0:
-            ret = 0;
+        case ReachableViaWiFi:
+            isExistenceNetwork = 1;
+            NSLog(@"Current Reachability Status : WIFI");
             break;
-        case 1:
-            ret = 1;
-            break;
-        case 2:
-            ret = 2;
-            break;
-        case 3:
-            ret = 3;
-            break;
-        case 4:
-            ret = 4;
-            break;
-        case 5:
-            ret = 5;
+        case ReachableViaWWAN:
+            isExistenceNetwork = 1;
+            NSLog(@"Current Reachability Status : 3/4G");
             break;
         default:
             break;
     }
-    return ret;
+    return isExistenceNetwork;
+    //比较low
+//    NSArray *subViews = [[[[UIApplication sharedApplication] valueForKey:@"statusBar"] valueForKey:@"foregroundView"] subviews];
+//    NSNumber *dateNetworkItemView = nil;
+//
+//
+//    for(id subview in subViews) {
+//        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
+//            dateNetworkItemView = subview;
+//            break;
+//        }
+//    }
+//
+//    int ret = 0;
+//    switch ([[dateNetworkItemView valueForKey:@"dataNetworkType"] integerValue]) {
+//        case 0:
+//            ret = 0;
+//            break;
+//        case 1:
+//            ret = 1;
+//            break;
+//        case 2:
+//            ret = 2;
+//            break;
+//        case 3:
+//            ret = 3;
+//            break;
+//        case 4:
+//            ret = 4;
+//            break;
+//        case 5:
+//            ret = 5;
+//            break;
+//        default:
+//            break;
+//    }
+//    return ret;
 }
 
 //网络状态监听，应用当前是否有网络
@@ -91,8 +115,9 @@ DEF_SINGLETON(APIClient);
             manager.requestSerializer = [AFHTTPRequestSerializer serializer];
             [manager.requestSerializer setValue:contentType forHTTPHeaderField:@"Content-Type"];
             manager.responseSerializer = [AFJSONResponseSerializer serializer];
-            AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
-            manager.responseSerializer = responseSerializer;
+            manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+           AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
+           manager.responseSerializer = responseSerializer;
             manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain",@"application/x-www-form-urlencodem", nil];
             client.manager = manager;
         }
@@ -106,6 +131,7 @@ DEF_SINGLETON(APIClient);
                 [client.manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id  JSON) {
                     __strong typeof(weakSelf)strongSelf = weakSelf;
                     if(strongSelf) {
+                        
                         [strongSelf handleSuccessRequest:JSON cb:response];
                     }
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -123,6 +149,10 @@ DEF_SINGLETON(APIClient);
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                     if(response) {
                         response(ApiRequestError, nil);
+                        NSData * data = error.userInfo[@"com.alamofire.serialization.response.error.data"];
+                        NSString * str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+                        NSLog(@"服务器的错误原因:%@",str);
+                        NSLog(@"%@--ApiRequestError----", error);
                     }
                 }];
                 break;
@@ -157,7 +187,7 @@ DEF_SINGLETON(APIClient);
                                    }];
     } else {
         if(cb) {
-            cb(ApiRequestOK, JSON);
+                cb(ApiRequestOK, JSON);
         }
     }
 }

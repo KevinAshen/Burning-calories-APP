@@ -121,7 +121,14 @@ static const CGFloat kLoginLeft = 60;
     btn.titleLabel.font = [UIFont systemFontOfSize:24];
 }
 - (void)sureRgButtonClick:(UIButton *)button {
-    
+    if (self.sureRgCallBackBlock) {
+        self.sureRgCallBackBlock(button,self.userRgTextField.text, self.pwdRgTextField.text, self.surePwdTextField.text);
+    }
+}
+- (void)cancelClick:(UIButton *)button {
+    if(self.cancelRgCallBackBlock) {
+        self.cancelRgCallBackBlock(button);
+    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.

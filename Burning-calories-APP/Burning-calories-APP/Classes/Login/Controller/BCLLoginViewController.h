@@ -10,4 +10,6 @@
 
 @interface BCLLoginViewController : BCLBaseViewController
 
+@property (nonatomic, strong) NSString *pwdLoginString;
+@property (nonatomic, strong) NSString *userNameLoginString;
 @end

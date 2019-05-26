@@ -8,6 +8,10 @@
 
 #import "BCLBaseViewController.h"
 
+typedef void(^ReturnValueBlock)(NSString *passedUserName, NSString *passedPassword);
+
 @interface BCLRegisterViewController : BCLBaseViewController
+
+@property (nonatomic, copy) ReturnValueBlock returnValueBlock;
 
 @end
