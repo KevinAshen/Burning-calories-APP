@@ -17,8 +17,17 @@
 
 @implementation BCLLoginViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%@--self.userNameLoginString---", self.userNameLoginString);
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _userNameLoginString = [[NSString alloc] init];
+    _pwdLoginString = [[NSString alloc] init];
+
     self.view.backgroundColor = [UIColor colorWithRed:0.88f green:0.45f blue:0.53f alpha:1.00f];
     
     _loginView = [[BCLLoginView alloc] initWithFrame:self.view.bounds];
@@ -39,6 +48,10 @@
 }
 - (void)registered {
     BCLRegisterViewController *registerViewController = [[BCLRegisterViewController alloc] init];
+    registerViewController.returnValueBlock = ^(NSString *passedUserName, NSString *passedPassword) {
+        self.loginView.usersTextField.text = passedUserName;
+        self.loginView.passwordTextField.text = passedPassword;
+    };
     [self presentViewController:registerViewController animated:NO completion:nil];
 }
 - (void)didReceiveMemoryWarning {

@@ -12,5 +12,7 @@
 
 @property (nonatomic, copy) void(^loginCallBackBlock)(UIButton *button, NSString *name);
 @property (nonatomic, copy)void(^registerCallBackBlock)(UIButton *button);
+@property (nonatomic, strong) UITextField *usersTextField;
+@property (nonatomic, strong) UITextField *passwordTextField;
 
 @end

@@ -10,6 +10,6 @@
 
 @interface BCLRegisterView : UIView
 
-@property (nonatomic, copy) void(^sureRgCallBackBlock)(UIButton *button, NSString *name);
+@property (nonatomic, copy) void(^sureRgCallBackBlock)(UIButton *button,NSString *userName, NSString *pwd, NSString *surePwd);
 @property (nonatomic, copy)void(^cancelRgCallBackBlock)(UIButton *button);
 @end
