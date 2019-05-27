@@ -12,8 +12,6 @@ static const CGFloat kLoginLeft = 60;
 
 @interface BCLLoginView()<UITextFieldDelegate>
 
-
-@property (nonatomic, strong) UIButton *loginButton;
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIImageView *logoImageView;
 
@@ -51,6 +49,8 @@ static const CGFloat kLoginLeft = 60;
     _usersTextField.leftViewMode = UITextFieldViewModeAlways;
     _usersTextField.layer.cornerRadius = 3;
     _usersTextField.backgroundColor = [UIColor whiteColor];
+    _usersTextField.delegate = self;
+    
     UIImageView *lineImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bcl_icon_login_shortline"]];
     lineImageView.frame = CGRectMake(32, 8, 2, 38);
     [_usersTextField addSubview:lineImageView];
@@ -105,6 +105,18 @@ static const CGFloat kLoginLeft = 60;
     if(_registerCallBackBlock) {
         self.registerCallBackBlock(button);
     }
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if(![self.usersTextField isExclusiveTouch] || ![self.passwordTextField isExclusiveTouch]) {
+        [self.usersTextField resignFirstResponder];
+        [self.passwordTextField resignFirstResponder];
+    }
+    return YES;
+}
+//点击空白收起键盘
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.usersTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

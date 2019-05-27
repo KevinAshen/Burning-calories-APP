@@ -14,5 +14,6 @@
 @property (nonatomic, copy)void(^registerCallBackBlock)(UIButton *button);
 @property (nonatomic, strong) UITextField *usersTextField;
 @property (nonatomic, strong) UITextField *passwordTextField;
+@property (nonatomic, strong) UIButton *loginButton;
 
 @end
