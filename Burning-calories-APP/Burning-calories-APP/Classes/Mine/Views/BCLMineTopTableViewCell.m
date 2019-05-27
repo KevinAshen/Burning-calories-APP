@@ -63,6 +63,7 @@ static CGFloat kMargin = 5;
 - (void)reloadCellWithData:(id)data {
     self.nickNameLabel.text = @"阡陌";
     self.signLabel.text = @"我不喜欢这世界，我只喜欢你";
+    
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

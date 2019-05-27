@@ -131,7 +131,6 @@ DEF_SINGLETON(APIClient);
                 [client.manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id  JSON) {
                     __strong typeof(weakSelf)strongSelf = weakSelf;
                     if(strongSelf) {
-                        
                         [strongSelf handleSuccessRequest:JSON cb:response];
                     }
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

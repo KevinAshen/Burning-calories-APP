@@ -16,7 +16,7 @@ static const CGFloat kLoginLeft = 60;
 @property (nonatomic, strong) UITextField *surePwdTextField;
 @property (nonatomic, strong) UIButton *sureRgButton;
 @property (nonatomic, strong) UIImageView *logoImageView;
-@property (nonatomic, strong) UIButton *cancelButton;
+
 @end
 
 @implementation BCLRegisterView
@@ -129,6 +129,11 @@ static const CGFloat kLoginLeft = 60;
     if(self.cancelRgCallBackBlock) {
         self.cancelRgCallBackBlock(button);
     }
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.userRgTextField resignFirstResponder];
+    [self.pwdRgTextField resignFirstResponder];
+    [self.surePwdTextField resignFirstResponder];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -48,14 +48,34 @@
         
         [weakSelf dismissViewControllerAnimated:YES completion:nil];
     };
-    
-    
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     // Do any additional setup after loading the view.
+}
+
+- (void)keyBoardWillShow:(NSNotification *)notification {
+    CGFloat kbHeight = [[notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].origin.y;
+    CGFloat offset = kbHeight;
+    //取得键盘的动画时间，这样可以在视图上移的时候更连贯、
+    double duration = [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    
+    if (offset > 0) {
+        [UIView animateWithDuration:duration animations:^{
+            self.view.transform = CGAffineTransformMakeTranslation(0.0f, self.registerView.cancelButton.origin.y - offset + 5);
+        }];
+    }
+}
+#pragma mark --- 当键盘消失后，视图需要恢复原状
+- (void)keyBoardWillHide:(NSNotification *)notify {
+    double duration = [[notify.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    //视图下移恢复原状
+    [UIView animateWithDuration:duration animations:^{
+        self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    }];
 }
 - (void)sureRgPwd {
     NSString *url = @"http://www.shidongxuan.top:8000/user/register";
-    NSDictionary *parameters = @{@"username":self.userNameString,@"password":self.pwdString,@"gender":@1, @"phone":@"15009175072",@"email":@"dfssd",@"birth":@"2019/08/18 00:00:00"};
+    NSDictionary *parameters = @{@"username":self.userNameString,@"password":self.pwdString,@"gender":@1, @"phone":@"15009175070",@"email":@"dfssd",@"birth":@"2019/08/18 00:00:00"};
     NSLog(@"%@--parameters---", parameters);
     
     

@@ -12,4 +12,5 @@
 
 @property (nonatomic, copy) void(^sureRgCallBackBlock)(UIButton *button,NSString *userName, NSString *pwd, NSString *surePwd);
 @property (nonatomic, copy)void(^cancelRgCallBackBlock)(UIButton *button);
+@property (nonatomic, strong) UIButton *cancelButton;
 @end
