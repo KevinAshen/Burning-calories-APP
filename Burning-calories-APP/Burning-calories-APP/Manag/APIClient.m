@@ -113,7 +113,9 @@ DEF_SINGLETON(APIClient);
             
             manager.requestSerializer.timeoutInterval = 30;
             manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-            [manager.requestSerializer setValue:contentType forHTTPHeaderField:@"Content-Type"];
+            if(contentType) {
+                [manager.requestSerializer setValue:contentType forHTTPHeaderField:@"Content-Type"];
+            }
             manager.responseSerializer = [AFJSONResponseSerializer serializer];
             manager.responseSerializer = [AFHTTPResponseSerializer serializer];
            AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
