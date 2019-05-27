@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.navigationController.navigationItem.title = @"Camera";
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setImage:[UIImage imageNamed:@"xiangji-2"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"bcl_ic_imageRecognition_tabBar"] forState:UIControlStateNormal];
     UIButton *rightBUtton = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightBUtton setTitle:@"library" forState:UIControlStateNormal];
     [rightBUtton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -28,8 +28,8 @@
     UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithCustomView:rightBUtton];
     self.navigationItem.rightBarButtonItem = rightBarButton;
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.view.backgroundColor = [UIColor yellowColor];
+
     _selectImageButton.frame = CGRectMake(65, 170, 300, 300);
     [self.view addSubview:_selectImageButton];
     // Do any additional setup after loading the view.

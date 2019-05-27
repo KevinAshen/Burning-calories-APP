@@ -35,7 +35,7 @@
     [self.view addSubview:_logView];
     
     _logView.tableView.delegate = self;
-    
+
     // Do any additional setup after loading the view.
 }
 

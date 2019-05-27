@@ -20,6 +20,7 @@
 		04504C3E2275E2AA0049D5A9 /* ABCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04504C3D2275E2AA0049D5A9 /* ABCTableViewCell.m */; };
 		04504C412275E30C0049D5A9 /* XYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04504C402275E30C0049D5A9 /* XYTableView.m */; };
 		0457FA2322015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */; };
+		045B375D2299702C00EC497F /* BCLSceneImageAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B375C2299702B00EC497F /* BCLSceneImageAnalyzer.m */; };
 		046496D621F7F9BE0093AC4E /* BCLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D521F7F9BE0093AC4E /* BCLBaseViewController.m */; };
 		046496D921F8038B0093AC4E /* BCLLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496D821F8038B0093AC4E /* BCLLogViewController.m */; };
 		046496DC21F803B50093AC4E /* BCLSportsDietaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046496DB21F803B50093AC4E /* BCLSportsDietaryViewController.m */; };
@@ -41,6 +42,9 @@
 		0499396E228FF71E009C8B42 /* cook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499396D228FF71E009C8B42 /* cook.png */; };
 		04B9E7E52289982C00AFE4B1 /* BCLBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */; };
 		04D7519F222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */; };
+		04D8DEB4229431BE00F65482 /* FruitImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 04D8DEB2229431BE00F65482 /* FruitImageClassifier.mlmodel */; };
+		04D8DEB5229431BE00F65482 /* VegImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 04D8DEB3229431BE00F65482 /* VegImageClassifier.mlmodel */; };
+		04EC82EF229A76F700411347 /* bcl_ic_imageRecognition_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EC82EE229A76F700411347 /* bcl_ic_imageRecognition_tabBar.png */; };
 		04FE34B0222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */; };
 		04FE34B6222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE34B5222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m */; };
 		5A46CE68DB97B13E78568515 /* libPods-Burning-calories-APP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44AD2EE5AF1285FC01A860 /* libPods-Burning-calories-APP.a */; };
@@ -173,6 +177,8 @@
 		04504C402275E30C0049D5A9 /* XYTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTableView.m; sourceTree = "<group>"; };
 		0457FA2122015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryRecordSportsTableViewCellView.h; sourceTree = "<group>"; };
 		0457FA2222015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryRecordSportsTableViewCellView.m; sourceTree = "<group>"; };
+		045B375B2299702B00EC497F /* BCLSceneImageAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSceneImageAnalyzer.h; sourceTree = "<group>"; };
+		045B375C2299702B00EC497F /* BCLSceneImageAnalyzer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSceneImageAnalyzer.m; sourceTree = "<group>"; };
 		046496D421F7F9BE0093AC4E /* BCLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBaseViewController.h; sourceTree = "<group>"; };
 		046496D521F7F9BE0093AC4E /* BCLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBaseViewController.m; sourceTree = "<group>"; };
 		046496D721F8038B0093AC4E /* BCLLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLLogViewController.h; sourceTree = "<group>"; };
@@ -208,6 +214,9 @@
 		04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBounceView.m; sourceTree = "<group>"; };
 		04D7519D222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryAddSportsListTagView.h; sourceTree = "<group>"; };
 		04D7519E222D48A1005D7027 /* BCLSportsDietaryAddSportsListTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryAddSportsListTagView.m; sourceTree = "<group>"; };
+		04D8DEB2229431BE00F65482 /* FruitImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitImageClassifier.mlmodel; sourceTree = "<group>"; };
+		04D8DEB3229431BE00F65482 /* VegImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VegImageClassifier.mlmodel; sourceTree = "<group>"; };
+		04EC82EE229A76F700411347 /* bcl_ic_imageRecognition_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_imageRecognition_tabBar.png; sourceTree = "<group>"; };
 		04FE34AF222FC47200B9F1F0 /* bcl_ic_soprts_addSports_addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bcl_ic_soprts_addSports_addButton.png; sourceTree = "<group>"; };
 		04FE34B4222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLSportsDietaryAddSportsListTableViewCell.h; sourceTree = "<group>"; };
 		04FE34B5222FFB4E00B9F1F0 /* BCLSportsDietaryAddSportsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLSportsDietaryAddSportsListTableViewCell.m; sourceTree = "<group>"; };
@@ -459,6 +468,15 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		045B375A22996FB300EC497F /* SceneImageAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				045B375B2299702B00EC497F /* BCLSceneImageAnalyzer.h */,
+				045B375C2299702B00EC497F /* BCLSceneImageAnalyzer.m */,
+			);
+			path = SceneImageAnalyzer;
+			sourceTree = "<group>";
+		};
 		046496B521F736AF0093AC4E /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,9 +510,10 @@
 		046496E121F8049E0093AC4E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				045B375A22996FB300EC497F /* SceneImageAnalyzer */,
 				971B10A6228C564700A73B04 /* Login */,
 				970C7C122280819C002FC9A0 /* Mine */,
-				9716B5A7227F2675007B64A1 /* imageRecognition */,
+				9716B5A7227F2675007B64A1 /* ImageRecognition */,
 				9716EF5A21F6FF2300583DBD /* Community */,
 				9716EF5921F6FF0B00583DBD /* SportsDietary */,
 				9716EF5821F6FED900583DBD /* Log */,
@@ -608,6 +627,37 @@
 			path = AddSports;
 			sourceTree = "<group>";
 		};
+		0499396F229424E1009C8B42 /* Mlmodel */ = {
+			isa = PBXGroup;
+			children = (
+				04D8DEB2229431BE00F65482 /* FruitImageClassifier.mlmodel */,
+				04D8DEB3229431BE00F65482 /* VegImageClassifier.mlmodel */,
+			);
+			path = Mlmodel;
+			sourceTree = "<group>";
+		};
+		04EC82EA229A740B00411347 /* ImageRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				04EC82EE229A76F700411347 /* bcl_ic_imageRecognition_tabBar.png */,
+			);
+			path = ImageRecognition;
+			sourceTree = "<group>";
+		};
+		04EC82EC229A745300411347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04EC82ED229A764A00411347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		853A7B615FC2989979A8E8B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,28 +766,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9716B5A7227F2675007B64A1 /* imageRecognition */ = {
+		9716B5A7227F2675007B64A1 /* ImageRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				04EC82ED229A764A00411347 /* Model */,
+				04EC82EC229A745300411347 /* View */,
 				9716B5AA227F26BE007B64A1 /* ViewControllers */,
-				9716B5A9227F26B8007B64A1 /* Views */,
-				9716B5A8227F26B0007B64A1 /* Model */,
 			);
-			path = imageRecognition;
-			sourceTree = "<group>";
-		};
-		9716B5A8227F26B0007B64A1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		9716B5A9227F26B8007B64A1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
+			path = ImageRecognition;
 			sourceTree = "<group>";
 		};
 		9716B5AA227F26BE007B64A1 /* ViewControllers */ = {
@@ -774,6 +810,7 @@
 		9716EF1321F6F48B00583DBD /* Burning-calories-APP */ = {
 			isa = PBXGroup;
 			children = (
+				0499396F229424E1009C8B42 /* Mlmodel */,
 				04504C382275E2010049D5A9 /* New Group */,
 				97098B71226F4897001C6A48 /* Manag */,
 				9716EF4F21F6FDAE00583DBD /* Resource */,
@@ -811,6 +848,7 @@
 		9716EF4F21F6FDAE00583DBD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				04EC82EA229A740B00411347 /* ImageRecognition */,
 				974BED382281D2DF004A8ABB /* Mine */,
 				046496E521F807D00093AC4E /* Welcome */,
 				046496E421F807CB0093AC4E /* Log */,
@@ -1162,6 +1200,7 @@
 				9796BC1821F8787900294FE6 /* bcl_ic_log_tabBar_selected.png in Resources */,
 				97E69607221D2BC500FB6316 /* bcl_btn_whole.png in Resources */,
 				9716EF1C21F6F48C00583DBD /* Main.storyboard in Resources */,
+				04EC82EF229A76F700411347 /* bcl_ic_imageRecognition_tabBar.png in Resources */,
 				970C7630221706DA00DE5F88 /* bcl_ic_log_week_aixin.png in Resources */,
 				9748CD36228D8D43004AE8CB /* bcl_ic_login_password.png in Resources */,
 				974BED372281D290004A8ABB /* bcl_ic_mine_tabBar.png in Resources */,
@@ -1246,6 +1285,7 @@
 				970C14ED229AD1E6000CD620 /* Reachability.m in Sources */,
 				046496DF21F803D70093AC4E /* BCLCommunityViewController.m in Sources */,
 				0457FA2322015E6600176341 /* BCLSportsDietaryRecordSportsTableViewCellView.m in Sources */,
+				045B375D2299702C00EC497F /* BCLSceneImageAnalyzer.m in Sources */,
 				046496F421FB46B50093AC4E /* BCLSportsDietaryRecordSportsHeadView.m in Sources */,
 				046496F721FB46DB0093AC4E /* BCLSportsDietaryRecordSportsBottomView.m in Sources */,
 				97377F742222703B0077ED68 /* BCLCommunityMoment.m in Sources */,
@@ -1262,6 +1302,7 @@
 				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
 				970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */,
 				9748CD43228DA7A6004AE8CB /* BCLRegisterView.m in Sources */,
+				04D8DEB5229431BE00F65482 /* VegImageClassifier.mlmodel in Sources */,
 				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
 				04504C3B2275E21E0049D5A9 /* XYBaseTableViewCell.m in Sources */,
 				048300B12219A4AD000DDE19 /* BCLSportsDietaryRecordDietaryRecipeView.m in Sources */,
@@ -1276,6 +1317,7 @@
 				970EBB452218581900025038 /* BCLMonthLineChartView.m in Sources */,
 				04040BBD223682FB00DAFAC5 /* BCLSportsDietaryAddSportsListPickerView.m in Sources */,
 				970C7C1B22808394002FC9A0 /* BCLMineView.m in Sources */,
+				04D8DEB4229431BE00F65482 /* FruitImageClassifier.mlmodel in Sources */,
 				97149C2B221D8C1D001454B0 /* BCLCommunityView.m in Sources */,
 				042A8F0E223FCBA300CE57AB /* BCLSportsDietaryAddSportsBounceView.m in Sources */,
 				9709248F2276DB7D00DA25C0 /* BCLBaseTabBarController.m in Sources */,
@@ -1459,7 +1501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R4CRLLJSKR;
+				DEVELOPMENT_TEAM = 94Q433PSKZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Burning-calories-APP/PrefixHeader.pch";
 				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
@@ -1467,7 +1509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = qst;
+				PRODUCT_BUNDLE_IDENTIFIER = jkw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1479,7 +1521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R4CRLLJSKR;
+				DEVELOPMENT_TEAM = 94Q433PSKZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Burning-calories-APP/PrefixHeader.pch";
 				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
@@ -1487,7 +1529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = qst;
+				PRODUCT_BUNDLE_IDENTIFIER = jkw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
