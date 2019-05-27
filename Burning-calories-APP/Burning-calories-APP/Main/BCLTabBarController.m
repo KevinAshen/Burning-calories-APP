@@ -10,15 +10,19 @@
 #import "BCLLogViewController.h"
 #import "BCLCommunityViewController.h"
 #import "BCLSportsDietaryViewController.h"
+#import "BCLSelectFinishViewController.h"
 #import "BCLMineViewController.h"
 #import "BCLCustomTabBar.h"
 #import "BCLBounceView.h"
 
-@interface BCLTabBarController ()
+@interface BCLTabBarController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 ///弹出的选择框
 @property (nonatomic, strong) BCLBounceView *bounceView;
 @property (nonatomic, strong) BCLCustomTabBar *customTabBar;
+
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
+@property (nonatomic, strong) UIImageView *testImageView;
 
 @end
 
@@ -76,12 +80,30 @@
 }
 
 - (void)addFoodPhotoWithTag:(NSInteger)tag {
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    _imagePickerController.delegate = self;
+    
     UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
-    UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"打开相机" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"打开相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            return;
+        }
+        self.imagePickerController.allowsEditing = NO;
+        
+        [self presentViewController:self.imagePickerController animated:YES completion:nil];
+    }];
     [alertVc addAction:cameraAction];
     
-    UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"打开相册" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"打开相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+            return;
+        }
+        self.imagePickerController.allowsEditing = NO;
+        [self presentViewController:self.imagePickerController animated:YES completion:nil];
+    }];
     [alertVc addAction:albumAction];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:nil];
@@ -89,6 +111,28 @@
     
     [self presentViewController:alertVc animated:YES completion:nil];
     NSLog(@"XXXX%ldXXXX", tag);
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
+    BCLSelectFinishViewController *selectFinishViewController = [[BCLSelectFinishViewController alloc] init];
+    UIImage *pickImage = info[UIImagePickerControllerOriginalImage];
+    NSLog(@"%@", pickImage);
+    [selectFinishViewController.selectImageButton setImage:pickImage forState:UIControlStateNormal];
+    [picker presentViewController:selectFinishViewController animated:YES completion:nil];
+    
+//    //销毁控制器
+//    [picker dismissViewControllerAnimated:YES completion:nil];
+//    //设置图片
+//    self.testImageView = [[UIImageView alloc] init];
+//    _testImageView.image = info[UIImagePickerControllerOriginalImage];
+//    NSLog(@"%@FAILQSTZZ", _testImageView.image);
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    NSLog(@"FAILQSTSD");
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

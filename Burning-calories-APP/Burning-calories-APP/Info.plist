@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>App需要您的同意，才能打开您的相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要您的同意，才能打开您的相册</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

@@ -8,11 +8,8 @@
 
 #import "AppDelegate.h"
 #import "BCLTabBarController.h"
-#import "BCLSelectFinishViewController.h"
 #import "BCLLoginViewController.h"
 
-#define KScreenWidth [UIScreen mainScreen].bounds.size.width
-#define KScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface AppDelegate ()
 @property (nonatomic, strong)UIViewController *openViewController;
 

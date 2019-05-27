@@ -9,5 +9,7 @@
 #import "BCLBaseViewController.h"
 
 @interface BCLSelectFinishViewController : BCLBaseViewController
+
 @property (nonatomic, strong)UIButton *selectImageButton;
+
 @end
