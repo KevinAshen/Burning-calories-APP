@@ -8,10 +8,15 @@
 
 #import "BCLRegisterViewController.h"
 #import "BCLRegisterView.h"
+#import "BCLLoginViewController.h"
 
 @interface BCLRegisterViewController ()
 
 @property (nonatomic, strong) BCLRegisterView *registerView;
+@property (nonatomic, copy) NSString *userNameString;
+@property (nonatomic, copy)NSString *pwdString;
+@property (nonatomic, copy) NSString *surePwdString;
+@property (nonatomic, strong) NSDictionary *returnParameters;
 
 @end
 
@@ -23,9 +28,91 @@
     self.registerView = [[BCLRegisterView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_registerView];
     
+    self.userNameString = [[NSString alloc] init];
+    self.pwdString = [[NSString alloc] init];
+    self.surePwdString = [[NSString alloc] init];
+    self.returnParameters = [[NSDictionary alloc] init];
+    
+    typeof(self) weakSelf = self;
+    self.registerView.sureRgCallBackBlock = ^(UIButton *button, NSString *userName, NSString *pwd, NSString *surePwd) {
+        weakSelf.userNameString = userName;
+        weakSelf.pwdString = pwd;
+        weakSelf.surePwdString = surePwd;
+        [weakSelf sureRgPwd];
+        //[weakSelf showSureRgAlertView];
+        
+    };
+    
+        
+    self.registerView.cancelRgCallBackBlock = ^(UIButton *button) {
+        
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    };
+    
+    
+    
     // Do any additional setup after loading the view.
 }
-
+- (void)sureRgPwd {
+    NSString *url = @"http://www.shidongxuan.top:8000/user/register";
+    NSDictionary *parameters = @{@"username":self.userNameString,@"password":self.pwdString,@"gender":@1, @"phone":@"15009175072",@"email":@"dfssd",@"birth":@"2019/08/18 00:00:00"};
+    NSLog(@"%@--parameters---", parameters);
+    
+    
+    if([APIClient networkType] > 0) {
+        [APIClient requestURL:url httpMethod:POST contentType:@"application/x-www-form-urlencoded" params:parameters response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
+                switch (requestStatusCode) {
+                    case ApiRequestOK:{
+                        self.returnParameters = JSON;
+                         NSLog(@"%@---self.returnParameters----", self.returnParameters);
+                        if([self->_returnParameters[@"status"] isEqual:@0]) {
+                            [self showSureRgAlertView];
+                        } else {
+                            [self showAlertView:@"用户名已存在" andMessage:@"唉。。。"];
+                        }
+                        
+                        if(![self isEqualPassword:self.pwdString andsurePwd:self.surePwdString]) {
+                            [self showAlertView:@"两次密码输入不同哦" andMessage:@"请重新检查输入"];
+                        }
+                        break;
+                    }
+                    case ApiRequestError:
+                        break;
+                    case ApiRequestNotReachable:
+                        break;
+                    default:
+                        break;
+                }
+        }];
+    }
+}
+- (void)getData:(id)sender {
+    NSDictionary *returnParameters = (NSDictionary *)sender;
+    self.returnParameters = returnParameters;
+}
+- (BOOL)isEqualPassword:(NSString *)pwd andsurePwd:(NSString *)surePwd{
+    if([pwd isEqualToString:surePwd]) {
+        return YES;
+    }
+    return NO;
+}
+- (void)showAlertView:(NSString *)title andMessage:(NSString *)message {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+- (void)showSureRgAlertView {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"注册成功" message:@"耶" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if (self.returnValueBlock) {
+            self.returnValueBlock(self.userNameString, self.pwdString);
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

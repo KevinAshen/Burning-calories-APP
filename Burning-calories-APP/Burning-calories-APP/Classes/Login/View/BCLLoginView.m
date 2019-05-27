@@ -12,8 +12,7 @@ static const CGFloat kLoginLeft = 60;
 
 @interface BCLLoginView()<UITextFieldDelegate>
 
-@property (nonatomic, strong) UITextField *usersTextField;
-@property (nonatomic, strong) UITextField *passwordTextField;
+
 @property (nonatomic, strong) UIButton *loginButton;
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIImageView *logoImageView;
