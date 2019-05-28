@@ -19,10 +19,18 @@
 
 #import <UIImageView+WebCache.h>
 
+#define kJKWInterval 10
+#define kJKWMargin 30
+
+
+
 // 屏幕物理尺寸宽度
 #define k_screen_width          [UIScreen mainScreen].bounds.size.width
 // 屏幕物理尺寸高度
 #define k_screen_height         [UIScreen mainScreen].bounds.size.height
+
+#define kJKWLength k_screen_width / 5.0
+
 // 状态栏高度
 #define k_status_height         [[UIApplication sharedApplication] statusBarFrame].size.height
 // 导航栏高度

@@ -24,6 +24,8 @@
 @property (nonatomic, strong) UIImagePickerController *imagePickerController;
 @property (nonatomic, strong) UIImageView *testImageView;
 
+@property (nonatomic, assign) NSInteger type;
+
 @end
 
 @implementation BCLTabBarController
@@ -75,6 +77,7 @@
     [_bounceView showInView:self.view];
     _bounceView.buttonAction = ^(NSInteger tag) {
         [self addFoodPhotoWithTag:tag];
+        self.type = tag;
     };
     NSLog(@"fdsfs");
 }
@@ -118,6 +121,9 @@
     BCLSelectFinishViewController *selectFinishViewController = [[BCLSelectFinishViewController alloc] init];
     UIImage *pickImage = info[UIImagePickerControllerOriginalImage];
     NSLog(@"%@", pickImage);
+    NSLog(@"%ld", self.type);
+    selectFinishViewController.type = self.type;
+    selectFinishViewController.selectImageButton = [[UIButton alloc] init];
     [selectFinishViewController.selectImageButton setImage:pickImage forState:UIControlStateNormal];
     [picker presentViewController:selectFinishViewController animated:YES completion:nil];
     

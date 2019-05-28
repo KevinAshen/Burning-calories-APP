@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong)UIButton *selectImageButton;
 
+@property (nonatomic, assign) NSInteger type;
+
 @end
