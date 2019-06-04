@@ -12,7 +12,6 @@
 static const NSInteger kSportsNameHeight = 20;
 static const NSInteger kSportsCalorieHeight = 15;
 
-static const NSInteger kCellLeftAndRightInterval = 36;
 static const NSInteger kTopLittleInterval = 10;
 static const NSInteger kCalorieToTimeInterval = 10;
 
