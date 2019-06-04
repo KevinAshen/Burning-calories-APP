@@ -1539,7 +1539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94Q433PSKZ;
+				DEVELOPMENT_TEAM = R4CRLLJSKR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Burning-calories-APP/PrefixHeader.pch";
 				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
@@ -1559,7 +1559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94Q433PSKZ;
+				DEVELOPMENT_TEAM = R4CRLLJSKR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Burning-calories-APP/PrefixHeader.pch";
 				INFOPLIST_FILE = "Burning-calories-APP/Info.plist";
