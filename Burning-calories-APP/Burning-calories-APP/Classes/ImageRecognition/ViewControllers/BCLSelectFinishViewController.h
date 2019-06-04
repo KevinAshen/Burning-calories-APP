@@ -10,7 +10,10 @@
 
 @interface BCLSelectFinishViewController : BCLBaseViewController
 
-@property (nonatomic, strong)UIButton *selectImageButton;
+typedef void(^ButtonClick)(void);
+@property (nonatomic, copy) ButtonClick buttonActionPre;
+
+@property (nonatomic, strong) UIImageView *selectImageView;
 
 @property (nonatomic, assign) NSInteger type;
 

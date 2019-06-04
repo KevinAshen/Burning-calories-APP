@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BCLBounceView : UIView
 
 //定义block传入button的tag值，确定打开的mlmodel类型
-typedef void(^ButtonClick)(NSInteger tag);
-@property (nonatomic, copy) ButtonClick buttonAction;
+typedef void(^ButtonClickF)(NSInteger tag);
+@property (nonatomic, copy) ButtonClickF buttonAction;
 
 ///出现弹出框
 - (void)showInView:(UIView *)view;

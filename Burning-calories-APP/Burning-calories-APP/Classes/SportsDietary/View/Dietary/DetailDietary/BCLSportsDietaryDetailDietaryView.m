@@ -60,9 +60,6 @@ static NSString *kDetailDietaryCellIdentifier = @"detailDietaryCell";
 
 #pragma mark - 食谱TableView设置
 - (void)setupDetailDietaryTableView {
-    //食谱TableViewHeadView创建
-//    UIImageView *detailDietaryTableViewHeadImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bcl_ic_dietary_detailDietary_testDietaryImage"]];
-//    detailDietaryTableViewHeadImageView.frame = CGRectMake(kViewLeftOrRightInterval, 0, kDeviceWidth - 2 * kViewLeftOrRightInterval, kDetailDietaryTableViewHeadViewHeight);
     UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(kViewLeftOrRightInterval, 0, kDeviceWidth - 2 * kViewLeftOrRightInterval, kDetailDietaryTableViewHeadViewHeight)];
     backgroundView.backgroundColor = [UIColor clearColor];
     UIImageView *detailDietaryTableViewHeadImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bcl_ic_dietary_detailDietary_testDietaryImage"]];

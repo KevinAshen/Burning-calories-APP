@@ -113,31 +113,22 @@
     [alertVc addAction:cancelAction];
     
     [self presentViewController:alertVc animated:YES completion:nil];
-    NSLog(@"XXXX%ldXXXX", tag);
 }
 
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
     BCLSelectFinishViewController *selectFinishViewController = [[BCLSelectFinishViewController alloc] init];
+    selectFinishViewController.buttonActionPre = ^{
+        //[self dismissViewControllerAnimated:YES completion:nil];
+    };
     UIImage *pickImage = info[UIImagePickerControllerOriginalImage];
-    NSLog(@"%@", pickImage);
-    NSLog(@"%ld", self.type);
     selectFinishViewController.type = self.type;
-    selectFinishViewController.selectImageButton = [[UIButton alloc] init];
-    [selectFinishViewController.selectImageButton setImage:pickImage forState:UIControlStateNormal];
+    selectFinishViewController.selectImageView = [[UIImageView alloc] init];
+    selectFinishViewController.selectImageView.image = pickImage;
     [picker presentViewController:selectFinishViewController animated:YES completion:nil];
-    
-//    //销毁控制器
-//    [picker dismissViewControllerAnimated:YES completion:nil];
-//    //设置图片
-//    self.testImageView = [[UIImageView alloc] init];
-//    _testImageView.image = info[UIImagePickerControllerOriginalImage];
-//    NSLog(@"%@FAILQSTZZ", _testImageView.image);
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    NSLog(@"FAILQSTSD");
-    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

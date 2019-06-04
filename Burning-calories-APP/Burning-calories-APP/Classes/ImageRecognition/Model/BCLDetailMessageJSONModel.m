@@ -19,9 +19,11 @@
                                                                   @"idStr":@"id",
                                                                   @"cnNameStr":@"cnName",
                                                                   @"enNameStr":@"enName",
-                                                                  @"coloresStr":@"colores",
+                                                                  @"coloriesStr":@"calories",
                                                                   @"typeStr":@"type",
                                                                   @"ingredientStr":@"ingredient",
+                                                                  @"qualityStr":@"quality",
+                                                                  @"unitStr":@"unit"
                                                                   }];
 }
 

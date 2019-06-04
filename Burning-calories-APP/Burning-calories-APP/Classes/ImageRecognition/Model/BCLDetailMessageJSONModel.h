@@ -15,9 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *idStr;
 @property (nonatomic, copy) NSString *enNameStr;
 @property (nonatomic, copy) NSString *cnNameStr;
-@property (nonatomic, copy) NSString *coloresStr;
+@property (nonatomic, copy) NSString *coloriesStr;
 @property (nonatomic, copy) NSString *typeStr;
 @property (nonatomic, copy) NSString *ingredientStr;
+@property (nonatomic, copy) NSString *qualityStr;
+@property (nonatomic, copy) NSString *unitStr;
 
 @end
 

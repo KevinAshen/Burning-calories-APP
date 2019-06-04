@@ -37,6 +37,8 @@
 		0499396A228FF551009C8B42 /* Fruit.png in Resources */ = {isa = PBXBuildFile; fileRef = 04993969228FF551009C8B42 /* Fruit.png */; };
 		0499396C228FF6F5009C8B42 /* rice.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499396B228FF6F5009C8B42 /* rice.png */; };
 		0499396E228FF71E009C8B42 /* cook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499396D228FF71E009C8B42 /* cook.png */; };
+		04998D3B22A4F0E300812E4D /* BCLImageRecognitionBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04998D3A22A4F0E300812E4D /* BCLImageRecognitionBounceView.m */; };
+		04998D3E22A4F27600812E4D /* BCLImageRecognitionPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04998D3D22A4F27600812E4D /* BCLImageRecognitionPickerView.m */; };
 		04B9E7E52289982C00AFE4B1 /* BCLBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */; };
 		04D3FF71229D5BAC00FA9A18 /* 宝宝粥.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FF6F229D5BAC00FA9A18 /* 宝宝粥.png */; };
 		04D3FF72229D5BAC00FA9A18 /* 五谷浆.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FF70229D5BAC00FA9A18 /* 五谷浆.png */; };
@@ -212,6 +214,10 @@
 		04993969228FF551009C8B42 /* Fruit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fruit.png; sourceTree = "<group>"; };
 		0499396B228FF6F5009C8B42 /* rice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rice.png; sourceTree = "<group>"; };
 		0499396D228FF71E009C8B42 /* cook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cook.png; sourceTree = "<group>"; };
+		04998D3922A4F0E300812E4D /* BCLImageRecognitionBounceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLImageRecognitionBounceView.h; sourceTree = "<group>"; };
+		04998D3A22A4F0E300812E4D /* BCLImageRecognitionBounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImageRecognitionBounceView.m; sourceTree = "<group>"; };
+		04998D3C22A4F27600812E4D /* BCLImageRecognitionPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLImageRecognitionPickerView.h; sourceTree = "<group>"; };
+		04998D3D22A4F27600812E4D /* BCLImageRecognitionPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLImageRecognitionPickerView.m; sourceTree = "<group>"; };
 		04B9E7E32289982C00AFE4B1 /* BCLBounceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCLBounceView.h; sourceTree = "<group>"; };
 		04B9E7E42289982C00AFE4B1 /* BCLBounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCLBounceView.m; sourceTree = "<group>"; };
 		04D3FF6F229D5BAC00FA9A18 /* 宝宝粥.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝宝粥.png"; sourceTree = "<group>"; };
@@ -663,6 +669,10 @@
 				04EC82F1229C228600411347 /* BCLDetailFoodView.m */,
 				04EC82FD229C2A7600411347 /* BCLDetailMessageView.h */,
 				04EC82FE229C2A7600411347 /* BCLDetailMessageView.m */,
+				04998D3922A4F0E300812E4D /* BCLImageRecognitionBounceView.h */,
+				04998D3A22A4F0E300812E4D /* BCLImageRecognitionBounceView.m */,
+				04998D3C22A4F27600812E4D /* BCLImageRecognitionPickerView.h */,
+				04998D3D22A4F27600812E4D /* BCLImageRecognitionPickerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1309,6 +1319,7 @@
 				970C55FC2289A321001006CA /* BCLMineTopTableViewCell.m in Sources */,
 				04EC82FA229C235600411347 /* ABCTableViewCell.m in Sources */,
 				04EC82FB229C235600411347 /* XYBaseTableViewCell.m in Sources */,
+				04998D3B22A4F0E300812E4D /* BCLImageRecognitionBounceView.m in Sources */,
 				977C9DA121FF48AB00898615 /* BCLDayTimeRecordViewController.m in Sources */,
 				97F608DA21F9F506004BC91E /* BCLLogDayWeekTableViewCell.m in Sources */,
 				9796BC2721F8A52100294FE6 /* BCLLogHeaderView.m in Sources */,
@@ -1342,6 +1353,7 @@
 				974DDAFB223144220036FE8D /* BCLCommunityRecipesView.m in Sources */,
 				970C55F92289A2B7001006CA /* BCLMineTableView.m in Sources */,
 				9748CD43228DA7A6004AE8CB /* BCLRegisterView.m in Sources */,
+				04998D3E22A4F27600812E4D /* BCLImageRecognitionPickerView.m in Sources */,
 				04D8DEB5229431BE00F65482 /* VegImageClassifier.mlmodel in Sources */,
 				04D3FF78229D723900FA9A18 /* BCLDetailMessageJSONModel.m in Sources */,
 				9708E94922242F000037EA02 /* UIView+Geometry.m in Sources */,
