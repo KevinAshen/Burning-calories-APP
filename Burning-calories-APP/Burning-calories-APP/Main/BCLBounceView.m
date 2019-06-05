@@ -64,7 +64,7 @@
     [_contentView addSubview:_vegButton];
     
     [_vegButton setTitle:@"蔬菜" forState:UIControlStateNormal];
-    [_vegButton setImage:[UIImage imageNamed:@"TestVeg.png"] forState:UIControlStateNormal];
+    [_vegButton setImage:[UIImage imageNamed:@"bcl_ic_AddFood_button_veg.png"] forState:UIControlStateNormal];
     _vegButton.tag = 1;
     [_vegButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -72,7 +72,7 @@
     [_contentView addSubview:_fruitButton];
     
     [_fruitButton setTitle:@"水果" forState:UIControlStateNormal];
-    [_fruitButton setImage:[UIImage imageNamed:@"Fruit.png"] forState:UIControlStateNormal];
+    [_fruitButton setImage:[UIImage imageNamed:@"bcl_ic_AddFood_button_fruit.png"] forState:UIControlStateNormal];
     _fruitButton.tag = 2;
     [_fruitButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -80,7 +80,7 @@
     [_contentView addSubview:_cookButton];
     
     [_cookButton setTitle:@"菜肴" forState:UIControlStateNormal];
-    [_cookButton setImage:[UIImage imageNamed:@"cook.png"] forState:UIControlStateNormal];
+    [_cookButton setImage:[UIImage imageNamed:@"bcl_ic_AddFood_button_cook.png"] forState:UIControlStateNormal];
     _cookButton.tag = 3;
     [_cookButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -89,7 +89,7 @@
     [_contentView addSubview:_stapleButton];
     
     [_stapleButton setTitle:@"主食" forState:UIControlStateNormal];
-    [_stapleButton setImage:[UIImage imageNamed:@"rice.png"] forState:UIControlStateNormal];
+    [_stapleButton setImage:[UIImage imageNamed:@"bcl_ic_AddFood_button_rice.png"] forState:UIControlStateNormal];
     _stapleButton.tag = 4;
      [_stapleButton addTarget:self action:@selector(chooseClassify:) forControlEvents:UIControlEventTouchUpInside];
     

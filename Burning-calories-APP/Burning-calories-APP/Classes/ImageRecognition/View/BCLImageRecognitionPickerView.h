@@ -17,11 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^BounceShow)(void);
 @property (nonatomic,copy) BounceShow bounceShow;
 
+typedef void(^DismissCancel)(void);
+@property (nonatomic, copy) DismissCancel dismissCancel;
+
 @property (nonatomic, strong) UIPickerView *pickerView;
 
 @property (nonatomic, strong) UITextField *textField;
 
-- (void)setupPickerView;
+- (void)setupSubview;
 
 @end
 
