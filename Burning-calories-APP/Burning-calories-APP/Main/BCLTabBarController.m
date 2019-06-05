@@ -119,7 +119,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
     BCLSelectFinishViewController *selectFinishViewController = [[BCLSelectFinishViewController alloc] init];
     selectFinishViewController.buttonActionPre = ^{
-        //[self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:nil];
     };
     UIImage *pickImage = info[UIImagePickerControllerOriginalImage];
     selectFinishViewController.type = self.type;

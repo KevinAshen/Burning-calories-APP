@@ -19,7 +19,7 @@ static const NSInteger kBounceViewHight = 400;
 
 //时间选择View设置
 - (void)setupImageRecognitionPickerView {
-    self.frame = CGRectMake(0, 0, k_screen_width, kBounceViewHight);
+    self.frame = CGRectMake(0, 0, k_screen_width, k_screen_height);
     
     //alpha 0.0  白色   alpha 1 ：黑色   alpha 0～1 ：遮罩颜色，逐渐
     self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
@@ -27,8 +27,10 @@ static const NSInteger kBounceViewHight = 400;
     [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(disMissView)]];
     
     if (_imageRecognitionPickerView == nil) {
-        
         _imageRecognitionPickerView = [[BCLImageRecognitionPickerView alloc]initWithFrame:CGRectMake(0, k_screen_height - kBounceViewHight, k_screen_width, kBounceViewHight)];
+        _imageRecognitionPickerView.dismissCancel = ^{
+            [self disMissView];
+        };
         _imageRecognitionPickerView.backgroundColor = [UIColor whiteColor];
         [self addSubview:_imageRecognitionPickerView];
     }
@@ -47,7 +49,7 @@ static const NSInteger kBounceViewHight = 400;
     
     [_imageRecognitionPickerView setFrame:CGRectMake(0, k_screen_height, k_screen_width, kBounceViewHight)];
     
-    [UIView animateWithDuration:0.1 animations:^{
+    [UIView animateWithDuration:0.3f animations:^{
         
         self.alpha = 1.0;
         

@@ -22,9 +22,10 @@
 @property (nonatomic, strong) UIButton *affirmButton;
 @property (nonatomic, strong) UIButton *cancelButton;
 
-@property (nonatomic, copy) NSArray *itemArr1;
-@property (nonatomic, copy) NSArray *itemArr2;
-@property (nonatomic, copy) NSArray *itemArr3;
+@property (nonatomic, copy) NSString *foodNameStr;
+@property (nonatomic, copy) NSString *foodUnitStr;
+@property (nonatomic, copy) NSString *foodQualityStr;
+@property (nonatomic, copy) NSArray *numberArr1;
 
 @property (nonatomic, strong) BCLImageRecognitionBounceView *imageRecognitionBounceView;
 
@@ -45,14 +46,14 @@
     NSString *foodNameStr;
     switch (self.type) {
         case 1:
-            self.sceneImageAnalyzer = [[BCLSceneImageAnalyzer alloc] initWithImageType:imageFruit];
-            foodNameStr = [self analyzeItWithImageType:imageFruit];
-            NSLog(@"是水果牙");
-            break;
-        case 2:
             self.sceneImageAnalyzer = [[BCLSceneImageAnalyzer alloc] initWithImageType:imageVeg];
             foodNameStr = [self analyzeItWithImageType:imageVeg];
             NSLog(@"是蔬菜牙");
+            break;
+        case 2:
+            self.sceneImageAnalyzer = [[BCLSceneImageAnalyzer alloc] initWithImageType:imageFruit];
+            foodNameStr = [self analyzeItWithImageType:imageFruit];
+            NSLog(@"是水果牙");
         default:
             break;
     }
@@ -78,9 +79,7 @@
     [_cancelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_cancelButton addTarget:self action:@selector(touchCancel) forControlEvents:UIControlEventTouchUpInside];
     
-    self.itemArr1 = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7"];
-    self.itemArr2 = @[@"个"];
-    self.itemArr3 = @[@"苹果"];
+    self.numberArr1 = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10"];
 }
 
 - (void)touchCancel {
@@ -98,18 +97,14 @@
     
     [_imageRecognitionBounceView showInView:self.view];
     _imageRecognitionBounceView.imageRecognitionPickerView.bounceShow = ^{
-        NSLog(@"shixian");
         self->_imageRecognitionBounceView.imageRecognitionPickerView.pickerView.dataSource  = self;
         self->_imageRecognitionBounceView.imageRecognitionPickerView.pickerView.delegate = self;
     };
-    [_imageRecognitionBounceView.imageRecognitionPickerView setupPickerView];
+    [_imageRecognitionBounceView.imageRecognitionPickerView setupSubview];
     
 }
 
 - (void)getDetailWithFoodName:(NSString *)foodNameStr {
-//    if ([foodNameStr isEqualToString:@"Hami melo"]) {
-//        foodNameStr = @"Hami melon";
-//    }
     for (int i = 0; i < foodNameStr.length; i++) {
         char k = [foodNameStr characterAtIndex:i];
         if (k == ' ') {
@@ -144,6 +139,9 @@
 
 - (void)setupDetailFoodViewWithModel:(BCLDetailMessageJSONModel *)model {
     self.detailFoodView = [[BCLDetailFoodView alloc] initWithFrame:CGRectMake(kJKWLength, kJKWLength * 4.5, kJKWLength * 3, kJKWLength * 2.5) DetailMessageJSONModel:model];
+    self.foodNameStr = model.dataJSONModel.cnNameStr;
+    self.foodUnitStr = model.dataJSONModel.unitStr;
+    self.foodQualityStr = model.dataJSONModel.qualityStr;
     NSLog(@"初始化完成");
     [self.view addSubview:_detailFoodView];
 }
@@ -163,13 +161,13 @@
 
 #pragma mark -- UIPickerViewDelegate
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    if (component == 0) {
-        return _itemArr3[row];
-    }
     if (component == 1) {
-        return _itemArr1[row];
+        return _numberArr1[row];
     }
-    return _itemArr2[row];
+    if (component == 0) {
+        return _foodNameStr;
+    }
+    return _foodUnitStr;
 }
 
 #pragma mark -- UIPickerViewDataSource
@@ -178,20 +176,21 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if (component == 0) {
-        return _itemArr3.count;
-    }
     if (component == 1) {
-        return _itemArr1.count;
+        return _numberArr1.count;
     }
-    return _itemArr2.count;
+    return 1;
 }
 
 // 当用户选中UIPickerViewDataSource中指定列和列表项时激发该方法
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:
 (NSInteger)row inComponent:(NSInteger)component {
-    NSString *temp = _itemArr1[row];
-    self.imageRecognitionBounceView.imageRecognitionPickerView.textField.text = temp;
+    NSString *numberStr = _numberArr1[row];
+    NSInteger numberInt = [numberStr integerValue];
+    NSInteger qualityInt = [_foodQualityStr integerValue];
+    NSInteger caloriesInt = numberInt * qualityInt;
+    NSString *caloriesStr = [NSString stringWithFormat:@"%ld大卡", caloriesInt];
+    self.imageRecognitionBounceView.imageRecognitionPickerView.textField.text = caloriesStr;
 }
 
 
