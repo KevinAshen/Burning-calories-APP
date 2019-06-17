@@ -22,21 +22,21 @@
 ## 晋级/获奖名单
 ### 初赛【200余支队伍晋级复赛（含香港、新加坡）】
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhsk0Vegm4Krook8C5ww83rOOYSotPLwMcKb76mWI6uiaGIh1DibjZHxQLbQSr4XuSw6YFZVQyj7iawrQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448wu7t7nj30o60t6dlz.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhsk0Vegm4Krook8C5ww83rOdRYBLZw669SG9zsQuFMvSnG1h5GiaRzp5lhLiaa1HOMjaNkiaggfCcP8A/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448wz57mhj30o50ul0yf.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhsk0Vegm4Krook8C5ww83rOOfATLGgfiasErD1LIVGFf5ibpqKEXMFhNY2CfSBTFibJNqPIMugCXql7g/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448x2ed0ej30o30u3gs3.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhsk0Vegm4Krook8C5ww83rOo2NNfYF5Tib8UN2iaET92NzOpcNiaX7RJLGT3OGxicanvZENciaB3qZCkGQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448x5bu2hj30o30utwk3.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhsk0Vegm4Krook8C5ww83rOvOYiaTlzv0jHJBHicsE2wrFrVq5dpsxmuI0NHAiaYAbLfyTvvC3SqniaOw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448x9fov7j30o60m5jve.jpg)
 
 ### 决赛【60支队伍闯入决赛】
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/Cbm3pJgCNhttFic2MaRFI89tJ5eP2ll675jYH2wU9RVXHUiazeYHYvtcAKtchlNGC7OZFEVGIfruTD0NJV6iblYmQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xc780hj30oq108n30.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/Cbm3pJgCNhttFic2MaRFI89tJ5eP2ll67kGOOBoIgoawKzXNbkdOuMViaaHSJ33ziaCQDGEKLoib4aGtQppjEJRSiaA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448xffizgj30oo0qs793.jpg)
 
 # 2019年流程汇总
 ## 说明
@@ -57,7 +57,7 @@
 - 专项奖：若干队
 - 优秀指导教师奖4名：由最具创新奖和一等奖指导教师获得
 - 优秀组织奖5名：由决赛和复赛进入队伍最多的学校获得
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvruoMmYvcjRXfZg0eE46uTT45QOtRhGwFHCD2icqn3rcIeicXoXEIXLsVIsUj9hUkgXoPAqjm0k5ibQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448xl0baij30u00ie0tn.jpg)
 
 - 最具创新奖每位队员都可以获得Apple 一系列产品Mac，iPhone，iPad 和 Apple Watch，还有三张免费WWDC门票，组委会全额承担机票住宿。
 - 可以看到，2019年的奖励比2018年丰厚多了，因此也成功吸引到了1057支队伍参赛
@@ -71,31 +71,31 @@
 
 #### PDF要求
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhsRBHgz3j2lpLrsIEAufsYWCamRpNoOQX5UC2xRAURlQY7NM1ju0xgAqY6ux6za6kCYvIU29gial2Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448xo0autj30u016fgtm.jpg)
 
 #### 初赛评审结果
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPUBjibMf8NwNBzspseRjplA0Uic9HRic8DgxicLbu0DzTMR4AwBhXRl6Oww/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xr8jvyj30u016htcw.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPyuA9ibwhvOXet1iaT5CVWhBD1c9Z3HyqMe18Basry0h9Kiabt2ibVKTYWA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xtodwpj30u016h77z.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPAOwE4McjxsQLiamEDrXfHz8cFGDAFzOhuUGEr8HaZTP97uoOUWuJIibQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448xwg9qsj30u016htc6.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPUc3vTRgEMGvlf58p4T6XPCUz4UWZPm0vXnGSTjrkWxnNxBn7uzJyag/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xynekjj30u016h423.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPOLOKNAqsX4lGjibIzqlAHah9Yo4KTZWpm5hFIianrA3k5hgAROrqUAEQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448y1juyzj30u016h0wi.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPlGnp6UyWGbRKwNG56TYUWn9bbxC1wEr152mLwCbJXnLoqiciaSGnWNFA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448y4lbccj30u016h0wr.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPCASjLxsyws20rEzuSMBmMGFJkqQQN0ACyJu1QG46UDqwGdIcbrTMlA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448y85b1xj30u016h0wj.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPHU7uW0CLWSw5RdicbAVx8pxjmBy0My0rOB8YfVJXIWy7EN8sjek1goQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448ybfxfpj30u016hwid.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichP3K6N9IJNAYiaKFvV19vzcmmWCBbm7Yle8Xk6tquIpflicX6ZptnPUpaA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448ye8k5oj30u016hgpd.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPfRf81dfafMuCuD3puUZHwHCGqSFq2wO5ibFHXreNPlmzMLZbaHGiaX8Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448ygwordj30u016h780.jpg)
 
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/Cbm3pJgCNhvyqSArbc5IrJq9pDhyMichPZPGoIHFk1FybL4Hat1HAdicuQ2sKl5oDE4RFiacncc75lAeg5xPr7JrQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448yju3ryj30u016h0we.jpg)
 
 ### 复赛阶段
 - 原本是到6月30号截止提交视频，后延期至7月21号
