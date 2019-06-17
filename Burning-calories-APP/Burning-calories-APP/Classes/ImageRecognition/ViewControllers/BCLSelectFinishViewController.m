@@ -119,10 +119,8 @@
         [APIClient requestURL:url httpMethod:GET contentType:@"application/x-www-form-urlencoded" params:parameters response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
             switch (requestStatusCode) {
                 case ApiRequestOK: {
-                    NSLog(@"%@---JSON", JSON);
                     BCLDetailMessageJSONModel *detailMessageJSONModel = [[BCLDetailMessageJSONModel alloc] initWithDictionary:JSON error:nil];
                     self.detailMessageJSONModel = [[BCLDetailMessageJSONModel alloc] init];
-                    NSLog(@"detailMessageJSONModel：%@", detailMessageJSONModel);
                     [self setupDetailFoodViewWithModel:detailMessageJSONModel];
                 }
                     break;
@@ -142,7 +140,6 @@
     self.foodNameStr = model.dataJSONModel.cnNameStr;
     self.foodUnitStr = model.dataJSONModel.unitStr;
     self.foodQualityStr = model.dataJSONModel.qualityStr;
-    NSLog(@"初始化完成");
     [self.view addSubview:_detailFoodView];
 }
 
