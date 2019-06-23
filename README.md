@@ -1,50 +1,125 @@
-# Burning-calories-APP
-- 简介：一个专注于健康饮食健身的APP
+Table of Contents
+=================
 
+   * [前言](#前言)
+   * [2018年比赛流程汇总](#2018年比赛流程汇总)
+      * [说明](#说明)
+      * [来源](#来源)
+      * [时间表](#时间表)
+      * [晋级/获奖名单](#晋级获奖名单)
+         * [初赛【200余支队伍晋级复赛（含香港、新加坡）】](#初赛200余支队伍晋级复赛含香港新加坡)
+         * [决赛【60支队伍闯入决赛】](#决赛60支队伍闯入决赛)
+   * [2019年流程汇总](#2019年流程汇总)
+      * [说明](#说明-1)
+      * [来源](#来源-1)
+      * [可选主题](#可选主题)
+      * [奖项以及奖品](#奖项以及奖品)
+      * [流程&amp;&amp;要求](#流程要求)
+         * [初赛阶段](#初赛阶段)
+            * [PDF要求](#pdf要求)
+            * [初赛评审结果](#初赛评审结果)
+         * [复赛阶段](#复赛阶段)
+# 前言
 
+- 2019年移动应用创新赛CCCC移动应用创新赛参赛作品
+- 我将会在本仓库汇总关于参加该比赛的所有汇总资料，以及我们提交的视频，pdf等文件，希望能为以后想参加该比赛的高校iOS开发者同好提供一点微小的帮助
+- 如果你看到本仓库，感觉其中内容对你有所帮助，请点击右上方star;如果你有任何疑问，或者希望能在此同样分享自己的参赛经验等，请提出issue告诉我
+- While the world sleeps，you dream
 
-## 共同参考
+# 2018年比赛流程汇总
+## 说明
+- 由于我没有参与2018年的比赛，所以放上去的都是浏览的历史信息
+- 在GitHub找到了2018三等奖作品seek的仓库[中国高校计算机大赛-移动应用创新赛三等奖Seek](https://github.com/qyz777/Seek)
+## 来源
+- 官方网站：[2018年中国高校计算机大赛移动应用创新赛](http://www.appcontest.net/2018/)
+- 比赛官方公众号：移动应用创新赛
 
-- 项目框架来源：[iOS 项目框架搭建](https://blog.csdn.net/cblithe/article/details/81257723)
-- 代码规范：[iOS开发规范（超详细的）](https://www.jianshu.com/p/1784cd67e8de)
-- [iOS开发技巧 - 一行代码修改TabBar图标渲染颜色](https://blog.csdn.net/u013316626/article/details/71056078)
-- [iOS 富文本使用](https://www.jianshu.com/p/ae795de53308)  
-- [UIButton 折行显示 主标题，副标题](https://blog.csdn.net/u011561536/article/details/52804736)
-- [OC各种数据类型之间的转换方法](https://blog.csdn.net/guozh/article/details/7822646)
-- [iOS UIBezierPath使用——贝塞尔曲线](https://www.jianshu.com/p/e136c3e65c29)
-- [iOS 中tableview cell点击取消选中效果](https://www.jianshu.com/p/6b91bc638681)
-- [UITableView 去掉分割线](https://www.jianshu.com/p/3e8a260d21bc)
-- [CAGradientLayer的一些属性解析](https://www.cnblogs.com/YouXianMing/p/3793913.html)
-- [iOS经典讲解之UIButton改变图片和文字的位置](https://blog.csdn.net/loving_ios/article/details/52412734)
-- [自定义UISegmentControl控件](https://blog.csdn.net/Iven_ma/article/details/75011491)
-- [iOS 保持界面流畅的技巧](https://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
-- [实现微信朋友圈动态列表](https://www.jianshu.com/p/5bd97047a78e)
-- [scrollView实现图片的缩小放大
-](https://www.jianshu.com/p/3dfb0e409eb1)
-- [CGRect使用技巧](https://blog.csdn.net/andy_jiangbin/article/details/14519539)
-- [iOS UIDatePicker的使用详情](https://www.jianshu.com/p/f5149258d881)
-- [iOS开发UI篇—常见的项目文件介绍](https://www.cnblogs.com/wendingding/p/3766249.html)
-- [pch文件找不到的解决方法](https://www.jianshu.com/p/5742cf8a867f)
-- [【已解决】iOS程序中，设置delegate时候，出现警告：Assigning to ‘id<UINavigationControllerDelegate,UIImagePickerControllerDelegate>’ from incompatible type ‘AddSightingViewController *const __strong’](https://www.crifan.com/when_assign_delegate_occur_warning_assigning_to_id_uinavigationcontrollerdelegate_uiimagepickercontrollerdelegate_from_incompatible_type_const_strong/)
-- [UILable UITextField 文字 左右 左右 垂直 居中 对其怎么解决](https://zhidao.baidu.com/question/177720710578080164.html)
+## 时间表
+- 报名：2018年4月29日-2018年5月31日
+- 初赛：2018年5月31日 — App介绍PDF
+- 复赛：2018年7月21日 — 介绍视频
+- 暑期培训：8月中旬 
+- 决赛：9月中旬 — 代码文件
 
-## 比赛信息
-- 三创：
-    - 报名截止时间：2019年3月31日
-    - 4月底提交商业计划书参加校级选拔
-    - 同年5、6、7月将分别举行校级选拔赛、省级选拔赛与全国总决赛
-    - 本次大赛竞赛时间原则安排在2018—2019学年举办。校级赛要在2019年4月15日前完成；省级选拔赛要在2019年6月15日前完成，全国决赛计划在2019年7月举行，8月公示完成后，发放电子版证书。
-    - http://www.3chuang.net
-- 互联网+：
-    - 2019年4月1日-2019年4月31日，参赛报名。各参赛学生以团队为单位登录
-    - 2019年5月1日-5月20日：学院决赛
-    - 2019年5月21日-5月31日：学校决赛
-    - 2019年6月省赛
-    - http://222.24.63.100:8080/teach
-- 移动应用创新赛：
-    - 初赛报名截止日期为 2018 年 5 月 31 日
-    - 2018 年 7 月 31 日复赛
-    - 8月中旬暑假培训
-    - 9月中旬决赛
-    - 报名截止日期之前，各参赛队伍可随时修改、完善、更新已提交的报名信息。首次提交参赛作品时，作品形式包括但不限于 App 简介、App 效果图、宣传海报等，作品格式仅限于 .jpg 文件；进入复赛的参赛队伍提交参赛作品时，作品应包含设计文档、部分关键代码、视频等。进入决赛后，参赛队伍可对作品进行完善，但不能变更作品主题和内容，并根据决赛要求提交可在移动设备中运行的 App 应用。参赛作品以决赛作品提交截止日期前提交的最后一版为准。进入决赛的参赛队伍在准备作品演示的过程中（决赛参赛作品须能进行现场演示），苹果公司将提供必要的设备及技术支持。
-    - http://www.appcontest.net/2019/
+## 晋级/获奖名单
+### 初赛【200余支队伍晋级复赛（含香港、新加坡）】
+
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448wu7t7nj30o60t6dlz.jpg)
+
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448wz57mhj30o50ul0yf.jpg)
+
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448x2ed0ej30o30u3gs3.jpg)
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448x5bu2hj30o30utwk3.jpg)
+
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448x9fov7j30o60m5jve.jpg)
+
+### 决赛【60支队伍闯入决赛】
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xc780hj30oq108n30.jpg)
+
+![img](http://ww2.sinaimg.cn/large/006tNc79ly1g448xffizgj30oo0qs793.jpg)
+
+# 2019年流程汇总
+## 说明
+- 2019年的比赛是我亲身参与的，这个文档也是参与到哪个部分写到哪个部分，希望能给大家帮助
+## 来源
+- 官方网站：[2019年中国高校计算机大赛移动应用创新赛](http://www.appcontest.net/2019/)
+- 比赛官方公众号：移动应用创新赛
+- 官方QQ群：694873894
+
+## 可选主题
+- 作品主题须紧扣竞赛推荐的应用领域及其他社会关注的热点难点问题，包括但不限于能源、健康医疗、环保、养老、智慧交通、智慧城市、智慧物流、与社会服务相关的物联网、食品安全、与社会服务相关的大数据/云服务等。
+
+## 奖项以及奖品
+- 最具创新奖：1队
+- 一等奖：3队
+- 二等奖：8队
+- 三等奖：18队
+- 专项奖：若干队
+- 优秀指导教师奖4名：由最具创新奖和一等奖指导教师获得
+- 优秀组织奖5名：由决赛和复赛进入队伍最多的学校获得
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448xl0baij30u00ie0tn.jpg)
+
+- 最具创新奖每位队员都可以获得Apple 一系列产品Mac，iPhone，iPad 和 Apple Watch，还有三张免费WWDC门票，组委会全额承担机票住宿。
+- 可以看到，2019年的奖励比2018年丰厚多了，因此也成功吸引到了1057支队伍参赛
+
+## 流程&&要求
+### 初赛阶段
+- 报名3月15号到5月1号，后经历两次延期，最后是5月26号截止提交初赛PDF
+- 初赛一共要提交一份报名表和一个产品介绍PDF
+- 其中要注意的是网上报名的时候需要填写参赛人员信息，请保证填写的顺序和报名表填写顺序一致，因为最后决定队长是通过网上报名顺序确定的第一个人为队长
+- 到6月10日公布了初赛评审结果
+
+#### PDF要求
+
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448xo0autj30u016fgtm.jpg)
+
+#### 初赛评审结果
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xr8jvyj30u016htcw.jpg)
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xtodwpj30u016h77z.jpg)
+
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448xwg9qsj30u016htc6.jpg)
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448xynekjj30u016h423.jpg)
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448y1juyzj30u016h0wi.jpg)
+
+![img](http://ww1.sinaimg.cn/large/006tNc79ly1g448y4lbccj30u016h0wr.jpg)
+
+![img](http://ww3.sinaimg.cn/large/006tNc79ly1g448y85b1xj30u016h0wj.jpg)
+
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448ybfxfpj30u016hwid.jpg)
+
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448ye8k5oj30u016hgpd.jpg)
+
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448ygwordj30u016h780.jpg)
+
+![img](http://ww4.sinaimg.cn/large/006tNc79ly1g448yju3ryj30u016h0we.jpg)
+
+### 复赛阶段
+- 原本是到6月30号截止提交视频，后延期至7月21号
+- 在b站上找到了进入复赛的浙江大学城市学院作品：《云泥》的视频，不得不说，做的太唯美了。
+- [浙江大学城市学院 创意与艺术设计学院 工业设计系 移动应用创新赛云泥——青瓷服务设计APP](https://www.bilibili.com/video/av46520892?t=122)

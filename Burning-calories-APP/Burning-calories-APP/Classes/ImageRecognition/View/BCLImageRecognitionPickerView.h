@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BCLImageRecognitionPickerView : UIView
 
 typedef void(^BounceShow)(void);
-@property (nonatomic,copy) BounceShow bounceShow;
+@property (nonatomic, copy) BounceShow bounceShow;
 
 typedef void(^DismissCancel)(void);
 @property (nonatomic, copy) DismissCancel dismissCancel;
