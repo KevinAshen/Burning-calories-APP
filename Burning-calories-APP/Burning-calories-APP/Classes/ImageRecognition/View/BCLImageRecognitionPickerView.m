@@ -89,8 +89,15 @@ static const NSInteger kMargin = 25;
     [_affirmButton setBackgroundColor:[UIColor colorWithRed:0.55f green:0.51f blue:0.81f alpha:1.00f]];
     _affirmButton.layer.masksToBounds = YES;
     _affirmButton.layer.cornerRadius = 10;
+    [_affirmButton addTarget:self action:@selector(affirmUpLoadClick:) forControlEvents:UIControlEventTouchUpInside];
 }
-
+- (void)affirmUpLoadClick:(UIButton *)sender {
+    if (_uploadCallBack) {
+        _uploadCallBack(_textField.text);
+    } else {
+        NSLog(@"jkwdd");
+    }
+}
 - (void)setupTextField {
     self.textField = [[UITextField alloc] init];
     [self addSubview:_textField];

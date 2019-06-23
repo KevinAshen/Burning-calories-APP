@@ -31,12 +31,13 @@ static const NSInteger kBounceViewHight = 400;
         _imageRecognitionPickerView.dismissCancel = ^{
             [self disMissView];
         };
+
         _imageRecognitionPickerView.backgroundColor = [UIColor whiteColor];
         [self addSubview:_imageRecognitionPickerView];
     }
 }
 
-//移除从上向底部弹下去的UIView（包含遮罩）
+//弹出从上向底部弹下去的UIView（包含遮罩）
 - (void)showInView:(UIView *)view {
     if (!view) {
         return;

@@ -48,7 +48,7 @@
         make.height.mas_equalTo(@(kJKWMargin + kJKWInterval * 2));
     }];
     
-    self.caloriesDetailMessageView = [[BCLDetailMessageView alloc] initWithDetailType:detailCalories detailLabel:_detailMessageJSONModel.dataJSONModel.coloriesStr];
+    self.caloriesDetailMessageView = [[BCLDetailMessageView alloc] initWithDetailType:detailCalories detailLabel:[NSString stringWithFormat:@"%@/100g", _detailMessageJSONModel.dataJSONModel.coloriesStr]];
     [self addSubview:_caloriesDetailMessageView];
 
     [_caloriesDetailMessageView mas_makeConstraints:^(MASConstraintMaker *make) {
