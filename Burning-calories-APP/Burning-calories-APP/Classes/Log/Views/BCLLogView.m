@@ -57,10 +57,14 @@ static NSString *const kMonthCellIdentifier = @"monthCell";
             dayWeekCell = [[BCLLogDayWeekTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kDayWeekCellIdentifier];
         }
         NSArray *timeRecordArray = [NSArray arrayWithObjects:@"日记录",@"周记录",nil];
-        NSArray *caloriesRecordArray = [NSArray arrayWithObjects:@"1777千卡",@"1777千卡",nil];
+        //NSArray *caloriesRecordArray = [NSArray arrayWithObjects:@"1777千卡",@"1777千卡",nil];
         NSArray *circleBackgroudColorArray = [NSArray arrayWithObjects:[UIColor colorWithRed:0.31f green:0.91f blue:0.00f alpha:1.00f],[UIColor colorWithRed:0.34f green:0.49f blue:0.90f alpha:1.00f], nil];
         dayWeekCell.timeRecordLabel.text = timeRecordArray[indexPath.row];
-        dayWeekCell.caloriesRecordLabel.text = caloriesRecordArray[indexPath.row];
+        //dayWeekCell.caloriesRecordLabel.text = caloriesRecordArray[indexPath.row];
+        if (self.foodArray.count > 0) {
+            [dayWeekCell reloadCellWithData:self.foodArray andIndexRow:indexPath.row];
+        }
+        
         dayWeekCell.circleButton.backgroundColor = circleBackgroudColorArray[indexPath.row];
         
         dayWeekCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

@@ -24,6 +24,8 @@ typedef void(^DismissCancel)(void);
 
 @property (nonatomic, strong) UITextField *textField;
 
+@property (nonatomic, copy) void(^uploadCallBack)(NSString *calories);
+
 - (void)setupSubview;
 
 @end

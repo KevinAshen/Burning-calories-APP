@@ -15,6 +15,6 @@
 @property (nonatomic, strong) UILabel *timeRecordLabel;
 @property (nonatomic, strong) UILabel *caloriesRecordLabel;
 
-
+- (void)reloadCellWithData:(id)data andIndexRow:(NSInteger)row;
 
 @end

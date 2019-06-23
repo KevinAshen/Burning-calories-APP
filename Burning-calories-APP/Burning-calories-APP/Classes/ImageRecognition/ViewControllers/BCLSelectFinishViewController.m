@@ -12,6 +12,7 @@
 #import "BCLDetailMessageJSONModel.h"
 #import "BCLImageRecognitionBounceView.h"
 #import "BCLImageRecognitionPickerView.h"
+#import <AFNetworking.h>
 
 @interface BCLSelectFinishViewController ()<UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -26,6 +27,7 @@
 @property (nonatomic, copy) NSString *foodUnitStr;
 @property (nonatomic, copy) NSString *foodQualityStr;
 @property (nonatomic, copy) NSArray *numberArr1;
+@property (nonatomic, assign) NSInteger caloriesInt;
 
 @property (nonatomic, strong) BCLImageRecognitionBounceView *imageRecognitionBounceView;
 
@@ -80,6 +82,70 @@
     [_cancelButton addTarget:self action:@selector(touchCancel) forControlEvents:UIControlEventTouchUpInside];
     
     self.numberArr1 = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10"];
+    
+    
+    
+}
+//上传数据网络请求
+- (void)uploadFood {
+    NSDate *dateNow = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY/MM/dd HH:mm:ss"];
+    NSString *currentTimeString = [formatter stringFromDate:dateNow];
+    NSString *userId =  [[NSUserDefaults standardUserDefaults] objectForKey:@"userId"];
+    
+    UIImage *originImage = [[UIImage alloc] init];
+    originImage = self.selectImageView.image;
+   
+    //NSString *dataStr = [data base64EncodedDataWithOptions:0];
+    //NSString *encodeImageStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    
+    NSString *url = @"http://www.shidongxuan.top:8000/food/add";
+    NSDictionary *dictionary = @{@"userId":userId,@"foodname":_detailMessageJSONModel.dataJSONModel.cnNameStr,@"updateMethod":@1,@"calories":[NSString stringWithFormat:@"%ld",(long)_caloriesInt ],@"type":[NSNumber numberWithInteger:self.type],@"foodTime":currentTimeString};
+    NSLog(@"%@---dictionary-----", dictionary[@"userId"]);
+    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain",@"application/x-www-form-urlencodem", nil];
+    sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    [sessionManager.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [sessionManager POST:url parameters:dictionary constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        UIImage *originImage = [[UIImage alloc] init];
+        originImage = self.selectImageView.image;
+        NSData *imageData = UIImageJPEGRepresentation(originImage, 1);
+        
+        [formData appendPartWithFileData:imageData name:@"foodImage"  fileName:@"something.jpg" mimeType:@"image/jpg"];       // 上传图片的参数key
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@", responseObject);
+        [self dismissViewControllerClass:NSClassFromString(@"BCLTabBarController")];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@", error);
+        NSLog(@"qst");
+    }];
+    
+//    if ([APIClient networkType] > 0) {
+//        [APIClient requestURL:url httpMethod:POST contentType:@"application/x-www-form-urlencoded" params:dictionary response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
+//            switch (requestStatusCode) {
+//                case ApiRequestOK:
+//                    NSLog(@"%@", JSON);
+//                    break;
+//
+//                default:
+//                    break;
+//            }
+//        }];
+//    }
+}
+
+- (void)dismissViewControllerClass:(Class)class {
+    UIViewController *vc = self;
+    while (![vc isKindOfClass:class] && vc != nil) {
+        vc = vc.presentingViewController;
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            vc = ((UINavigationController *)vc).viewControllers.lastObject;
+        }
+    }
+    [vc dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)touchCancel {
@@ -102,6 +168,10 @@
     };
     [_imageRecognitionBounceView.imageRecognitionPickerView setupSubview];
     
+    typeof(self) weakSelf = self; _imageRecognitionBounceView.imageRecognitionPickerView.uploadCallBack = ^(NSString * _Nonnull calories) {
+        [weakSelf uploadFood];
+    };
+    
 }
 
 - (void)getDetailWithFoodName:(NSString *)foodNameStr {
@@ -122,7 +192,8 @@
                     NSLog(@"%@---JSON", JSON);
                     BCLDetailMessageJSONModel *detailMessageJSONModel = [[BCLDetailMessageJSONModel alloc] initWithDictionary:JSON error:nil];
                     self.detailMessageJSONModel = [[BCLDetailMessageJSONModel alloc] init];
-                    NSLog(@"detailMessageJSONModel：%@", detailMessageJSONModel);
+                    self.detailMessageJSONModel = detailMessageJSONModel;
+                    NSLog(@"self.detailMessageJSONModel：%@", self.detailMessageJSONModel);
                     [self setupDetailFoodViewWithModel:detailMessageJSONModel];
                 }
                     break;
@@ -188,8 +259,8 @@
     NSString *numberStr = _numberArr1[row];
     NSInteger numberInt = [numberStr integerValue];
     NSInteger qualityInt = [_foodQualityStr integerValue];
-    NSInteger caloriesInt = numberInt * qualityInt;
-    NSString *caloriesStr = [NSString stringWithFormat:@"%ld大卡", caloriesInt];
+    _caloriesInt = numberInt * qualityInt;
+    NSString *caloriesStr = [NSString stringWithFormat:@"%ld大卡", _caloriesInt];
     self.imageRecognitionBounceView.imageRecognitionPickerView.textField.text = caloriesStr;
 }
 
