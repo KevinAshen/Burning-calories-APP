@@ -10,7 +10,7 @@
 
 typedef void(^ReturnValueBlock)(NSString *passedUserName, NSString *passedPassword);
 
-@interface BCLRegisterViewController : BCLBaseViewController
+@interface BCLRegisterViewController : UIViewController
 
 @property (nonatomic, copy) ReturnValueBlock returnValueBlock;
 

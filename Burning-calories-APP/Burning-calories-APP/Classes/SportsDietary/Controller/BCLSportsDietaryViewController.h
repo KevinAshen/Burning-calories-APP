@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BCLSportsDietaryViewController : BCLBaseViewController
+@interface BCLSportsDietaryViewController : UIViewController
 
 @end
 

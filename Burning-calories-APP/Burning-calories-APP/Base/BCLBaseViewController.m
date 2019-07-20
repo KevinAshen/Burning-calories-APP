@@ -25,7 +25,11 @@
 #pragma mark - 基础设定
 - (void)setupBaseSetting {
     // 设置应用的背景色
-    self.view.backgroundColor = [UIColor whiteColor];
+    //self.view.backgroundColor = [UIColor whiteColor];
+    //设置背景图
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageView.image = [UIImage imageNamed:@"caloriesbg"];
+    [self.view insertSubview:imageView atIndex:0];
     
 }
 

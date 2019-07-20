@@ -68,7 +68,7 @@
 - (void)login {
     NSDictionary *parameters = @{@"username":self.loginView.usersTextField.text,@"password":self.loginView.passwordTextField.text};
     NSLog(@"%@----parameters----", parameters);
-    
+
     if([APIClient networkType] > 0) {
         [APIClient requestURL:@"http://www.shidongxuan.top:8000/user/login" httpMethod:POST contentType:@"application/x-www-form-urlencoded" params:parameters response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
             NSLog(@"%@---JSON----", JSON);
@@ -83,7 +83,7 @@
     }
 //    BCLTabBarController *tabBarController = [[BCLTabBarController alloc]init];
 //    [self presentViewController:tabBarController animated:YES completion:nil];
-    
+//
 }
 - (void)registered {
     BCLRegisterViewController *registerViewController = [[BCLRegisterViewController alloc] init];

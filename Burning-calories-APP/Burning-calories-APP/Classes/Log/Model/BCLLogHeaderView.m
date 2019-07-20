@@ -41,8 +41,8 @@ static const CGFloat kTopMargin = 51;
         self.todayCaloriesButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:_todayCaloriesButton];
         [_todayCaloriesButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self->_anticipateCaloriesButton.mas_right).offset(35);
-            make.top.equalTo(self).offset(20);
+            make.left.equalTo(self->_anticipateCaloriesButton.mas_right).offset(55);
+            make.top.equalTo(self).offset(30);
             make.width.mas_equalTo(100);
             make.height.mas_equalTo(100);
         }];

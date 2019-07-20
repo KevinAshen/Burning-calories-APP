@@ -51,9 +51,13 @@
                     
                     NSArray *data = [NSArray array];
                     data = [logModel data];
-                    BCLFoodDataModel *model = [[BCLFoodDataModel alloc] initWithDictionary:data[data.count - 1] error:nil];
-                    NSLog(@"%@--Model-----", model);
-                    int daysCount = [self calculateLogDay:[model createTime]];
+                    int daysCount = 0;
+                    if (data.count > 0) {
+                        BCLFoodDataModel *model = [[BCLFoodDataModel alloc] initWithDictionary:data[data.count - 1] error:nil];
+                        daysCount = [self calculateLogDay:[model createTime]];
+                    }
+                    
+                    
                     
                     NSMutableArray *allDaysArray = [NSMutableArray array];
                     for (int i = 0; i <= daysCount; i++) {

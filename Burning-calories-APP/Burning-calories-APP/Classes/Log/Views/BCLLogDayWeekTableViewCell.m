@@ -40,7 +40,7 @@ static const CGFloat kTopMargin = 22;
     self.caloriesRecordLabel = [[UILabel alloc]init];
     [self addSubview:_caloriesRecordLabel];
     [_caloriesRecordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.timeRecordLabel.mas_right).offset(20);
+    make.left.equalTo(self.timeRecordLabel.mas_right).offset(20);
         make.top.equalTo(self.timeRecordLabel);
         make.width.mas_equalTo(150);
         make.height.mas_equalTo(25);
