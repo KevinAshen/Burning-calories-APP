@@ -7,7 +7,7 @@
 //
 
 #import "BCLLogDayWeekTableViewCell.h"
-#import <Masonry.h>
+#import "BCLLogModel.h"
 
 static const CGFloat kTopMargin = 22;
 @implementation BCLLogDayWeekTableViewCell
@@ -40,15 +40,33 @@ static const CGFloat kTopMargin = 22;
     self.caloriesRecordLabel = [[UILabel alloc]init];
     [self addSubview:_caloriesRecordLabel];
     [_caloriesRecordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.timeRecordLabel.mas_right).offset(20);
+    make.left.equalTo(self.timeRecordLabel.mas_right).offset(20);
         make.top.equalTo(self.timeRecordLabel);
-        make.width.mas_equalTo(83);
+        make.width.mas_equalTo(150);
         make.height.mas_equalTo(25);
     }];
     _caloriesRecordLabel.textColor = [UIColor colorWithRed:0.87f green:0.87f blue:0.87f alpha:1.00f];
     _caloriesRecordLabel.font = [UIFont systemFontOfSize:18];
 }
 
+- (void)reloadCellWithData:(id)data andIndexRow:(NSInteger)row{
+    NSArray *foodArray = [NSArray array];
+    if ([data isKindOfClass:NSClassFromString(@"NSArray")]) {
+        foodArray = data;
+    }
+    NSArray *everyDayArray = foodArray[foodArray.count - 1];
+    float dayCalories = 0.0;
+    for (int i = 0; i < everyDayArray.count; i++) {
+        BCLFoodDataModel *foodModel = everyDayArray[i];
+        float calories = [[foodModel calories] floatValue];
+        dayCalories += calories;
+    }
+    if (row == 0) {
+        _caloriesRecordLabel.text = [NSString stringWithFormat:@"%.2f千卡", dayCalories];
+    } else if (row == 1) {
+        _caloriesRecordLabel.text = [NSString stringWithFormat:@"%.2f千卡", dayCalories];
+    }
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

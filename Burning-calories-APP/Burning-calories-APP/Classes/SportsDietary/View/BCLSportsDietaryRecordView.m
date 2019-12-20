@@ -179,7 +179,7 @@ static NSString *kSportsCellIdentifier = @"sportsCell";
     if (tableView.tag == 1) {
         return _sportsNumber;
     } else {
-        return 5;
+        return 3;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

@@ -75,7 +75,7 @@
 }
 - (void)sureRgPwd {
     NSString *url = @"http://www.shidongxuan.top:8000/user/register";
-    NSDictionary *parameters = @{@"username":self.userNameString,@"password":self.pwdString,@"gender":@1, @"phone":@"15009175070",@"email":@"dfssd",@"birth":@"2019/08/18 00:00:00"};
+    NSDictionary *parameters = @{@"username":self.userNameString,@"password":self.pwdString,@"gender":@1, @"phone":@"15009175065",@"email":@"dfssd",@"birth":@"2019/08/18 00:00:00"};
     NSLog(@"%@--parameters---", parameters);
     
     

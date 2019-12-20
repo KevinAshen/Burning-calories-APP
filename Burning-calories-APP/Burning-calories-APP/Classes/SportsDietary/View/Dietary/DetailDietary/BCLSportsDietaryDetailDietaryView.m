@@ -9,7 +9,7 @@
 #import "BCLSportsDietaryDetailDietaryView.h"
 #import "BCLSportsDietaryRecordSportsHeadView.h"
 #import "BCLSportsDietaryAddSportsListTableViewCell.h"
-#include <Masonry.h>
+#import "BCLDietaryARTableViewCell.h"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight [UIScreen mainScreen].bounds.size.height
@@ -72,6 +72,7 @@ static NSString *kDetailDietaryCellIdentifier = @"detailDietaryCell";
     _detailDietaryTableView.tableHeaderView = backgroundView;
     
     [_detailDietaryTableView registerClass:[BCLSportsDietaryAddSportsListTableViewCell class] forCellReuseIdentifier:kDetailDietaryCellIdentifier];
+    [_detailDietaryTableView registerClass:[BCLDietaryARTableViewCell class] forCellReuseIdentifier:@"dietaryARCell"];
     _detailDietaryTableView.backgroundColor = [UIColor clearColor];
     _detailDietaryTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _detailDietaryTableView.showsVerticalScrollIndicator = NO;
@@ -87,16 +88,21 @@ static NSString *kDetailDietaryCellIdentifier = @"detailDietaryCell";
 
 #pragma mark - UITableViewDataSource实现
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 5;
+    //return 5;
+    return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BCLSportsDietaryAddSportsListTableViewCell *detailDietaryTableViewTableViewCell = [tableView dequeueReusableCellWithIdentifier:kDetailDietaryCellIdentifier forIndexPath:indexPath];
-    detailDietaryTableViewTableViewCell.backgroundColor = [UIColor clearColor];
-    detailDietaryTableViewTableViewCell.selectionStyle = UIAccessibilityTraitNone;
-    return detailDietaryTableViewTableViewCell;
+//    BCLSportsDietaryAddSportsListTableViewCell *detailDietaryTableViewTableViewCell = [tableView dequeueReusableCellWithIdentifier:kDetailDietaryCellIdentifier forIndexPath:indexPath];
+//    detailDietaryTableViewTableViewCell.backgroundColor = [UIColor clearColor];
+//    detailDietaryTableViewTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+//    return detailDietaryTableViewTableViewCell;
+    BCLDietaryARTableViewCell *detailTableViewCell = [tableView dequeueReusableCellWithIdentifier:@"dietaryARCell" forIndexPath:indexPath];
+    detailTableViewCell.backgroundColor = [UIColor clearColor];
+    detailTableViewCell.selectionStyle = UIAccessibilityTraitNone;
+    return detailTableViewCell;
 }
 
 /*

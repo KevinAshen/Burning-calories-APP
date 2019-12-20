@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BCLLogView : UIView<UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, copy) NSArray *foodArray;
 
 @end
 NS_ASSUME_NONNULL_END

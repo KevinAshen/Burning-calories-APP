@@ -8,7 +8,7 @@
 
 #import "BCLBaseViewController.h"
 
-@interface BCLLoginViewController : BCLBaseViewController
+@interface BCLLoginViewController : UIViewController
 
 @property (nonatomic, strong) NSString *pwdLoginString;
 @property (nonatomic, strong) NSString *userNameLoginString;

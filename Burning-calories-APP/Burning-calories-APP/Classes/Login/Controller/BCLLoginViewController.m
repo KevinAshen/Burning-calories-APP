@@ -38,8 +38,10 @@
     self.loginView.registerCallBackBlock = ^(UIButton *button) {
         [weakSelf registered];
     };
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
     // Do any additional setup after loading the view.
 }
 - (void)keyBoardWillShow:(NSNotification *)notification {
@@ -64,22 +66,24 @@
 }
 
 - (void)login {
-//    NSDictionary *parameters = @{@"username":self.loginView.usersTextField.text,@"password":self.loginView.passwordTextField.text};
-//    NSLog(@"%@----parameters----", parameters);
-//    if([APIClient networkType] > 0) {
-//        [APIClient requestURL:@"http://www.shidongxuan.top:8000/user/login" httpMethod:POST contentType:@"application/x-www-form- urlencoded" params:parameters response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
-//            NSLog(@"%@---JSON----", JSON);
-//            if([JSON[@"status"] isEqual:@0]) {
-//                BCLTabBarController *tabBarController = [[BCLTabBarController alloc]init];
-//                [self presentViewController:tabBarController animated:YES completion:nil];
-//            } else {
-//                [self showAlertView:@"账号或密码错误" andMessage:@"请重新检查"];
-//            }
-//        }];
-//    }
-    BCLTabBarController *tabBarController = [[BCLTabBarController alloc]init];
-    [self presentViewController:tabBarController animated:YES completion:nil];
-    
+    NSDictionary *parameters = @{@"username":self.loginView.usersTextField.text,@"password":self.loginView.passwordTextField.text};
+    NSLog(@"%@----parameters----", parameters);
+
+    if([APIClient networkType] > 0) {
+        [APIClient requestURL:@"http://www.shidongxuan.top:8000/user/login" httpMethod:POST contentType:@"application/x-www-form-urlencoded" params:parameters response:^(ApiRequestStatusCode requestStatusCode, id JSON) {
+            NSLog(@"%@---JSON----", JSON);
+            if([JSON[@"status"] isEqual:@0]) {
+                [[NSUserDefaults standardUserDefaults] setObject:JSON[@"data"][@"id"] forKey:@"userId"];
+                BCLTabBarController *tabBarController = [[BCLTabBarController alloc]init];
+                [self presentViewController:tabBarController animated:YES completion:nil];
+            } else {
+                [self showAlertView:@"账号或密码错误" andMessage:@"请重新检查"];
+            }
+        }];
+    }
+//    BCLTabBarController *tabBarController = [[BCLTabBarController alloc]init];
+//    [self presentViewController:tabBarController animated:YES completion:nil];
+//
 }
 - (void)registered {
     BCLRegisterViewController *registerViewController = [[BCLRegisterViewController alloc] init];
